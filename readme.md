@@ -29,4 +29,4 @@ This is built on top of [Eleventy](https://www.11ty.io) because it is great. One
 
 ## Deploy
 
-…
+`npm run build`
