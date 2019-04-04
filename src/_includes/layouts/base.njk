@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+    <link rel="stylesheet" href="/_assets/style.css" media="screen" type="text/css">
+
+		<title>{{ basics.name }}{% if title %} - {{ title }}{% endif %}</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="_assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="_assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="_assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="_assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="_assets/favicon/safari-pinned-tab.svg" color="#483ba4">
+    <link rel="shortcut icon" href="_assets/favicon/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="{{ basics.name }}">
+    <meta name="application-name" content="{{ basics.name }}">
+    <meta name="msapplication-TileColor" content="#483ba4">
+    <meta name="msapplication-config" content="_assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+
+  <body>
+    <header class="kc-header">
+      
+      <video autoplay loop="loop" src="https://web.archive.org/web/20190115112907im_/https://kingdomcode.uk/wp-content/uploads/2016/07/KingdomCode_Background_sm.mp4">
+        <source type="video/mp4" src="https://web.archive.org/web/20190115112907im_/https://kingdomcode.uk/wp-content/uploads/2016/07/KingdomCode_Background_sm.mp4">
+      </video>
+
+      <div class="kc-header__container">
+
+        <img src="_assets/logo.svg" alt="" />
+        <h1>{{ basics.name }}</h1>
+        <h2>{{ basics.tag }}</h2>
+
+        <div class="kc-header__ctas">
+          <a href="#meetups">Meetups</a>
+          <a href="#newsletter">Newsletter</a>
+        </div>
+
+        {% if events[0].date | isFutureDate %}
+          {% if events[0].url %}
+            <a href="{{ events[0].url }}" class="kc-header__meetup-lnk" target="_blank" rel="noopener">Join us at the next meetup</a>
+          {% endif %}
+        {% endif %}
+
+      </div>
+
+    </header>
+
+    <main class="container kc-describer">
+      <p>When the love of Jesus and a passion for tech collide, exciting things happen. Things that may just impact the Kingdom, things like Kingdom Code!</p>
+      <p>We’re a community of people who love Jesus and love tech. We’re creatives, developers, designers, entrepreneurs, ideators and innovators. We gather often to encourage, inspire and spark serendipity. So, whether you crunch data, grapple with code, place every pixel or love casting vision, there’s a place for you to come, learn, grow, make friends, network and have fun.</p>
+    </main>
+
+    <section class="container" id="meetups">
+      {{ layoutContent | safe }}
+    </section>
+
+    <div class="kc-newsletter">
+      <section class="container" id="newsletter">
+        <h2>Stay in touch</h2>
+        <p>Sign up and receive all the latest news and meet up information from Kingdom Code:</p>
+
+        <!-- Begin Mailchimp Signup Form -->
+        <form action="https://kingdomcode.us11.list-manage.com/subscribe/post?u=0faea843d029399bef7962992&amp;id=686a0f7b4b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0faea843d029399bef7962992_686a0f7b4b" tabindex="-1" value=""></div>
+
+          <div class="kc-newsletter__group">
+            <div class="kc-newsletter__field mc-field-group">
+              <label for="mce-FNAME">First Name</label>
+              <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First name">
+            </div>
+            <div class="kc-newsletter__field mc-field-group">
+              <label for="mce-LNAME">Last Name</label>
+              <input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Family name">
+            </div>
+            <div class="kc-newsletter__field mc-field-group">
+              <label for="mce-EMAIL">Email Address</label>
+              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Primary email address">
+            </div>
+            <div class="kc-newsletter__field">
+              <input type="submit" value="Subscribe!" name="subscribe" id="mc-embedded-subscribe" class="button">
+            </div>
+          </div>
+          
+        </form>
+        <!--End mc_embed_signup-->
+
+      </section>
+    </div>
+
+    <footer class="kc-footer">
+      <div class="container">
+        <p>
+          <a href="https://github.com/kingdom-code/kingdom-code" target="_blank" rel="noopener">View source</a>
+        </p>
+        <p>
+          Last updated: {{ data.today }}
+        </p>
+      </div>
+    </footer>
+
+  </body>
+</html>

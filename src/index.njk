@@ -1,0 +1,55 @@
+---
+layout: layouts/base.njk
+---
+
+<div class="kc-events">
+
+  <section itemscope itemtype="http://schema.org/Event" class="kc-events__future">
+
+    <h2>
+    {% if events[0].date | isFutureDate %}
+      Upcoming event
+    {% else %}
+      Latest event
+    {% endif %}
+    </h2>
+
+    <h3 itemprop="name">{{ events[0].name }}</h3>
+    <p>{{ events[0].city }}</p>
+    <p itemprop="description">{{ events[0].description }}</p>
+    <date itemprop="startDate" content="{{ events[0].date }}">{{ events[0].date | readableDate }}</date>
+    {% if events[0].url %}
+      <a href="{{ events[0].url }}" target="_blank" rel="noopener" itemprop="url" class="kc-events__future__btn">
+      {% if events[0].date | isFutureDate %}
+        Find out more
+      {% else %}
+        See more
+      {% endif %}
+    {% endif %}
+    </a>
+  </section>
+
+  <section>
+
+    <h2>Previous events</h2>
+
+    <ul class="kc-events-list">
+    {% set len = events.length %} 
+    {% for i in range(1, len) %}
+      <li itemscope itemtype="http://schema.org/Event">
+        <h3 itemprop="name">{{ events[i].name }}</h3>
+        <date itemprop="startDate" content="{{ events[i].date }}">{{ events[i].date | readableDate }}</date>
+        <span>{{ events[i].city }}</span>
+        
+        {% if events[i].url %}
+          <a href="{{ events[i].url }}"  target="_blank" rel="noopener" itemprop="url">See more</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+      
+    </ul>
+
+  </section>
+
+</div>
+

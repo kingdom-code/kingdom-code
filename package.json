@@ -1,0 +1,16 @@
+{
+  "name": "kingdom-code",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "eleventy --serve"
+  },
+  "author": "James Doc",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^0.7.1",
+    "luxon": "^1.4.4"
+  }
+}

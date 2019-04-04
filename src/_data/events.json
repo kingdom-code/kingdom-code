@@ -1,0 +1,31 @@
+[
+  {
+    "name": "microBUILD",
+    "city": "London",
+    "date": "2019-04-12",
+    "url": "https://www.eventbrite.co.uk/e/kingdom-code-london-microbuild-tickets-57974841311",
+    "description": "We've set the evening aside to work together as a community on our different passion projects. Bring your idea, bring your project, or just come along to support someone elses project…"
+  },
+  {
+    "name": "Drink",
+    "city": "London",
+    "date": "2019-04-01",
+    "url": "https://www.eventbrite.co.uk/e/kingdom-code-london-drink-tickets-54655407796",
+    "description": "Join us on Monday 1st April, 7.30pm at The Crosse Keys for a quiet drink with people who love Jesus and are involved in shaping technology. The evening is super informal, no agenda, just come along and meet likeminded folk in the Kingdom Code community."
+  },
+  {
+    "name": "Think: From passion project to full time job…",
+    "city": "London",
+    "date": "2019-03-04",
+    "url": "https://www.eventbrite.co.uk/e/kingdom-code-london-think-tickets-54655208199",
+    "description": "How do you take a small hobby project from something like one of our BUILD events in to a proper full time project? This evening will include some input from Andy Geers on the story of how this happened for the PrayerMate app."
+  },
+  {
+    "name": "Think: Responding to the needs of our world",
+    "city": "Bristol",
+    "date": "2019-02-20",
+    "url": "https://www.eventbrite.co.uk/e/kingdom-code-bath-and-bristol-responding-to-the-needs-of-our-world-tickets-55901241117#",
+    "description": "How are we called to respond to the needs of our world? What’s the role of tech in this and how can we contribute? Record numbers of displaced people, natural and man-made disasters are robbing people of life in all its fullness- including here in the South West. Join us as we explore how we can practically use our skill sets to bring love, life and hope into our cities."
+  }
+
+]

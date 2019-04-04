@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,700');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #ee5c53;
+  font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #1aac9c;
+  text-decoration: none;
+  border-bottom: 1px solid #ee5c53;
+  transition: border .5s;
+}
+
+a:hover {
+  border-bottom-color: #1aac9c;
+}
+
+.kc-header {
+  /* background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 200px;
+  min-height: 20vh; */
+  
+  color: #ffffff;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 4px;
+  position: relative;
+  width: 100%;
+
+  height: 0;
+  padding-bottom: 50vh;
+}
+
+.kc-header video {
+  border-radius: 4px;
+  display: block;
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.kc-header__container {
+  background-color: rgba(68, 77, 95, .5);
+  height: 100%;
+  position: absolute;
+  text-decoration: none;
+  transition: all .2s;
+  width: 100%;
+  max-width: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.kc-header img {
+  max-width: 150px;
+  margin: 50px 0 25px;
+}
+
+.kc-header h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.kc-header a {
+  color: #ffffff;
+  font-size: 2em;
+}
+
+.kc-header__ctas a {
+  border: 1px solid #1aac9c;
+  width: 200px;
+  display: inline-block;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 20px;
+  font-size: 1.35em;
+  transition: background-color .4s;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.kc-header__ctas a:hover {
+  background-color: #1aac9c;
+}
+
+.kc-header__ctas a:first-child {
+  border-color: #ee5c53;
+}
+
+.kc-header__ctas a:first-child:hover {
+  background-color: #ee5c53;
+}
+
+.kc-header__meetup-lnk {
+  margin-top: 20px;
+}
+
+
+.container {
+  margin: 0 auto;
+  max-width: 1020px;
+  width: 100%;
+  padding: 0 50px;
+}
+
+.kc-describer p {
+  line-height: 1.5em;
+}
+
+.kc-describer p:first-child {
+  font-size: 2em;
+}
+
+.kc-events {
+  display: block;
+  margin-top: 50px;
+}
+
+.kc-events section date {
+  display: block;
+}
+
+.kc-events h2 {
+  color: #1aac9c;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.kc-events h3 {
+  font-size: 1.17em;
+  margin: 1.17em 0 0;
+}
+
+.kc-events-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.kc-events__future {
+  background-color: #1aac9c;
+  border-radius: 8px;
+  color: white;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.kc-events__future h2, .kc-events__future p{
+  color: white;
+}
+
+.kc-events__future__btn {
+  background: #ee5c53;
+  color: white;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  margin: 5px 0;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.kc-footer {
+  padding: 1rem;
+  font-size: 0.725rem;
+}
+
+.kc-footer__social {
+  display: flex;
+  flex-direction: row;
+}
+
+.kc-footer__social img {
+  height: 16px;
+  margin-right: 5px;
+  width: 16px;
+}
+
+
+.kc-newsletter {
+  background-color: #ee5c53;
+  color: white;
+  margin: 50px 0;
+  padding: 50px 0;
+}
+
+.kc-newsletter__field {
+  display: block;
+  position: relative;
+  margin: 0 0 1em;
+}
+
+.kc-newsletter__field label {
+  display: block;
+  text-indent: -99999px;
+  font-size: 0;
+}
+
+.kc-newsletter__field input {
+  background-color: #cb4e47;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+  font-size: 0.825em;
+}
+
+.kc-newsletter__field input[type=submit] {
+  background-color: #ffffff;
+  color: #566075;
+  text-transform: uppercase;
+  transition: all .4s;
+  border: 1px solid #ee5c53;
+  cursor: pointer;
+}
+
+.kc-newsletter__field input[type=submit]:hover {
+  background-color: #ee5c53;
+  border-color: white;
+  color: white;
+}
+
+
+
+@media (min-width: 800px) {
+  .kc-header {
+    text-align: center;
+  }
+
+  .kc-header h1 {
+    font-size: 4em;
+  }
+
+  .kc-events {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+  }
+
+  .kc-events__future {
+    margin-bottom: 0;
+  }
+
+  .kc-footer {
+    padding-top: 5rem;
+    text-align: center;
+  }
+
+  .kc-footer__social {
+    justify-content: center;
+  }
+
+  .kc-newsletter__group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+  }
+
+  .kc-newsletter__field {
+    display: inline-block;
+    margin: 0;
+  }
+}
