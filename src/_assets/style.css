@@ -141,18 +141,30 @@ a:hover {
   color: #1aac9c;
   font-size: 1.5em;
   letter-spacing: 1px;
-  margin: 0;
+  margin: 0 0 20px;
   text-transform: uppercase;
 }
 
 .kc-events h3 {
   font-size: 1.17em;
-  margin: 1.17em 0 0;
+  margin: 0 0 0;
 }
 
 .kc-events-list {
   list-style-type: none;
   padding: 0;
+}
+
+.kc-events-list li {
+  margin: 20px 0;
+}
+
+.kc-events-list li:first-child {
+  margin-top: 0;
+}
+
+.kc-events-list li:last-child {
+  margin-bottom: 0;
 }
 
 .kc-events__future {
@@ -161,6 +173,11 @@ a:hover {
   color: white;
   padding: 20px;
   margin-bottom: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .kc-events__future h2, .kc-events__future p{
@@ -176,6 +193,17 @@ a:hover {
   margin: 5px 0;
   display: inline-block;
   text-transform: uppercase;
+}
+
+.kc-event__city {
+  text-transform: uppercase;
+  font-size: 0.825em;
+  margin: 0;
+  padding: 0;
+}
+
+.kc-event__city:after {
+  content: ':';
 }
 
 .kc-footer {
