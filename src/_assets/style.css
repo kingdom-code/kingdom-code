@@ -3,6 +3,13 @@
 * {
   box-sizing: border-box;
 }
+textarea,
+select,
+input,
+button {
+  outline: none;
+  font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+}
 
 body {
   color: #ee5c53;
@@ -245,6 +252,10 @@ a:hover {
   font-size: 0;
 }
 
+.kc-newsletter__field input::placeholder {
+  color: #d4d4d3;
+}
+
 .kc-newsletter__field input {
   background-color: #cb4e47;
   border: none;
@@ -252,7 +263,6 @@ a:hover {
   color: white;
   width: 100%;
   padding: 10px;
-  font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
   font-size: 0.825em;
 }
 
