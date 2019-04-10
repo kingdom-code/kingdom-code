@@ -1,5 +1,19 @@
 [
   {
+    "name": "Think- Culture Setting",
+    "city": "London",
+    "date": "2019-05-13",
+    "url": "",
+    "description": ""
+  },
+  {
+    "name": "Think- Beginnings",
+    "city": "Leeds",
+    "date": "2019-05-08",
+    "url": "",
+    "description": ""
+  },
+  {
     "name": "microBUILD",
     "city": "London",
     "date": "2019-04-12",
@@ -22,10 +36,52 @@
   },
   {
     "name": "Think- Responding to the needs of our world",
-    "city": "Bristol",
+    "city": "Bath and Bristol",
     "date": "2019-02-20",
     "url": "https://www.eventbrite.co.uk/e/kingdom-code-bath-and-bristol-responding-to-the-needs-of-our-world-tickets-55901241117#",
     "description": "How are we called to respond to the needs of our world? What’s the role of tech in this and how can we contribute? Record numbers of displaced people, natural and man-made disasters are robbing people of life in all its fullness- including here in the South West. Join us as we explore how we can practically use our skill sets to bring love, life and hope into our cities."
+  },
+  {
+    "name": "Think- Generous Technologists",
+    "city": "Bath and Bristol",
+    "date": "2018-11-07",
+    "url": "https://www.eventbrite.co.uk/e/kingdom-code-bristol-think-tickets-51804874775",
+    "description": "How does Christian generosity shape how we build tech? That was one of the questions that we were exploring last month during Kingdom Code BUILD. But we don't want to stop after the hackathon… we want to keep on exploring the topic together."
+  },
+  {
+    "name": "Drink",
+    "city": "Bath and Bristol",
+    "date": "2018-08-14",
+    "url": "https://www.eventbrite.co.uk/e/kingdom-code-bath-august-meetup-tickets-48586674050",
+    "description": ""
+  },
+  {
+    "name": "Think- With the Bible Society",
+    "city": "Bath and Bristol",
+    "date": "2018-06-20",
+    "url": "https://www.eventbrite.co.uk/e/kingdom-code-bristol-with-the-bible-society-tickets-45799157513",
+    "description": "This month we're going to be joined by Matt Cooper, Head of Digital at the Bible Society. They've existed since 1804 with the mission to bring the Bible to life; to help people around the world engage with it, relate to it, and make sense of it. No small task! Matt will be sharing more around how digital tools have changed how they work, and some of the plans for upcoming scripture engagement projects."
+  },
+  {
+    "name": "Drink",
+    "city": "Bath and Bristol",
+    "date": "2018-05-30",
+    "url": "https://www.eventbrite.co.uk/e/kingdom-code-bristol-tickets-45429827838",
+    "description": ""
+  },
+  {
+    "name": "Think- Beginnings",
+    "city": "Bath and Bristol",
+    "date": "2018-04-18",
+    "url": "https://www.eventbrite.co.uk/e/kingdom-code-think-bath-tickets-44001118530",
+    "description": "Join us on Wednesday 18th April as we host the second event in the South West. Last month was an opportunity to begin to get to know other Christians in the tech world, tonight will be a time to start to think and discuss how our faith and technology come together."
+  },
+  {
+    "name": "Drink",
+    "city": "Bath and Bristol",
+    "date": "2018-03-21",
+    "url": "https://www.eventbrite.co.uk/e/kingdom-code-bath-tickets-42196690437",
+    "description": "Over the next three months we're going to be starting a set of events in the South West to build relationships between us, to encourage one another, to share about the things that we're working on, to start thinking about how our Christian worldview comes together with our vocation, and looking to put that into practice."
   }
 
 ]

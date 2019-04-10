@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Alasdair Munday",
+    "team": ["Leeds"]
+  },
+  {
+    "name": "Alice Creasey",
+    "team": ["Leeds"]
+  },
+  {
+    "name": "Patrick Bokšan-Cullen",
+    "team": ["London"]
+  },
+  {
+    "name": "James Isbell",
+    "team": ["Bath and Bristol"]
+  },
+  {
+    "name": "Amy Silcock",
+    "team": ["Bath and Bristol"]
+  },
+  {
+    "name": "Andy Geers",
+    "team": ["London", "Leadership", "BUILD"]
+  },
+  {
+    "name": "James Doc",
+    "team": ["London", "Leadership", "BUILD"]
+  },
+  {
+    "name": "Sam Peckham",
+    "team": ["Leadership", "BUILD"]
+  },
+  {
+    "name": "Arun Mahtani",
+    "team": ["Leadership", "BUILD"]
+  }
+]

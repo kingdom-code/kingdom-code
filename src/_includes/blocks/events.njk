@@ -1,0 +1,90 @@
+<div class="kc-events">
+
+  <section itemscope itemtype="http://schema.org/Event" class="kc-events__future kc-event">
+
+    <h2 class="kc-event__type">Upcoming Events</h2>
+
+    <ul class="kc-events-list">
+    {% set count = 0 %}
+    {% for event in events | sort(false, false, "date") %}
+      {% if event.date | isFutureDate == true %}
+        <li itemscope itemtype="http://schema.org/Event">
+
+          <p class="kc-event__city">
+            {{ event.city }}
+          </p>
+
+          <h3 itemprop="name" class="kc-event__event-title">
+            {{ event.name }}
+          </h3>
+
+          <date itemprop="startDate" content="{{ event.date }}" class="kc-event__date">
+            {{ event.date | readableDate }}
+          </date>
+
+          <p itemprop="description" class="kc-event__description">
+            {{ event.description }}
+          </p>
+          
+          {% if event.url %}
+            <a href="{{ event.url }}" target="_blank" rel="noopener" itemprop="url" class="kc-events__future__btn">Find out more</a>
+          {% else %}
+            <p class="kc-event__description">
+              Save the date
+            </p>
+          {% endif %}
+        </li>
+        {% set count = count + 1 %}
+      {% endif %}
+    {% endfor %}
+
+    {% if count == 0 %}
+      <li>
+        <h3>No events in the diary… yet.</h3>
+      </li>
+    {% endif %}
+      
+    </ul>
+  </section>
+
+  <section class="kc-event">
+
+    <h2 class="kc-event__type">Previous events</h2>
+
+    <ul class="kc-events-list">
+    {% set count = 0 %}
+    {% for event in events | sort(true, false, "date") %}
+      {% if event.date | isFutureDate == false and count < 3 %}
+        <li itemscope itemtype="http://schema.org/Event">
+
+          <p class="kc-event__city">
+            {{ event.city }}
+          </p>
+
+          <h3 itemprop="name" class="kc-event__event-title">
+            {{ event.name }}
+          </h3>
+
+          <date itemprop="startDate" content="{{ event.date }}" class="kc-event__date">
+            {{ event.date | readableDate }}
+          </date>
+          
+          {% if event.url %}
+            <a href="{{ event.url }}"  target="_blank" rel="noopener" itemprop="url" class="kc-events__link">See more</a>
+          {% endif %}
+        </li>
+        {% set count = count + 1 %}
+      {% endif %}
+    {% endfor %}
+
+    {% if count == 0 %}
+      <li>
+        <p>This is very new…</p>
+      </li>
+    {% endif %}
+      
+    </ul>
+
+  </section>
+
+</div>

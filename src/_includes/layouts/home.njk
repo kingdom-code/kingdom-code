@@ -1,0 +1,43 @@
+---
+layout: layouts/base.njk
+---
+
+<header class="kc-header">
+  
+  <video class="kc-header__media" autoplay loop="loop" src="/_assets/kingdom-code-header.mp4" poster="/_assets/kingdom-code-header.jpg">
+    <source type="video/mp4" src="/_assets/kingdom-code-header.mp4">
+  </video>
+
+  <div class="kc-header__container">
+
+    <div class="kc-header__container__logoGroup">
+      <img src="/_assets/logo.svg" alt="Kingdom Code" class="kc-header__logo"/>
+      <hgroup>
+        <h1>{{ basics.name }}</h1>
+        <h2>{{ basics.tag }}</h2>
+      </hgroup>
+    </div>
+
+    <div class="kc-header__ctas">
+      <a href="#meetups">Meetups</a>
+      <a href="#newsletter">Newsletter</a>
+    </div>
+
+    {% if events[0].date | isFutureDate %}
+      {% if events[0].url %}
+        <a href="{{ events[0].url }}" class="kc-header__meetup-lnk" target="_blank" rel="noopener">Join us at the next meetup</a>
+      {% endif %}
+    {% endif %}
+
+  </div>
+
+</header>
+
+<main class="container kc-describer">
+  <p>When the love of Jesus and a passion for tech collide, exciting things happen. Things that may just impact the Kingdom, things like Kingdom Code!</p>
+  <p>We’re a community of people who love Jesus and love tech. We’re creatives, developers, designers, entrepreneurs, ideators and innovators. We gather often to encourage, inspire and spark serendipity. So, whether you crunch data, grapple with code, place every pixel or love casting vision, there’s a place for you to come, learn, grow, make friends, network and have fun.</p>
+</main>
+
+<section class="container" id="meetups">
+  {{ layoutContent | safe }}
+</section>

@@ -1,0 +1,48 @@
+---
+layout: layouts/base.njk
+---
+
+{% set events = events | eventsInCity(cityName) %}
+
+<header class="kc-header">
+
+  <img src="/_assets/cities/{{ cityName | slug }}.jpg" alt="" class="kc-header__media" />
+
+  <div class="kc-header__container">
+
+    <div class="kc-header__container__logoGroup">
+      <img src="/_assets/logo.svg" alt="Kingdom Code" class="kc-header__logo"/>
+      <hgroup>
+        <h1>{{ basics.name }}</h1>
+        <img src="/_assets/cities/{{ cityName | slug }}.svg" alt="{{ cityName }}" class="kc-header__cityName-svg"/>
+      </hgroup>
+    </div>
+
+  </div>
+
+</header>
+
+<main class="container kc-describer">
+  {{ layoutContent | safe }}
+</main>
+
+<div class="container">
+  {% include "blocks/events.njk" %}
+
+  <section>
+    <h3>City team</h3>
+
+    <ul>
+    {% for person in people | sort(false, false, 'name') %}
+
+      {% if cityName in person.team %}
+        <li>{{person.name}}</li>
+      {% endif %}
+      
+    {% endfor %}
+    </ul>
+
+    <p>Want to get invovled? <a href="https://www.twitter.com/kcodeuk/" target="_blank">Let us know</a>.</p>
+  </section>
+</div>
+

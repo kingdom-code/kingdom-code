@@ -10,14 +10,25 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
   });
 
-  eleventyConfig.addFilter("readableDate", dateObj => {
+  eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromISO(dateObj).toFormat("dd LLLL yyyy");
+  });
+
+  eleventyConfig.addFilter("eventsInCity", (events, city) => {
+    console.log('doing something', city);
+    return events.filter(e => e.city == city);
   });
 
   eleventyConfig.addPassthroughCopy("src/_assets");
 
+  eleventyConfig.addCollection("cities", function (collection) {
+    return collection.getAllSorted().filter(function (item) {
+      return item.inputPath.match(/^\.\/src\/cities\//) !== null;
+    });
+  });
+
   return {
-    templateFormats: ["html", "njk"],
+    templateFormats: ["html", "njk", "md"],
     pathPrefix: "/",
     passthroughFileCopy: true,
     dir: {

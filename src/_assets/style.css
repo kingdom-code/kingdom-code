@@ -40,8 +40,7 @@ a:hover {
   padding-bottom: 80vh;
 }
 
-.kc-header video {
-  border-radius: 4px;
+.kc-header__media {
   display: block;
   height: 100%;
   left: 0;
@@ -66,10 +65,16 @@ a:hover {
   align-items: center;
 }
 
-.kc-header img {
+.kc-header .kc-header__logo {
   max-width: 145px;
   min-width: 75px;
   margin: 20px 0;
+}
+
+.kc-header__cityName-svg {
+  margin: 20px 0;
+  max-width: 400px;
+  max-height: 50px;
 }
 
 .kc-header h1 {
@@ -166,6 +171,7 @@ a:hover {
 
 .kc-events-list li {
   margin: 20px 0;
+  border-bottom: 1px solid #79d2c8;
 }
 
 .kc-events-list li:first-child {
@@ -174,6 +180,12 @@ a:hover {
 
 .kc-events-list li:last-child {
   margin-bottom: 0;
+  border-bottom: none;
+}
+
+.kc-events__link {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .kc-events__future {
@@ -199,7 +211,7 @@ a:hover {
   padding: 10px;
   border: 0;
   border-radius: 5px;
-  margin: 5px 0;
+  margin: 5px 0 20px;
   display: inline-block;
   text-transform: uppercase;
 }
@@ -292,7 +304,7 @@ a:hover {
     font-size: 4em;
   }
 
-  .kc-header img {
+  .kc-header .kc-header__logo {
     width: 50%;
     max-width: 220px;
   }
@@ -338,7 +350,7 @@ a:hover {
     width: 100%;
   }
 
-  .kc-header__container__logoGroup img {
+  .kc-header__container__logoGroup .kc-header__logo {
     margin: 0;
     padding: 0 20px;
   }
