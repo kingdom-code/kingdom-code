@@ -1,7 +1,12 @@
 const { DateTime } = require("luxon");
 module.exports = function () {
 
-  const currentTime = DateTime.local().toFormat('dd MMMM yyyy')
+  const currentTime = DateTime.local()
+  const currentTimeHuman = currentTime.toFormat('dd MMMM yyyy');
+  const buildTime = currentTime.valueOf();
 
-  return { today: currentTime }
+  return {
+    buildRef: buildTime,
+    updatedTime: currentTimeHuman,
+  }
 }
