@@ -3,7 +3,7 @@
   <section>
     <h3>City team</h3>
 
-    <ul>
+    <ul style="list-style-type:none;">
     {% for person in people | sort(false, false, 'name') %}
 
       {% if cityName in person.team %}
