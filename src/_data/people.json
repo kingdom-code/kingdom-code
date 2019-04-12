@@ -11,7 +11,7 @@
     "name": "Patrick Bokšan-Cullen",
     "team": ["London"],
     "avatar": "/_assets/people/patrick.jpg",
-    "bio": "on honeymoon"
+    "bio": "Patrick looks after microBUILD in London."
   },
   {
     "name": "James Isbell",
@@ -23,13 +23,15 @@
   },
   {
     "name": "Andy Geers",
-    "team": ["London", "Leadership", "BUILD"]
+    "team": ["London", "Leadership", "BUILD"],
+    "bio": "Andy is the creator PrayerMate and founder of DisipleshipTech."
   },
   {
     "name": "James Doc",
     "team": ["London", "Leadership", "BUILD"],
     "avatar": "/_assets/people/doc.png",
-    "href": "https://github.com/jamesdoc"
+    "href": "https://jamesdoc.com",
+    "bio": "James co-leads Kingdom Code across the UK, he lives in London, writes code, designs things and drinks tea."
   },
   {
     "name": "Sam Peckham",
