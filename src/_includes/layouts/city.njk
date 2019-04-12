@@ -34,20 +34,5 @@ layout: layouts/base.njk
 <div class="container">
   {% include "blocks/events.njk" %}
 
-  <section>
-    <h3>City team</h3>
-
-    <ul>
-    {% for person in people | sort(false, false, 'name') %}
-
-      {% if cityName in person.team %}
-        <li>{{person.name}}</li>
-      {% endif %}
-      
-    {% endfor %}
-    </ul>
-
-    <p>Want to get invovled? <a href="https://www.twitter.com/kcodeuk/" target="_blank">Let us know</a>.</p>
-  </section>
+  {% include "blocks/people.njk" %}
 </div>
-
