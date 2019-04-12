@@ -72,7 +72,14 @@
     <footer class="kc-footer">
       <div class="container">
         <p>
-          Built on top of <a href="https://www.11ty.io" target="_blank" rel="noopener">Eleventy</a>
+          Kingdom Code communities current gather in:
+          {% for city in collections.cities | sort(false, false, 'cityName') %}
+            <a href="{{ city.url }}">{{ city.data.cityName }}</a>
+            {% if loop.last != true %} &middot; {% endif %}
+          {% endfor %}
+        </p>
+        <p>
+          This site is built on top of <a href="https://www.11ty.io" target="_blank" rel="noopener">Eleventy</a>
           &middot;
           <a href="https://github.com/kingdom-code/kingdom-code" target="_blank" rel="noopener">View source</a>
         </p>

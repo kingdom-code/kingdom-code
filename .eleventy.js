@@ -24,7 +24,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection("cities", function (collection) {
     return collection.getAllSorted().filter(function (item) {
-      return item.inputPath.match(/^\.\/src\/cities\//) !== null;
+      return item.inputPath.match(/^\.\/src\/cities\/.*\.md$/) !== null;
     });
   });
 
