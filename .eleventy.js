@@ -1,4 +1,5 @@
 const { DateTime } = require("luxon");
+const fs = require("fs");
 
 module.exports = function (eleventyConfig) {
 
@@ -25,6 +26,20 @@ module.exports = function (eleventyConfig) {
     return collection.getAllSorted().filter(function (item) {
       return item.inputPath.match(/^\.\/src\/cities\//) !== null;
     });
+  });
+
+  eleventyConfig.setBrowserSyncConfig({
+    callbacks: {
+      ready: function(err, browserSync) {
+        const content_404 = fs.readFileSync('dist/404.html');
+
+        browserSync.addMiddleware("*", (req, res) => {
+          // Provides the 404 content without redirect.
+          res.write(content_404);
+          res.end();
+        });
+      }
+    }
   });
 
   return {
