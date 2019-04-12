@@ -27,7 +27,8 @@
   {
     "name": "James Doc",
     "team": ["London", "Leadership", "BUILD"],
-    "avatar": "/_assets/people/doc.png"
+    "avatar": "/_assets/people/doc.png",
+    "href": "https://github.com/jamesdoc"
   },
   {
     "name": "Sam Peckham",
