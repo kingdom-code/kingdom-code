@@ -1,0 +1,45 @@
+---
+layout: layouts/base.njk
+---
+
+{% set events = events %}
+
+<header class="kc-header">
+
+  <div class="kc-header__container">
+
+    <div class="kc-header__container__logoGroup">
+      <img src="/_assets/logo.svg" alt="Kingdom Code" class="kc-header__logo"/>
+      <hgroup>
+        <h1>{{ basics.name }}</h1>
+        <h2>Event Archive</h2>
+      </hgroup>
+    </div>
+
+  </div>
+
+</header>
+
+<main class="container kc-describer">
+  {{ layoutContent | safe }}
+</main>
+
+<div class="container">
+
+  <section class="kc-event-archive">
+
+    <ul class="kc-event-archive-list">
+    {% for event in events | sort(false, false, 'date') %}
+
+      <li class="kc-event-archive-list-item">
+        <div class="kc-event-archive__name">{{event.name}}</div>
+        <div class="kc-event-archive__detail">{{event.city}}</div>
+        <div class="kc-event-archive__detail">{{event.date | readableDate}}</div>
+      </li>
+      
+    {% endfor %}
+    </ul>
+
+    <p>Want to get invovled? <a href="https://www.twitter.com/kcodeuk/" target="_blank">Let us know</a>.</p>
+  </section>
+</div>

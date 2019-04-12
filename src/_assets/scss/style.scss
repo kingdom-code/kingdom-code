@@ -325,7 +325,19 @@ a:focus {
   color: white;
 }
 
+.kc-event-archive-list {
+  list-style: none;
+}
 
+.kc-event-archive-list-item {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.kc-event-archive__name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 
 @media (min-width: 800px) {
   .kc-header {
