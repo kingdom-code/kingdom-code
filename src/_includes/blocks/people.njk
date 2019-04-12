@@ -8,8 +8,12 @@
 
       {% if cityName in person.team %}
         <li>
+          {% if person.avatar %}
             <image src="{{person.avatar}}" style="width:50px;height:50px;">
-            {{person.name}}
+          {% else %}
+            <image src="{{default.avatar}}" style="width:50px;height:50px;">
+          {% endif %}
+          {{person.name}}
         </li>
       {% endif %}
 
