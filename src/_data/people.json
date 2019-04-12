@@ -1,38 +1,47 @@
 [
   {
     "name": "Alasdair Munday",
-    "team": ["Leeds"]
+    "team": ["Leeds"],
+    "avatar": "/_assets/people/no-avatar.png"
   },
   {
     "name": "Alice Creasey",
-    "team": ["Leeds"]
+    "team": ["Leeds"],
+    "avatar": "/_assets/people/no-avatar.png"
   },
   {
     "name": "Patrick Bokšan-Cullen",
-    "team": ["London"]
+    "team": ["London"],
+    "avatar": "/_assets/people/no-avatar.png"
   },
   {
     "name": "James Isbell",
-    "team": ["Bath and Bristol"]
+    "team": ["Bath and Bristol"],
+    "avatar": "/_assets/people/no-avatar.png"
   },
   {
     "name": "Amy Silcock",
-    "team": ["Bath and Bristol"]
+    "team": ["Bath and Bristol"],
+    "avatar": "/_assets/people/no-avatar.png"
   },
   {
     "name": "Andy Geers",
-    "team": ["London", "Leadership", "BUILD"]
+    "team": ["London", "Leadership", "BUILD"],
+    "avatar": "/_assets/people/no-avatar.png"
   },
   {
     "name": "James Doc",
-    "team": ["London", "Leadership", "BUILD"]
+    "team": ["London", "Leadership", "BUILD"],
+    "avatar": "/_assets/people/no-avatar.png"
   },
   {
     "name": "Sam Peckham",
-    "team": ["Leadership", "BUILD"]
+    "team": ["Leadership", "BUILD"],
+    "avatar": "/_assets/people/no-avatar.png"
   },
   {
     "name": "Arun Mahtani",
-    "team": ["Leadership", "BUILD"]
+    "team": ["Leadership", "BUILD"],
+    "avatar": "/_assets/people/no-avatar.png"
   }
 ]
