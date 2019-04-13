@@ -1,10 +1,20 @@
 [
   {
-    "name": "Think- Culture Setting",
+    "name": "microBUILD",
+    "city": "London",
+    "date": "2019-06-14"
+  },
+  {
+    "name": "Drink",
+    "city": "London",
+    "date": "2019-06-03"
+  },
+  {
+    "name": "Think- Culture Making",
     "city": "London",
     "date": "2019-05-13",
-    "url": "",
-    "description": ""
+    "url": "https://www.eventbrite.co.uk/e/kingdom-code-london-culture-making-tickets-60342947380",
+    "description": "Our enviroments are part of shaping our culture, the tools that we use are a key part of that too. The technology that we build, implement and use changes how we work together. This month Ben Drury is going to be leading us through an evening thinking about faith, tech and culture. One of the big questions he is facing into at the moment is how can Christians be part of creating and working in a culture where everyone excited and energised by what they do. No small task!"
   },
   {
     "name": "Think- Beginnings",
