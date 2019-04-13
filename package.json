@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^0.7.1",
-    "luxon": "^1.4.4"
+    "luxon": "^1.4.4",
+    "moveto": "^1.8.0"
   }
 }
