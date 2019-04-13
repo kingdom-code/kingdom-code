@@ -21,6 +21,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy("src/_assets");
+  eleventyConfig.addPassthroughCopy("node_modules/moveto/dist");
 
   eleventyConfig.addCollection("cities", function (collection) {
     return collection.getAllSorted().filter(function (item) {
