@@ -16,7 +16,6 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("eventsInCity", (events, city) => {
-    console.log('doing something', city);
     return events.filter(e => e.city == city);
   });
 
