@@ -20,7 +20,6 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy("src/_assets/_img");
-  eleventyConfig.addPassthroughCopy("src/_assets/_css");
 
   eleventyConfig.addCollection("cities", function (collection) {
     return collection.getAllSorted().filter(function (item) {
