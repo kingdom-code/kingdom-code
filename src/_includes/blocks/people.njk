@@ -1,0 +1,23 @@
+<div class="kc-people">
+
+  <section>
+    <h3>City team</h3>
+
+    <ul class="peopleList">
+    {% for person in people | sort(false, false, 'name') %}
+
+      {% if cityName in person.team %}
+        <li class="peopleList__person">
+          <img src="/_assets/_img/people/{{ person.img if person.img else "no-avatar.jpg" }}" alt="{{ person.name }}" class="peopleList__person__img">
+
+          <p>{{ person.name }}</p>
+        </li>
+      {% endif %}
+
+    {% endfor %}
+    </ul>
+
+    <p>Want to get invovled? <a href="https://www.twitter.com/kcodeuk/" target="_blank">Let us know</a>.</p>
+  </section>
+
+</div>
