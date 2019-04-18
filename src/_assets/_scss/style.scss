@@ -1,3 +1,7 @@
+// $colorOrange: #ee5c53;
+$colorOrange: #ee5c53;
+$colorGreen: #1aac9c;
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500,700');
 
 * {
@@ -12,21 +16,21 @@ button {
 }
 
 body {
-  color: #ee5c53;
+  color: $colorOrange;
   font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
   margin: 0;
   padding: 0;
 }
 
 a {
-  color: #1aac9c;
+  color: $colorGreen;
   text-decoration: none;
-  border-bottom: 1px solid #ee5c53;
+  border-bottom: 1px solid $colorOrange;
   transition: border .5s;
 }
 
 a:hover {
-  border-bottom-color: #1aac9c;
+  border-bottom-color: $colorGreen;
 }
 
 .kc-header {
@@ -96,7 +100,7 @@ a:hover {
 }
 
 .kc-header__ctas a {
-  border: 1px solid #1aac9c;
+  border: 1px solid $colorGreen;
   width: 200px;
   display: inline-block;
   border-radius: 8px;
@@ -109,15 +113,15 @@ a:hover {
 }
 
 .kc-header__ctas a:hover {
-  background-color: #1aac9c;
+  background-color: $colorGreen;
 }
 
 .kc-header__ctas a:first-child {
-  border-color: #ee5c53;
+  border-color: $colorOrange;
 }
 
 .kc-header__ctas a:first-child:hover {
-  background-color: #ee5c53;
+  background-color: $colorOrange;
 }
 
 .kc-header__meetup-lnk {
@@ -152,7 +156,7 @@ a:hover {
 }
 
 .kc-events h2 {
-  color: #1aac9c;
+  color: $colorGreen;
   font-size: 1.5em;
   letter-spacing: 1px;
   margin: 0 0 20px;
@@ -189,7 +193,7 @@ a:hover {
 }
 
 .kc-events__future {
-  background-color: #1aac9c;
+  background-color: $colorGreen;
   border-radius: 8px;
   color: white;
   padding: 20px;
@@ -206,7 +210,7 @@ a:hover {
 }
 
 .kc-events__future__btn {
-  background: #ee5c53;
+  background: $colorOrange;
   color: white;
   padding: 10px;
   border: 0;
@@ -245,7 +249,7 @@ a:hover {
 
 
 .kc-newsletter {
-  background-color: #ee5c53;
+  background-color: $colorOrange;
   color: white;
   margin: 50px 0;
   padding: 50px 0;
@@ -282,12 +286,12 @@ a:hover {
   color: #566075;
   text-transform: uppercase;
   transition: all .4s;
-  border: 1px solid #ee5c53;
+  border: 1px solid $colorOrange;
   cursor: pointer;
 }
 
 .kc-newsletter__field input[type=submit]:hover {
-  background-color: #ee5c53;
+  background-color: $colorOrange;
   border-color: white;
   color: white;
 }
