@@ -16,12 +16,11 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("eventsInCity", (events, city) => {
-    console.log('doing something', city);
     return events.filter(e => e.city == city);
   });
 
-  eleventyConfig.addPassthroughCopy("src/_assets");
-  eleventyConfig.addPassthroughCopy("node_modules/moveto/dist");
+  eleventyConfig.addPassthroughCopy("src/_assets/_img");
+  eleventyConfig.addPassthroughCopy("src/_assets/_css");
 
   eleventyConfig.addCollection("cities", function (collection) {
     return collection.getAllSorted().filter(function (item) {
