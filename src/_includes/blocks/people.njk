@@ -3,28 +3,14 @@
   <section>
     <h3>City team</h3>
 
-    <ul style="list-style-type:none;">
+    <ul class="peopleList">
     {% for person in people | sort(false, false, 'name') %}
 
       {% if cityName in person.team %}
-        <li>
-          <div>
-            {% if person.avatar %}
-              <image src="{{person.avatar}}" style="width:50px;height:50px;">
-            {% else %}
-              <image src="{{default.avatar}}" style="width:50px;height:50px;">
-            {% endif %}
-            {% if person.href %}
-              <a href="{{person.href}}" style="text-decoration:none;">
-                {{person.name}}
-              </a>
-            {% else %}
-              {{person.name}}
-            {% endif %}
-          </div>
-          <div>
-            {{person.bio}}
-          </div>
+        <li class="peopleList__person">
+          <img src="/_assets/_img/people/{{ person.img if person.img else "no-avatar.jpg" }}" alt="{{ person.name }}" class="peopleList__person__img">
+
+          <p>{{ person.name }}</p>
         </li>
       {% endif %}
 
