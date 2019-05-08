@@ -1,18 +1,20 @@
 ---
+nav: true
 layout: layouts/base.njk
 ---
+<section class="container">
+  <h1>Cities</h1>
 
-<h1>Cities</h1>
+  <ul class="kc-city-list">
+  {% for city in collections.cities %}
+    <li>
+      <a href="{{ city.url }}">{{ city.data.cityName }}</a>
+    </li>
+  {% endfor %}
+  </ul>
 
-<ul class="kc-city-list">
-{% for city in collections.cities %}
-  <li>
-    <a href="{{ city.url }}">{{ city.data.cityName }}</a>
-  </li>
-{% endfor %}
-</ul>
-
-<p>Want a meetup happening in your city? <a href="https://www.twitter.com/kcodeuk/" target="_blank">Let us know</a>.</p>
+  <p>Want a meetup happening in your city? <a href="https://www.twitter.com/kcodeuk/" target="_blank">Let us know</a>.</p>
 
 
-<p>This page is ugly. <a href="https://github.com/kingdom-code/kingdom-code" target="_blank">Submit a pull request and help us fix it</a>.</p>
+  <p>This page is ugly. <a href="https://github.com/kingdom-code/kingdom-code" target="_blank">Submit a pull request and help us fix it</a>.</p>
+</section>

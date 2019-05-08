@@ -1,0 +1,33 @@
+.kc-nav {
+  background-color: $colorBlue;
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: uppercase;
+  width: 100%;
+
+  ul {
+    padding: 10px 50px;
+    list-style-type: none;
+  }
+
+  li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    font-weight: bold;
+    margin-right: 25px;
+    color: white;
+    border: none;
+    transition: color .2s;
+
+    &:hover {
+      color: $colorGreen;
+    }
+  }
+}

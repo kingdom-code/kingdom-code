@@ -30,6 +30,15 @@
 
   <body>
 
+    {% if nav %}
+    <nav class="kc-nav">
+      <ul class="container">
+        <li><a href="/">Kingdom Code</a></li>
+        <li><a href="/cities">Cities</a></li>
+        <li><a href="/build">Build</a></li>
+    </nav>
+    {% endif %}
+
     {{ layoutContent | safe }}
 
     <div class="kc-newsletter">
@@ -81,6 +90,7 @@
           Kingdom Code communities current gather in:
           {% for city in collections.cities | sort(false, false, 'cityName') %}
             <a href="{{ city.url }}">{{ city.data.cityName }}</a>
+
             {% if loop.last != true %} &middot; {% endif %}
           {% endfor %}
         </p>
@@ -94,6 +104,8 @@
         </p>
       </div>
     </footer>
+
+
     <script src="/_assets/_js/script.js?v={{ data.buildRef }}"></script>
   </body>
 </html>
