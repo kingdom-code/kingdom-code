@@ -23,12 +23,6 @@ layout: layouts/base.njk
       <a class="js-moveto" href="#newsletter">Newsletter</a>
     </div>
 
-    {% if events[0].date | isFutureDate %}
-      {% if events[0].url %}
-        <a href="{{ events[0].url }}" class="kc-header__meetup-lnk" target="_blank" rel="noopener">Join us at the next meetup</a>
-      {% endif %}
-    {% endif %}
-
   </div>
 
 </header>
