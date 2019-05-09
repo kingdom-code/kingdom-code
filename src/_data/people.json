@@ -1,14 +1,16 @@
 [
   {
     "name": "Alasdair Munday",
-    "team": ["Leeds"]
+    "team": ["Leeds"],
+    "img": "kingdom-code-alasdair-munday.jpg"
   },
   {
     "name": "Alice Creasey",
-    "team": ["Leeds"]
+    "team": ["Leeds"],
+    "img": "kingdom-code-alice-creasey.jpg"
   },
   {
-    "name": "Patrick Bokšan-Cullen",
+    "name": "Patrick Elshen",
     "team": ["London"],
     "img": "patrick.jpg",
     "bio": "Patrick looks after microBUILD in London."
