@@ -12,7 +12,7 @@
   {
     "name": "Patrick Elshen",
     "team": ["London"],
-    "img": "patrick.jpg",
+    "img": "kingdom-code-patrick-elshen.jpg",
     "bio": "Patrick looks after microBUILD in London."
   },
   {
@@ -26,12 +26,13 @@
   {
     "name": "Andy Geers",
     "team": ["London", "Leadership", "BUILD"],
-    "bio": "Andy is the creator PrayerMate and founder of DiscipleshipTech."
+    "bio": "Andy is the creator PrayerMate and founder of DiscipleshipTech.",
+    "img": "kingdom-code-andy-geers.jpg"
   },
   {
     "name": "James Doc",
     "team": ["London", "Leadership", "BUILD"],
-    "img": "james-doc.jpg",
+    "img": "kingdom-code-james-doc.jpg",
     "href": "https://jamesdoc.com",
     "bio": "James lives in London, writes code, designs things and drinks tea."
   },
