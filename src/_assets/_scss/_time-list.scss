@@ -1,0 +1,11 @@
+.time-list {
+  margin: 0;
+  padding: 0;
+  color: $colorBlue;
+
+  li {
+    display: grid;
+    grid-template-columns: 75px auto;
+    margin-bottom: 10px;
+  }
+}

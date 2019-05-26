@@ -1,0 +1,59 @@
+$breakpoints: (
+  xSmall: 600px,
+  small: 768px,
+  medium: 992px,
+  large: 1200px
+);
+
+@function bp($size) {
+  @return map-get($breakpoints, $size);
+}
+
+
+@mixin bpMinXSmall {
+  @media (min-width: bp(xSmall)) {
+    @content;
+  }
+}
+
+@mixin bpMinSmall {
+  @media (min-width: bp(small)) {
+    @content;
+  }
+}
+
+@mixin bpMinMedium {
+  @media (min-width: bp(medium)) {
+    @content;
+  }
+}
+
+@mixin bpMinLarge {
+  @media (min-width: bp(large)) {
+    @content;
+  }
+}
+
+@mixin bpMaxXSmall {
+  @media (max-width: bp(xSmall)) {
+    @content;
+  }
+}
+
+@mixin bpMaxSmall {
+  @media (max-width: bp(small)) {
+    @content;
+  }
+}
+
+@mixin bpMaxMedium {
+  @media (max-width: bp(medium)) {
+    @content;
+  }
+}
+
+@mixin bpMaxLarge {
+  @media (max-width: bp(large)) {
+    @content;
+  }
+}
