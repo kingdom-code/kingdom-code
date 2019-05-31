@@ -1,0 +1,16 @@
+{% if logobar_logos %}
+<section class="logobar">
+  <div class="container">
+    <h1 class="logobar__title">{% if logobar_title %}{{ logobar_title }}{% else %}Sponsors{% endif %}</h1>
+    <ul>
+      {% for logo in logobar_logos %}
+      <li>
+        <a href="{{ logo.url }}">
+          <img src="/_assets/_img/logos/{{ logo.img }}" alt="{{ logo.name }}" />
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}

@@ -1,16 +1,25 @@
-// $colorOrange: #ee5c53;
 $colorOrange: #ee5c53;
 $colorGreen: #1aac9c;
 $colorBlue: #4e5569;
 
+@import 'mixin-mediaqueries.scss';
+
 @import 'nav';
-@import 'people';
+@import 'text';
+@import 'time-list';
+
+@import 'block-people';
+@import 'block-logobar';
+@import 'block-imagetext';
+@import 'block-textcol';
+@import 'block-evticket';
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500,700');
 
 * {
   box-sizing: border-box;
 }
+
 textarea,
 select,
 input,
@@ -35,6 +44,10 @@ a {
 
 a:hover {
   border-bottom-color: $colorGreen;
+}
+
+a:focus {
+  outline: none;
 }
 
 .kc-header {

@@ -1,0 +1,22 @@
+.heading {
+  text-transform: uppercase;
+  font-size: 34px;
+  color: white;
+  letter-spacing: 2px;
+  
+  &--green {
+    color: $colorGreen;
+  }
+
+  &--blue {
+    color: $colorBlue;
+  }
+
+  &--orange {
+    color: $colorOrange;
+  }
+
+  &--centered {
+    text-align: center;
+  }
+}

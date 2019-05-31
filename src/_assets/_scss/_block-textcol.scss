@@ -1,0 +1,28 @@
+.textcol {
+
+  @include bpMinXSmall() {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 25px 0;
+
+    &__col {
+      padding: 25px 0;
+
+      &:first-child{
+        border-right: 1px solid $colorGreen;
+        padding-right: 25px;
+      }
+
+      &:last-child {
+        border-left: 1px solid $colorGreen;
+        padding-left: 25px;
+      }
+
+      &--centered {
+        text-align: center;
+      }
+    }
+
+  }
+}

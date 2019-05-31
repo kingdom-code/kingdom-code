@@ -1,0 +1,33 @@
+.logobar {
+  background-color: $colorBlue;
+  color: white;
+  padding: 25px 0;
+  width: 100%;
+
+  &__title {
+    @extend .heading;
+    margin: 0 0 10px;
+    text-align: center;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  li {
+    display: inline;
+  }
+
+  a {
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  img {
+    max-height: 90px;
+    max-width: 90px;
+  }
+}

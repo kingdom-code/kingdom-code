@@ -1,0 +1,154 @@
+---
+nav: true
+layout: layouts/base.njk
+challenges: [
+  {
+    name: 'Kingdom Code',
+    url: 'https://kingdomcode.uk',
+    img: 'kingdom-code.svg'
+  }
+]
+schedule: [
+  {
+    day: 2019-10-11,
+    timings: [
+      ['18.00', 'Doors open'],
+      ['19.00', 'Welcome, challenges and project presentations'],
+      ['20.30', 'Coding starts'],
+    ]
+  },
+  {
+    day: 2019-10-12,
+    timings: [
+      ['08.00', 'Breakfast'],
+      ['09.30', 'Morning prayer'],
+      ['12.30', 'Lunch break'],
+      ['17.00', 'Dinner'],
+      ['18.00', 'Presentations'],
+      ['20.30', 'Farewell']
+    ]
+  }
+]
+---
+
+<header class="kc-header">
+  
+  <video class="kc-header__media" autoplay loop="loop" src="/_assets/_img/kingdom-code-header.mp4" poster="/_assets/_img/kingdom-code-header.jpg">
+    <source type="video/mp4" src="/_assets/_img/kingdom-code-header.mp4">
+  </video>
+
+
+  <div class="kc-header__container">
+    <img src="/_assets/_img/build.svg" alt="" style="margin: 50px 0 20px; max-width: 350px" alt="Kingdom Code BUILD" class="kc-header__logo" />
+    <hgroup>
+      <h1>Kingdom Code BUILD</h1>
+      <h2>Friday 11 - Saturday 12 October 2019</h2>
+    </hgroup>
+  </div>
+</header>
+
+{% set logobar_logos = challenges %}
+{% set logobar_title = "Challenge partners" %}
+{#% include "blocks/logobar.njk" %#}
+
+<section class="imagetext imagetext--orange">
+  <div class="imagetext__img">
+    <img src="/_assets/_img/build/kingdom-code-build-dev.jpg" class="imagetext__img" alt="" />
+  </div>
+
+  <div class="imagetext__text">
+    <p>BUILD is the annual Kingdom Code hackathon bringing together Christians who work in the world of tech from across Europe.</p>
+    <p>Join us, Friday 11 – Saturday 12 October 2019 as we practically explore how faith and technology combine.</p>
+    <p>Registration opens on Thursday 6th June, sign up to the <a class="js-moveto" href="#newsletter">mailing list</a> to receive a reminder.</p>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="heading heading--centered heading--green">Challenges</h2>
+  <div class="textcol">
+    <div class="textcol__col textcol__col--centered">
+      <h3>Challenge 1:</br>Coming Soon</h3>
+    </div>
+
+    <div class="textcol__col textcol__col--centered">
+      <h3>Challenge 2:</br>Coming Soon</h3>
+    </div>
+  </div>
+</section>
+
+<section class="imagetext imagetext--blue">
+  <div class="imagetext__text">
+    <h1 class="heading">Location</h1>
+
+    <div>
+      <p>
+        St. John's, Hoxton<br />
+        Pitfield St,<br />
+        London N1 6NP
+      </p>
+
+      <p>
+        <a href="#">Get directions</a>
+      </p>
+    </div>
+
+    <div>
+      Nearest station: Old Street / Hoxton
+    </div>
+  </div>
+
+  <div class="imagetext__img">
+    <img src="/_assets/_img/build/kingdom-code-build-st-johns-hoxton.jpg" class="imagetext__img" alt="" />
+  </div>
+
+</section>
+
+<section class="container">
+  <h2 class="heading heading--centered heading--green">Schedule</h2>
+  
+  <div class="textcol">
+    {% for day in schedule %}
+    <div class="textcol__col">
+      <h3>{{ day.day | formatDate('dddd') }}</h3>
+      <ul class="time-list">
+        {% for item in day.timings %}
+          <li>
+            <span>{{ item[0] }}</span>
+            <span>{{ item[1] }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{# <section class="ev-ticket">
+
+  <div class="container">
+    <h2 class="ev-ticket__logo">Kingdom Code BUILD</h2>
+    
+    <h3>Book your ticket now</h3>
+    <date>19–20 October</date>
+    <div id="eventbrite-widget-container-61628909728"></div>
+    <p class="ev-ticket__smallprint">Kingdom Code BUILD ticket sales handled by Eventbrite</p>
+  </div>
+
+  <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
+
+  <script type="text/javascript">
+      var exampleCallback = function() {
+          console.log('Order complete!');
+      };
+
+      window.EBWidgets.createWidget({
+          // Required
+          widgetType: 'checkout',
+          eventId: '61628909728',
+          iframeContainerId: 'eventbrite-widget-container-61628909728',
+
+          // Optional
+          onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+      });
+  </script>
+</section> #}

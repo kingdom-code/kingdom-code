@@ -1,0 +1,14 @@
+.ev-ticket {
+  background-color: #f8f7fa;
+  padding: 25px;
+
+  &__smallprint {
+    text-align: center;
+    font-size: 0.825em;
+  }
+}
+
+
+.ev-ticket + .kc-newsletter {
+  margin-top: 0;
+}

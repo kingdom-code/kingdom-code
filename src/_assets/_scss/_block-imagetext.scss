@@ -1,0 +1,82 @@
+.imagetext {
+  width: 100%;
+
+  @include bpMinXSmall() {
+    display: grid;
+    grid-template-rows: minmax(350px, 1fr);
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  &--orange {
+    background-color: $colorOrange;
+    color: white;
+
+    a {
+      color: white;
+      border-bottom: 1px solid white;
+
+      &:hover {
+        border-bottom-color: $colorBlue;
+      }
+    }
+  }
+
+  &--blue {
+    background-color: $colorBlue;
+    color: white;
+
+    a {
+      color: white;
+      border-bottom: 1px solid white;
+
+      &:hover {
+        border-bottom-color: $colorOrange;
+      }
+    }
+  }
+
+  &__img {
+    position: relative;
+    align-self: stretch;
+    background-position: center center;
+    background-size: cover;
+    height: 200px;
+
+    @include bpMinXSmall() {
+      height: auto;
+    }
+
+    img {
+      display: block;
+      height: 100%;
+      left: 0;
+      -o-object-fit: cover;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+    + .imagetext__text {
+      justify-self: left;
+    }
+  }
+
+  &__text{
+    padding: 20px;
+
+    @include bpMinXSmall() {
+      max-width: 490px;
+    }
+
+    p:first-child {
+      font-weight: bold;
+    }
+
+    justify-self: right;
+    width: 100%;
+
+    
+  }
+}

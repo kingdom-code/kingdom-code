@@ -1,19 +1,26 @@
-const { DateTime } = require("luxon");
+const dayjs = require("dayjs");
 const fs = require("fs");
 
-module.exports = function (eleventyConfig) {
+const dateFormat = (d, format) => {
+  return dayjs(d).format(format);
+}
 
+module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("isFutureDate", (dateObj)=> {
-    return DateTime.fromISO(dateObj) > DateTime.local()
+    return dayjs(dateObj).isAfter(dayjs())
   });
 
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+    return dateFormat(dateObj, 'YYYY-MM-DD');
   });
 
   eleventyConfig.addFilter("readableDate", (dateObj) => {
-    return DateTime.fromISO(dateObj).toFormat("dd LLLL yyyy");
+    return dateFormat(dateObj, 'ddd, D MMMM YYYY');
   });
+
+  eleventyConfig.addFilter("formatDate", (dateObj, format) => {
+    return dateFormat(dateObj, format)
+  })
 
   eleventyConfig.addFilter("eventsInCity", (events, city) => {
     return events.filter(e => e.city == city);
