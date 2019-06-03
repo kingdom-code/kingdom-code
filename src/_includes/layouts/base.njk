@@ -104,8 +104,15 @@
         </p>
       </div>
     </footer>
-
-
+    {% if basics.ga %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ basics.ga }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ basics.ga }}');
+    </script>
+    {% endif %}
     <script src="/_assets/_js/script.js?v={{ data.buildRef }}"></script>
   </body>
 </html>
