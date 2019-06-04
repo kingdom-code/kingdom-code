@@ -1,0 +1,25 @@
+.btn {
+  width: 200px;
+  display: inline-block;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1.35em;
+  transition: all .4s;
+  text-align: center;
+  text-transform: uppercase;
+
+  &--white-outline {
+    border: 1px solid white;
+    color: $colorOrange;
+
+    &:hover {
+      border: 1px solid $colorBlue;
+      color: $colorBlue;
+    }
+  }
+
+  &--green {
+    background: $colorGreen;
+    color: white;
+  }
+}
