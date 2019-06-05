@@ -15,7 +15,8 @@
   "author": "James Doc",
   "license": "ISC",
   "dependencies": {
-    "moveto": "^1.8.0"
+    "moveto": "^1.8.0",
+    "tiny-slider": "^2.9.2"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.7.1",

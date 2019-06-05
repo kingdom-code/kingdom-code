@@ -1,0 +1,16 @@
+{% if quotes %}
+<section class="js-slider slider">
+
+  <div class="container slider__container">
+
+    {% for q in quotes %}
+    <blockquote class="slider__slide">
+      <p class="slider__quote">{{ q.quote }}</p>
+      <footer class="slider__attribute">{{ q.attr }}</footer>
+    </blockquote>
+    {% endfor %}
+
+  </div>
+
+</section>
+{% endif %}
