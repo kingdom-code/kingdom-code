@@ -1,10 +1,17 @@
 [
   {
+    "name": "BUILD hackathon",
+    "city": "London",
+    "date": "2019-10-11",
+    "url": "https://kingdomcode.uk/build",
+    "description": "Kingdom Code BUILD is back for 2019! It is our annual hackathon bringing together Christians who work in the world of tech from across Europe."
+  },
+  {
     "name": "With Jimmy Lawrence",
     "city": "Leeds",
     "date": "2019-07-10",
     "url": "https://www.eventbrite.co.uk/e/kingdom-code-leeds-tickets-61627168520",
-    "description": "We're being joined by Rev. Jimmy Lawrence as he leads us in a exploration and disussion of the history of Christianity, technology and how culture has been shaped as the technology grows and changes."
+    "description": "We're being joined by Rev. Jimmy Lawrence as he leads us in a exploration and discussion of the history of Christianity, technology and how culture has been shaped as the technology grows and changes."
   },
   {
     "name": "microBUILD",
