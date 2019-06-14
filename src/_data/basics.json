@@ -7,5 +7,12 @@
   "ga": "UA-121839947-1",
   "feed": {
     "url": "https://kingdomcode.org.uk/blog/feed.xml"
+  },
+  "socials": { 
+    "github": "https://github.com/kingdom-code",
+    "instagram": "https://instagram.com/kcodeuk",
+    "twitter": "https://twitter.com/kcodeuk",
+    "eventbrite": "https://kingdomcode.eventbrite.co.uk",
+    "slack": "http://kingdombuilders.io"
   }
 }

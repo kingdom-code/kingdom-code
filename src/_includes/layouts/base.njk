@@ -33,12 +33,22 @@
   <body>
     {% if nav %}
     <nav class="kc-nav">
-      <ul class="container">
-        <li><a href="/">Kingdom Code</a></li>
-        <li><a href="/cities">Cities</a></li>
-        <li><a href="/build">Build</a></li>
-        <li><a href="/blog">Blog</a></li>
-      </ul>
+      <div class="container">
+        <ul>
+          <li><a href="/">Kingdom Code</a></li>
+          <li><a href="/cities">Cities</a></li>
+          <li><a href="/build">Build</a></li>
+          <li><a href="/blog">Blog</a></li>
+        </ul>
+        
+        <ul>
+        {% for key, social in basics.socials %}
+          <li><a href="{{ social }}" target="_blank" rel="noopener">
+          <img class="social-icon" src="/_assets/_img/icons/{{ key }}.svg" alt="{{ key }}"/>
+          </a></li>
+        {% endfor %}
+        </ul>
+      </div>
     </nav>
     {% endif %}
 
