@@ -11,6 +11,7 @@
   ul {
     padding: 10px 50px;
     list-style-type: none;
+    margin: 0;
   }
 
   li {
@@ -30,4 +31,14 @@
       color: $colorGreen;
     }
   }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social-icon {
+    height: 14px;
+  }
+
 }
