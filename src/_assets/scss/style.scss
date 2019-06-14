@@ -327,6 +327,9 @@ a:focus {
 
 .kc-event-archive-list {
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 15px;
 }
 
 .kc-event-archive-list-item {
@@ -336,7 +339,12 @@ a:focus {
 
 .kc-event-archive__name {
   font-weight: bold;
+  font-size: 20px;
   margin-bottom: 10px;
+}
+
+.kc-event-archive__detail {
+  margin-top: 5px;
 }
 
 @media (min-width: 800px) {
