@@ -9,7 +9,7 @@ layout: layouts/base.njk
   <div class="kc-header__container">
 
     <div class="kc-header__container__logoGroup">
-      <img src="/_assets/logo.svg" alt="Kingdom Code" class="kc-header__logo"/>
+      <img src="/_assets/_img/logos/kingdom-code.svg" alt="Kingdom Code" class="kc-header__logo"/>
       <hgroup>
         <h1>{{ basics.name }}</h1>
         <h2>Event Archive</h2>
@@ -28,13 +28,14 @@ layout: layouts/base.njk
 
   <section class="kc-event-archive">
 
-    <ul class="kc-event-archive-list">
-    {% for event in events | sort(false, false, 'date') %}
+    <ul class="kc-event-archive__list">
+    {% for event in events | sort(true, false, 'date') %}
 
-      <li class="kc-event-archive-list-item">
+      <li class="kc-event-archive__list__item">
         <div class="kc-event-archive__name">{{event.name}}</div>
         <div class="kc-event-archive__detail">{{event.city}}</div>
         <div class="kc-event-archive__detail">{{event.date | readableDate}}</div>
+        <div class="kc-event-archive__detail">{{event.description}}</div>
       </li>
       
     {% endfor %}
