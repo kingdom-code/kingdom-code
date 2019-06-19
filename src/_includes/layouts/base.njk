@@ -87,7 +87,7 @@
     <footer class="kc-footer">
       <div class="container">
         <p>
-          Kingdom Code communities current gather in:
+          Kingdom Code communities currently gather in:
           {% for city in collections.cities | sort(false, false, 'cityName') %}
             <a href="{{ city.url }}">{{ city.data.cityName }}</a>
 
