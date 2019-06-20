@@ -1,17 +1,24 @@
 [
   {
-    "name": "BUILD hackathon",
+    "name": "BUILD Hackathon",
     "city": "London",
     "date": "2019-10-11",
     "url": "https://kingdomcode.uk/build",
     "description": "Kingdom Code BUILD is back for 2019! It is our annual hackathon bringing together Christians who work in the world of tech from across Europe."
   },
   {
-    "name": "With Jimmy Lawrence",
+    "name": "The Fourth Industrial Revolution",
     "city": "Leeds",
     "date": "2019-07-10",
     "url": "https://www.eventbrite.co.uk/e/kingdom-code-leeds-tickets-61627168520",
-    "description": "The technological revolution we are currently experiencing will (and already is) radically changing Western society. Described at the 4th industrial revolution, modern technology affects all areas of our lives; from what we purchase, to how we date, to our energy consumption and employment opportunities. At the next Kingdom Code Think event Rev. Jimmy Lawrence will explore the nature of those changes, how we might think about them from a faith perspective, and crucially what we as technology producers can do about it."
+    "description": "The technological revolution we are currently experiencing will (and already is) radically changing Western society. Described as the 4th industrial revolution, modern technology affects all areas of our lives; from what we purchase, to how we date, to our energy consumption and employment opportunities. At the next Kingdom Code Think event Rev. Jimmy Lawrence will explore the nature of those changes, how we might think about them from a faith perspective, and crucially what we as technology producers can do about it."
+  },
+  {
+    "name": "BUILD shaping",
+    "city": "London",
+    "date": "2019-07-09",
+    "url": "https://www.eventbrite.co.uk/e/kingdom-code-london-build-planning-tickets-63860184531",
+    "description": "Following on from the changes that we made to BUILD last year with the new venue and 24 hour format, we're going to be hosting an evening on Tuesday 9th July to explore how BUILD can be improved. If you'd like to be invovled with making the hackathon happen come along!"
   },
   {
     "name": "microBUILD",
