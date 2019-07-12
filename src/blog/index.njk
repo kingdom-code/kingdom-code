@@ -1,0 +1,29 @@
+---
+layout: layouts/base.njk
+nav: true
+---
+
+<main class="container kc-blog">
+  <h1>The Kingdom Code Blog…</h1>
+
+  <ul class="listing">
+  {% for post in collections.posts | reverse %}
+    <li class="listing__item">
+      {% if post.data.canonical %}
+      <a href="{{ post.data.canonical }}" target="_blank" rel="noopener" class="listing__item__link listing__item__link--remote">
+      {% else %}
+      <a href="{{ post.url }}" class="listing__item__link">
+      {% endif %}
+
+        <date>{{ post.data.date | readableDate }}</date>
+        <h2 class="listing__item__title">{{ post.data.title }}</h2>
+
+        {% if post.data.intro %}
+        <p>{{ post.data.intro }}</p>
+        {% endif %}
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+
+</main>
