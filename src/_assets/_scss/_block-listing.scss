@@ -1,0 +1,29 @@
+.listing {
+  display: grid;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.listing__item {
+  margin-bottom: 30px;
+  border-radius: 5px;
+  border: 1px solid $colorOrange;
+  padding: 10px;
+  margin: 0;
+}
+
+.listing__item__link {
+  align-content: stretch;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.listing__item__title {
+  margin: 5px 0 0;
+}
