@@ -7,7 +7,7 @@ intro: Years ago a friend told me 'ideas are cheap. What sets people apart is th
 ---
 Years ago a friend told me &#8220;<em>ideas are cheap. What sets people apart is the implementation</em>&#8220;. It was a provokation… they had heard me share another wild idea, but were (understandably) frustrated from hearing yet another scheme that probably wouldn&#8217;t be followed through.
 
-At the last Kingdom Code meetup we spent the evening coming up with ideas… we heard from both Bible Society and Stewardship, about their mission, about how their Christian ethos has challenged them to make a difference, how they&#8217;ve been working over many years to see it realised, and where they see their challenges now. Then over the course of the rest of our evening we came up with many ideas riffing off the challenge statements, exploring how digital skillsets could help resource these organisations further. Now what? Do we just sit on our ideas until the <a href="https://kingdomcode.uk/build">hackathon in October</a>?
+At the last Kingdom Code meetup we spent the evening coming up with ideas… we heard from both Bible Society and Stewardship, about their mission, about how their Christian ethos has challenged them to make a difference, how they&#8217;ve been working over many years to see it realised, and where they see their challenges now. Then over the course of the rest of our evening we came up with many ideas riffing off the challenge statements, exploring how digital skillsets could help resource these organisations further. Now what? Do we just sit on our ideas until the <a href="https://kingdomcode.org.uk/build">hackathon in October</a>?
 
 Of course not… Now is the time to invest in those ideas…
 
@@ -41,6 +41,6 @@ Remember that a good project isn&#8217;t a crazy level of functionality &#8211; 
 
 It&#8217;s okay to arrive having done groundwork already, be that sketching out some design concepts, setting up your development environment, installing all of the software libraries you&#8217;re going to need. Do everything you can so that you and your team can hit the ground running.
 
-There you go, that is four things you can do between now and Friday 19 October to help get your idea ready for the hackathon. And… if you haven&#8217;t already, you can sign up at <a href="https://kingdomcode.uk/build">https://kingdomcode.uk/build</a>
+There you go, that is four things you can do between now and Friday 19 October to help get your idea ready for the hackathon. And… if you haven&#8217;t already, you can sign up at <a href="https://kingdomcode.org.uk/build">https://kingdomcode.org.uk/build</a>
 
-<a class="et_pb_promo_button et_pb_button" href="https://kingdomcode.uk/build/#tickets">Book your place now</a>
+<a class="et_pb_promo_button et_pb_button" href="https://kingdomcode.org.uk/build/#tickets">Book your place now</a>

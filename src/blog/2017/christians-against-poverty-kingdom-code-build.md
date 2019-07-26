@@ -17,4 +17,4 @@ As we gather on Friday 20th – Sunday 22nd October 2017 what projects could you
 
 On Monday 11th September 2017, Jon Day, Director of Technology and Transformation for CAP, will be joining us at our [September meetup](https://www.eventbrite.co.uk/e/kingdom-code-turning-your-challenge-into-a-product-plan-tickets-37058847009) to share more about their work, how they use digital tools already, and we’re going to start an ideation process around their challenge. It’s a free event please sign up.
 
-If this has sparked your interest, and would like to find out more about BUILD you can book your place at [kingdomcode.uk/build](https://www.kingdomcode.uk/build).
+If this has sparked your interest, and would like to find out more about BUILD you can book your place at [kingdomcode.org.uk/build](https://www.kingdomcode.org.uk/build).

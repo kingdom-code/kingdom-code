@@ -6,13 +6,13 @@ date: 2018-10-02
 intro: A hackathon is always an intense experience where you are seeking to make as much progress as possible in a short space of time, but this year's BUILD is a little different from previous BUILD events- we only have 24 hours to get things done.
 ---
 
-A hackathon is always an intense experience where you are seeking to make as much progress as possible in a short space of time, but this year <a href="http://kingdomcode.uk/build">Kingdom Code BUILD</a> is a little different from previous BUILD events- we only have 24 hours to get things done. So how do we make the most of a shorter event like this? How do we come away feeling like we’ve achieved something meaningful rather than just coming away frustrated that there wasn’t enough hours in the day?
+A hackathon is always an intense experience where you are seeking to make as much progress as possible in a short space of time, but this year <a href="http://kingdomcode.org.uk/build">Kingdom Code BUILD</a> is a little different from previous BUILD events- we only have 24 hours to get things done. So how do we make the most of a shorter event like this? How do we come away feeling like we’ve achieved something meaningful rather than just coming away frustrated that there wasn’t enough hours in the day?
 
 Here are our top three tips, that will give you a fantastic experience at this year’s event. And we’re also going to be using them as the criteria for judging this year’s “Best Use of Time” award, which will be awarded to the team that is most in the spirit of a “hack” event.
 
 ## 1. Be prepared
 
-We recognise this isn’t always possible, but if you can, it’s great to get your project idea as concrete as you can before the weekend even begins. James has already written <a href="https://kingdomcode.uk/blog/moving-your-ideas-forward/">a great blog post about this</a> so I won’t say it all again, but there’s real value in knowing what your project is, knowing that it’s a viable idea, and knowing what it is that you plan on actually building at the event. If possible, why not even get a head start on setting up your build environment so that you don’t spend the first night just installing a programming language or framework?
+We recognise this isn’t always possible, but if you can, it’s great to get your project idea as concrete as you can before the weekend even begins. James has already written <a href="https://kingdomcode.org.uk/blog/moving-your-ideas-forward/">a great blog post about this</a> so I won’t say it all again, but there’s real value in knowing what your project is, knowing that it’s a viable idea, and knowing what it is that you plan on actually building at the event. If possible, why not even get a head start on setting up your build environment so that you don’t spend the first night just installing a programming language or framework?
 
 If you’ve not already joined, get involved in the <a href="http://kingdombuilders.io/slack/">#hack-in-ldn Slack channel</a> and discuss your idea, or see what other people have suggested on <a href="https://trello.com/b/KaQkWjex/build-2018-projects">the Trello board</a>. If you don’t have your own idea perhaps there’s an existing project idea that takes your fancy.
 
@@ -36,6 +36,6 @@ So this is how we’ll be judging the “Best Use Of Time” award &#8211; we’
 - Sensible scope
 - Shortcuttery
 
-Tickets are running out fast so <a href="http://kingdomcode.uk/build"><span style="font-weight: 400;">book yours today</a>. Happy hacking!
+Tickets are running out fast so <a href="http://kingdomcode.org.uk/build"><span style="font-weight: 400;">book yours today</a>. Happy hacking!
 
-<a href="https://kingdomcode.uk/build/#tickets">Book your place now</a>
+<a href="https://kingdomcode.org.uk/build/#tickets">Book your place now</a>

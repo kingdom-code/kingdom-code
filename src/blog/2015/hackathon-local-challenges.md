@@ -44,4 +44,4 @@ Technology has transformed the way that we stay in touch with our families and f
 
 The community challenge about looking how we can use technology to serve our local communities- in our churches, in our neighbourhoods, in the buildings we work in, in a global community.
 
-There are still a small number of tickets available for the hackathon next week. You can find out a lot more about it and sign up at kingdomcode.uk/hackathon.
+There are still a small number of tickets available for the hackathon next week. You can find out a lot more about it and sign up at kingdomcode.org.uk/hackathon.

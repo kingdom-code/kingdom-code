@@ -12,7 +12,7 @@ While not all of the MetOffice data is in the public domain, there is an increas
 
 While we may be rich in data, how easy is it to turn those datasets into meaningful information? Having the CSV, JSON or SPARQL endpoints are great… but what does it mean? How is it useful? How does having that data change how we act or live?
 
-The theme this year at [Code for the Kingdom London](https://www.kingdomcode.uk/build) is Transforming Lives. How could a group of Christians start visualising datasets to help the church transform lives?
+The theme this year at [Code for the Kingdom London](https://www.kingdomcode.org.uk/build) is Transforming Lives. How could a group of Christians start visualising datasets to help the church transform lives?
 
 What could we build to start making use of that data? What could we do with it? How could we visualise this data to bring awareness to need in society? To help a church know where to plant next? To help Christians serve their local communities better? To transform lives?
 

@@ -8,7 +8,7 @@ intro: Build is about gathering a people together who love to think about techno
 
 Kingdom Code: Build is about gathering a people together who love to think about technology, design and build. Over the course of the weekend we’ll form teams and work together on projects that bring technology to bear on the great commission.
 
-Perhaps you’ve heard of a hackathon, but have never quite known what to expect, or even if you should even go along… This blog post is for you, and will also tell you what is different about coming along to [Kingdom Code: BUILD](https://kingdomcode.uk/build).
+Perhaps you’ve heard of a hackathon, but have never quite known what to expect, or even if you should even go along… This blog post is for you, and will also tell you what is different about coming along to [Kingdom Code: BUILD](https://kingdomcode.org.uk/build).
 
 ## Friday night
 
@@ -47,7 +47,7 @@ We’ll award prizes, divide out the remaining gummy bears and pack down after a
 
 **Sign up!**
 
-Seriously! [Get yourself registered](https://kingdomcode.uk/build). Think about other people who might want to join you as well, bring them along too.
+Seriously! [Get yourself registered](https://kingdomcode.org.uk/build). Think about other people who might want to join you as well, bring them along too.
 
 **Think about the project**
 

@@ -26,8 +26,8 @@ Daniel Jones from Stewardship explains the challenge:
 
 Come with your ideas, join a team, prototype something new at BUILD. On Friday 19th – Saturday 20th October we’ll be using that weekend to develop new projects to encourage generosity with Stewardship and increasing appetite for Bible engagement with Bible Society. Whatever your involvement in the world of tech – from novice programmer through to expert project manager, designer or database administrator – it’s open to all levels of skill and experience.
 
-<a href="https://kingdomcode.uk/build/">Book your place</a>, come along, get involved, learn and work together.
+<a href="https://kingdomcode.org.uk/build/">Book your place</a>, come along, get involved, learn and work together.
 
-Stewardship and Bible Society joins the growing number of Christian agencies that Kingdom Code has been privileged to work with over the last four years including Christians Against Poverty, The Church of England and Tearfund. Kingdom Code BUILD is taking place on Friday 19th – Saturday 20th October 2018. <a href="https://kingdomcode.uk/build/">Tickets are on sale now</a>.
+Stewardship and Bible Society joins the growing number of Christian agencies that Kingdom Code has been privileged to work with over the last four years including Christians Against Poverty, The Church of England and Tearfund. Kingdom Code BUILD is taking place on Friday 19th – Saturday 20th October 2018. <a href="https://kingdomcode.org.uk/build/">Tickets are on sale now</a>.
 
 To hear more about Stewardship and start working on project ideas with others in the Kingdom Code community, we’ll be hosting an <a href="https://www.eventbrite.co.uk/e/kingdom-code-ideation-evening-tickets-48121051360">ideation evening on Monday 10th September</a>. Both of our partners will be talking more about their work, explaining why they are setting their challenge and then we’ll start to develop ideas to bring to the hackathon.

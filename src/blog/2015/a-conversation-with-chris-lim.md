@@ -94,7 +94,7 @@ Then, even if you are non-technical, Code for the Kingdom can be a great place. 
 
 If you are a pastor, this is an amazing event where you can see your members activated, working at their best, doing what they love so intensely, on things that they love to do and they get to do it for the sake of the kingdom. It’s so refreshing to be in that kind of area, the energy is palpable and although everyone comes away tired, it is a good tired. It’s a tired of ‘wow, we really did that? Amazing! When can we do this again?’ That’s the kind of feeling you come away with from these events.
 
-JD: Thanks Chris! If what we’ve spoken about today has peaked your interest and you want to find out more or buy tickets the Code for the Kingdom website codeforthekingdom.org and the Kingdom Code website kingdomcode.uk has lots more information.
+JD: Thanks Chris! If what we’ve spoken about today has peaked your interest and you want to find out more or buy tickets the Code for the Kingdom website codeforthekingdom.org and the Kingdom Code website kingdomcode.org.uk has lots more information.
 
 Chris, thanks so much for joining, really appreciate that
 
@@ -106,7 +106,7 @@ CL: Likewise!
 
 Mentioned in this conversation:
 
-Hackathon tickets: kingdomcode.uk/hackathon
+Hackathon tickets: kingdomcode.org.uk/hackathon
 
 Chris Lim: twitter.com/meritandgrace
 
