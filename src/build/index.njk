@@ -3,9 +3,26 @@ nav: true
 layout: layouts/base.njk
 challenges: [
   {
-    name: 'Kingdom Code',
-    url: 'https://kingdomcode.org.uk',
-    img: 'kingdom-code.svg'
+    challenge: 'How can we equip Christians to use the Bible more in evangelism?',
+    intro: '',
+    youtubeUrl: '',
+    url: 'https://kingdomcode.org.uk/blog',
+    org: {
+      name: 'Announcing soon',
+      url: 'https://kingdomcode.org.uk',
+      img: 'kingdom-code.svg'
+    }
+  },
+  {
+    challenge: 'How might we resource your local church to serve and include the poor?',
+    intro: '',
+    youtubeUrl: '',
+    url: 'https://kingdomcode.org.uk/blog',
+    org: {
+      name: 'Announcing soon',
+      url: 'https://kingdomcode.org.uk',
+      img: 'kingdom-code.svg'
+    }
   }
 ]
 quotes: [
@@ -113,13 +130,27 @@ schedule: [
 <section class="container" id="challenges">
   <h2 class="heading heading--centered heading--green">Challenges</h2>
   <div class="textcol">
-    <div class="textcol__col textcol__col--centered">
-      <h3>Challenge 1:</br>Coming Soon</h3>
-    </div>
+    {% for c in challenges %}
 
     <div class="textcol__col textcol__col--centered">
-      <h3>Challenge 2:</br>Coming Soon</h3>
+      <h3>
+        {{ c.challenge }}
+      </h3>
+
+      <p>
+        {{ c.intro }}
+      </p>
+
+      {% if c.org %}
+        <div>
+          Challenge sponsored by {{ c.org.name }}<br />
+          <img src="/_assets/_img/logos/{{ c.org.img }}" alt="{{ c.org.name }} />
+        </div>
+      {% endif %}
+
     </div>
+
+    {% endfor %}
   </div>
 </section>
 
