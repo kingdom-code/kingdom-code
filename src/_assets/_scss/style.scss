@@ -26,8 +26,8 @@ $colorBlue: #4e5569;
 }
 
 p {
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 1rem;
+  line-height: 1.725rem;
 }
 
 textarea,
@@ -165,12 +165,9 @@ a:focus {
   padding: 0 50px;
 }
 
-.kc-describer p {
-  line-height: 1.5em;
-}
-
 .kc-describer p:first-child {
-  font-size: 2em;
+  font-size: 2rem;
+  line-height: 2.725rem;
 }
 
 .kc-events {

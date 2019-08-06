@@ -5,8 +5,8 @@
     <ul>
       {% for logo in logobar_logos %}
       <li>
-        <a href="{{ logo.url }}">
-          <img src="/_assets/_img/logos/{{ logo.img }}" alt="{{ logo.name }}" />
+        <a href="{{ logo.org.url }}">
+          <img src="/_assets/_img/logos/{{ logo.org.img }}" alt="{{ logo.org.name }}" />
         </a>
       </li>
       {% endfor %}

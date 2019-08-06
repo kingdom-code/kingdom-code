@@ -20,3 +20,15 @@
     text-align: center;
   }
 }
+
+.kc-blog {
+
+  &__header {
+    text-align: center;
+  }
+
+  &__body {
+    margin: 0 auto;
+    max-width: 720px;
+  }
+}

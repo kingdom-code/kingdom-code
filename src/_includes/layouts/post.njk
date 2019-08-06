@@ -4,12 +4,12 @@ layout: layouts/base.njk
 ---
 <div class="container kc-blog">
 
-  <header role="banner" class="">
+  <header role="banner" class="kc-blog__header">
     <h1 itemprop="name">{{ title }}</h1>
     <date>{{ date | readableDate }}</date>
   </header>
 
-  <main>
+  <main class="kc-blog__body">
     {{ layoutContent | safe }}
   </main>
 
