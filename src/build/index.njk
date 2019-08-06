@@ -4,25 +4,25 @@ layout: layouts/base.njk
 challenges: [
   {
     challenge: 'How can we equip Christians to use the Bible more in evangelism?',
-    intro: '',
-    youtubeUrl: '',
-    url: 'https://kingdomcode.org.uk/blog',
-    org: {
-      name: 'Announcing soon',
-      url: 'https://kingdomcode.org.uk',
-      img: 'kingdom-code.svg'
-    }
+    intro: '"Go and make disciples of all nations...". These are the words of Jesus to his disciples (Matt 28v19). And Paul writes to Timothy "All Scripture is God-breathed and is useful for teaching..." (2 Tim 3v16). So how might we use technology to equip Christians to use Scripture in their personal evangelism?',
+    // youtubeId: 'Ik9InoOXfQI',
+    //url: 'https://kingdomcode.org.uk/blog',
+    //org: {
+    //  name: 'Announcing soon',
+    //  url: 'https://kingdomcode.org.uk',
+    //  img: 'kingdom-code.svg',
+    //}
   },
   {
     challenge: 'How might we resource your local church to serve and include the poor?',
-    intro: '',
-    youtubeUrl: '',
-    url: 'https://kingdomcode.org.uk/blog',
-    org: {
-      name: 'Announcing soon',
-      url: 'https://kingdomcode.org.uk',
-      img: 'kingdom-code.svg'
-    }
+    intro: 'James writes to the scattered church; pure and faultless religion is "to look after orphans and widows in their distress..." (James 1v27). The local church has a role to play in caring for the poor and vulnerable in its community- so how might we be part of resourcing that work of service?',
+    // youtubeId: 'Ik9InoOXfQI',
+    //url: 'https://kingdomcode.org.uk/blog',
+    //org: {
+    //  name: 'Announcing soon',
+    //  url: 'https://kingdomcode.org.uk',
+    //  img: 'kingdom-code.svg',
+    //}
   }
 ]
 quotes: [
@@ -129,6 +129,7 @@ schedule: [
 
 <section class="container" id="challenges">
   <h2 class="heading heading--centered heading--green">Challenges</h2>
+  <p>At Kingdom Code we want to explore how the technical skillsets that God has given us can practically serve His church. Each year at BUILD we set a pair of challenges to give focus to what we work on during the 24 hour hackathon.</p>
   <div class="textcol">
     {% for c in challenges %}
 
@@ -141,10 +142,22 @@ schedule: [
         {{ c.intro }}
       </p>
 
+      {% if c.youtubeId %}
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/{{ c.youtubeId }}" frameborder="0" allowfullscreen></iframe>
+      </div>
+      {% endif %}
+
+      {% if c.url %}
+      <p>
+        <a href="{{ c.url }}" class="btn btn--micro btn--orange">Read more...</a>
+      </p>
+      {% endif %}
+
       {% if c.org %}
-        <div>
-          Challenge sponsored by {{ c.org.name }}<br />
-          <img src="/_assets/_img/logos/{{ c.org.img }}" alt="{{ c.org.name }} />
+        <div class="highlight-box">
+          <img class="highlight-box__logo" src="/_assets/_img/logos/{{ c.org.img }}" alt="{{ c.org.name }}" />
+          <p>Challenge sponsored by <a href="{{ c.org.url }}" target="_blank">{{ c.org.name }}</a></p>
         </div>
       {% endif %}
 

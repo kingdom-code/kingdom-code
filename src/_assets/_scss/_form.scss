@@ -21,5 +21,30 @@
   &--green {
     background: $colorGreen;
     color: white;
+    border: 1px solid $colorGreen;
+
+    &:hover {
+      background: transparent;
+      color: $colorGreen;
+      border: 1px solid $colorGreen;
+    }
+  }
+
+  &--orange {
+    background: $colorOrange;
+    color: white;
+    border: 1px solid $colorOrange;
+
+    &:hover {
+      background: transparent;
+      color: $colorOrange;
+      border: 1px solid $colorOrange;
+    }
+  }
+
+  &--micro {
+    width: auto;
+    font-size: .825em;
+    padding: 3px 10px;
   }
 }
