@@ -1,0 +1,48 @@
+.promo {
+  background-position: center center;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+  width: 100%;
+  color: white;
+  background-image: url('/_assets/_img/build/kingdom-code-build-dev.jpg');
+}
+
+.promo__content {
+  align-items: flex-start;
+  background-image: radial-gradient(at top center, rgba(40,41,56,0), #282938);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  padding: 20px;
+  text-decoration: none;
+  transition: all .2s;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+
+  p, date {
+    color: white;
+  }
+
+  date {
+    font-size: 1.17em;
+  }
+}
+
+.promo__content__logo {
+  width: 200px;
+}
+.promo__content__button {
+  color: white;
+  background-color: $colorOrange;
+  text-transform: uppercase;
+  padding: 5px 7px;
+  border-radius: 4px;
+  transition: background-color .2s;
+
+  &:hover {
+    background-color: rgba($colorOrange, .5);
+  }
+}
