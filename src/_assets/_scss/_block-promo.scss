@@ -6,6 +6,12 @@
   width: 100%;
   color: white;
   background-image: url('/_assets/_img/build/kingdom-code-build-dev.jpg');
+
+  @include bpMinMedium() {
+    margin-left: -20px;
+    margin-right: -20px;
+    width: calc(100% + 40px);
+  }
 }
 
 .promo__content {

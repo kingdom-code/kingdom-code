@@ -8,6 +8,7 @@ $colorBlue: #4e5569;
 @import 'form';
 @import 'text';
 @import 'time-list';
+@import 'img';
 
 @import 'block-listing';
 @import 'block-people';
@@ -385,15 +386,5 @@ a:focus {
   }
   .kc-header__container__logoGroup h2 {
     margin: 0;
-  }
-}
-
-.kc-blog {
-  p {
-    color: $colorBlue;
-  }
-
-  a {
-    color: $colorOrange;
   }
 }

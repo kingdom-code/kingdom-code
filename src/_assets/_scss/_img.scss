@@ -1,0 +1,27 @@
+.img {
+  border-radius: 10px;
+  
+  &--pull-left {
+    max-width: 50%;
+    margin-left: -15%;
+    margin-right: 20px;
+    float: left;
+
+    @include bpMinMedium() {
+      max-width: 380px;
+      margin-left: -190px;
+    }
+  }
+
+  &--pull-right {
+    max-width: 50%;
+    margin-right: -15%;
+    margin-left: 20px;
+    float: right;
+
+    @include bpMinMedium() {
+      max-width: 380px;
+      margin-right: -190px;
+    }
+  }
+}
