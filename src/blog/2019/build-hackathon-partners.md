@@ -12,7 +12,7 @@ A few weeks ago we [shared with you the challenges for BUILD](https://kingdomcod
 
 We’ve asked Jubi from Christianity Explored Ministries and Scott from CAP to explain more about each challenge and why they are so important:
 
-## _Christianity Explored Ministries:_<br />How can we equip Christians to use the Bible more in evangelism?
+<h2 id="build:cem"><em>Christianity Explored Ministries:</em><br />How can we equip Christians to use the Bible more in evangelism?</h2>
 
 > As Christians, we know the Bible is much more than just the book we read on Sundays. Scripture is the very breath of God for all humankind, and the gospel is the power of God to open blind eyes to see salvation in Jesus. In other words, the Bible is alive --to believers and unbelievers alike. This is why we are convinced the best way to share the news about Jesus is by opening the pages of the Bible together. At Christianity Explored Ministries, we then create resources to help people do that --resources like [Life Explored](http://www.life.explo.red/).
 >
@@ -23,14 +23,14 @@ We’ve asked Jubi from Christianity Explored Ministries and Scott from CAP to e
   <li class="peopleList__person">
     <img src="/_assets/_img/people/jubiracy-filho-cem-kingdom-code.jpg" alt="Jubiracy da Silva" class="peopleList__person__img">
 
-  <p>Jubiracy da Silva<br />
+  <p><strong>Jubiracy da Silva</strong><br />
   Creative Project Development & Supporter Relations<br />
   <a href="https://www.explo.red/Groups/302038/Get_involved/About_us/About_us.aspx">Christianity Explored Ministries</a></p>
   </li>
   </ul>
 </cite>
 
-## _Christians Against Poverty:_<br />How might we resource your local church to serve and include the poor?
+<h2 id="build:cap"><em>Christians Against Poverty:</em><br />How might we resource your local church to serve and include the poor?</h2>
 
 > There are 1.5million people living in destitution in the UK and many millions in poverty. Often this hardship is the kind you don't see - it's people surviving long periods without putting any gas or electricity in the meter, or it's a mum going without food so her children can eat. UK poverty can be a private, relentless struggle where there's just never enough. Our experiences show that these impossible choices have to be made when people are least able to function well, the times when the relationship has broken down, there's a bereavement or they've lost their job. It can be very lonely.
 >
@@ -43,7 +43,7 @@ We’ve asked Jubi from Christianity Explored Ministries and Scott from CAP to e
   <li class="peopleList__person">
     <img src="/_assets/_img/people/scott-aubrey-cap-kingdom-code.jpg" alt="Scott Aubrey" class="peopleList__person__img">
 
-  <p>Scott Aubrey<br />
+  <p><strong>Scott Aubrey</strong><br />
   Head of System Architecture<br />
   <a href="https://capuk.org/">Christians Against Poverty</a></p>
   </li>

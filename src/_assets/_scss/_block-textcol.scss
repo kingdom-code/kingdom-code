@@ -9,6 +9,15 @@
     &__col {
       padding: 25px 0;
 
+      &__lead-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 75px;
+
+        a{ border: none; }
+      }
+
       &:first-child{
         border-right: 1px solid $colorGreen;
         padding-right: 25px;

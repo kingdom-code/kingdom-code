@@ -8,22 +8,24 @@ challenges: [
     intro: '"Go and make disciples of all nations...". These are the words of Jesus to his disciples (Matt 28v19). And Paul writes to Timothy "All Scripture is God-breathed and is useful for teaching..." (2 Tim 3v16). So how might we use technology to equip Christians to use Scripture in their personal evangelism?',
     // youtubeId: 'Ik9InoOXfQI',
     url: '/blog/2019/build-19-challenges/#build:ch1',
-    //org: {
-    //  name: 'Announcing soon',
-    //  url: 'https://kingdomcode.org.uk',
-    //  img: 'kingdom-code.svg',
-    //}
+    org: {
+      name: 'Christianity Explored Ministries',
+      url: '/blog/2019/build-hackathon-partners/#build:cem',
+      img: 'cem.svg',
+      color: '#d0112d'
+    }
   },
   {
     challenge: 'How might we resource your local church to serve and include the poor?',
     intro: 'James writes to the scattered church; pure and faultless religion is "to look after orphans and widows in their distress..." (James 1v27). The local church has a role to play in caring for the poor and vulnerable in its community- so how might we be part of resourcing that work of service?',
     // youtubeId: 'Ik9InoOXfQI',
     url: '/blog/2019/build-19-challenges/#build:ch2',
-    //org: {
-    //  name: 'Announcing soon',
-    //  url: 'https://kingdomcode.org.uk',
-    //  img: 'kingdom-code.svg',
-    //}
+    org: {
+      name: 'Christians Against Poverty',
+      url: '/blog/2019/build-hackathon-partners/#build:cap',
+      img: 'cap.svg',
+      color: '#7dbc42'
+    }
   }
 ]
 quotes: [
@@ -135,6 +137,15 @@ schedule: [
     {% for c in challenges %}
 
     <div class="textcol__col textcol__col--centered">
+
+      {% if c.org %}
+        <div class="textcol__col__lead-img">
+          <a href="{{ c.org.url }}">
+            <img class="highlight-box__logo" src="/_assets/_img/logos/{{ c.org.img }}" alt="{{ c.org.name }}" />
+          </a>
+        </div>
+      {% endif %}
+
       <h3>
         {{ c.challenge }}
       </h3>
@@ -151,16 +162,10 @@ schedule: [
 
       {% if c.url %}
       <p>
-        <a href="{{ c.url }}" class="btn btn--micro btn--orange">Read more...</a>
+        <a href="{{ c.url }}" class="btn btn--micro btn--orange" style="background-color: {{ c.org.color }}; border: 1px solid white;">Read more...</a>
       </p>
       {% endif %}
 
-      {% if c.org %}
-        <div class="highlight-box">
-          <img class="highlight-box__logo" src="/_assets/_img/logos/{{ c.org.img }}" alt="{{ c.org.name }}" />
-          <p>Challenge sponsored by <a href="{{ c.org.url }}" target="_blank">{{ c.org.name }}</a></p>
-        </div>
-      {% endif %}
 
     </div>
 
