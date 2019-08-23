@@ -3,7 +3,7 @@ title: Build 2019 Partners
 tags: Build
 author: James Doc
 date: 2019-08-22
-intro: How can technology, software development, coding and design help the church in the 21st century?
+intro: Each BUILD hackathon is an opportunity for us to practically serve a Christian ministry use tech well. A few weeks ago we shared with you the challenges for BUILD. Today, we're excited to announce that at BUILD 2019 we’ll be joined by…
 ---
 
 **Each [BUILD hackathon](https://kingdomcode.org.uk/build/) is an opportunity for us to practically serve, support and help a Christian organisation utilise technology in their ministry.** These ministries share with us the area that God has called them to serve in, and the Kingdom Code community brings the tech-based skillsets that God has given us. Over the last few years as a community of technologists we’ve had the privilege of working with ministries like Home for Good, Bible Society, Tearfund and Stewardship, to name just a few.
