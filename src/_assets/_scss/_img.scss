@@ -24,4 +24,13 @@
       margin-right: -190px;
     }
   }
+
+  &--full-width {
+    max-width: 100%;
+    
+    @include bpMinMedium() {
+      max-width: calc(100% + 100px);
+      margin: 0 -50px;
+    }
+  }
 }
