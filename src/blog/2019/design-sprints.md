@@ -22,4 +22,25 @@ Book your place:
 
 You can also join us at [Kingdom Code BUILD](/build) on 11–12 October 2019.
 
+<section class="promo">
+
+  <a class="promo__content" href="/build">
+
+  <img class="promo__content__logo" src="/_assets/_img/build.svg" />
+
+  <date>
+    Friday 11 - Saturday 12 October 2019
+  </date>
+
+  <p>
+    Kingdom Code BUILD brings together Christians in the world of tech from across Europe to practically explore our how faith in Jesus connects with our technical skills.
+  </p>
+
+  <p>
+    <span class="promo__content__button">
+      Find out more
+    </span>
+  </p>
+  </a>
+</section>
 
