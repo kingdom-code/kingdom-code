@@ -9,9 +9,9 @@ intro: In September our meetups in London and Leeds are getting practical ahead 
 
 <img class="img img--full-width" src="/_assets/_img/blog/2019/design-sprint.jpg" alt="Attendees at 2018 Design Sprint" />
 
-Have you or your team ever thought about a new project or feature, but have really been sure how to go about it? Design Sprints create a way to rapidly prototype ideas before making a heavy investment in development time. They are also fun to do as a team too!
+Have you or your team ever thought about a new project or feature, but haven't really been sure how to go about it? Design Sprints create a way to rapidly prototype ideas before making a heavy investment in development time. They are also fun to do as a team too!
 
-Okay… so why is this a Kingdom Code event? Good question! Well, ahead of [BUILD](/build) we are inviting our challenge partners to share more of what they are working on, exploring more about the challenges and using a Design Sprint to prototype and test your ideas.
+Okay… so why is this a Kingdom Code event? Good question! Well, ahead of [BUILD](/build) we are inviting [our challenge partners](/blog/2019/build-hackathon-partners/) to share more of what they are working on, exploring more about the challenges and using a Design Sprint to prototype and test your ideas.
 
 If you are joining us at BUILD, want to explore Design Sprints or just want to meet other Christians in the world of the Design Sprint meet ups will be a great place to be!
 
