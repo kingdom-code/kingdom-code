@@ -5,6 +5,10 @@ layout: layouts/base.njk
 <div class="container kc-blog">
 
   <header role="banner" class="kc-blog__header">
+    {% if hero_img %}
+    <img src="{{ hero_img }}" alt="{{ title }}" class="kc-blog__header__img" />
+    {% endif %}
+
     <h1 itemprop="name">{{ title }}</h1>
     <date>{{ date | readableDate }}</date>
   </header>

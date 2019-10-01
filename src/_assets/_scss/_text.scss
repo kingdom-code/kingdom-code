@@ -24,6 +24,10 @@
 .kc-blog {
   &__header {
     text-align: center;
+
+    &__img {
+      max-width: 100%;
+    }
   }
 
   &__body {
