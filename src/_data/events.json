@@ -1,5 +1,19 @@
 [
   {
+    "name": "Drink",
+    "city": "Leeds",
+    "date": "2019-11-12",
+    "url": "https://www.eventbrite.co.uk/e/kingdom-code-leeds-76881429425",
+    "description": "We want to build relationships as well as projects. On Tuesday 12th we're going to gather together for a quiet drink together."
+  },
+  {
+    "name": "microBUILD",
+    "city": "London",
+    "date": "2019-10-25",
+    "url": "https://www.eventbrite.co.uk/e/kingdom-code-london-microbuild-tickets-76880847685",
+    "description": "Every couple of months we like to set aside an evening to keep working on our side projects. Join us for some pizza and hack-time."
+  },
+  {
     "name": "BUILD Hackathon",
     "city": "London",
     "date": "2019-10-11",
