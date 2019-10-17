@@ -22,7 +22,7 @@ Three teams stood out and left with a Kingdom Code mixtape as we gathered at the
 
 *Value Navigator*, which won the Christianity Explored Ministries challenge, was led by Claire Angus. Over the course of the weekend the team of eight explored how they might help people uncover what people value in life, in line with the Life Explored course. The team developed a BuzzFeed style quiz which ended helping the quiz-taker understand these themes in terms of how God created them in light of relevant passages from the Bible.
 
-Christians Against Poverty awarded their challenge prize to a prototype project called *Find the Need*. Pitched on the Friday night by Alasdair Munday, this team built on top on the national census data to reveal some of the areas of deprivation around your local church, and to suggest specific ministries that might be able to support in those contexts.
+Christians Against Poverty awarded their challenge prize to a prototype project called *Find the Need*. Pitched on the Friday night by Alasdair Munday, this team built on top on the national census data to reveal some of the areas of deprivation around your local church, and to suggest specific ministries that you might be able to support in those contexts.
 
 <img class="img img--pull-left" src="/_assets/_img/blog/2019/build-19-go-chatter.jpg" alt="Go Chatter Team" />
 
