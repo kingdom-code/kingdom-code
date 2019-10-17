@@ -7,6 +7,13 @@
     "description": "We want to build relationships as well as projects. On Tuesday 12th we're going to gather together for a quiet drink together."
   },
   {
+    "name": "Drink",
+    "city": "London",
+    "date": "2019-11-11",
+    "url": "https://www.eventbrite.co.uk/e/kingdom-code-london-drink-tickets-77265887349",
+    "description": "Join us on Monday 11th November, 7.30pm at The Crosse Keys for a quiet drink with people who love Jesus and are involved in shaping technology."
+  },
+  {
     "name": "microBUILD",
     "city": "London",
     "date": "2019-10-25",
