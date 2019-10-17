@@ -26,8 +26,17 @@
     text-align: center;
 
     &__img {
+      border-radius: 0 0 5px 5px;
       max-width: 100%;
+
+      @include bpMinLarge() {
+        max-width: 110%;
+        width: 110%;
+        margin-left: -5%;
+        border-radius: 0 0 5px 5px;
+      }
     }
+
   }
 
   &__body {
