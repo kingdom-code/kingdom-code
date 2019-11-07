@@ -2,8 +2,8 @@
 title: One Body, Many Members
 tags: Build
 author: Andy Geers
-date: 2019-10-01
-intro:
+date: 2019-11-07
+intro: The apostle Paul describes the church as one body with many members. Andy Geers explores what this means for us as Kingdom Code.
 ---
 
 Last month at Kingdom Code BUILD we spent some time dwelling on the following words from Romans 12:3-9 (NIV):
@@ -13,16 +13,16 @@ Last month at Kingdom Code BUILD we spent some time dwelling on the following wo
 
 ## 1. Within Kingdom Code we are one body with many members
 
-One of the glorious things about Kingdom Code is the range of different skills represented within the community. Something we often hear when people find out about Kingdom Code is “Oh, but I’m not a coder…” - but praise God that we’re not all coders! A good hackathon team benefits massively from a range of input, from designers to project managers… and yes, ultimately they usually need coders too!
+One of the glorious things about Kingdom Code is the range of different skills represented within the community. Something we often hear when people find out about Kingdom Code is “Oh, but I’m not a coder…” - but praise God that we’re not all coders! To build anything useful in the technology world it takes a whole range of input, from designers to project managers… and yes, ultimately coders too!
 
 It’s God’s great design (v4) that “just as each of us has one body with many members, and these members do not all have the same function, so in Christ we, though many, form one body, and each member belongs to all the others”. The great encouragement here is that whatever our skills, we’re to get on and use them! v6 “We have different gifts according to the grace given to each of us… If you gift is prophesying, then prophesy in accordance with your faith… v7 if it’s serving, then serve! If it’s teaching, then teach, if it is to encourage, then give encouragement, if it is giving, then give generously…" you get the idea!
 We mustn’t compare ourselves with others and wish God had given us their skills - we’re to get on and serve with the gifts we have.
 
 ## 2. Within the church we are one body with many members
 
-Of course when Paul wrote this passage, he wasn’t primarily writing to people at a hackathon… From a global perspective, in many ways the Kingdom Code community itself represents one member of the wider body of Christ. Whether we’re developers or designers or entrepreneurs or data scientists, in many ways we are all “technologists” as far as the wider church is concerned.
+From a global perspective, in many ways the Kingdom Code community itself represents one member of the wider body of Christ. Whether we’re developers or designers or entrepreneurs or data scientists, in many ways we are all “technologists” as far as the wider church is concerned.
 
-On the one hand, this passage helps us to not think too highly of ourselves. As v3 says, what we do at BUILD is important and has the potential to be highly significant for God’s glory around the world. However, without the rest of the body we’d be completely stuck. It’s the whole body of Christ who together are going to reach out and serve the poor; it’s the whole body of Christ who together are going to be seeking to reach the lost with the word of God.
+On the one hand, this passage helps us to not think too highly of ourselves, as v3 says. The things we do as a community, such as through events like BUILD, are important and have the potential to be highly significant for God’s glory around the world. However, without the rest of the body we’d be completely stuck. To take our two recent hackathon challenges, for example: it’s the whole body of Christ who together are going to reach out and serve the poor; it’s the whole body of Christ who together are going to be seeking to reach the lost with the word of God.
 
 On the other hand, don’t undervalue your skills as a technologist. Hopefully the experience of many at BUILD was of seeing that our tech skills are not separate from our faith - we don’t have to put our digital stuff in a little box over here and our Christian service in a separate little box over there. If these are the gifts that God has given to each of us, then let us use them. We belong to all of the other members of the church, and they **need** us and our skills. God willing some of the projects from BUILD are going to really help the church in their mission.
 
