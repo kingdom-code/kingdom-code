@@ -61,6 +61,11 @@
     color: $colorOrange;
   }
 
+  // ToDO: Undo this tech debt
+  .btn--orange{
+    color: white
+  }
+
   &__back {
     text-align: center;
     display: table;
