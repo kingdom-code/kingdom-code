@@ -230,10 +230,8 @@ a:focus {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-}
 
-.kc-events__future h2, .kc-events__future p{
-  color: white;
+  h2, p, a { color: white; }
 }
 
 .kc-events__future__btn {
