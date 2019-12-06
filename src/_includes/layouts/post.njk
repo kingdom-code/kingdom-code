@@ -17,6 +17,21 @@ layout: layouts/base.njk
     {{ layoutContent | safe }}
   </main>
 
+  {% if author %}
+
+    {% for person in people | sort(false, false, 'name') %}
+
+      {% if author == person.name %}
+        <div class="kc-blog__author">
+          <img src="/_assets/_img/people/{{ person.img if person.img else "no-avatar.jpg" }}" alt="{{ person.name }}" class="kc-blog__author__img">
+          <p>{% if person.href %}<a href="{{ person.href }}" target="_blank" rel="noopener">{% endif %}{{ person.name }}{% if person.href %}</a>{% endif %}</p>
+          <p>{{ person.bio }}</p>
+        </div>
+      {% endif %}
+
+    {% endfor %}
+  {% endif %}
+
   <a class="kc-blog__back" href="/blog">Back to all posts</a>
 
   {% if canonical %}

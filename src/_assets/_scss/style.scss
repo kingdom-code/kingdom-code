@@ -387,3 +387,8 @@ a:focus {
     margin: 0;
   }
 }
+
+.divider {
+  border-bottom: 2px solid $colorOrange;
+  border-top: 0;
+}

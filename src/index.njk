@@ -4,3 +4,28 @@ nav: true
 ---
 
 {% include "blocks/events.njk" %}
+
+<br />
+<br />
+
+{% set post = collections.posts|reverse|first %}
+
+<section class="promo promo--flipped" style="background-image: url({{ post.data.hero_img }});">
+
+  <a class="promo__content" href="{{ post.url }}">
+
+    <p class="promo__content__tag">Latest blog post</p>
+    <h2 class="promo__content__title">{{ post.data.title }}</h2>
+
+    {% if post.data.intro %}
+      <p>{{ post.data.intro }}</p>
+    {% endif %}
+
+    <p>
+      <span class="promo__content__button">
+        Keep reading…
+      </span>
+    </p>
+  </a>
+</section>
+

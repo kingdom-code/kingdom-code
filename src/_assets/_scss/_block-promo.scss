@@ -16,7 +16,7 @@
 
 .promo__content {
   align-items: flex-start;
-  background-image: radial-gradient(at top center, rgba(40,41,56,0), #282938);
+  background-image: radial-gradient(at center right, rgba(40,41,56,0), #282938);
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -30,10 +30,31 @@
 
   p, date {
     color: white;
+    max-width: 550px;
   }
 
   date {
     font-size: 1.17em;
+  }
+
+  &__tag {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.825em;
+    margin: 0;
+  }
+
+  &__title {
+    color: $colorOrange;
+    margin: 0;
+  }
+}
+
+.promo--flipped {
+  .promo__content {
+    align-items: flex-end;
+    text-align: right;
+    background-image: radial-gradient(at center left, rgba(40, 41, 56, 0), #282938);
   }
 }
 

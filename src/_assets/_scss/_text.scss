@@ -45,7 +45,6 @@
     }
 
     date { display: block; }
-
   }
 
   &__body {
@@ -53,8 +52,9 @@
     max-width: 720px;
   }
 
-  p {
+  p, li {
     color: $colorBlue;
+    margin: 1em 0;
   }
 
   a {
@@ -76,5 +76,21 @@
     border-left: 4px solid $colorBlue;
     padding-left: 20px;
     margin-left: 1px;
+  }
+
+  &__author {
+    margin: 2em auto;
+    padding: 2em 0;
+    border-top: 2px solid $colorOrange;
+    border-bottom: 2px solid $colorOrange;
+    max-width: 720px;
+    text-align: center;
+
+    &__img {
+      border-radius: 50px;
+      height: 50px;
+      margin-right: 10px;
+      width: 50px;
+    }
   }
 }
