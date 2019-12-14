@@ -26,6 +26,21 @@ module.exports = function (eleventyConfig) {
     return events.filter(e => e.city == city);
   });
 
+  eleventyConfig.addFilter("orphanWrap", str => {
+		let splitSpace = str.split(" ");
+		let after = "";
+		if( splitSpace.length > 2 ) {
+      after += " ";
+      
+			let lastWord = splitSpace.pop();
+			let secondLastWord = splitSpace.pop();
+
+			after += `${secondLastWord}&nbsp;${lastWord}`;
+		}
+
+		return splitSpace.join(" ") + after;
+	});
+
   eleventyConfig.addPassthroughCopy("src/_assets/_img");
 
   eleventyConfig.addCollection("cities", function (collection) {
