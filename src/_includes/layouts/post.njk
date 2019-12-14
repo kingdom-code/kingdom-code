@@ -9,7 +9,7 @@ layout: layouts/base.njk
     <img src="{{ hero_img }}" alt="{{ title }}" class="kc-blog__header__img" />
     {% endif %}
 
-    <h1 itemprop="name">{{ title }}</h1>
+    <h1 itemprop="name">{{ title | orphanWrap | safe }}</h1>
     <date>{{ date | readableDate }}</date>
   </header>
 
