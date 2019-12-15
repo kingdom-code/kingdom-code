@@ -9,7 +9,7 @@
   width: 100%;
 
   ul {
-    padding: 10px 50px;
+    padding: 10px;
     list-style-type: none;
     margin: 0;
   }
@@ -32,9 +32,33 @@
     }
   }
 
+  &__menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+    a {
+      margin-right: 0;
+    }
+
+    @media (min-width: 675px) {
+      width: auto;
+      display: block;
+
+      a {
+        margin-right: 25px;
+      }
+    }
+  }
+
   .container {
     display: flex;
     justify-content: space-between;
+    padding: 0;
+
+    @media (min-width: 675px) {
+      padding: 0 50px;
+    }
   }
 
   .social-icon {
