@@ -1,11 +1,14 @@
 const dayjs = require("dayjs");
 const fs = require("fs");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 const dateFormat = (d, format) => {
   return dayjs(d).format(format);
 }
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(pluginRss);
+
   eleventyConfig.addFilter("isFutureDate", (dateObj)=> {
     return dayjs(dateObj).isAfter(dayjs())
   });
@@ -27,18 +30,22 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("orphanWrap", str => {
-		let splitSpace = str.split(" ");
-		let after = "";
-		if( splitSpace.length > 2 ) {
-      after += " ";
-      
-			let lastWord = splitSpace.pop();
-			let secondLastWord = splitSpace.pop();
+    if (str) {
+      let splitSpace = str.split(" ");
+      let after = "";
+      if( splitSpace.length > 2 ) {
+        after += " ";
+        
+        let lastWord = splitSpace.pop();
+        let secondLastWord = splitSpace.pop();
 
-			after += `${secondLastWord}&nbsp;${lastWord}`;
-		}
+        after += `${secondLastWord}&nbsp;${lastWord}`;
+      }
 
-		return splitSpace.join(" ") + after;
+      return splitSpace.join(" ") + after;
+    } else {
+      return str;
+    }
 	});
 
   eleventyConfig.addPassthroughCopy("src/_assets/_img");
