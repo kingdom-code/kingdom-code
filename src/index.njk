@@ -3,11 +3,6 @@ layout: layouts/home.njk
 nav: true
 ---
 
-{% include "blocks/events.njk" %}
-
-<br />
-<br />
-
 {% set post = collections.posts|reverse|first %}
 
 <section class="promo promo--flipped" style="background-image: url({{ post.data.hero_img }});">
@@ -29,3 +24,5 @@ nav: true
   </a>
 </section>
 
+
+{% include "blocks/events.njk" %}
