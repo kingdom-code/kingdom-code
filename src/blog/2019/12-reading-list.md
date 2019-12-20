@@ -1,6 +1,6 @@
 ---
 title: December Reading List
-tags: 
+tags:
 author: James Doc
 date: 2019-12-20
 intro: Each month we digging out some of the best blog posts exploring the intersection of Christianity and technology. This month we've go an article from Financial Times about religion and technology, through to another BUILD project going live…
@@ -17,7 +17,7 @@ hero_img: /_assets/_img/blog/2019/december-reading-list.jpg
 
 ## The Digital <s>Revolution</s> Reformation
 
-The Gospel Caolition calls itself as an "internet-based ministry". In this blog post they explore some of the challenges that doing ministry in a digital space presents, but also three opportunites that they see growing.
+The Gospel Coalition calls itself as an "internet-based ministry". In this blog post they explore some of the challenges that doing ministry in a digital space presents, but also three opportunites that they see growing.
 
 <a href="https://www.thegospelcoalition.org/article/digital-revolution-reformation/" class="btn btn--orange btn--micro" target="_blank" rel="noopener">Read on The Gospel Coalition</a> (12 min read)
 
