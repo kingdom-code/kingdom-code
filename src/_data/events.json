@@ -26,11 +26,7 @@
     "city": "London",
     "date": "2020-05-11"
   },
-  {
-    "name": "Think: Title TBC",
-    "city": "London",
-    "date": "2020-04-06"
-  },
+
   {
     "name": "microBUILD",
     "city": "London",
@@ -43,7 +39,7 @@
     "date": "2020-03-02"
   },
   {
-    "name": "Think: Title TBC",
+    "name": "Think: The History of the Church and Technology",
     "city": "London",
     "date": "2020-02-03"
   },
@@ -51,12 +47,14 @@
     "name": "microBUILD",
     "city": "London",
     "date": "2020-01-24",
-    "description": "Every couple of months we like to set aside an evening to keep working on our side projects. Join us for some pizza and hack-time."
+    "description": "Every couple of months we like to set aside an evening to keep working on our side projects. Join us for some pizza and hack-time.",
+    "url": "https://www.eventbrite.co.uk/e/kingdom-code-london-microbuild-tickets-86902803625"
   },
   {
     "name": "Drink",
     "city": "London",
-    "date": "2020-01-13"
+    "date": "2020-01-13",
+    "url": "https://www.eventbrite.co.uk/e/kingdom-code-london-drink-tickets-86902667217"
   },
   {
     "name": "Drink",
