@@ -39,9 +39,20 @@
     "date": "2020-03-02"
   },
   {
+    "name": "TBC",
+    "city": "Leeds",
+    "date": "2020-02-24"
+  },
+  {
     "name": "Think: The History of the Church and Technology",
     "city": "London",
     "date": "2020-02-03"
+  },
+  {
+    "name": "Drink",
+    "city": "Leeds",
+    "date": "2020-01-27",
+    "url": "https://www.eventbrite.co.uk/e/kingdom-code-leeds-drink-tickets-87250642019"
   },
   {
     "name": "microBUILD",
