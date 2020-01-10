@@ -44,9 +44,11 @@
     "date": "2020-02-24"
   },
   {
-    "name": "Think: The History of the Church and Technology",
+    "name": "Think: Church Through a Tech Lens",
     "city": "London",
-    "date": "2020-02-03"
+    "date": "2020-02-03",
+    "url": "https://www.eventbrite.co.uk/e/kingdom-code-london-church-through-a-tech-lens-tickets-89214279311",
+    "description": "Christians are often portrayed as a bit backward with regard to technology, but is this really the case? On Monday 3rd Febuary we've invited church history lecturer Tom Breimaier to join us. We'll be exploring how technology is on display in history of the church, and how that challenges us to think of where we go, and what we build, from here."
   },
   {
     "name": "Drink",
