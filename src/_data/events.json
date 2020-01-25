@@ -39,9 +39,11 @@
     "date": "2020-03-02"
   },
   {
-    "name": "TBC",
+    "name": "Think: Discussion Evening",
     "city": "Leeds",
-    "date": "2020-02-24"
+    "date": "2020-02-24",
+    "url": "https://www.eventbrite.co.uk/e/kingdom-code-leeds-discussion-night-registration-91387052133",
+    "description": "Join us for our first discussion night exploring the intersection of Christianity and technology. We're going to be using a 'Lean Coffee' format, which gives everyone the chance to bring topics for discussion, and then be part of the conversation as much or as little as you want to."
   },
   {
     "name": "Think: Church Through a Tech Lens",
