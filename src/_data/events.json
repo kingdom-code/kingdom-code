@@ -36,7 +36,9 @@
   {
     "name": "Drink",
     "city": "London",
-    "date": "2020-03-02"
+    "date": "2020-03-02",
+    "description": "Join us for a quiet drink together, discussing intersection of Christianity & technology.",
+    "url": "https://www.eventbrite.co.uk/e/kingdom-code-london-tickets-94810481703"
   },
   {
     "name": "Think: Discussion Evening",
