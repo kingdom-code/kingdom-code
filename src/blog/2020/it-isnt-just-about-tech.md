@@ -2,7 +2,7 @@
 title: It's about more than just tech
 author: Dave Knotts
 date: 2020-01-10
-intro: “Having a project idea is easy, implementing that idea is harder, but by far the hardest thing is sticking with a project for a few years! We hear back from one of the projects out of the 2016 hackathon.
+intro: Having a project idea is easy, implementing that idea is harder, but by far the hardest thing is sticking with a project for a few years! We hear back from one of the projects out of the 2016 hackathon.
 hero_img: /_assets/_img/blog/2020/more-than-tech.jpg
 ---
 
