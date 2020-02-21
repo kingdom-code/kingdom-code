@@ -71,5 +71,12 @@
     "name": "Dave Knotts",
     "team": [],
     "bio": "Dave is a Web Developer and lives and serves as a missionary in Central Asia."
+  },
+  {
+    "name": "Joe Gallant",
+    "team": [],
+    "bio": "Joe runs Be Gallant, offering web design for churches and charities, as well as ChurchTrain, a blog with free church communications resources.",
+    "href": "https://www.begallant.uk/",
+    "img": "joe-gallant.jpg"
   }
 ]
