@@ -23,7 +23,7 @@ Wired ran an article exploring how Christian entreprenuers and churches are comi
 
 ## Sleepless AI
 
-Recently James was invited to take part in a roundtable discussion with a number of church leaders, academics, and practitiors in the AI space and was asked to think about _'what keeps you awake at night thinking about AI and the church?'_ In his blog post James ignores terminator illustrations (mostly), and instead talks about horses with three sides to fall off…
+Recently James was invited to take part in a roundtable discussion with a number of church leaders, academics, and practitioners in the AI space and was asked to think about _'what keeps you awake at night thinking about AI and the church?'_ In his blog post James ignores terminator illustrations (mostly), and instead talks about horses with three sides to fall off…
 
 <a href="https://jamesdoc.com/blog/2020/sleepless-ai/" class="btn btn--orange btn--micro" target="_blank" rel="noopener">Read now</a> (6 min read)
 
