@@ -24,9 +24,16 @@
   {
     "name": "Think: Spiritual Disciplines in a Digital Age",
     "city": "London",
-    "date": "2020-05-11"
+    "date": "2020-05-11",
+    "description": "What does it look like to engage with spiritual disciplines in a world saturated by the technology we create?",
+    "url": "https://www.eventbrite.co.uk/e/kingdom-code-london-may-spiritual-disciplines-in-a-digital-age-tickets-97390633005"
   },
-
+  {
+    "name": "TBC",
+    "city": "London",
+    "date": "2020-04-06",
+    "url": "https://www.eventbrite.co.uk/e/kingdom-code-london-april-tickets-97381395375"
+  },
   {
     "name": "microBUILD",
     "city": "London",
