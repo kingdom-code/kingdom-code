@@ -22,7 +22,7 @@
     "description": "Every couple of months we like to set aside an evening to keep working on our side projects. Join us for some pizza and hack-time."
   },
   {
-    "name": "Think: Spiritual Disciplines in a Digital Age",
+    "name": "Think: Reimagining the Spiritual Disciplines in a Digital Age",
     "city": "London",
     "date": "2020-05-11",
     "description": "What does it look like to engage with spiritual disciplines in a world saturated by the technology we create?",
@@ -30,9 +30,24 @@
   },
   {
     "name": "TBC",
+    "city": "Leeds",
+    "date": "2020-04-27",
+    "description": "We've not landed on a plan for this evening yet… but save the date and join us for a gathering of Christians who work in the world of tech.",
+    "url": "https://www.eventbrite.co.uk/e/kingdom-code-leeds-april-tickets-98469038545"
+  },
+  {
+    "name": "Think: Discussion Evening",
     "city": "London",
     "date": "2020-04-06",
-    "url": "https://www.eventbrite.co.uk/e/kingdom-code-london-april-tickets-97381395375"
+    "url": "https://www.eventbrite.co.uk/e/kingdom-code-london-april-tickets-97381395375",
+    "description": "What is it that you want to talk about Christianity and technology? Perhaps it application for tech in your church, or the ethics of AI… bring your conversation starter and explore with us."
+  },
+  {
+    "name": "microBUILD",
+    "city": "Leeds",
+    "date": "2020-03-28",
+    "description": "Today takes the passion of BUILD, and brings it for a day to Leeds. It isn't about being a rockstart dev it's about coming along, learning together, and working on a project that matters.",
+    "url": "https://www.eventbrite.co.uk/e/kingdom-code-leeds-microbuild-tickets-98463076713"
   },
   {
     "name": "microBUILD",
