@@ -26,8 +26,10 @@
             {{ event.description }}
           </p>
           
-          {% if event.url %}
+          {% if (event.url) and (event.url != 'postponed') %}
             <a href="{{ event.url }}" target="_blank" rel="noopener" itemprop="url" class="kc-events__future__btn">Register</a>
+          {% elif (event.url) and (event.url == 'postponed') %}
+            <span class="kc-events__future__btn">Postponed</span>
           {% else %}
             <p class="kc-event__description">
               Save the date
