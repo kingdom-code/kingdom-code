@@ -10,7 +10,7 @@ hero_img: /_assets/_img/blog/2020/covid19.jpg
 
 We're a community of technologists, people who build and implement tools to solve real world problems, and this week our churches have some big problems. How do we hold in tension the Christian priority of meeting together to worship with the advice of the government to avoid all unnecessary travel and contact?
 
-If you want to get some ideas of how you could help, there is a growing Google Doc put together by a few people who are involved with technology and church ministy. Read it, share it, start using it: **[Digital Tools During the Coronavirus](https://docs.google.com/document/d/1fYN5QW1QnA6ofCLNdUNeSMARI44anqTsEAoXu7mRwFE/edit)**
+If you want to get some ideas of how you could help, there is a growing Google Doc put together by a few people who are involved with technology and church ministy. Read it, share it, start using it: **[Digital Tools During the Coronavirus](https://covid.churcheshandbook.co.uk/)**
 
 Now is a great time to get in touch with your church leaders to see how you might be able to serve them, maybe it is setting up a livestream for them, perhaps it is introducing them to a tool like Mailchimp, or Churchsuite so they can communicate quickly with the church. For those of you who work remotely, perhaps it is setting up small groups to happen via Skype or Zoom…
 
