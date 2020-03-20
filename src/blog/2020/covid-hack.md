@@ -2,7 +2,7 @@
 title: Covid-19 Global Church Hackathon
 author: James Doc
 date: 2020-03-20
-intro: As the government encourages us to reduce the amount of social interaction now is the perfect time for the Kingdom Code community to serve the local church
+intro: As Christian technologists we're equipped to innovate, to serve, to design and build tools together that helps the Church do what she does best- bringing faith, hope and love to the world around us…
 hero_img: /_assets/_img/blog/2020/covid19.jpg
 ---
 
