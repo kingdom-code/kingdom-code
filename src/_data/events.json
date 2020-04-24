@@ -1,38 +1,22 @@
 [
   {
-    "name": "microBUILD",
-    "city": "London",
-    "date": "2020-07-10",
-    "description": "Every couple of months we like to set aside an evening to keep working on our side projects. Join us for some pizza and hack-time."
-  },
-  {
-    "name": "Drink",
-    "city": "London",
-    "date": "2020-07-06"
-  },
-  {
     "name": "Think: The Fourth Revolution",
     "city": "London",
-    "date": "2020-06-01"
+    "date": "2020-06-01",
+    "url": "postponed"
   },
   {
     "name": "microBUILD",
     "city": "London",
     "date": "2020-05-15",
-    "description": "Every couple of months we like to set aside an evening to keep working on our side projects. Join us for some pizza and hack-time."
+    "description": "Every couple of months we like to set aside an evening to keep working on our side projects. Join us for some pizza and hack-time.",
+    "url": "postponed"
   },
   {
     "name": "Think: Reimagining the Spiritual Disciplines in a Digital Age",
     "city": "London",
     "date": "2020-05-11",
     "description": "What does it look like to engage with spiritual disciplines in a world saturated by the technology we create?",
-    "url": "https://www.eventbrite.co.uk/e/kingdom-code-london-may-spiritual-disciplines-in-a-digital-age-tickets-97390633005"
-  },
-  {
-    "name": "TBC",
-    "city": "Leeds",
-    "date": "2020-04-27",
-    "description": "We've not landed on a plan for this evening yet… but save the date and join us for a gathering of Christians who work in the world of tech.",
     "url": "postponed"
   },
   {
