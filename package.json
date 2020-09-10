@@ -43,6 +43,6 @@
     "uglifyjs-webpack-plugin": "^2.1.2",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.0",
-    "webpack-merge": "^4.2.1"
+    "webpack-merge": "^5.1.4"
   }
 }
