@@ -3,6 +3,7 @@ layout: layouts/home.njk
 nav: true
 ---
 
+{#
 {% set post = collections.posts|reverse|first %}
 
 <section class="promo promo--flipped" style="background-image: url({{ post.data.hero_img }});">
@@ -15,6 +16,24 @@ nav: true
     {% if post.data.intro %}
       <p>{{ post.data.intro }}</p>
     {% endif %}
+
+    <p>
+      <span class="promo__content__button">
+        Keep reading…
+      </span>
+    </p>
+  </a>
+</section>
+#}
+
+<section class="promo" style="background-image: url('/_assets/_img/blog/2020/more-than-tech.jpg');">
+
+  <a class="promo__content" href="https://docs.google.com/forms/d/e/1FAIpQLSd4jvRGCnTqmU7a_OoztWQjf19O3tznNInrwnD5w1z-ykXFIQ/viewform?usp=sf_link">
+
+    <p class="promo__content__tag">Autumn Survey</p>
+    <h2 class="promo__content__title">Help shape the future of Kingdom Code…</h2>
+
+    <p>Over the last six months Kingdom Code has been in hibernation, and a lot has changed. We're praying, thinking, and exploring what the next season of Kingdom Code might look like, and we need your help to do it…</p>
 
     <p>
       <span class="promo__content__button">
