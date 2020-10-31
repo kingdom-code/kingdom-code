@@ -2,26 +2,26 @@ $colorOrange: #ee5c53;
 $colorGreen: #1aac9c;
 $colorBlue: #4e5569;
 
-@import 'mixin-mediaqueries.scss';
+@import "mixin-mediaqueries.scss";
 
-@import 'nav';
-@import 'text';
-@import 'time-list';
-@import 'img';
-@import 'form';
+@import "nav";
+@import "text";
+@import "time-list";
+@import "img";
+@import "form";
 
-@import 'block-listing';
-@import 'block-people';
-@import 'block-slider';
-@import 'block-logobar';
-@import 'block-imagetext';
-@import 'block-textcol';
-@import 'block-evticket';
-@import 'block-iframe';
-@import 'block-highlight-box';
-@import 'block-promo';
+@import "block-listing";
+@import "block-people";
+@import "block-slider";
+@import "block-logobar";
+@import "block-imagetext";
+@import "block-textcol";
+@import "block-evticket";
+@import "block-iframe";
+@import "block-highlight-box";
+@import "block-promo";
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:500,700');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,700");
 
 * {
   box-sizing: border-box;
@@ -37,12 +37,12 @@ select,
 input,
 button {
   outline: none;
-  font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+  font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
 }
 
 body {
   color: $colorOrange;
-  font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+  font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -52,7 +52,7 @@ a {
   color: $colorGreen;
   text-decoration: none;
   border-bottom: 1px solid $colorOrange;
-  transition: border .5s;
+  transition: border 0.5s;
 }
 
 a:hover {
@@ -85,11 +85,11 @@ a:focus {
 }
 
 .kc-header__container {
-  background-color: rgba(68, 77, 95, .5);
+  background-color: rgba(68, 77, 95, 0.5);
   height: 100%;
   position: absolute;
   text-decoration: none;
-  transition: all .2s;
+  transition: all 0.2s;
   width: 100%;
   max-width: auto;
   text-align: center;
@@ -137,7 +137,7 @@ a:focus {
   padding: 10px;
   margin: 5px 20px;
   font-size: 1.35em;
-  transition: background-color .4s;
+  transition: background-color 0.4s;
   text-align: center;
   text-transform: uppercase;
 }
@@ -159,7 +159,6 @@ a:focus {
   margin-top: 20px;
   text-align: center;
 }
-
 
 .container {
   margin: 0 auto;
@@ -235,7 +234,11 @@ a:focus {
   justify-content: center;
   align-items: flex-start;
 
-  h2, p, a { color: white; }
+  h2,
+  p,
+  a {
+    color: white;
+  }
 }
 
 .kc-events__future__btn {
@@ -257,7 +260,7 @@ a:focus {
 }
 
 .kc-event__city:after {
-  content: ':';
+  content: ":";
 }
 
 .kc-footer {
@@ -275,7 +278,6 @@ a:focus {
   margin-right: 5px;
   width: 16px;
 }
-
 
 .kc-newsletter {
   background-color: $colorOrange;
@@ -310,31 +312,31 @@ a:focus {
   font-size: 0.825em;
 }
 
-.kc-newsletter__field input[type=submit] {
+.kc-newsletter__field input[type="submit"] {
   background-color: #ffffff;
   color: #566075;
   text-transform: uppercase;
-  transition: all .4s;
+  transition: all 0.4s;
   border: 1px solid $colorOrange;
   cursor: pointer;
 }
 
-.kc-newsletter__field input[type=submit]:hover {
+.kc-newsletter__field input[type="submit"]:hover {
   background-color: $colorOrange;
   border-color: white;
   color: white;
 }
 
-.kc-event-archive-list {
+.kc-event-archive__list {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 15px;
+  grid-gap: 2em;
 }
 
-.kc-event-archive-list-item {
-  margin-top: 5px;
-  margin-bottom: 20px;
+.kc-event-archive__list__item {
+  border: 1px solid $colorOrange;
+  padding: 1em;
 }
 
 .kc-event-archive__name {
