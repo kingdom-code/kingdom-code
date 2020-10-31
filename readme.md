@@ -1,5 +1,7 @@
 # Kingdom Code
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7d8a72c0-8b98-4a6a-85f8-7523edd8ccf8/deploy-status)](https://app.netlify.com/sites/kingdomcode/deploys)
+
 ## Editing the events
 
 Events are stored in `src/_data/events.json`
@@ -49,4 +51,6 @@ Behind the scenes Webpack is handling JS (`src/_assets/_js`) and SCSS (`src/_ass
 
 ## Deploy
 
-`npm run build`
+Pushing to `master` will automagically deploy to Netlify, which spits out the site at [kingdomcode.org.uk](https://kingdomcode.org.uk).
+
+However if you want to test something… `npm run build` is your friend.
