@@ -4,13 +4,13 @@ tags: Build
 author: James Doc
 date: 2019-10-08
 intro: Kingdom Code BUILD is part of a global set of hackathons hosted by Indigitous. During two weekend in October over 30 different cities of technologists come together to apply their skillsets. Here's how we can be praying for them…
-hero_img: /_assets/_img/blog/2019/kingdom-code-hackathon-prayer.jpg
+hero_img: /_assets/img/blog/2019/kingdom-code-hackathon-prayer.jpg
 ---
 
 **Kingdom Code BUILD is part of a global set of hackathons hosted by [Indigitous](https://indigitous.org/). During two weekend in October over 30 different cities of technologists come together to apply their skillsets.** We’re halfway through this year’s set of hackathons. Some happened last weekend, some will happen this weekend coming. Can I ask you to take a few minutes now to be praying for the impact of them?
 
 <div class="img img--pull-right">
-<img class="" src="/_assets/_img/blog/2019/hack-singapore.jpg" alt="Indigitous Hack happening Singapore" />
+<img class="" src="/_assets/img/blog/2019/hack-singapore.jpg" alt="Indigitous Hack happening Singapore" />
 <small>Indigitous Hack happening Singapore</small>
 </div>
 
@@ -19,7 +19,7 @@ These hackathon are taking place in cities around the world, from Auckland - New
 In these hackathons, ministry challenges which span many different areas of church ministry will be discussed, post-it notes will be scribbled on, solutions formed, laptops opened, and ideas will be transformed into designs and code that aim to carry on this great call that Jesus gives the church: _‘go and make disciples of all nations’_ (Matthew 28v19).
 
 <div class="img img--pull-left">
-<img class="" src="/_assets/_img/blog/2019/hack-uganda.jpg" alt="Indigitous Hack happening Uganda" />
+<img class="" src="/_assets/img/blog/2019/hack-uganda.jpg" alt="Indigitous Hack happening Uganda" />
 <small>Hackathon prize giving in Uganda</small>
 </div>
 

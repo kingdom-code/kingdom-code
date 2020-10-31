@@ -8,7 +8,7 @@ intro: BUILD is one of our regular events where we practically explore how our s
 
 **At Kingdom Code we want to explore how the technical skillsets that God has given us can be used for His glory and serve His church.** [BUILD](https://kingdomcode.org.uk/build/), our annual hackathon, is one method to practically explore this as a community. Each October we gather for 24 hours, setting up shop, exploring a couple of different challenges. Today we’re announcing the two challenges for the 2019 hackathon!
 
-<img class="img img--pull-right" src="/_assets/_img/blog/2019/build-2019-challenges.jpg" alt="Amy and Sam introduce BUILD" />
+<img class="img img--pull-right" src="/_assets/img/blog/2019/build-2019-challenges.jpg" alt="Amy and Sam introduce BUILD" />
 
 <h2 id="build:ch1">Challenge #1:<br />How can we equip Christians to use the Bible more in evangelism?</h2>
 
@@ -30,7 +30,7 @@ In September we’ll be hosting two Design Sprints to help us think more about t
 
   <a class="promo__content" href="/build">
 
-  <img class="promo__content__logo" src="/_assets/_img/build.svg" />
+  <img class="promo__content__logo" src="/_assets/misc/build.svg" />
 
   <date>
     Friday 11 - Saturday 12 October 2019
@@ -47,4 +47,3 @@ In September we’ll be hosting two Design Sprints to help us think more about t
   </p>
   </a>
 </section>
-

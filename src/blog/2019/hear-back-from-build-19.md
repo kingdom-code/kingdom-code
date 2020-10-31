@@ -4,7 +4,7 @@ tags: Build
 author: James Doc
 date: 2019-11-01
 intro: Throughout BUILD 19 we were interviewing some of the people in the room to give you a snapshot of what happened during the 24 hour hackathon. Listen now…
-hero_img: /_assets/_img/blog/2019/kingdom-code-build-2019-podcast.jpg
+hero_img: /_assets/img/blog/2019/kingdom-code-build-2019-podcast.jpg
 ---
 
 **Throughout the hackathon last month [Bill Shaw](https://twitter.com/billshaw8) spent the 24 hours interviewing and following some of the participants as they worked on the different hackathon challenges and projects.** Bill has a BBC local radio background, and has a podcast about the work of organisations such as Street Pastors and Foodbanks. He has put together a 30 minute episode snapshot of what happened at [Kingdom Code BUILD](/build/2019).

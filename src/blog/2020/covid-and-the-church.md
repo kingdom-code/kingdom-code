@@ -3,7 +3,7 @@ title: Technologists Serving the Church During Coronavirus
 author: James Doc
 date: 2020-03-16
 intro: As the government encourages us to reduce the amount of social interaction now is the perfect time for the Kingdom Code community to serve the local church
-hero_img: /_assets/_img/blog/2020/covid19.jpg
+hero_img: /_assets/img/blog/2020/covid19.jpg
 ---
 
 **As the government encourages us to reduce the amount of social interaction, now is the perfect time for the Kingdom Code community to serve the local church.**

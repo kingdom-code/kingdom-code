@@ -4,7 +4,7 @@ tags:
 author: James Doc
 date: 2020-02-28
 intro: This month we're featuring an article from Wired.com about how a church in Cincinnati is working with tech entreprenuers, an interview with Facebook's head of faith-based partnerships and more…
-hero_img: /_assets/_img/blog/2020/02-reading-list.jpg
+hero_img: /_assets/img/blog/2020/02-reading-list.jpg
 ---
 
 **Each month we pull out some of the highlights of articles written about Christianity and technology across the web.** This month we're featuring an article from Wired.com about how a church in Cincinnati is working with tech entreprenuers, an interview with Facebook's head of faith-based partnerships and more…

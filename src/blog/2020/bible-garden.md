@@ -3,17 +3,19 @@ title: A digital garden to encourage growth
 author: Joe Gallant
 date: 2020-02-21
 intro: ‘BUILD's challenge stuck me to consider how we could use digital tools to increase appetite and engagement…’ Joe shares more about the desire to get their project, Bible Garden, finished and launched
-hero_img: /_assets/_img/blog/2020/bible-garden.jpg
+hero_img: /_assets/img/blog/2020/bible-garden.jpg
 ---
+
 _Blessed is the one… whose delight is in the law of the Lord, and who meditates on his law day and night. That person is like a tree planted by streams of water, which yields its fruit in season and whose leaf does not wither—whatever they do prospers._ - Psalm 1:1-3
 
 ## Planting the Seed
+
 During the first evening of [Kingdom Code Build 2018](/build) I was struck by the challenge to use digital tools to increase appetite and engagement with the Bible presented by [Bible Society](https://www.biblesociety.org.uk/). In the days leading up to the event, my wife had been showing off her newly downloaded app ([Forest](https://www.forestapp.cc/)), which encouraged users to ‘switch off’ from their phones; the longer you resist picking up your device, the more a digital forest is able to grow..
 
 So as I sat listening to the Bible Society’s challenge, it occured to me that something similar could be applied to reading scripture. This gamification, though used for disengagement in my wife’s app, could be used to encourage genuine engagement with God’s word which, as Psalm 1 says, brings fruitfulness in the lives of people who delight in God’s word.
 
 <figure class="img img--pull-right">
-  <img src="/_assets/_img/blog/2020/bible-garden-joe-pitch-kingdom-code-build.jpg" alt="Joe pitching at BUILD 2018" />
+  <img src="/_assets/img/blog/2020/bible-garden-joe-pitch-kingdom-code-build.jpg" alt="Joe pitching at BUILD 2018" />
   <figcaption>
     Joe pitching at BUILD 2018
   </figcaption>
@@ -39,7 +41,7 @@ Users can go on to plant additional seeds, to develop their own garden. Over tim
 ## Tending the Garden
 
 <figure class="img img--pull-left">
-  <img src="/_assets/_img/blog/2020/bible-garden-team-at-work-kingdom-code-build.jpg" alt="Bible Garden team working at Kingdom Code BUILD 2018" />
+  <img src="/_assets/img/blog/2020/bible-garden-team-at-work-kingdom-code-build.jpg" alt="Bible Garden team working at Kingdom Code BUILD 2018" />
   <figcaption>
     Bible Garden team working at Kingdom Code BUILD 2018
   </figcaption>

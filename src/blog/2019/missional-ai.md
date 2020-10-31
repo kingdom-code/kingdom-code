@@ -3,7 +3,7 @@ title: Connecting AI to Global Missions
 author: James Doc
 date: 2019-12-14
 intro: In March 2020 the first Global Missional AI Summit will be taking place in Bangkok, Thailand. As it approaches, James spoke to Daniel Whitenack, one of the conference organisers to find out more about the event…
-hero_img: /_assets/_img/blog/2019/global-missional-ai-summit.jpg
+hero_img: /_assets/img/blog/2019/global-missional-ai-summit.jpg
 ---
 
 **In March 2020 the first [Global Missional AI Summit](https://www.missional.ai/) will be taking place in Bangkok, Thailand.** As it approaches, James spoke to [Daniel Whitenack](https://datadan.io/), one of the conference organisers to find out more about the event. Daniel is a data scientist, building AI tools with [SIL International](https://www.sil.org/), and co-hosts the [Practical AI podcast](https://changelog.com/practicalai).
@@ -16,7 +16,7 @@ hero_img: /_assets/_img/blog/2019/global-missional-ai-summit.jpg
 
 **James Doc (JD):** _Missional AI? How did you come to the idea of hosting this conference?_
 
-<img class="img img--pull-right" src="/_assets/_img/people/daniel-whitenack-missional-ai.jpg" alt="Dan Whitenack, co-organiser of the Missional AI summit" />
+<img class="img img--pull-right" src="/_assets/img/people/daniel-whitenack-missional-ai.jpg" alt="Dan Whitenack, co-organiser of the Missional AI summit" />
 
 **Daniel Whitenack (DW):** I was working for an artificial intelligence and machine learning startup in California. As I was taking these steps, I started exploring it I started thinking; how can I use these tools for global missions and cross cultural ministry?
 
@@ -33,7 +33,7 @@ After these conversations it became evident that there needed to be a gathering.
 
 **DW:** The conference is going to a great mixture of practical and discussions- we’re going to have workshops that cover everything from AI fundamentals through to exploring personalisation and spiritual state modeling, there will be keynote speakers, chaired panels. The key thing is to get people learning and talking. We want to form the groups around chatbots or translations to get people together, talking. Each group will have a champion, to facilitate the conversation at the conference, but also to resource people to keep on talking after the event.
 
-<img class="img img--pull-left" src="/_assets/_img/blog/2019/missional-ai-site.jpg" alt="Screenshot of Global Missional AI Summit Website" />
+<img class="img img--pull-left" src="/_assets/img/blog/2019/missional-ai-site.jpg" alt="Screenshot of Global Missional AI Summit Website" />
 
 **JD:** That’s amazing! So who do you want to come?
 

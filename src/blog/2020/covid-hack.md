@@ -3,7 +3,7 @@ title: Covid-19 Global Church Hackathon
 author: James Doc
 date: 2020-03-20
 intro: As Christian technologists we're equipped to innovate, to serve, to design and build tools together that helps the Church do what she does best- bringing faith, hope and love to the world around us…
-hero_img: /_assets/_img/blog/2020/covid19.jpg
+hero_img: /_assets/img/blog/2020/covid19.jpg
 ---
 
 It seems a long time since I wrote the blog post on Monday about [serving the church during coronavirus](/blog/2020/covid-and-the-church/), let me encourage you again; **please get in touch with your church leaders and see how you can support them in this time**. Kingdom Code has been contributing to the [Digital Tools for churches during the Coronavirus](https://covid.churcheshandbook.co.uk). It's full of resources and how-to guides to get your church up and running digitally.

@@ -4,7 +4,7 @@ tags: Build
 author: James Doc
 date: 2019-10-01
 intro: Last year Dan Rackham came to BUILD with an idea that had been mulling in the back of his mind for a while. James sat down with him and talked to him about GoChatter, coming to BUILD and getting a team together around an idea…
-hero_img: /_assets/_img/blog/2019/dan-rackham-go-chatter.jpg
+hero_img: /_assets/img/blog/2019/dan-rackham-go-chatter.jpg
 ---
 
 **Last year Dan Rackham came to BUILD with an idea that had been mulling in the back of his mind for a while**, and now a year on [GoChatter Custom Videos](https://www.gochattercustomvideos.com) is up and running, working with a number of ministries and churches including _Thy Kingdom Come_ and _Christian Publishing and Outreach (CPO)_. James Doc sat down with him and talked to him about _GoChatter_, coming to [BUILD](/build) and getting a team together around an idea…
@@ -21,7 +21,7 @@ At university I’d been involved with a small tech start-up. I enjoyed the expe
 
 But we weren’t just spending the weekend head-down on a computer. We opened the Bible together, we prayed, we sang. It was really good in the sense of refocusing us to why we were working that weekend. And the groups were taking time out throughout the build together, to pray about their ideas and their concepts.
 
-<img class="img img--pull-right" src="/_assets/_img/people/dan-rackham-kingdom-code.jpg" alt="Dan Rackham speaking at a conference" />
+<img class="img img--pull-right" src="/_assets/img/people/dan-rackham-kingdom-code.jpg" alt="Dan Rackham speaking at a conference" />
 
 **JD**: _You came last year with an idea… What was the idea?_
 
@@ -35,7 +35,7 @@ It was a simple idea, but I remember saying to you; ‘_look, is this possible? 
 
 The hackathon did two things for me; firstly it proved to me that it was worth investing some more time and effort in this idea. Because here’s six people who had decided to give up a day of their life and you know I’m very grateful for that. Secondly, the fact that they were able to do what I had envisioned showed that actually this was completely possible, it was just that no one had done it before. So it spurred me on in that, and just an encouragement that other people are keen to sort of get involved with your crazy idea.
 
-<img class="img img--pull-left" src="/_assets/_img/blog/2019/go-chatter-custom-videos-kingdom-code.png" alt="Go Chatter Custom Videos Screenshot" />
+<img class="img img--pull-left" src="/_assets/img/blog/2019/go-chatter-custom-videos-kingdom-code.png" alt="Go Chatter Custom Videos Screenshot" />
 
 **JD**: _We’re a year after that hack, the video generator has had a significant amount of work… What’s happened since the hackathon?_
 
@@ -53,7 +53,7 @@ Come along because it’s a genuine group of people who are trying to work on so
 
   <a class="promo__content" href="/build">
 
-  <img class="promo__content__logo" src="/_assets/_img/build.svg" />
+  <img class="promo__content__logo" src="/_assets/misc/build.svg" />
 
   <date>
     Friday 11 - Saturday 12 October 2019

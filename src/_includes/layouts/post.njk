@@ -23,7 +23,7 @@ layout: layouts/base.njk
 
       {% if author == person.name %}
         <div class="kc-blog__author">
-          <img src="/_assets/_img/people/{{ person.img if person.img else "no-avatar.jpg" }}" alt="{{ person.name }}" class="kc-blog__author__img">
+          <img src="/_assets/img/people/{{ person.img if person.img else "no-avatar.jpg" }}" alt="{{ person.name }}" class="kc-blog__author__img">
           <p>{% if person.href %}<a href="{{ person.href }}" target="_blank" rel="noopener">{% endif %}{{ person.name }}{% if person.href %}</a>{% endif %}</p>
           <p>{{ person.bio }}</p>
         </div>

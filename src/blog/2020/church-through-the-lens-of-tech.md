@@ -4,7 +4,7 @@ tags:
 author: James Doc
 date: 2020-02-07
 intro: As part of our regular 'Think' meetups we invited church history lecturer, Dr Tom Breimaier, to help us to explore how technology is on display in history of the church, and how that challenges us to think of where we go, and what we build, from here…
-hero_img: /_assets/_img/blog/2020/church-through-the-lens-of-tech-kingdom-code-tom-breimaier.jpg
+hero_img: /_assets/img/blog/2020/church-through-the-lens-of-tech-kingdom-code-tom-breimaier.jpg
 ---
 
 **As a community of Christians at work within the world of technology we want to make time and space to explore how our faith shapes our work.** It's also important to explore how our technological skills can be used to serve our local and global church.

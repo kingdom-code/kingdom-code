@@ -28,7 +28,7 @@ Shortly after quitting at Amazon, I got involved with Code for the Kingdom becau
 
 **JD**: _That sounds incredible, so what does your average day look like TheoTech world?_
 
-<img class="img img--pull-right" src="/_assets/_img/people/chris-lim-theotech-kingdom-code.jpg" alt="Chris Lim from TheoTech" />
+<img class="img img--pull-right" src="/_assets/img/people/chris-lim-theotech-kingdom-code.jpg" alt="Chris Lim from TheoTech" />
 
 **CL**: Well, as you can imagine, it is a little bit unpredictable and there is just so much to be done! Although I’ve had help from various people, people being interns or helpers, I’m really the main guy right now, so right now I’m in the middle of (and I’m going to talk a little bit about it later perhaps) building an Android version of an app called Ceaseless which helps people to pray for others, pray for their friends.
 

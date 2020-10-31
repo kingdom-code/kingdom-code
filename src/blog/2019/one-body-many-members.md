@@ -4,7 +4,7 @@ tags: Build
 author: Andy Geers
 date: 2019-11-07
 intro: The apostle Paul describes the church as one body with many members. Andy Geers explores what this means for us as Kingdom Code.
-hero_img: /_assets/_img/blog/2019/kingdom-code-andy-geers-one-body.jpg
+hero_img: /_assets/img/blog/2019/kingdom-code-andy-geers-one-body.jpg
 ---
 
 **Last month at [Kingdom Code BUILD](/build/2019), Andy Geers helped us to explore Paul's description of the church in his letter to the early Christians in Rome, and what it means for us a community of Christians working in the world of tech.**

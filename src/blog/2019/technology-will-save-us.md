@@ -3,7 +3,7 @@ title: Technology will save us
 author: Ed Bennigsen
 date: 2019-12-06
 intro: “Technology will save us.” This is BT’s latest marketing pitch. It’s easy to look at it as yet another ad campaign, but it taps into something deeper…
-hero_img: /_assets/_img/blog/2019/technology-will-save-us.jpg
+hero_img: /_assets/img/blog/2019/technology-will-save-us.jpg
 ---
 
 **_“Technology will save us.”_ This is BT’s latest marketing pitch, positioning themselves as a technology company and trying to sell us faster broadband. It’s easy to look at it as yet another ad campaign, but I think it taps into something deeper.** In an era of political paranoia and climate change anxiety - people really do want something to save them from it all. In the technical age we live in, technology is often lauded as our saviour.

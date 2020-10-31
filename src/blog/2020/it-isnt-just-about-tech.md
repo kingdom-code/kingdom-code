@@ -3,7 +3,7 @@ title: It's about more than just tech
 author: Dave Knotts
 date: 2020-01-10
 intro: Having a project idea is easy, implementing that idea is harder, but by far the hardest thing is sticking with a project for a few years! We hear back from one of the projects out of the 2016 hackathon.
-hero_img: /_assets/_img/blog/2020/more-than-tech.jpg
+hero_img: /_assets/img/blog/2020/more-than-tech.jpg
 ---
 
 **Having an idea for a great app or website is easy, implementing that idea is harder. But by far the hardest thing is sticking with a project for a few years; continuing to update, add to it, and make sure it is still doing what you set out to do!**
@@ -11,7 +11,7 @@ hero_img: /_assets/_img/blog/2020/more-than-tech.jpg
 In 2016, I came to Kingdom Code BUILD with an idea to build a Bible reading app that would allow people inside a closed country to read the Word of God in their language and provide them an opportunity to securely chat with someone who can answer their questions about Christianity. The target language and people for this app meant that security would be a key component, because the Islamic government would prefer its people not read the Christian scriptures and are known for persecuting converts and those interested in Christianity.
 
 <figure class="img img--full-width">
-  <img src="/_assets/_img/blog/2020/build-2016.jpg" alt="Teams are work at BUILD 2016" />
+  <img src="/_assets/img/blog/2020/build-2016.jpg" alt="Teams are work at BUILD 2016" />
   <figcaption>
     Teams are work at BUILD 2016
   </figcaption>

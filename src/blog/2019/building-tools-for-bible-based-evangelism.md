@@ -50,7 +50,7 @@ The Kingdom Code BUILD event runs from 18:00 on Friday 11th to 21:00 on Saturday
 
   <a class="promo__content" href="/build">
 
-  <img class="promo__content__logo" src="/_assets/_img/build.svg" />
+  <img class="promo__content__logo" src="/_assets/misc/build.svg" />
 
   <date>
     Friday 11 - Saturday 12 October 2019

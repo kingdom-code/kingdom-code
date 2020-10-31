@@ -3,7 +3,7 @@ title: March Reading List
 author: James Doc
 date: 2020-04-03
 intro: We're a little late in publishing the March reading list, but inside you'll find several great resources to help you think through some of the topics that have come up during coronavirus, and to help you serve your church and local community.
-hero_img: /_assets/_img/blog/2020/02-reading-list.jpg
+hero_img: /_assets/img/blog/2020/02-reading-list.jpg
 ---
 
 **We're a little late in publishing the March reading list, but inside you'll find several great resources to help you think through some of the topics that have come up during coronavirus, and to help you serve your church and local community.**

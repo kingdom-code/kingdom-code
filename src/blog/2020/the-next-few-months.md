@@ -3,7 +3,7 @@ title: The Next Few Months for Kingdom Code
 author: James Doc
 date: 2020-04-24
 intro: As life begins to find a bit more rhythm, I want to share with you our thinking for Kingdom Code over the next few months…
-hero_img: /_assets/_img/blog/2020/next-few-months.jpg
+hero_img: /_assets/img/blog/2020/next-few-months.jpg
 ---
 
 **A month into lockdown and we're beginning to stablise - there is more of an understanding of how our lives work now.** We don't need to worry about panic buying toilet paper, our churches are beginning to get their heads around that live-streaming thing, and this is good!

@@ -21,7 +21,7 @@ We’ve asked Jubi from Christianity Explored Ministries and Scott from CAP to e
 <cite>
   <ul class="peopleList">
   <li class="peopleList__person">
-    <img src="/_assets/_img/people/jubiracy-filho-cem-kingdom-code.jpg" alt="Jubiracy da Silva" class="peopleList__person__img">
+    <img src="/_assets/img/people/jubiracy-filho-cem-kingdom-code.jpg" alt="Jubiracy da Silva" class="peopleList__person__img">
 
   <p><strong>Jubiracy da Silva</strong><br />
   Creative Project Development & Supporter Relations<br />
@@ -41,7 +41,7 @@ We’ve asked Jubi from Christianity Explored Ministries and Scott from CAP to e
 <cite>
   <ul class="peopleList">
   <li class="peopleList__person">
-    <img src="/_assets/_img/people/scott-aubrey-cap-kingdom-code.jpg" alt="Scott Aubrey" class="peopleList__person__img">
+    <img src="/_assets/img/people/scott-aubrey-cap-kingdom-code.jpg" alt="Scott Aubrey" class="peopleList__person__img">
 
   <p><strong>Scott Aubrey</strong><br />
   Head of System Architecture<br />
@@ -56,7 +56,7 @@ How does this challenge you? Kingdom Code BUILD is happening on 11–12 October 
 
   <a class="promo__content" href="/build">
 
-  <img class="promo__content__logo" src="/_assets/_img/build.svg" />
+  <img class="promo__content__logo" src="/_assets/misc/build.svg" />
 
   <date>
     Friday 11 - Saturday 12 October 2019

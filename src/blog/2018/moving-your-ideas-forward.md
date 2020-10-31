@@ -37,7 +37,7 @@ Regardless of how big or small your idea is, there is only so much that you&#821
 
 Remember that a good project isn&#8217;t a crazy level of functionality &#8211; you&#8217;ll never be able to build all of that in the short time that we&#8217;re going to have together. Instead, think about what a slice of product will look like from functionality through to a great user experience… That way at the end of the hackathon you&#8217;ll be a lot more likely to have something that is ready to ship…
 
-<img src="/_assets/_img/blog/kingdom-code-hackathon-mvp-slice.jpg" alt="Enjoyable, Useable, Reliable, Functional. Make sure your hackathon project is all four of these things." style="max-width: 100%" />
+<img src="/_assets/img/blog/kingdom-code-hackathon-mvp-slice.jpg" alt="Enjoyable, Useable, Reliable, Functional. Make sure your hackathon project is all four of these things." style="max-width: 100%" />
 
 It&#8217;s okay to arrive having done groundwork already, be that sketching out some design concepts, setting up your development environment, installing all of the software libraries you&#8217;re going to need. Do everything you can so that you and your team can hit the ground running.
 

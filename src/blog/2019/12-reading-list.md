@@ -4,7 +4,7 @@ tags:
 author: James Doc
 date: 2019-12-20
 intro: Each month we digging out some of the best blog posts exploring the intersection of Christianity and technology. This month we've go an article from Financial Times about religion and technology, through to another BUILD project going live…
-hero_img: /_assets/_img/blog/2019/december-reading-list.jpg
+hero_img: /_assets/img/blog/2019/december-reading-list.jpg
 ---
 
 **From articles on the Financial Times about religion and technology, through to another [Kingdom Code BUILD](/build) project going live, the reading list this month is full of great posts to get stuck into.** Each month we're trying to dig out some of the best blog posts and news articles exploring the intersection of Christianity and technology.

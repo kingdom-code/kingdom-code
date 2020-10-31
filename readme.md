@@ -30,7 +30,7 @@ Add a new person with the format:
   },
 ```
 
-Avatars should be saved to `src/_assets/_img/people`
+Avatars should be saved to `src/_assets/img/people`
 
 ## Development
 

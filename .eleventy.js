@@ -48,8 +48,6 @@ module.exports = function (eleventyConfig) {
     }
   });
 
-  eleventyConfig.addPassthroughCopy("./src/_assets/_img");
-
   eleventyConfig.addCollection("cities", function (collection) {
     return collection.getAllSorted().filter(function (item) {
       return item.inputPath.match(/^\.\/src\/cities\/.*\.md$/) !== null;
@@ -61,6 +59,12 @@ module.exports = function (eleventyConfig) {
       return item.inputPath.match(/^\.\/src\/blog\/.*\.md$/) !== null;
     });
   });
+
+  // Watch assets folder for changes
+  eleventyConfig.addWatchTarget("./src/_assets");
+
+  // Copy these assets straight across
+  eleventyConfig.addPassthroughCopy({ "./src/_assets/misc": "_assets/misc" });
 
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
@@ -77,7 +81,7 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
-    templateFormats: ["html", "njk", "md"],
+    templateFormats: ["html", "njk", "md", "11ty.js"],
     pathPrefix: "/",
     passthroughFileCopy: true,
     dir: {

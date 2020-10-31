@@ -3,7 +3,7 @@ title: Second Edition of From The Garden to the City in the works
 author: James Doc
 date: 2020-08-22
 intro: On his Twitter feed this week John Dyer teased a update to his influential book looking at technology from a Christian perspective.
-hero_img: /_assets/_img/blog/2020/from-the-garden-to-the-city-second-edition.jpg
+hero_img: /_assets/img/blog/2020/from-the-garden-to-the-city-second-edition.jpg
 ---
 
 **One of the first books I often recommend to anyone thinking about Christian faith and technology is John Dyer's _[From the Garden to the City](http://fromthegardentothecity.com/)_.** It was hugely helpful to me when I was just beginning to get my head into thinking about the intersection between faith and tech, and is still one of several books that I keep to hand for quick reference!

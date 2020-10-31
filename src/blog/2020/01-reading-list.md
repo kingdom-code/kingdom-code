@@ -4,7 +4,7 @@ tags:
 author: James Doc
 date: 2020-01-24
 intro: Ahead of the Global  Missional AI summit we've got some primers to help you think about tech and AI, as well as people exploring how to show the relevance of the Bible to those working in tech, and think through questions raised by transhumanism…
-hero_img: /_assets/_img/blog/2020/01-reading-list.jpg
+hero_img: /_assets/img/blog/2020/01-reading-list.jpg
 ---
 
 **Ahead of the upcoming [Global Missional AI Summit](/blog/2019/missional-ai/) I've been doing my reading…** In this month's reading list you'll find a couple of articles that have stood out as I've been reading up on AI and Christianity, a BUILD projects to help show how the Bible can be relevant to the tech world, and news of a Kingdom Code project that has been running quietly behind the scenes, but has massive impact in a [closed country](https://www.opendoorsuk.org/persecution/countries/).
