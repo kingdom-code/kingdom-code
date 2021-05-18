@@ -419,6 +419,10 @@ a:focus {
   border-top: 0;
 }
 
+.divider--green {
+  border-color: $colorGreen;
+}
+
 .social-icons {
   display: none;
   @media (min-width: 675px) {

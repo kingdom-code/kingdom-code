@@ -40,9 +40,8 @@
           <li><a href="/cities">Cities</a></li>
           <li><a href="/build">Build</a></li>
           <li><a href="/blog">Blog</a></li>
-          <li><a href="/jobs">Jobs</a></li>
         </ul>
-        
+
         <ul class="social-icons">
         {% for key, social in basics.socials %}
           <li><a href="{{ social }}" target="_blank" rel="noopener">
@@ -101,14 +100,6 @@
 
     <footer class="kc-footer">
       <div class="container">
-        <p>
-          Kingdom Code communities currently gather in:
-          {% for city in collections.cities | sort(false, false, 'cityName') %}
-            <a href="{{ city.url }}">{{ city.data.cityName }}</a>
-
-            {% if loop.last != true %} &middot; {% endif %}
-          {% endfor %}
-        </p>
         <p>
           We have a <a href="/blog">Blog</a>
           &middot;
