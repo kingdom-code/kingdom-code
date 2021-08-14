@@ -2,30 +2,10 @@
 nav: true
 layout: layouts/base.njk
 title: BUILD
-challenges: [
+dates: Friday 15th – Saturday 16th October 2021
+projects: [
   {
-    challenge: 'How can we equip Christians to use the Bible more in evangelism?',
-    intro: '"Go and make disciples of all nations...". These are the words of Jesus to his disciples (Matt 28v19). And Paul writes to Timothy "All Scripture is God-breathed and is useful for teaching..." (2 Tim 3v16). So how might we use technology to equip Christians to use Scripture in their personal evangelism?',
-    youtubeId: 'vYptMzrYumo',
-    url: '/blog/2019/build-19-challenges/#build:ch1',
-    org: {
-      name: 'Christianity Explored Ministries',
-      url: '/blog/2019/build-hackathon-partners/#build:cem',
-      img: 'CEM.svg',
-      color: '#d0112d'
-    }
-  },
-  {
-    challenge: 'How might we resource your local church to serve and include the poor?',
-    intro: 'James writes to the scattered church; pure and faultless religion is "to look after orphans and widows in their distress..." (James 1v27). The local church has a role to play in caring for the poor and vulnerable in its community- so how might we be part of resourcing that work of service?',
-    youtubeId: '0mso7XiU-pc',
-    url: '/blog/2019/build-19-challenges/#build:ch2',
-    org: {
-      name: 'Christians Against Poverty',
-      url: '/blog/2019/build-hackathon-partners/#build:cap',
-      img: 'CAP.svg',
-      color: '#7dbc42'
-    }
+
   }
 ]
 quotes: [
@@ -72,7 +52,7 @@ quotes: [
 ]
 schedule: [
   {
-    day: 2019-10-11,
+    day: 2021-10-15,
     timings: [
       ['18.00', 'Doors open'],
       ['18.45', 'Welcome, challenges presentations'],
@@ -84,7 +64,7 @@ schedule: [
     ]
   },
   {
-    day: 2019-10-12,
+    day: 2021-10-16,
     timings: [
       ['08.00', 'Breakfast'],
       ['09.00', 'Morning prayer'],
@@ -105,18 +85,20 @@ schedule: [
     <source type="video/mp4" src="/_assets/misc/kingdom-code-header.mp4">
   </video>
 
-
   <div class="kc-header__container">
     <img src="/_assets/misc/build.svg" style="margin: 50px 0 20px; max-width: 350px" alt="Kingdom Code BUILD" class="kc-header__logo" />
     <hgroup>
       <h1>Kingdom Code BUILD</h1>
-      <h2>Will be back in 2021</h2>
+      <h2>{{ dates }}</h2>
+      <h3>Leeds &middot; London</h3>
     </hgroup>
 
     <div class="kc-header__ctas">
       <a href="#newsletter" class="js-moveto">Notify me</a>
       <a href="/blog/2019/build-2019-review/">Previously</a>
     </div>
+
+    <p><em>Bookings open in September.</em></p>
   </div>
 </header>
 
@@ -142,9 +124,9 @@ schedule: [
 
   <div class="container">
     <h2 class="ev-ticket__title heading">Kingdom Code BUILD</h2>
+    <date>{{ dates }}</date>
 
-    <!--<h3>Booking will open in summer</h3>
-    <date>October 2020</date>-->
+    <h3>Booking will open in September</h3>
 
     {# <div class="ev-ticket__eventbrite-widget" id="js-eb-ticket-widget"></div> #}
     {# <p class="ev-ticket__smallprint">Kingdom Code BUILD ticket sales handled by Eventbrite.</p> #}

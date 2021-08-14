@@ -12,6 +12,7 @@
   "dependencies": {
     "@11ty/eleventy-plugin-rss": "^1.0.9",
     "moveto": "^1.8.0",
+    "node-sass": "^6.0.1",
     "tiny-slider": "^2.9.3"
   },
   "devDependencies": {
@@ -26,7 +27,6 @@
     "cssesc": "^3.0.0",
     "dayjs": "^1.8.24",
     "memfs": "^3.1.3",
-    "node-sass": "^4.14.1",
     "require-dir": "^1.0.0",
     "sharp": "^0.25.2",
     "svg-sprite": "^1.5.0",
