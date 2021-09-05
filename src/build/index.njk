@@ -90,15 +90,14 @@ schedule: [
     <hgroup>
       <h1>Kingdom Code BUILD</h1>
       <h2>{{ dates }}</h2>
-      <h3>Leeds &middot; London</h3>
+      {# <h3>Bookings open now!</h3> #}
     </hgroup>
 
     <div class="kc-header__ctas">
-      <a href="#newsletter" class="js-moveto">Notify me</a>
-      <a href="/blog/2019/build-2019-review/">Previously</a>
+      <a href="https://www.eventbrite.co.uk/e/kingdom-code-build-south-tickets-169754699877?aff=kcsite">London</a>
+      <a href="https://www.eventbrite.co.uk/e/kingdom-code-build-north-tickets-168927040325?aff=kcsite">Leeds</a>
     </div>
 
-    <p><em>Bookings open in September.</em></p>
   </div>
 </header>
 
@@ -126,28 +125,41 @@ schedule: [
     <h2 class="ev-ticket__title heading">Kingdom Code BUILD</h2>
     <date>{{ dates }}</date>
 
-    <h3>Booking will open in September</h3>
+    {# <h3>Booking will open in September</h3> #}
 
-    {# <div class="ev-ticket__eventbrite-widget" id="js-eb-ticket-widget"></div> #}
-    {# <p class="ev-ticket__smallprint">Kingdom Code BUILD ticket sales handled by Eventbrite.</p> #}
-    <!--<p><a class="btn btn--orange btn--full-width" href="https://www.eventbrite.co.uk/e/kingdom-code-build-19-tickets-62719767513">Book your place via Eventbrite</a></p>-->
+    <div style="display: grid; gap: 1rem; grid-template-columns: 1fr 1fr;">
+    <div class="ev-ticket__eventbrite-widget" id="js-eb-ticket-widget-south"></div>
+    <div class="ev-ticket__eventbrite-widget" id="js-eb-ticket-widget-north"></div>
+    </div>
+    <p class="ev-ticket__smallprint">Kingdom Code BUILD ticket sales handled by Eventbrite.</p>
+    <p><a class="btn btn--orange btn--full-width" href="https://www.eventbrite.co.uk/o/kingdom-code-uk-29351883943">Book your place via Eventbrite</a></p>
   </div>
 
-  <!--<script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
+  <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
 
   <script type="text/javascript">
-      {# var exampleCallback = function() {
+      var exampleCallback = function() {
           console.log('Order complete!');
-      }; #}
+      };
 
       window.EBWidgets.createWidget({
           // Required
           widgetType: 'checkout',
-          eventId: '62719767513',
-          iframeContainerId: 'js-eb-ticket-widget',
+          eventId: '169754699877',
+          iframeContainerId: 'js-eb-ticket-widget-south',
 
           // Optional
           // onOrderComplete: exampleCallback  // Method called when an order has successfully completed
       });
-  </script>-->
+
+      window.EBWidgets.createWidget({
+          // Required
+          widgetType: 'checkout',
+          eventId: '168927040325',
+          iframeContainerId: 'js-eb-ticket-widget-north',
+
+          // Optional
+          // onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+      });
+  </script>
 </section>
