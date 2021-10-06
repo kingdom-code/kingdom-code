@@ -55,8 +55,8 @@ schedule: [
     day: 2021-10-15,
     timings: [
       ['18.00', 'Doors open'],
-      ['18.45', 'Welcome, challenges presentations'],
-      ['19.15', 'Dinner'],
+      ['18:45', 'Dinner'],
+      ['19:15', 'Welcome'],
       ['19.45', 'Praise and prayer'],
       ['20.00', 'Project presentations'],
       ['20.30', 'Team formation'],
@@ -89,13 +89,12 @@ schedule: [
     <img src="/_assets/misc/build.svg" style="margin: 50px 0 20px; max-width: 350px" alt="Kingdom Code BUILD" class="kc-header__logo" />
     <hgroup>
       <h1>Kingdom Code BUILD</h1>
-      <h2>{{ dates }}</h2>
+      <h2>London: {{ dates }}</h2>
       {# <h3>Bookings open now!</h3> #}
     </hgroup>
 
     <div class="kc-header__ctas">
-      <a href="https://www.eventbrite.co.uk/e/kingdom-code-build-south-tickets-169754699877?aff=kcsite">London</a>
-      <a href="https://www.eventbrite.co.uk/e/kingdom-code-build-north-tickets-168927040325?aff=kcsite">Leeds</a>
+      <a href="https://www.eventbrite.co.uk/e/kingdom-code-build-south-tickets-169754699877?aff=kcsite">Book Now</a>
     </div>
 
   </div>
@@ -127,10 +126,8 @@ schedule: [
 
     {# <h3>Booking will open in September</h3> #}
 
-    <div style="display: grid; gap: 1rem; grid-template-columns: 1fr 1fr;">
     <div class="ev-ticket__eventbrite-widget" id="js-eb-ticket-widget-south"></div>
-    <div class="ev-ticket__eventbrite-widget" id="js-eb-ticket-widget-north"></div>
-    </div>
+
     <p class="ev-ticket__smallprint">Kingdom Code BUILD ticket sales handled by Eventbrite.</p>
     <p><a class="btn btn--orange btn--full-width" href="https://www.eventbrite.co.uk/o/kingdom-code-uk-29351883943">Book your place via Eventbrite</a></p>
   </div>
@@ -152,14 +149,5 @@ schedule: [
           // onOrderComplete: exampleCallback  // Method called when an order has successfully completed
       });
 
-      window.EBWidgets.createWidget({
-          // Required
-          widgetType: 'checkout',
-          eventId: '168927040325',
-          iframeContainerId: 'js-eb-ticket-widget-north',
-
-          // Optional
-          // onOrderComplete: exampleCallback  // Method called when an order has successfully completed
-      });
   </script>
 </section>
