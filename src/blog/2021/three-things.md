@@ -23,4 +23,3 @@ We've switched things up this year and have invited specific projects to come th
 BUILD happens as part of [a global event hosted by Indigitous](https://indigitous.org). We're just one country, participating in hackathon of 60 different countries, all with the ambition to make an impact and take the gospel where it needs to go. Please pray not just for the projects here in the UK, but globally. There is so much potential!
 
 Thank you for your prayers!
-James
