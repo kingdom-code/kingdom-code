@@ -65,6 +65,7 @@ module.exports = function (eleventyConfig) {
 
   // Copy these assets straight across
   eleventyConfig.addPassthroughCopy({ "./src/_assets/misc": "_assets/misc" });
+  eleventyConfig.addPassthroughCopy({ "./src/_redirects": "_redirects" });
 
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
