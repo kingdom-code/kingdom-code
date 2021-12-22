@@ -3,7 +3,7 @@
   font-size: 34px;
   color: white;
   letter-spacing: 2px;
-  
+
   &--green {
     color: $colorGreen;
   }
@@ -28,6 +28,7 @@
     &__img {
       border-radius: 0 0 5px 5px;
       max-width: 100%;
+      height: auto;
 
       @include bpMinLarge() {
         max-width: 110%;
@@ -37,14 +38,16 @@
       }
 
       + h1 {
-        background-color:white;
+        background-color: white;
         margin: -20px 0 10px;
         display: inline-block;
         padding: 0 8px;
       }
     }
 
-    date { display: block; }
+    date {
+      display: block;
+    }
   }
 
   &__body {
@@ -52,7 +55,8 @@
     max-width: 720px;
   }
 
-  p, li {
+  p,
+  li {
     color: $colorBlue;
     margin: 1em 0;
   }
@@ -62,8 +66,8 @@
   }
 
   // ToDO: Undo this tech debt
-  .btn--orange{
-    color: white
+  .btn--orange {
+    color: white;
   }
 
   &__back {

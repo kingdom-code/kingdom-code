@@ -8,8 +8,8 @@
 
       {% if cityName in person.team %}
         <li class="peopleList__person">
-          <img src="/_assets/img/people/{{ person.img if person.img else "no-avatar.jpg" }}" alt="{{ person.name }}" class="peopleList__person__img">
-
+          {% set avatar = person.img if person.img else 'no-avatar.jpg' %}
+          {% rwdImg "/_assets/img/people/" + avatar, person.name , "50px", "peopleList__person__img" %}
           <p>{{ person.name }}</p>
         </li>
       {% endif %}
