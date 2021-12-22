@@ -3,7 +3,7 @@ layout: layouts/home.njk
 nav: true
 ---
 
-<section class="promo" style="background-image: url('/_assets/img/blog/2020/build-2016.jpg');">
+{#<section class="promo" style="background-image: url('/_assets/img/blog/2020/build-2016.jpg');">
 
   <a class="promo__content" href="/build">
 
@@ -21,11 +21,8 @@ nav: true
       </span>
     </p>
   </a>
-</section>
+</section>#}
 
-<br /><br />
-
-{#
 {% set post = collections.posts|reverse|first %}
 
 <section class="promo promo--flipped" style="background-image: url({{ post.data.hero_img }});">
@@ -46,6 +43,6 @@ nav: true
     </p>
   </a>
 </section>
-#}
+
 
 {#% include "blocks/events.njk" %#}
