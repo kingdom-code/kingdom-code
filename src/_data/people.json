@@ -78,5 +78,12 @@
     "bio": "Joe runs Be Gallant, offering web design for churches and charities, as well as ChurchTrain, a blog with free church communications resources.",
     "href": "https://www.begallant.uk/",
     "img": "joe-gallant.jpg"
+  },
+  {
+    "name": "Matt Hardy",
+    "team": [],
+    "bio": "Matt is a Linux Systems Administrator is the Christians Against Poverty technology team.",
+    "href": "https://capuk.org/",
+    "img": "matt-hardy.jpg"
   }
 ]
