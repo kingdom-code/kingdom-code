@@ -6,9 +6,8 @@ layout: layouts/base.njk
 {% set events = events | eventsInCity(cityName) %}
 
 <header class="kc-header">
+  {% rwdImg "/_assets/img/cities/" + cityName | slug + ".jpg", "" , "100vw", "kc-header__media" %}
 
-  <img src="/_assets/img/cities/{{ cityName | slug }}.jpg" alt="" class="kc-header__media" />
-  
   <div class="kc-header__container">
 
     <div class="kc-header__container__logoGroup">

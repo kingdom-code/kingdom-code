@@ -100,7 +100,7 @@ schedule: [
 ---
 
 <header class="kc-header">
-  
+
   <video class="kc-header__media" autoplay loop="loop" src="/_assets/misc/kingdom-code-header.mp4" poster="/_assets/img/build/kingdom-code-build-presentations.jpg">
     <source type="video/mp4" src="/_assets/misc/kingdom-code-header.mp4">
   </video>
@@ -125,7 +125,7 @@ schedule: [
 
 <section class="imagetext imagetext--orange">
   <div class="imagetext__img">
-    <img src="/_assets/img/build/kingdom-code-build-dev.jpg" class="imagetext__img" alt="" />
+      {% rwdImg "/_assets/img/build/kingdom-code-build-dev.jpg", "Build at St. John's, Hoxton" , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
   </div>
 
   <div class="imagetext__text">
@@ -203,14 +203,14 @@ schedule: [
   </div>
 
   <div class="imagetext__img">
-    <img src="/_assets/img/build/kingdom-code-build-st-johns-hoxton.jpg" class="imagetext__img" alt="" />
+    {% rwdImg "/_assets/img/build/kingdom-code-build-st-johns-hoxton.jpg", "Build at St. John's, Hoxton" , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
   </div>
 
 </section>
 
 <section class="container" id="schedules">
   <h2 class="heading heading--centered heading--green">Schedule</h2>
-  
+
   <div class="textcol">
     {% for day in schedule %}
     <div class="textcol__col">
@@ -232,7 +232,7 @@ schedule: [
 
   <div class="container">
     <h2 class="ev-ticket__title heading">Kingdom Code BUILD</h2>
-    
+
     <h3>Sorry, are now bookings closed</h3>
     <date>11–12 October</date>
     <div class="ev-ticket__eventbrite-widget" id="js-eb-ticket-widget"></div>
