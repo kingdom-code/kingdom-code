@@ -1,13 +1,19 @@
 const dayjs = require("dayjs");
-const fs = require("fs");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 const dateFormat = (d, format) => {
   return dayjs(d).format(format);
 };
 
+const shortcodes = require("./utils/shortcodes.js");
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
+
+  // Shortcodes
+  Object.keys(shortcodes).forEach((shortcodeName) => {
+    eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName]);
+  });
 
   eleventyConfig.addFilter("isFutureDate", (dateObj) => {
     return dayjs(dateObj).isAfter(dayjs());
@@ -64,25 +70,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/_assets");
 
   // Copy these assets straight across
+  eleventyConfig.addPassthroughCopy({ "./src/_assets/img": "_assets/img" });
   eleventyConfig.addPassthroughCopy({ "./src/_assets/misc": "_assets/misc" });
   eleventyConfig.addPassthroughCopy({ "./src/_redirects": "_redirects" });
 
-  eleventyConfig.setBrowserSyncConfig({
-    callbacks: {
-      ready: function (err, browserSync) {
-        const content_404 = fs.readFileSync("dist/404.html");
-
-        browserSync.addMiddleware("*", (req, res) => {
-          // Provides the 404 content without redirect.
-          res.write(content_404);
-          res.end();
-        });
-      },
-    },
-  });
-
   return {
-    templateFormats: ["html", "njk", "md", "11ty.js"],
+    templateFormats: ["html", "njk", "md"],
     pathPrefix: "/",
     passthroughFileCopy: true,
     dir: {
