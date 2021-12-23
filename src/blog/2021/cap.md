@@ -1,5 +1,5 @@
 ---
-title: The Technology Behind Christians in Poverty
+title: The Technology Behind Christians Against Poverty
 author: Matt Hardy
 date: 2021-12-22
 intro: When I first joined the CAP technology team we were a team of six… eleven years on the team has grown to almost 30 and we’re still growing because there is still such a great need…
