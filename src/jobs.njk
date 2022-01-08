@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+nav: true
+---
+<div class="container">
+
+<h1>Jobs Board</h1>
+
+<p>These jobs are posted on behalf of Christian ministries, or from people within Kingdom Code community - they are not directly affiliated with Kingdom Code. If you have questions regarding these roles please get in touch with the organsiations directly.</p>
+
+{% if jobs.length %}
+<ul>
+  {% for job in jobs %}
+  <li>
+    <a href="{{ job.URL }}"><strong>{{ job.Title }}</strong> at {{ job.Organisation}}</a>. {{ job.Intro }}<br />
+    <small>{{ job.Location }} &middot; {{ job.Type}} &middot; Closing Date: <date>{{ job.ClosingDate }}</date></small>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+  <div>
+    Sorry, there are no jobs currently listed.
+  </div>
+{% endif %}
+<p>
+</div>
