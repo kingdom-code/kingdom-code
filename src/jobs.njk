@@ -17,7 +17,7 @@ nav: true
     <ul>
       {% for job in jobs %}
       <li class="pb-4">
-        <a href="{{ job.URL }}"><strong>{{ job.Title }}</strong> at <strong>{{ job.Organisation}}</strong></a>. {{ job.Intro }}<br />
+        <a href="{{ job.URL }}" target="_blank" data-gtm="jobs"><strong>{{ job.Title }}</strong> at <strong>{{ job.Organisation}}</strong></a>. {{ job.Intro }}<br />
         <small class="mt-2">{{ job.Location }} &middot; {{ job.Type}} &middot; Closing Date: <date>{{ job.ClosingDate }}</date></small>
       </li>
       {% endfor %}
