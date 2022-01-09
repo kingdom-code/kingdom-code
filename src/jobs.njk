@@ -4,23 +4,30 @@ nav: true
 ---
 <div class="container">
 
-<h1>Jobs Board</h1>
+  <div class="rounded-lg bg-orange text-white p-4 my-4">
+    <h1>Jobs Board</h1>
 
-<p>These jobs are posted on behalf of Christian ministries, or from people within Kingdom Code community - they are not directly affiliated with Kingdom Code. If you have questions regarding these roles please get in touch with the organsiations directly.</p>
-
-{% if jobs.length %}
-<ul>
-  {% for job in jobs %}
-  <li>
-    <a href="{{ job.URL }}"><strong>{{ job.Title }}</strong> at {{ job.Organisation}}</a>. {{ job.Intro }}<br />
-    <small>{{ job.Location }} &middot; {{ job.Type}} &middot; Closing Date: <date>{{ job.ClosingDate }}</date></small>
-  </li>
-  {% endfor %}
-</ul>
-{% else %}
-  <div>
-    Sorry, there are no jobs currently listed.
+    <p>These jobs are posted on behalf of Christian ministries, or from people within Kingdom Code community - they are not directly affiliated with Kingdom Code.</p>
+    <p>If you have questions regarding these roles please get in touch with the organsiations directly.</p>
   </div>
-{% endif %}
-<p>
+
+  <div class="px-4">
+
+    {% if jobs.length %}
+    <ul>
+      {% for job in jobs %}
+      <li class="pb-4">
+        <a href="{{ job.URL }}"><strong>{{ job.Title }}</strong> at <strong>{{ job.Organisation}}</strong></a>. {{ job.Intro }}<br />
+        <small class="mt-2">{{ job.Location }} &middot; {{ job.Type}} &middot; Closing Date: <date>{{ job.ClosingDate }}</date></small>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+      <p>
+        <strong>Sorry</strong>, there are no jobs currently listed.
+      </p>
+    {% endif %}
+
+    <p>Do you have a job to post? <a href="https://airtable.com/shrkjfNK3JGzzya1S" target="_blank">Submit one now</a>.</p>
+  </div>
 </div>
