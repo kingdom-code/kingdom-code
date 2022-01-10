@@ -1,11 +1,18 @@
 require("dotenv").config();
-// const Cache = require("@11ty/eleventy-cache-assets");
+const { AssetCache } = require("@11ty/eleventy-cache-assets");
 const Airtable = require("airtable");
 var base = new Airtable({ apiKey: process.env.AIRTABLE_API }).base(
   "appKsIxw7GrZGsYwy"
 );
 
 module.exports = () => {
+  let asset = new AssetCache("airtable_jobs");
+
+  if (asset.isCacheValid("1d")) {
+    console.log("Serving jobs from the cache…");
+    return asset.getCachedValue();
+  }
+
   return new Promise((resolve, reject) => {
     let allDatasets = [];
 
@@ -28,6 +35,7 @@ module.exports = () => {
           if (err) {
             reject(err);
           } else {
+            asset.save(allDatasets, "json");
             resolve(allDatasets);
           }
         }
