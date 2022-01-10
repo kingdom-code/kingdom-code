@@ -14,14 +14,19 @@ nav: true
   <div class="px-4">
 
     {% if jobs.length %}
-    <ul>
       {% for job in jobs %}
-      <li class="pb-4">
-        <a href="{{ job.URL }}" target="_blank" data-gtm="jobs"><strong>{{ job.Title }}</strong> at <strong>{{ job.Organisation}}</strong></a>. {{ job.Intro }}<br />
-        <small class="mt-2">{{ job.Location }} &middot; {{ job.Type}} &middot; Closing Date: <date>{{ job.ClosingDate }}</date></small>
-      </li>
+      <div class="pb-6">
+        <a class="mb-1" href="{{ job.URL }}" target="_blank" data-gtm="jobs"><strong>{{ job.Title }}</strong> at <strong>{{ job.Organisation}}</strong></a>
+        <div class="grid gap-4 grid-cols-3">
+          <p class="my-0 col-span-2">{{ job.Intro }}</p>
+          <div class="uppercase text-xs flex flex-col justify-center pl-4">
+            <span class="block">{{ job.Location }}</span>
+            <span class="block">{{ job.Type }}</span>
+            <span class="block">Closing Date: <date>{{ job.ClosingDate }}</date></span>
+          </div>
+        </div>
+      </div>
       {% endfor %}
-    </ul>
     {% else %}
       <p>
         <strong>Sorry</strong>, there are no jobs currently listed.
