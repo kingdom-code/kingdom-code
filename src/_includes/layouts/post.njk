@@ -4,16 +4,16 @@ layout: layouts/base.njk
 ---
 <div class="container kc-blog">
 
-  <header role="banner" class="kc-blog__header">
+  <header role="banner" class="kc-blog__header mb-4">
     {% if hero_img %}
       {% rwdImg hero_img, title , "(min-width: 1020px) 1020px, calc(100vw - 100px)", "kc-blog__header__img" %}
     {% endif %}
 
-    <h1 itemprop="name">{{ title | orphanWrap | safe }}</h1>
+    <h1 class="text-4xl font-bold my-2" itemprop="name">{{ title | orphanWrap | safe }}</h1>
     <date>{{ date | readableDate }}</date>
   </header>
 
-  <main class="kc-blog__body">
+  <main class="mx-auto prose lg:prose-xl">
     {{ layoutContent | safe }}
   </main>
 
@@ -24,7 +24,7 @@ layout: layouts/base.njk
       {% if author == person.name %}
         <div class="kc-blog__author">
           {% set avatar = person.img if person.img else 'no-avatar.jpg' %}
-          {% rwdImg "/_assets/img/people/" + avatar, person.name , "50px", "kc-blog__author__img" %}
+          {% rwdImg "/_assets/img/people/" + avatar, person.name , "50px", "kc-blog__author__img mx-auto" %}
           <p>{% if person.href %}<a href="{{ person.href }}" target="_blank" rel="noopener">{% endif %}{{ person.name }}{% if person.href %}</a>{% endif %}</p>
           <p>{{ person.bio }}</p>
         </div>

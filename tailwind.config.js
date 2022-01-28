@@ -7,8 +7,11 @@ module.exports = {
       white: "#ffffff",
       orange: "#ee5d52",
       mint: "#1cac9c",
+      blue: "#4e5569"
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };

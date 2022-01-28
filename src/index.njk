@@ -30,15 +30,15 @@ nav: true
   <a class="promo__content" href="{{ post.url }}">
 
     <p class="promo__content__tag">Latest blog post</p>
-    <h2 class="promo__content__title">{{ post.data.title }}</h2>
+    <h2 class="text-2xl text-orange font-bold">{{ post.data.title }}</h2>
 
     {% if post.data.intro %}
-      <p>{{ post.data.intro }}</p>
+      <p class="mb-2">{{ post.data.intro }}</p>
     {% endif %}
 
     <p>
       <span class="promo__content__button">
-        Keep reading…
+        Keep reading
       </span>
     </p>
   </a>

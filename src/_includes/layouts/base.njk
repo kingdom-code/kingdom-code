@@ -44,11 +44,13 @@
           <li><a href="/jobs">Jobs</a></li>
         </ul>
 
-        <ul class="social-icons">
+        <ul class="">
         {% for key, social in basics.socials %}
-          <li><a href="{{ social }}" target="_blank" rel="noopener">
-          <img class="social-icon" src="/_assets/misc/icons/{{ key }}.svg" alt="{{ key }}"/>
-          </a></li>
+          <li class="inline">
+            <a href="{{ social }}" target="_blank" rel="noopener">
+              <img class="inline social-icon" src="/_assets/misc/icons/{{ key }}.svg" alt="{{ key }}"/>
+            </a>
+          </li>
         {% endfor %}
         </ul>
       </div>
@@ -59,8 +61,8 @@
 
     <div class="kc-newsletter">
       <section class="container" id="newsletter">
-        <h2>Stay in touch</h2>
-        <p>Sign up and receive all the latest news and meet up information from Kingdom Code{% if cityName %} and events in {{ cityName }}{% endif %}:</p>
+        <h2 class="text-2xl font-bold">Stay in touch</h2>
+        <p class="mb-4">Sign up and receive all the latest news and meet up information from Kingdom Code{% if cityName %} and events in {{ cityName }}{% endif %}:</p>
 
         <form action="https://kingdomcode.us11.list-manage.com/subscribe/post?u=0faea843d029399bef7962992&amp;id=686a0f7b4b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
           <div id="mce-responses" class="clear">

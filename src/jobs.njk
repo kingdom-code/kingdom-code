@@ -5,18 +5,19 @@ nav: true
 <div class="container">
 
   <div class="rounded-lg bg-orange text-white p-4 my-4">
-    <h1>Jobs Board</h1>
-
-    <p>These jobs are posted on behalf of Christian ministries, or from people within Kingdom Code community - they are not directly affiliated with Kingdom Code.</p>
-    <p>If you have questions regarding these roles please get in touch with the organsiations directly.</p>
+    <div class="md:max-w-screen-md">
+      <h1 class="text-4xl font-bold mb-4">Jobs Board</h1>
+      <p class="mb-4">These jobs are posted on behalf of Christian ministries, or from people within Kingdom Code community - they are not directly affiliated with Kingdom Code.</p>
+      <p>If you have questions regarding these roles please get in touch with the organsiations directly.</p>
+    </div>
   </div>
 
-  <div class="px-4">
+  <div class="px-4 divide-y divide-mint">
 
     {% if jobs.length %}
       {% for job in jobs %}
-      <div class="pb-6">
-        <a class="mb-1" href="{{ job.URL }}" target="_blank" data-gtm="jobs"><strong>{{ job.Title }}</strong> at <strong>{{ job.Organisation}}</strong></a>
+      <div class="py-6">
+        <a class="mb-1 text-mint" href="{{ job.URL }}" target="_blank" data-gtm="jobs"><strong>{{ job.Title }}</strong> at <strong>{{ job.Organisation}}</strong></a>
         <div class="grid gap-4 grid-cols-3">
           <p class="my-0 col-span-2">{{ job.Intro }}</p>
           <div class="uppercase text-xs flex flex-col justify-center pl-4">
@@ -33,6 +34,8 @@ nav: true
       </p>
     {% endif %}
 
-    <p>Do you have a job to post? <a href="https://airtable.com/shrkjfNK3JGzzya1S" target="_blank">Submit one now</a>.</p>
+    <div class="py-6">
+      <p>Do you have a job to post? <a href="https://airtable.com/shrkjfNK3JGzzya1S" target="_blank">Submit one now</a>.</p>
+    </div>
   </div>
 </div>

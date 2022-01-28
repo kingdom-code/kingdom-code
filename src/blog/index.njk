@@ -6,25 +6,23 @@ eleventyExcludeFromCollections: true
 ---
 
 <main class="container kc-blog">
-  <h1>The Kingdom Code Blog…</h1>
+  <div class="rounded-lg bg-orange text-white p-4 my-4">
+    <div class="md:max-w-screen-md">
+      <h1 class="text-4xl font-bold">The Kingdom Code Blog</h1>
+    </div>
+  </div>
 
   <ul class="listing">
   {% for post in collections.posts | reverse %}
-    <li class="listing__item">
-      {% if post.data.canonical %}
-      <a href="{{ post.data.canonical }}" target="_blank" rel="noopener" class="listing__item__link listing__item__link--remote">
-      {% else %}
-      <a href="{{ post.url }}" class="listing__item__link">
+
+    <a href="{{ post.url }}" class="group p-4 rounded border border-orange hover:border-mint">
+      <date>{{ post.data.date | readableDate }}</date>
+      <h2 class="text-orange text-2xl font-bold mb-4 group-hover:text-mint">{{ post.data.title }}</h2>
+
+      {% if post.data.intro %}
+      <div class="m-0 text-blue">{{ post.data.intro }}</div>
       {% endif %}
-
-        <date>{{ post.data.date | readableDate }}</date>
-        <h2 class="listing__item__title">{{ post.data.title }}</h2>
-
-        {% if post.data.intro %}
-        <p>{{ post.data.intro }}</p>
-        {% endif %}
-      </a>
-    </li>
+    </a>
   {% endfor %}
   </ul>
 

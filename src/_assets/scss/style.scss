@@ -50,13 +50,11 @@ body {
 
 a {
   color: $colorGreen;
-  text-decoration: none;
-  border-bottom: 1px solid $colorOrange;
   transition: border 0.5s;
 }
 
 a:hover {
-  border-bottom-color: $colorGreen;
+  // border-bottom-color: $colorGreen;
 }
 
 a:focus {
