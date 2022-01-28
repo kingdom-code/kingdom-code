@@ -11,8 +11,8 @@ module.exports = {
     const options = {
       widths: [320, 640, 800, 1000, 1200],
       formats: ["webp", "jpeg"],
-      urlPath: "/_assets/img/",
-      outputDir: "./dist/_assets/img",
+      urlPath: "/_assets/rwd-img/",
+      outputDir: "./dist/_assets/rwd-img",
     };
 
     const imageAttributes = {
