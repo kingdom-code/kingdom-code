@@ -105,11 +105,20 @@
     <footer class="kc-footer">
       <div class="container">
         <p>
-          We have a <a href="/blog">Blog</a>
+          We have a <a href="/blog" class="underline">Blog</a>
           &middot;
-          This site is built on top of <a href="https://www.11ty.io" target="_blank" rel="noopener">Eleventy</a>
+          {% if jobs.length == 1 %}
+          There is <a href="/jobs" class="underline">one job on the jobs board</a>
           &middot;
-          <a href="https://github.com/kingdom-code/kingdom-code" target="_blank" rel="noopener">View source</a>
+          {% endif %}
+
+          {% if jobs.length > 1 %}
+          There are <a href="/jobs" class="underline">{{ jobs.length }} jobs on the jobs board</a>
+          &middot;
+          {% endif %}
+          This site is built on top of <a href="https://www.11ty.io" target="_blank" rel="noopener" class="underline">Eleventy</a>
+          &middot;
+          <a href="https://github.com/kingdom-code/kingdom-code" class="underline" target="_blank" rel="noopener">View source</a>
         </p>
         <p>
           Last updated: {{ data.updatedTime }}
