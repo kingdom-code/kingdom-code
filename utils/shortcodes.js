@@ -30,5 +30,11 @@ module.exports = {
 function imageGen(src, options, attributes) {
   Image(src, options);
   metadata = Image.statsSync(src, options);
-  return Image.generateHTML(metadata, attributes);
+  return Image.generateHTML(
+    metadata,
+    attributes,
+    {
+      whitespaceMode: "inline"
+    }
+  );
 }
