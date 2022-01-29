@@ -6,17 +6,18 @@ const dateFormat = (d, format) => {
   return dayjs(d).format(format);
 };
 
-async function imageShortcode(src, alt, sizes="100vw", classes = "") {
+function imageShortcode(src, alt, sizes="100vw", classes = "") {
   if (!src) { return; }
-
   src = `./src${src}`;
 
-  let metadata = await Image(src, {
+  let opts = {
     widths: [320, 800, 1200],
-    formats: ["avif", "jpeg"],
+    formats: ["webp", "jpeg"],
     urlPath: "/_assets/rwd-img/",
     outputDir: "./dist/_assets/rwd-img",
-  });
+  };
+
+  Image(src, opts);
 
   let imageAttributes = {
     class: classes,
@@ -26,6 +27,7 @@ async function imageShortcode(src, alt, sizes="100vw", classes = "") {
     decoding: "async",
   };
 
+  let metadata = Image.statsSync(src, opts);
   return Image.generateHTML(
     metadata,
     imageAttributes,
@@ -40,7 +42,7 @@ async function imageShortcode(src, alt, sizes="100vw", classes = "") {
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
 
-  eleventyConfig.addNunjucksAsyncShortcode("rwdImg", imageShortcode);
+  eleventyConfig.addNunjucksShortcode("rwdImg", imageShortcode);
 
   // Shortcodes
   // Object.keys(shortcodes).forEach((shortcodeName) => {
