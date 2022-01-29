@@ -1,53 +1,19 @@
 const dayjs = require("dayjs");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const Image = require("@11ty/eleventy-img");
 
 const dateFormat = (d, format) => {
   return dayjs(d).format(format);
 };
 
-function imageShortcode(src, alt, sizes="100vw", classes = "") {
-  if (!src) { return; }
-  src = `./src${src}`;
-
-  let opts = {
-    widths: [320, 800, 1200],
-    formats: ["webp", "jpeg"],
-    urlPath: "/_assets/rwd-img/",
-    outputDir: "./dist/_assets/rwd-img",
-  };
-
-  Image(src, opts);
-
-  let imageAttributes = {
-    class: classes,
-    alt,
-    sizes,
-    loading: "lazy",
-    decoding: "async",
-  };
-
-  let metadata = Image.statsSync(src, opts);
-  return Image.generateHTML(
-    metadata,
-    imageAttributes,
-    {
-      whitespaceMode: "inline"
-    }
-  );
-}
-
-// const shortcodes = require("./utils/shortcodes.js");
+const shortcodes = require("./utils/shortcodes.js");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
 
-  eleventyConfig.addNunjucksShortcode("rwdImg", imageShortcode);
-
   // Shortcodes
-  // Object.keys(shortcodes).forEach((shortcodeName) => {
-  //   eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName]);
-  // });
+  Object.keys(shortcodes).forEach((shortcodeName) => {
+    eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName]);
+  });
 
   eleventyConfig.addFilter("isFutureDate", (dateObj) => {
     return dayjs(dateObj).isAfter(dayjs());
