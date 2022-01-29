@@ -72,12 +72,11 @@ module.exports = function (eleventyConfig) {
   // Copy these assets straight across
   eleventyConfig.addPassthroughCopy({ "./src/_assets/img": "_assets/img" });
   eleventyConfig.addPassthroughCopy({ "./src/_assets/misc": "_assets/misc" });
+  // eleventyConfig.addPassthroughCopy({ "./src/_assets/vid": "_assets/misc" });
   eleventyConfig.addPassthroughCopy({ "./src/_redirects": "_redirects" });
 
   return {
     templateFormats: ["html", "njk", "md"],
-    pathPrefix: "/",
-    passthroughFileCopy: true,
     dir: {
       input: "src",
       output: "dist",
