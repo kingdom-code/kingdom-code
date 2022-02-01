@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.njk
 nav: true
+title: Jobs Board
 ---
 <div class="container">
 
@@ -12,18 +13,25 @@ nav: true
     </div>
   </div>
 
-  <div class="px-4 divide-y divide-mint">
+  <div class="px-4 divide-y divide-grey mx-auto md:w-10/12 text-blue">
 
     {% if jobs.length %}
       {% for job in jobs %}
       <div class="py-6">
-        <a class="mb-1 text-mint" href="{{ job.URL }}" target="_blank" data-gtm="jobs"><strong>{{ job.Title }}</strong> at <strong>{{ job.Organisation}}</strong></a>
-        <div class="grid gap-4 grid-cols-3">
-          <p class="my-0 col-span-2">{{ job.Intro }}</p>
-          <div class="uppercase text-xs flex flex-col justify-center pl-4">
-            <span class="block">{{ job.Location }}</span>
-            <span class="block">{{ job.Type }}</span>
-            <span class="block">Closing Date: <date>{{ job.ClosingDate }}</date></span>
+
+        <div class="grid gap-4 sm:grid-cols-3">
+          <div class="my-0 sm:col-span-2">
+            <a class="block mb-2 text-mint" href="{{ job.URL }}" target="_blank" data-gtm="jobs">
+              <strong class="block text-xl">{{ job.Title }}</strong>
+              <strong class="block uppercase text-xs">{{ job.Organisation}}</strong>
+            </a>
+            <p>{{ job.Intro }}</p>
+            <a class="block mt-2 underline hover:text-mint" href="{{ job.URL }}" target="_blank">Find out more…</a>
+          </div>
+          <div class="grid grid-cols-3 gap-2 sm:flex flex-col justify-center sm:gap-4 sm:pl-4">
+            <p class="text-xs"><strong>Location:</strong><br />{{ job.Location }}</p>
+            <p class="text-xs"><strong>Type:</strong><br />{{ job.Type }}</p>
+            <p class="text-xs "><strong>Closing Date:</strong><br /><date>{{ job.ClosingDate | readableDate }}</date></p>
           </div>
         </div>
       </div>
@@ -35,7 +43,7 @@ nav: true
     {% endif %}
 
     <div class="py-6">
-      <p>Do you have a job to post? <a href="https://airtable.com/shrkjfNK3JGzzya1S" target="_blank">Submit one now</a>.</p>
+      <p>Do you have a job to post? <a class="underline hover:text-mint" href="https://airtable.com/shrkjfNK3JGzzya1S" target="_blank">Submit one now</a>.</p>
     </div>
   </div>
 </div>

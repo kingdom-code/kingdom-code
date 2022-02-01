@@ -34,21 +34,26 @@
   <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PS73Z74" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {% if nav %}
-    <nav class="kc-nav">
-      <div class="container">
-        <ul>
-          <li><a href="/">Kingdom Code</a></li>
-          {# <li><a href="/cities">Cities</a></li> #}
-          <li><a href="/build">Build</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/jobs">Jobs</a></li>
+    <nav class="bg-blue text-white font-bold uppercase">
+      <div class="container sm:flex sm:justify-between">
+        <ul class="py-1 text-sm flex gap-3 items-center md:gap-6">
+          <li class="inline">
+            <a class="text-white hover:text-orange" href="/">
+              <img class="inline h-4 w-4 mr-1" src="/_assets/misc/logos/kingdom-code.svg" alt="Kingdom Code"/>
+              Kingdom Code
+            </a>
+          </li>
+          {# <li class="inline"><a class="text-white hover:text-orange" href="/cities">Cities</a></li> #}
+          <li class="inline"><a class="text-white hover:text-orange" href="/build">Build</a></li>
+          <li class="inline"><a class="text-white hover:text-orange" href="/blog">Blog</a></li>
+          <li class="inline"><a class="text-white hover:text-orange" href="/jobs">Jobs</a></li>
         </ul>
 
-        <ul class="">
+        <ul class="flex gap-3 py-1">
         {% for key, social in basics.socials %}
           <li class="inline">
-            <a href="{{ social }}" target="_blank" rel="noopener">
-              <img class="inline social-icon" src="/_assets/misc/icons/{{ key }}.svg" alt="{{ key }}"/>
+            <a class="" href="{{ social }}" target="_blank" rel="noopener">
+              <img class="inline h-4 w-4" src="/_assets/misc/icons/{{ key }}.svg" alt="{{ key }}"/>
             </a>
           </li>
         {% endfor %}
