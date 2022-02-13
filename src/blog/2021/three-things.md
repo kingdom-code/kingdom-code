@@ -1,6 +1,5 @@
 ---
 title: Three things you can pray for BUILD 2021
-author: James Doc
 date: 2021-10-15
 intro: BUILD kicks off tonight, we'd love for you to support us in prayer over the weekend…
 hero_img: /_assets/img/blog/2019/kingdom-code-build-2019-hackathon.jpg

@@ -8,5 +8,7 @@ module.exports = function () {
   return {
     buildRef: buildTime,
     updatedTime: currentTimeHuman,
+    currentYear: new Date().getFullYear(),
+    env: process.env.ELEVENTY_ENV
   }
 }

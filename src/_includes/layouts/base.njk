@@ -35,29 +35,19 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PS73Z74" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {% if nav %}
     <nav class="bg-blue text-white font-bold uppercase">
-      <div class="container sm:flex sm:justify-between">
-        <ul class="py-1 text-sm flex gap-3 items-center md:gap-6">
-          <li class="inline">
-            <a class="text-white hover:text-orange" href="/">
-              <img class="inline h-4 w-4 mr-1" src="/_assets/misc/logos/kingdom-code.svg" alt="Kingdom Code"/>
-              Kingdom Code
-            </a>
-          </li>
-          {# <li class="inline"><a class="text-white hover:text-orange" href="/cities">Cities</a></li> #}
-          <li class="inline"><a class="text-white hover:text-orange" href="/build">Build</a></li>
-          <li class="inline"><a class="text-white hover:text-orange" href="/blog">Blog</a></li>
-          <li class="inline"><a class="text-white hover:text-orange" href="/jobs">Jobs</a></li>
-        </ul>
+      <div class="text-sm px-4 flex justify-between gap-2 md:container md:px-0 mx-auto">
+        <a class="py-1 hover:text-orange" href="/">
+          <img class="inline h-4 w-4 mr-1" src="/_assets/misc/logos/kingdom-code.svg" alt="Kingdom Code"/>
+          Kingdom&nbsp;Code
+        </a>
 
-        <ul class="flex gap-3 py-1">
-        {% for key, social in basics.socials %}
-          <li class="inline">
-            <a class="" href="{{ social }}" target="_blank" rel="noopener">
-              <img class="inline h-4 w-4" src="/_assets/misc/icons/{{ key }}.svg" alt="{{ key }}"/>
-            </a>
-          </li>
-        {% endfor %}
-        </ul>
+        <div class="flex gap-3 items-center md:gap-6">
+          {# <li class="inline"><a class="text-white hover:text-orange" href="/cities">Cities</a></li> #}
+          <a class="py-1 inline border-b-2 {% if section == 'build' %}border-orange{% else %}border-blue{% endif %} text-white hover:text-orange" href="/build">Build</a>
+          <a class="py-1 inline border-b-2 {% if section == 'blog' %}border-orange{% else %}border-blue{% endif %} text-white hover:text-orange" href="/blog">Blog</a>
+          <a class="py-1 inline border-b-2 {% if section == 'jobs' %}border-orange{% else %}border-blue{% endif %} text-white hover:text-orange" href="/jobs">Jobs</a>
+        </div>
+
       </div>
     </nav>
     {% endif %}
@@ -108,24 +98,24 @@
 
 
     <footer class="kc-footer">
-      <div class="container">
+      <div class="container text-center md:text-left">
         <p>
           We have a <a href="/blog" class="underline">Blog</a>
           &middot;
           {% if jobs.length == 1 %}
-          There is <a href="/jobs" class="underline">one job on the jobs board</a>
+          There is <a href="/jobs" class="underline">one vacancy on the jobs board</a>
           &middot;
           {% endif %}
 
           {% if jobs.length > 1 %}
-          There are <a href="/jobs" class="underline">{{ jobs.length }} jobs on the jobs board</a>
+          There are <a href="/jobs" class="underline">{{ jobs.length }} vacancies on the jobs board</a>
           &middot;
           {% endif %}
           This site is built on top of <a href="https://www.11ty.io" target="_blank" rel="noopener" class="underline">Eleventy</a>
           &middot;
           <a href="https://github.com/kingdom-code/kingdom-code" class="underline" target="_blank" rel="noopener">View source</a>
         </p>
-        <p>
+        <p class="text-sm">
           Last updated: {{ data.updatedTime }}
         </p>
       </div>

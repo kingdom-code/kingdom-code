@@ -1,6 +1,14 @@
 const Image = require("@11ty/eleventy-img");
 
 module.exports = {
+
+  svgSprite: (svgSprite) => {
+    return `<svg class="${svgSprite.class}" role="img" aria-hidden="true">
+              <use xlink:href="/_assets/svg/sprite.sv
+              g#${svgSprite.name}"></use>
+            </svg>`;
+  },
+
   rwdImg: (src, alt, sizes = "100vw", classes = " ") => {
     if (!src) { return; }
     src = `./src${src}`;
