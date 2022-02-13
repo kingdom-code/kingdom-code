@@ -1,6 +1,5 @@
 ---
 title: BUILD is back for 2021
-author: James Doc
 date: 2021-08-03
 intro: Back for 2021, and now in the North and the South! Join Christians in the world of technology and innovation to support and serve ministries with digital projects.
 hero_img: /_assets/img/blog/2019/kingdom-code-build-2019-hackathon.jpg

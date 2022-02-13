@@ -2,41 +2,57 @@
 nav: true;
 layout: layouts/base.njk
 ---
-<div class="container kc-blog">
+<div class="container kc-blog md:grid md:grid-cols-3 md:gap-8">
 
-  <header role="banner" class="kc-blog__header mb-4">
-    {% if hero_img %}
-      {% rwdImg hero_img, title , "(min-width: 1020px) 1020px, calc(100vw - 100px)", "kc-blog__header__img" %}
-    {% endif %}
+  <article class="text-blue md:col-span-2 md:mt-0">
 
-    <h1 class="text-4xl font-bold my-2" itemprop="name">{{ title | orphanWrap | safe }}</h1>
-    <date>{{ date | readableDate }}</date>
-  </header>
 
-  <main class="mx-auto prose lg:prose-xl">
-    {{ layoutContent | safe }}
-  </main>
-
-  {% if author %}
-
-    {% for person in people | sort(false, false, 'name') %}
-
-      {% if author == person.name %}
-        <div class="kc-blog__author">
-          {% set avatar = person.img if person.img else 'no-avatar.jpg' %}
-          {% rwdImg "/_assets/img/people/" + avatar, person.name , "50px", "kc-blog__author__img mx-auto" %}
-          <p>{% if person.href %}<a href="{{ person.href }}" target="_blank" rel="noopener">{% endif %}{{ person.name }}{% if person.href %}</a>{% endif %}</p>
-          <p>{{ person.bio }}</p>
-        </div>
+    <header role="banner" class="mb-4">
+      {% if hero_img %}
+        {% rwdImg hero_img, title , "(min-width: 1020px) 1020px, calc(100vw - 100px)", "w-full rounded-b" %}
       {% endif %}
 
-    {% endfor %}
-  {% endif %}
+      <date class="block text-sm mt-2 md:hidden">{{ date | readableDate }}</date>
+      <h1 class="text-3xl md:text-4xl font-bold mb-2 md:mt-2" itemprop="name">{{ title | orphanWrap | safe }}</h1>
 
-  <a class="kc-blog__back" href="/blog">Back to all posts</a>
+    </header>
 
-  {% if canonical %}
-  <small class="thought-canonical">This post originally appeared at:<br /><a href="{{ canonical }}">{{ canonical }}<a/></small>
-  {% endif %}
+    <div class="prose lg:prose-xl">
+      {{ layoutContent | safe }}
+    </div>
 
+
+    {% if canonical %}
+    <small class="thought-canonical">This post originally appeared at:<br /><a href="{{ canonical }}">{{ canonical }}<a/></small>
+    {% endif %}
+
+  </article>
+
+  <div class="md:max-w-screen-md pb-2 mb:pb-4">
+    <div class="flex flex-col-reverse top-0 sticky pt-2 md:pt-4 md:flex-col">
+      <div>
+        <a class="block text-xs" href="/blog">The Kingdom Code Blog</a>
+        <p class="text-base md:text-2xl lg:text-3xl font-bold mb-2 md:mb-4" itemprop="name">{{ title | orphanWrap | safe }}</p>
+        <date class="block text-sm md:text-base">{{ date | readableDate }}</date>
+      </div>
+      {% if author %}
+        {% for person in people | sort(false, false, 'name') %}
+          {% if author == person.name %}
+            <div class="border-y border-grey py-4 my-4 flex gap-4">
+              {% set avatar = person.img if person.img else 'no-avatar.jpg' %}
+              <div class="h-12 w-12 flex-none">
+                {% rwdImg "/_assets/img/people/" + avatar, person.name , "50px", "rounded-full h-12 w-12 flex-none" %}
+              </div>
+              <div>
+                <p>{% if person.href %}<a href="{{ person.href }}" target="_blank" rel="noopener">{% endif %}{{ person.name }}{% if person.href %}</a>{% endif %}</p>
+                <p class="text-sm">{{ person.bio }}</p>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+      <a class="text-sm underline hover:text-mint" href="/blog">Back to all posts</a>
+
+    </div>
+  </div>
 </div>
