@@ -43,6 +43,7 @@
 
         <div class="flex gap-3 items-center md:gap-6">
           {# <li class="inline"><a class="text-white hover:text-orange" href="/cities">Cities</a></li> #}
+          <a class="py-1 inline border-b-2 {% if section == 'meetup' %}border-orange{% else %}border-blue{% endif %} text-white hover:text-orange" href="/meetup">Meetups</a>
           <a class="py-1 inline border-b-2 {% if section == 'build' %}border-orange{% else %}border-blue{% endif %} text-white hover:text-orange" href="/build">Build</a>
           <a class="py-1 inline border-b-2 {% if section == 'blog' %}border-orange{% else %}border-blue{% endif %} text-white hover:text-orange" href="/blog">Blog</a>
           <a class="py-1 inline border-b-2 {% if section == 'jobs' %}border-orange{% else %}border-blue{% endif %} text-white hover:text-orange" href="/jobs">Jobs</a>
@@ -98,17 +99,17 @@
 
 
     <footer class="kc-footer">
-      <div class="container text-center md:text-left">
+      <div class="md:container mx-auto px-4 md:px-0 text-center md:text-left">
         <p>
           We have a <a href="/blog" class="underline">Blog</a>
           &middot;
           {% if jobs.length == 1 %}
-          There is <a href="/jobs" class="underline">one vacancy on the jobs board</a>
+          There is one vacancy on <a href="/jobs" class="underline">the jobs board</a>
           &middot;
           {% endif %}
 
           {% if jobs.length > 1 %}
-          There are <a href="/jobs" class="underline">{{ jobs.length }} vacancies on the jobs board</a>
+          There are {{ jobs.length }} vacancies on <a href="/jobs" class="underline">the jobs board</a>
           &middot;
           {% endif %}
           This site is built on top of <a href="https://www.11ty.io" target="_blank" rel="noopener" class="underline">Eleventy</a>

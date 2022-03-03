@@ -1,4 +1,6 @@
 const dayjs = require("dayjs");
+const isSameOrAfter = require("dayjs/plugin/isSameOrAfter");
+dayjs.extend(isSameOrAfter);
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 const dateFormat = (d, format) => {
@@ -6,6 +8,7 @@ const dateFormat = (d, format) => {
 };
 
 const shortcodes = require("./utils/shortcodes.js");
+const { Dayjs } = require("dayjs");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -17,6 +20,12 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("isFutureDate", (dateObj) => {
     return dayjs(dateObj).isAfter(dayjs());
+  });
+
+  eleventyConfig.addFilter("futureMeetups", (collection) => {
+    return collection.filter(function (item) {
+      return dayjs(item.data.date).isSameOrAfter(dayjs());
+    });
   });
 
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
@@ -66,6 +75,12 @@ module.exports = function (eleventyConfig) {
     });
   });
 
+  eleventyConfig.addCollection("meetups", function (collection) {
+    return collection.getAllSorted().filter(function (item) {
+      return item.inputPath.match(/^\.\/src\/meetup\/.*\.md$/) !== null;
+    });
+  });
+
   // Watch assets folder for changes
   eleventyConfig.addWatchTarget("./src/_assets");
 
@@ -74,6 +89,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "./src/_assets/misc": "_assets/misc" });
   // eleventyConfig.addPassthroughCopy({ "./src/_assets/vid": "_assets/misc" });
   eleventyConfig.addPassthroughCopy({ "./src/_redirects": "_redirects" });
+
+  eleventyConfig.browserSyncConfig = {
+    https: true,
+  };
 
   return {
     templateFormats: ["html", "njk", "md"],

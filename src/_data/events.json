@@ -1,44 +1,52 @@
 [
   {
+    "name": "Build",
+    "city": "London",
+    "date": "2022-10-14",
+    "description": "Kingdom Code BUILD is our annual hackathon in partnership with Indigitous #Hack, bringing together Christians who work in the world of tech from across Europe.",
+    "url": "/build"
+  },
+  {
+    "name": "London Meetup",
+    "city": "London",
+    "date": "2022-06-13",
+    "description": "It's been over two years since the last Kingdom Code meetup and it's great to be back! Whether you have just heard about Kingdom Code, were a regular member in the before times, or somewhere in between… join the community of Christian technologists and innovators as we jump into the conversation of how our Christian faith and our technological skillset intersect.",
+    "url": "/meetup/2022/06-london-meetup/"
+  },
+  {
     "name": "Think: The Fourth Revolution",
     "city": "London",
-    "date": "2020-06-01",
-    "url": "postponed"
+    "date": "2020-06-01"
   },
   {
     "name": "microBUILD",
     "city": "London",
     "date": "2020-05-15",
-    "description": "Every couple of months we like to set aside an evening to keep working on our side projects. Join us for some pizza and hack-time.",
-    "url": "postponed"
+    "description": "Every couple of months we like to set aside an evening to keep working on our side projects. Join us for some pizza and hack-time."
   },
   {
     "name": "Think: Reimagining the Spiritual Disciplines in a Digital Age",
     "city": "London",
     "date": "2020-05-11",
-    "description": "What does it look like to engage with spiritual disciplines in a world saturated by the technology we create?",
-    "url": "postponed"
+    "description": "What does it look like to engage with spiritual disciplines in a world saturated by the technology we create?"
   },
   {
     "name": "Think: Discussion Evening",
     "city": "London",
     "date": "2020-04-06",
-    "url": "postponed",
     "description": "What is it that you want to talk about Christianity and technology? Perhaps it application for tech in your church, or the ethics of AI… bring your conversation starter and explore with us."
   },
   {
     "name": "microBUILD",
     "city": "Leeds",
     "date": "2020-03-28",
-    "description": "Today takes the passion of BUILD, and brings it for a day to Leeds. It isn't about being a rockstart dev it's about coming along, learning together, and working on a project that matters.",
-    "url": "postponed"
+    "description": "Today takes the passion of BUILD, and brings it for a day to Leeds. It isn't about being a rockstart dev it's about coming along, learning together, and working on a project that matters."
   },
   {
     "name": "microBUILD",
     "city": "London",
     "date": "2020-03-20",
-    "description": "Every couple of months we like to set aside an evening to keep working on our side projects. Join us for some pizza and hack-time.",
-    "url": "postponed"
+    "description": "Every couple of months we like to set aside an evening to keep working on our side projects. Join us for some pizza and hack-time."
   },
   {
     "name": "Drink",
@@ -252,5 +260,4 @@
     "url": "https://www.eventbrite.co.uk/e/kingdom-code-bath-tickets-42196690437",
     "description": "Over the next three months we're going to be starting a set of events in the South West to build relationships between us, to encourage one another, to share about the things that we're working on, to start thinking about how our Christian worldview comes together with our vocation, and looking to put that into practice."
   }
-
 ]

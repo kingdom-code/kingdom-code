@@ -1,0 +1,4 @@
+{
+  "layout": "layouts/meetup.njk",
+  "section": "meetup"
+}

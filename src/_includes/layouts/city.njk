@@ -6,7 +6,7 @@ layout: layouts/base.njk
 {% set events = events | eventsInCity(cityName) %}
 
 <header class="kc-header">
-  {% rwdImg "/_assets/img/cities/" + cityName | slug + ".jpg", "" , "100vw", "kc-header__media" %}
+  {% rwdImg "/_assets/img/cities/" + cityName | slugify + ".jpg", "" , "100vw", "kc-header__media" %}
 
   <div class="kc-header__container">
 
@@ -14,7 +14,7 @@ layout: layouts/base.njk
       <img src="/_assets/misc/logos/kingdom-code.svg" alt="Kingdom Code" class="kc-header__logo"/>
       <hgroup>
         <h1>{{ basics.name }}</h1>
-        <img src="/_assets/misc/logos/{{ cityName | slug }}.svg" alt="{{ cityName }}" class="kc-header__cityName-svg"/>
+        <img src="/_assets/misc/logos/{{ cityName | slugify }}.svg" alt="{{ cityName }}" class="kc-header__cityName-svg"/>
       </hgroup>
     </div>
 
