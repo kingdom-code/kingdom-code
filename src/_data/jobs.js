@@ -1,7 +1,13 @@
 require("dotenv").config();
 const { AssetCache } = require("@11ty/eleventy-cache-assets");
 const Airtable = require("airtable");
-var base = new Airtable({ apiKey: process.env.AIRTABLE_API }).base(
+
+if (!process.env.AIRTABLE_API) {
+  console.error("🚨 Oh no! No Airtable API Key in the env…");
+  return false;
+}
+
+const base = new Airtable({ apiKey: process.env.AIRTABLE_API }).base(
   "appKsIxw7GrZGsYwy"
 );
 
