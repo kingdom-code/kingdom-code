@@ -1,16 +1,17 @@
 const Image = require("@11ty/eleventy-img");
 
 module.exports = {
-
   svgSprite: (svgSprite) => {
     return `<svg class="${svgSprite.class}" role="img" aria-hidden="true">
-              <use xlink:href="/_assets/svg/sprite.sv
-              g#${svgSprite.name}"></use>
+              <use xlink:href="/_assets/svg/sprite.svg#${svgSprite.name}">
+              </use>
             </svg>`;
   },
 
   rwdImg: (src, alt, sizes = "100vw", classes = " ") => {
-    if (!src) { return; }
+    if (!src) {
+      return;
+    }
     src = `./src${src}`;
 
     let opts = {
@@ -31,12 +32,8 @@ module.exports = {
     };
 
     let metadata = Image.statsSync(src, opts);
-    return Image.generateHTML(
-      metadata,
-      imageAttributes,
-      {
-        whitespaceMode: "inline"
-      }
-    );
-  }
-}
+    return Image.generateHTML(metadata, imageAttributes, {
+      whitespaceMode: "inline",
+    });
+  },
+};
