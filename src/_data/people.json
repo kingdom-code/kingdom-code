@@ -11,7 +11,7 @@
   },
   {
     "name": "Patrick Elshen",
-    "team": ["London"],
+    "team": [],
     "img": "kingdom-code-patrick-elshen.jpg",
     "bio": "Patrick looks after microBUILD in London."
   },
@@ -85,5 +85,12 @@
     "bio": "Matt is a Linux Systems Administrator in the Christians Against Poverty technology team.",
     "href": "https://capuk.org/",
     "img": "matt-hardy.jpg"
+  },
+  {
+    "name": "Jana Owens",
+    "team": ["London"],
+    "bio": "Jana is a UX designer, and part of the leadership of Kingdom Code.",
+    "href": "",
+    "img": "jana-owens.jpg"
   }
 ]

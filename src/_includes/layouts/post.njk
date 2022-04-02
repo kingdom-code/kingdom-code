@@ -6,7 +6,6 @@ layout: layouts/base.njk
 
   <article class="text-blue md:col-span-2 md:mt-0">
 
-
     <header role="banner" class="mb-4">
       {% if hero_img %}
         {% rwdImg hero_img, title , "(min-width: 1020px) 1020px, calc(100vw - 100px)", "w-full rounded-b" %}
@@ -17,7 +16,7 @@ layout: layouts/base.njk
 
     </header>
 
-    <div class="prose lg:prose-xl">
+    <div class="prose prose-figcaption:text-xs lg:prose-xl ">
       {{ layoutContent | safe }}
     </div>
 
@@ -33,7 +32,8 @@ layout: layouts/base.njk
       <div>
         <a class="block text-xs" href="/blog">The Kingdom Code Blog</a>
         <p class="text-base md:text-2xl lg:text-3xl font-bold mb-2 md:mb-4" itemprop="name">{{ title | orphanWrap | safe }}</p>
-        <date class="block text-sm md:text-base">{{ date | readableDate }}</date>
+        <date class="block text-sm md:text-base mb-2 md:mb-4">{{ date | readableDate }}</date>
+        <p class="block text-sm md:text-base">{{ intro }}</p>
       </div>
       {% if author %}
         {% for person in people | sort(false, false, 'name') %}
