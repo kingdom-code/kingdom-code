@@ -21,4 +21,4 @@ eventbriteId: 335756686287
 
 **It's been over two years since the last Kingdom Code meetup and it's great to be back!** Whether you have just heard about Kingdom Code, were a regular member in the before times, or somewhere in between… join the community of Christian technologists and innovators as we jump into the conversation of how our Christian faith and our technological skillset intersect.
 
-We're be announcing more information about the meetup in the coming days. Please book your spot, and <a href="#newsletter" class="js-moveto">sign up to the mailing list</a> to hear when more details are announced.
+We'll be announcing more information about the meetup in the coming days. Please book your spot, and <a href="#newsletter" class="js-moveto">sign up to the mailing list</a> to hear when more details are announced.
