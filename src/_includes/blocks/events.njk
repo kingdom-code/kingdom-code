@@ -25,9 +25,9 @@
           <p itemprop="description" class="kc-event__description">
             {{ event.description }}
           </p>
-          
+
           {% if (event.url) and (event.url != 'postponed') %}
-            <a href="{{ event.url }}" target="_blank" rel="noopener" itemprop="url" class="kc-events__future__btn">Register</a>
+            <a href="{{ event.url }}" itemprop="url" class="kc-events__future__btn">Register</a>
           {% elif (event.url) and (event.url == 'postponed') %}
             <span class="kc-events__future__btn">Postponed</span>
           {% else %}
@@ -46,7 +46,7 @@
         <p>Sign up to the <a href="#newsletter" class="js-moveto">newsletter</a> to hear about future events when they are announced.</p>
       </li>
     {% endif %}
-      
+
     </ul>
   </section>
 
@@ -71,7 +71,7 @@
           <date itemprop="startDate" content="{{ event.date }}" class="kc-event__date">
             {{ event.date | readableDate }}
           </date>
-          
+
           {% if event.url %}
             <a href="{{ event.url }}"  target="_blank" rel="noopener" itemprop="url" class="kc-events__link">See more</a>
           {% endif %}
@@ -87,7 +87,7 @@
         <p>This is very new…</p>
       </li>
     {% endif %}
-      
+
     </ul>
 
   </section>
