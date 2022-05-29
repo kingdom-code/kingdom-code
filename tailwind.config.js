@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./src/**/*.njk", "./src/**/*.html"],
+  content: ["./src/**/*.njk", "./src/**/*.html", "./src/**/*.md"],
   theme: {
     colors: {
       transparent: "transparent",

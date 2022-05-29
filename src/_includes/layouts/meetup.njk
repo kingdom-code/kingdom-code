@@ -23,9 +23,12 @@ layout: layouts/base.njk
 
       <date class="block text-sm mt-2 md:hidden">{{ date | readableDate }}</date>
       <h1 class="text-3xl md:text-4xl font-bold mb-2 md:mt-2" itemprop="name">{{ title | orphanWrap | safe }}</h1>
+      <p class="text-sm mt-2">
+        {{ date | readableDate }} - {{ time }}
       {% if eventbriteId %}
-        <a href="#tickets" class="block text-sm mt-2 text-orange underline hover:text-mint js-moveto">Book your place</a>
+        &middot; <a href="#tickets" class=" text-orange underline hover:text-mint js-moveto">Book your place</a>
       {% endif %}
+      </p>
     </header>
 
     <div class="prose prose-blue prose-a:text-orange prose-figcaption:text-xs lg:prose-xl">
@@ -45,7 +48,7 @@ layout: layouts/base.njk
   </article>
 
   <aside class="md:row-start-1 md:col-start-1">
-    <div class="flex flex-col-reverse top-0 sticky pt-2 md:pt-4 md:flex-col">
+    <div class="flex flex-col top-0 sticky pt-2 md:pt-4">
       <div>
         <a class="block text-xs" href="/meetup">Meetups</a>
         <p class="text-base md:text-2xl lg:text-3xl font-bold mb-2 md:mb-4" itemprop="name">{{ city }}</p>
@@ -68,6 +71,12 @@ layout: layouts/base.njk
         {{ location.road }}<br />
         {{ location.city }}<br />
         {{ location.postcode }}
+      </div>
+      {% endif %}
+
+      {% if eventbriteId %}
+      <div class="mb-4">
+      <a href="#tickets" class="inline-block text-sm p-2 rounded uppercase font-bold text-white bg-orange border border-orange hover:bg-white hover:text-orange js-moveto">Get tickets</a>
       </div>
       {% endif %}
 
