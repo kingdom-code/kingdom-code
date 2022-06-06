@@ -82,17 +82,31 @@ layout: layouts/base.njk
 
       <div class="border-grey border p-2 mb-4 text-grey">
         {% if sponsors %}
+          <p class="border-b text-sm mb-2 pb-2">Event sponsored by…</p>
           {% for sponsor in sponsors %}
           <p>
+            {% if sponsor.type %}
+            <span class="block text-sm">{{ sponsor.type }}:</span>
+            {% endif %}
             {% if sponsor.url %}
             <a href="{{ sponsor.url }}" target="_blank" rel="noopener" class="underline text-orange">
-            <strong class="block">{{ sponsor.name }}</strong>
+              {% if sponsor.logo %}
+                <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }} logo" class="max-w-[50%]" />
+              {% endif %}
+              <strong class="block">{{ sponsor.name }}</strong>
             </a>
             {% else %}
-            <strong class="block text-orange">{{ sponsor.name }}</strong>
+            {% if sponsor.logo %}
+              <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }} logo" class="max-w-[50%]" />
             {% endif %}
-            {{ sponsor.type }}
+            <strong class="block text-orange">{{ sponsor.name }}</strong>
+
+            {% endif %}
+
           </p>
+          <div class="border-t pt-2 mt-2">
+            <p class="text-sm">Please get in touch (info@) if you would like to talk about sponsoring future Kingdom Code events.</p>
+          </div>
           {% endfor %}
         {% else %}
           <p>

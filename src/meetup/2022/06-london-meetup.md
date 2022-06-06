@@ -11,12 +11,12 @@ location:
   postcode: SE1 2AH
 intro: Save the date for our next London meetup where we'll be exploring the idea of the goodness of technology…
 eventbriteId: 335756686287
-# sponsors:
-#   - name: Blah
-#     logo: ""
-#     type: Venue sponsor
-#     url: https://google.com
-#   - name: Blah Blah
+sponsors:
+  - name: Word on the Streets
+    logo: "https://www.wordonthestreets.net/Images/Content/2365/765506.png"
+    # type: Pizza sponsor
+    url: https://www.wordonthestreets.net/
+  # - name: Blah Blah
 ---
 
 **It's been over two years since the last Kingdom Code meetup and it's great to be back!** Whether you have recently heard about Kingdom Code, or were a regular member in the before times… Join the community of Christian technologists and innovators as we jump into the conversation of how our Christian faith and our technological skillset intersect.
