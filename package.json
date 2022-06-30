@@ -12,14 +12,14 @@
   "dependencies": {
     "@11ty/eleventy-cache-assets": "^2.3.0",
     "airtable": "^0.11.1",
-    "dotenv": "^10.0.0",
+    "dotenv": "^16.0.1",
     "laravel-mix": "^6.0.39",
     "moveto": "^1.8.0",
     "tiny-slider": "^2.9.3"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
-    "@11ty/eleventy-img": "^1.0.0",
+    "@11ty/eleventy-img": "^2.0.1",
     "@11ty/eleventy-plugin-rss": "^1.1.2",
     "@ayctor/laravel-mix-svg-sprite": "^1.0.0",
     "@gerhobbelt/markdown-it-responsive": "^0.1.1-3",
