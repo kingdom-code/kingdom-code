@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/_assets/css/style.css?v={{ data.buildRef }}" media="screen" type="text/css">
     <link rel="stylesheet" href="/_assets/css/tw.css?v={{ data.buildRef }}" media="screen" type="text/css">
 
-		<title>{{ basics.name }}{% if title %} | {{ title }}{% endif %}</title>
+    <title>{{ basics.name }}{% if title %} | {{ title }}{% endif %}</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/_assets/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/_assets/img/favicon/favicon-32x32.png">
@@ -37,10 +37,10 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PS73Z74" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {% if nav %}
     <nav class="bg-blue text-white font-bold uppercase">
-      <div class="text-sm px-4 flex justify-between gap-2 md:container md:px-0 mx-auto">
+      <div class="text-sm px-4 flex justify-between gap-2">
         <a class="py-1 hover:text-orange" href="/">
           <img class="inline h-4 w-4 mr-1" src="/_assets/misc/logos/kingdom-code.svg" alt="Kingdom Code"/>
-          Kingdom&nbsp;Code
+          <span class="sr-only sm:not-sr-only">Kingdom&nbsp;Code</span>
         </a>
 
         <div class="flex gap-3 items-center md:gap-6">
@@ -100,8 +100,8 @@
     </div>
 
 
-    <footer class="kc-footer">
-      <div class="md:container mx-auto px-4 md:px-0 text-center md:text-left">
+    <footer class="container mx-auto">
+      <div class="text-center md:text-left mb-4">
         <p>
           We have a <a href="/blog" class="underline">Blog</a>
           &middot;

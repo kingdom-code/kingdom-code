@@ -3,7 +3,7 @@ nav: true
 layout: layouts/base.njk
 title: BUILD
 section: build
-dates: October 2022
+dates: 14 – 15 October 2022
 projects: [
   {
 
@@ -67,7 +67,7 @@ schedule: [
   {
     day: 2021-10-16,
     timings: [
-      ['08.00', 'Breakfast'],
+      ['08.30', 'Breakfast'],
       ['09.00', 'Morning prayer'],
       ['12.30', 'Lunch break'],
       ['17.00', 'Project deadline and tidy up!'],
@@ -87,25 +87,34 @@ schedule: [
   </video>
 
   <div class="kc-header__container">
-    <img src="/_assets/misc/build.svg" style="margin: 50px 0 20px; max-width: 350px" alt="Kingdom Code BUILD" class="kc-header__logo" />
+    <img src="/_assets/misc/build.svg" style="margin: 50px 0 20px; max-width: 350px" alt="Kingdom Code BUILD" class="kc-header__logo w-[90%]" />
     <hgroup>
       <h1>Kingdom Code BUILD</h1>
       <h2>London: {{ dates }}</h2>
-      {# <h3>Bookings open now!</h3> #}
     </hgroup>
 
-    {#<div class="kc-header__ctas">
-      <a href="https://www.eventbrite.co.uk/e/kingdom-code-build-south-tickets-169754699877?aff=kcsite">Book Now</a>
-    </div>#}
+    <div>
+      <a href="#tickets" class="js-moveto border border-orange rounded p-2 uppercase text-white hover:bg-orange transition-colors">Booking open soon</a>
+    </div>
+
+    <ul class="block mt-4 md:mt-16 py-4">
+      <li class="inline"><a href="#about" class="js-moveto underline px-2 hover:no-underline">About</a>
+      <li class="inline"><a href="#location" class="js-moveto underline px-2 hover:no-underline">Location</a>
+      <li class="inline"><a href="#projects" class="js-moveto underline px-2 hover:no-underline">Projects</a>
+      <li class="inline"><a href="#sponsor" class="js-moveto underline px-2 hover:no-underline">Partner</a>
+      <li class="inline"><a href="#timings" class="js-moveto underline px-2 hover:no-underline">Timings and Practicalities</a>
+      <li class="inline"><a href="#tickets" class="js-moveto underline px-2 hover:no-underline">Tickets</a>
+    </ul>
 
   </div>
 </header>
-
+{#
 {% set logobar_logos = challenges %}
 {% set logobar_title = "Challenge partners" %}
-{#% include "blocks/logobar.njk" %#}
+{% include "blocks/logobar.njk" %}
+#}
 
-<section class="imagetext imagetext--orange">
+<section class="imagetext imagetext--orange" id="about">
   <div class="imagetext__img">
     {% rwdImg "/_assets/img/build/kingdom-code-build-st-johns-hoxton.jpg", "Build at St. John's, Hoxton" , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
   </div>
@@ -118,15 +127,115 @@ schedule: [
   </div>
 </section>
 
+
+<section class="imagetext imagetext--blue" id="location">
+  <div class="imagetext__text">
+    <h2 class="text-white font-bold text-2xl uppercase mb-4">Location</h2>
+
+    <div>
+      <p class="mb-4">
+        St. John's, Hoxton<br />
+        Pitfield St,<br />
+        London N1 6NP
+      </p>
+
+      <p>
+        <a href="https://www.google.co.uk/maps/place/St+John's+Hoxton/@51.530558,-0.0857897,17z/data=!3m1!4b1!4m5!3m4!1s0x48761ca4a1c662f3:0x32dbb98ab343ecd8!8m2!3d51.530558!4d-0.083601?hl=en">Get directions</a>
+      </p>
+    </div>
+
+    <div>
+      Nearest station: Old Street / Hoxton
+    </div>
+  </div>
+
+  <div class="imagetext__img lg:min-h-[450px]">
+    {% rwdImg "/_assets/img/build/build18-stjohns.jpg", "Build at St. John's, Hoxton" , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
+  </div>
+
+</section>
+
 {% include "blocks/slider.njk" %}
+
+<section class="imagetext imagetext--orange" id="projects">
+  <div class="imagetext__img lg:min-h-[450px]">
+    {% rwdImg "/_assets/img/build/build21-team.jpg", "Build at St. John's, Hoxton" , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
+  </div>
+
+  <div class="imagetext__text">
+    <h2 class="uppercase text-2xl font-bold">Projects</h2>
+    <p class="my-2">Each year individuals come together around projects to form a teams. These might be a missionally minded passion project, a R&amp;D project from a ministry, or an investigation into the potential of a new tech or tool…</p>
+    <p class="my-2">In 2016 we explored the evangelistic potential from Alexa, and in 2017 how Christians Against Poverty might use VR… We've optimised AWS setups for ministries, designed supporter websites, analysed data…</p>
+    <a class="mt-2 inline-block hover:no-underline" href="/build/projects">Find out about bringing your project</a>
+  </div>
+</section>
+
+
+<section class="imagetext imagetext--blue" id="sponsor">
+  <div class="imagetext__text">
+    <h2 class="uppercase text-2xl font-bold">Partner with BUILD</h2>
+    <p class="my-2">From having projects to work on, through to covering the event costs, we need your help. The team give their time for free, but without the support of like-minded businesses, churches and charities, BUILD could not take place.</p>
+    <a class="mt-2 inline-block hover:no-underline" href="/build/partnership">Find out more</a>
+  </div>
+
+  <div class="imagetext__img lg:min-h-[450px]">
+    {% rwdImg "/_assets/img/build/cap-build.jpg", "Build at St. John's, Hoxton" , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
+  </div>
+
+</section>
+
+<section class="container" id="timings">
+  <h2 class="text-mint font-bold text-2xl uppercase my-4 md:my-16 text-center">Schedule</h2>
+
+  <div class="textcol">
+    {% for day in schedule %}
+    <div class="textcol__col">
+      <h3 class="font-bold uppercase mb-2">{{ day.day | formatDate('dddd') }}</h3>
+      <ul class="time-list">
+        {% for item in day.timings %}
+          <li>
+            <span>{{ item[0] }}</span>
+            <span>{{ item[1] }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+
+  <h3 class="text-mint font-bold uppercase mb-0 text-center">Some practicalities</h3>
+  <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-4 my-4 md:mb-16">
+    <div class="border border-mint p-4">
+      <h3 class="font-bold text-mint">Food</h3>
+      <p class="text-sm sm:text-base">We'll feed you throughout the whole weekend, just let us know your dietary needs when you register.</p>
+    </div>
+
+    <div class="border border-mint p-4">
+      <h3 class="font-bold text-mint">Sleeping</h3>
+      <p class="text-sm sm:text-base">Some people choose to work all the way through, most choose some sleep! You can sleep onsite (bring your own sleeping bag and toothbrush), or arrange your own offsite accomodation.</p>
+    </div>
+
+    <div class="border border-mint p-4">
+      <h3 class="font-bold text-mint">Getting here</h3>
+      <p class="text-sm sm:text-base">St. John's is a five minute walk from Old Street Tube station (Northern line), it's a quick hop from London, King's Cross.</p>
+    </div>
+
+    <div class="border border-mint p-4">
+      <h3 class="font-bold text-mint">Other questions?</h3>
+      <p class="text-sm sm:text-base">Ping us a message on <a href="https://twitter.com/kcodeuk" rel="noopener" target="_blank">twitter</a>, or send an email to info@ and we will get back to you asap.</p>
+    </div>
+  </div>
+</section>
+
+
 <section class="ev-ticket" id="tickets">
 
-  <div class="container">
+  <div class="container py-16">
     <h2 class="ev-ticket__title text-4xl font-bold">Kingdom Code BUILD</h2>
     <date>{{ dates }}</date>
 
-    {#
-    <h3>Booking will open in September</h3> #}
+
+    <h3>Booking will open soon</h3>
 
     {#<div class="ev-ticket__eventbrite-widget" id="js-eb-ticket-widget-south"></div>
 
@@ -154,3 +263,6 @@ schedule: [
 
   </script>
 </section>
+
+
+{% include "blocks/buildPartners.njk" %}

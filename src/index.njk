@@ -3,29 +3,15 @@ layout: layouts/home.njk
 nav: true
 ---
 
-{#<section class="promo" style="background-image: url('/_assets/img/blog/2020/build-2016.jpg');">
 
-  <a class="promo__content" href="/build">
+{% include "blocks/build.njk" %}
 
-    <p class="promo__content__tag">Friday 15th – Saturday 16th October 2021</p>
-    <h2 class="promo__content__title">Kingdom Code BUILD</h2>
 
-    <p>
-      <strong>Back for 2021!</strong>
-      Join Christians in the world of technology and innovation to support and serve ministries with digital projects.
-    </p>
-
-    <p>
-      <span class="promo__content__button">
-        Find out more
-      </span>
-    </p>
-  </a>
-</section>#}
+{% include "blocks/events.njk" %}
 
 {% set post = collections.posts|reverse|first %}
 
-<section class="promo promo--flipped" style="background-image: url({{ post.data.hero_img }});">
+<section class="promo promo--flipped mt-4 md:mt-16" style="background-image: url({{ post.data.hero_img }});">
 
   <a class="promo__content" href="{{ post.url }}">
 
@@ -45,4 +31,3 @@ nav: true
 </section>
 
 
-{% include "blocks/events.njk" %}
