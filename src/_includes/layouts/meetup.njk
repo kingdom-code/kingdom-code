@@ -80,6 +80,7 @@ layout: layouts/base.njk
       </div>
       {% endif %}
 
+      {% if sponsors !== "disabled" %}
       <div class="border-grey border p-2 mb-4 text-grey">
         {% if sponsors %}
           <p class="border-b text-sm mb-2 pb-2">Event sponsored by…</p>
@@ -114,6 +115,7 @@ layout: layouts/base.njk
           Please get in touch (info@) if you would like to talk about sponsoring Kingdom Code events.</p>
         {% endif %}
       </div>
+      {% endif %}
     </div>
   </aside>
 </div>

@@ -9,6 +9,13 @@
   {
     "name": "London Meetup",
     "city": "London",
+    "date": "2022-08-15",
+    "description": "Join us to discuss intersection of Christianity, technology, and innovation with other members of the Kingdom Code community.",
+    "url": "/meetup/2022/08-london-meetup/"
+  },
+  {
+    "name": "London Meetup",
+    "city": "London",
     "date": "2022-06-13",
     "description": "It's been over two years since the last Kingdom Code meetup and it's great to be back! Whether you have just heard about Kingdom Code, were a regular member in the before times, or somewhere in between… join the community of Christian technologists and innovators as we jump into the conversation of how our Christian faith and our technological skillset intersect.",
     "url": "/meetup/2022/06-london-meetup/"
