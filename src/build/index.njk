@@ -2,6 +2,7 @@
 nav: true
 layout: layouts/base.njk
 title: BUILD
+eventbriteId: 396537453197
 section: build
 dates: 14 – 15 October 2022
 projects: [
@@ -94,7 +95,11 @@ schedule: [
     </hgroup>
 
     <div>
+      {% if eventbriteId %}
+      <a href="#tickets" class="js-moveto border border-orange rounded p-2 uppercase text-white hover:bg-orange transition-colors">Book Now</a>
+      {% else %}
       <a href="#tickets" class="js-moveto border border-orange rounded p-2 uppercase text-white hover:bg-orange transition-colors">Booking open soon</a>
+      {% endif %}
     </div>
 
     <ul class="block mt-4 md:mt-16 py-4">
@@ -123,7 +128,12 @@ schedule: [
     <p>Kingdom Code BUILD is our annual hackathon in partnership with <a href="https://indigitous.org/hack" target="_blank" rel="noopener" style="border-color: #d95835">Indigitous #Hack</a>, bringing together Christians who work in the world of tech from across Europe.</p>
     <p>Join Christian technologists from across the UK and beyond to share ideas and kick start projects that integrate our Christian faith and technical skill sets.</p>
     <p>Whether you’re a developer, designer, project manager, branding/marketing expert, ideator or something else entirely, enjoy taking a weekend to meet and work with others in the Kingdom Code community who share your desire to see God glorified through technology.</p>
-    <!--<a class="js-moveto btn btn--white-outline" href="#tickets">Book Now</a>-->
+
+    {% if eventbriteId %}
+    <a href="#tickets" class="inline-block js-moveto mt-4 border border-white rounded p-2 uppercase text-white hover:border-blue hover:text-blue transition-colors">
+      Book Now
+    </a>
+    {% endif %}
   </div>
 </section>
 
@@ -234,16 +244,18 @@ schedule: [
     <h2 class="ev-ticket__title text-4xl font-bold">Kingdom Code BUILD</h2>
     <date>{{ dates }}</date>
 
+    {% if eventbriteId %}
+    <div class="ev-ticket__eventbrite-widget" id="js-eb-ticket-widget-south"></div>
 
-    <h3>Booking will open soon</h3>
-
-    {#<div class="ev-ticket__eventbrite-widget" id="js-eb-ticket-widget-south"></div>
-
-    <p class="ev-ticket__smallprint">Kingdom Code BUILD ticket sales handled by Eventbrite.</p>
+    <p class="ev-ticket__smallprint mt-8">Kingdom Code BUILD ticket sales handled by Eventbrite.</p>
     <p><a class="btn btn--orange btn--full-width" href="https://www.eventbrite.co.uk/o/kingdom-code-uk-29351883943">Book your place via Eventbrite</a></p>
-    #}
+
+    {% else %}
+    <h3>Booking will open soon</h3>
+    {% endif %}
   </div>
 
+  {% if eventbriteId %}
   <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
 
   <script type="text/javascript">
@@ -254,7 +266,7 @@ schedule: [
       window.EBWidgets.createWidget({
           // Required
           widgetType: 'checkout',
-          eventId: '169754699877',
+          eventId: '{{ eventbriteId }}',
           iframeContainerId: 'js-eb-ticket-widget-south',
 
           // Optional
@@ -262,6 +274,7 @@ schedule: [
       });
 
   </script>
+  {% endif %}
 </section>
 
 
