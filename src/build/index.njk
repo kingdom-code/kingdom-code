@@ -167,20 +167,6 @@ schedule: [
 
 {% include "blocks/slider.njk" %}
 
-<section class="imagetext imagetext--orange" id="projects">
-  <div class="imagetext__img lg:min-h-[450px]">
-    {% rwdImg "/_assets/img/build/build21-team.jpg", "Build at St. John's, Hoxton" , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
-  </div>
-
-  <div class="imagetext__text">
-    <h2 class="uppercase text-2xl font-bold">Projects</h2>
-    <p class="my-2">Each year individuals come together around projects to form a teams. These might be a missionally minded passion project, a R&amp;D project from a ministry, or an investigation into the potential of a new tech or tool…</p>
-    <p class="my-2">In 2016 we explored the evangelistic potential from Alexa, and in 2017 how Christians Against Poverty might use VR… We've optimised AWS setups for ministries, designed supporter websites, analysed data…</p>
-    <a class="mt-2 inline-block hover:no-underline" href="/build/projects">Find out about bringing your project</a>
-  </div>
-</section>
-
-
 <section class="imagetext imagetext--blue" id="sponsor">
   <div class="imagetext__text">
     <h2 class="uppercase text-2xl font-bold">Partner with BUILD</h2>
@@ -192,6 +178,59 @@ schedule: [
     {% rwdImg "/_assets/img/build/cap-build.jpg", "Build at St. John's, Hoxton" , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
   </div>
 
+</section>
+
+<section class="imagetext imagetext--orange" id="projects">
+  <div class="imagetext__img lg:min-h-[450px]">
+    {% rwdImg "/_assets/img/build/build21-team.jpg", "Build at St. John's, Hoxton" , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
+  </div>
+
+  <div class="imagetext__text">
+    <h2 class="uppercase text-2xl font-bold">Projects</h2>
+    <p class="my-2">Each year individuals come together around projects to form a teams. These might be a missionally minded passion project, a R&amp;D project from a ministry, or an investigation into the potential of a new tech or tool…</p>
+    <p class="my-2">In 2016 we explored the evangelistic potential from Alexa, and in 2017 how Christians Against Poverty might use VR… We've optimised AWS setups for ministries, designed supporter websites, analysed data…</p>
+    <p class="my-2">This year we're excited to be working with projects and ministries like {% for project in buildProjects.slice(0,3) %}{% if loop.last %} and {% elif loop.first !== true %}, {% endif %}{{ project.Organisation }}{% endfor %}…</p>
+    <a class="mt-2 inline-block hover:no-underline" href="/build/projects">Find out about bringing yours.</a>
+  </div>
+</section>
+
+<section class="py-4 bg-orange/10 text-blue md:py-16">
+  <div class="container">
+    <h3 class="text-orange font-bold uppercase mb-0 text-center">Confirmed projects so far…</h3>
+    <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-4 my-4 md:mb-16">
+      {% for project in buildProjects %}
+      <div class="border border-orange p-4 bg-white">
+        {% if project.Logo.length %}
+        <div class="border-b border-orange mb-2">
+          <img src="{{ project.Logo[0].thumbnails.small.url }}" class="h-6" alt="{{ project.Organisation}}" />
+        </div>
+        {% endif %}
+        <h3 class="font-bold text-orange">
+          {{ project.Name}}
+          {% if project.Organisation !== project.Name %} - {{ project.Organisation}}{% endif %}
+        </h3>
+        <p class="text-sm">{{ project.Description }}</p>
+
+        <ul class="mt-2">
+          {% for skill in project.Skills.split(',') %}
+            <li class="inline-block text-xs bg-orange text-white rounded px-1">{{ skill }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+      {% if buildProjects % 4 !== 0 %}
+        <a href="/build/projects" class="bg-white block border border-orange p-4 hover:scale-105 transition">
+          <div class="border-b border-orange mb-2">
+            And your project?
+          </div>
+          <p>We're looking for some great Kingdom minded projects to work on at BUILD this year.</p>
+          <p class="mt-2">
+            <span class="rounded border-orange border p-1">Find out more</span>
+          </p>
+        </a>
+      {% endif %}
+    </div>
+  </div>
 </section>
 
 <section class="container" id="timings">

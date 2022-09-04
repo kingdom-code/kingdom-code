@@ -2,6 +2,7 @@ const dayjs = require("dayjs");
 const isSameOrAfter = require("dayjs/plugin/isSameOrAfter");
 dayjs.extend(isSameOrAfter);
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const inspect = require("util").inspect;
 
 const dateFormat = (d, format) => {
   return dayjs(d).format(format);
@@ -21,6 +22,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("isFutureDate", (dateObj) => {
     return dayjs(dateObj).isAfter(dayjs());
   });
+
+  eleventyConfig.addFilter("debug", (content) => `${inspect(content)}`);
 
   eleventyConfig.addFilter("futureMeetups", (collection) => {
     return collection.filter(function (item) {
