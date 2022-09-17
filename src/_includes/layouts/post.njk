@@ -16,7 +16,7 @@ layout: layouts/base.njk
 
     </header>
 
-    <div class="prose prose-figcaption:text-xs lg:prose-xl ">
+    <div class="prose prose-figcaption:text-xs">
       {{ layoutContent | safe }}
     </div>
 
@@ -53,9 +53,11 @@ layout: layouts/base.njk
       {% endif %}
       <a class="text-sm underline hover:text-mint" href="/blog">Back to all posts</a>
 
+      {% if disable_ad !== true %}
       <div class="py-4">
         {% include "blocks/build.njk" %}
       </div>
+      {% endif %}
     </div>
   </div>
 
