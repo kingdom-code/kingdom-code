@@ -2,6 +2,7 @@ const Image = require("@11ty/eleventy-img");
 
 module.exports = {
   svgSprite: (svgSprite) => {
+    return "";
     return `<svg class="${svgSprite.class}" role="img" aria-hidden="true">
               <use xlink:href="/_assets/svg/sprite.svg#${svgSprite.name}">
               </use>
