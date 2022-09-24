@@ -81,43 +81,44 @@ schedule: [
 ]
 ---
 
-<header class="kc-header">
+<header class="relative text-white">
 
-  <video class="kc-header__media" autoplay muted loop="loop" src="/_assets/misc/kingdom-code-header.mp4" poster="/_assets/img/build/kingdom-code-build-presentations.jpg">
-    <source type="video/mp4" src="/_assets/misc/kingdom-code-header.mp4">
-  </video>
+  <img src="/_assets/img/build/kingdom-code-build-presentations.jpg" alt="" class="block h-full object-cover absolute w-full" />
 
-  <div class="kc-header__container">
+  <div class="relative w-full text-center flex items-center justify-center flex-col bg-blue-500/60">
     <img src="/_assets/misc/build.svg" style="margin: 50px 0 20px; max-width: 350px" alt="Kingdom Code BUILD" class="kc-header__logo w-[90%]" />
     <hgroup>
-      <h1>Kingdom Code BUILD</h1>
+      <h1 class="font-bold text-5xl">Kingdom Code BUILD</h1>
       <h2>London: {{ dates }}</h2>
     </hgroup>
 
     <div>
       {% if eventbriteId %}
-      <a href="#tickets" class="js-moveto border border-orange rounded p-2 uppercase text-white hover:bg-orange transition-colors">Book Now</a>
+      <a href="#tickets" class="js-moveto mt-4 block border bg-orange border-orange rounded p-2 uppercase text-white hover:bg-transparent transition-colors">Book Now</a>
       {% else %}
-      <a href="#tickets" class="js-moveto border border-orange rounded p-2 uppercase text-white hover:bg-orange transition-colors">Booking open soon</a>
+      <a href="#tickets" class="js-moveto mt-4 block border bg-orange border-orange rounded p-2 uppercase text-white hover:bg-transparent transition-colors">Booking open soon</a>
       {% endif %}
     </div>
 
-    <ul class="block mt-4 md:mt-16 py-4">
+    <ul class="block mt-4 md:mt-8 py-4">
       <li class="inline"><a href="#about" class="js-moveto underline px-2 hover:no-underline">About</a>
       <li class="inline"><a href="#location" class="js-moveto underline px-2 hover:no-underline">Location</a>
       <li class="inline"><a href="#projects" class="js-moveto underline px-2 hover:no-underline">Projects</a>
-      <li class="inline"><a href="#sponsor" class="js-moveto underline px-2 hover:no-underline">Partner</a>
-      <li class="inline"><a href="#timings" class="js-moveto underline px-2 hover:no-underline">Timings and Practicalities</a>
+      {# <li class="inline"><a href="#sponsor" class="js-moveto underline px-2 hover:no-underline">Partner</a> #}
+      <li class="inline"><a href="#timings" class="js-moveto underline px-2 hover:no-underline">Timings&nbsp;and&nbsp;Practicalities</a>
       <li class="inline"><a href="#tickets" class="js-moveto underline px-2 hover:no-underline">Tickets</a>
     </ul>
 
   </div>
 </header>
-{#
-{% set logobar_logos = challenges %}
-{% set logobar_title = "Challenge partners" %}
-{% include "blocks/logobar.njk" %}
-#}
+
+<section class="py-4 md:py-12">
+  <div class="container text-center sm:text-left">
+    <p class="uppercase text-[#1f2453]">{% if logobar_title %}{{ logobar_title }}{% else %}Supported by:{% endif %}</p>
+    <img src="/_assets/misc/logos/churchsuite.svg" alt="ChurchSuite" class="w-1/2 max-w-sm m-auto sm:m-0" />
+  </div>
+</section>
+
 
 <section class="imagetext imagetext--orange" id="about">
   <div class="imagetext__img">
