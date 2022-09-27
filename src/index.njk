@@ -11,7 +11,8 @@ nav: true
 
 {% set post = collections.posts|reverse|first %}
 
-<section class="promo promo--flipped mt-4 md:mt-16" style="background-image: url({{ post.data.hero_img }});">
+<section class="promo promo--flipped mt-4 md:mt-16">
+  {% rwdImg post.data.hero_img, "" , "100vw", "block h-full object-cover absolute w-full rounded z-[-1]" %}
 
   <a class="promo__content" href="{{ post.url }}">
 

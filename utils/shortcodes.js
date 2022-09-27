@@ -16,10 +16,10 @@ module.exports = {
     src = `./src${src}`;
 
     let opts = {
-      widths: [320, 800, 1200],
+      widths: [320, 800, 1200, 2400],
       formats: ["webp", "jpeg"],
-      urlPath: "/_assets/rwd-img/",
-      outputDir: "./dist/_assets/rwd-img",
+      urlPath: "/_assets/11tyImg/",
+      outputDir: "./dist/_assets/11tyImg",
     };
 
     Image(src, opts);
