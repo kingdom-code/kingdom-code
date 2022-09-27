@@ -1,0 +1,18 @@
+[[plugins]]
+package = "netlify-plugin-cache"
+
+  [plugins.inputs]
+  paths = [
+    "dist/assets/img", # Eleventy Image Disk Cache
+    ".cache" # Remote Asset Cache
+  ]
+
+[[redirects]]
+  from = "/hackathon"
+  to = "/build"
+  status = 301
+
+[[redirects]]
+  from = "/feedback"
+  to = "/https://forms.gle/ot8r7Y3ZufNgf3om7"
+  status = 302
