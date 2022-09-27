@@ -4,8 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ELEVENTY_ENV=development eleventy --serve & mix watch",
-    "build": "ELEVENTY_ENV=production eleventy & mix --production"
+    "clean": "rm -rf static/dist",
+    "dev": "npm-run-all clean -p dev:*",
+    "dev:eleventy": "eleventy --serve --quiet",
+    "dev:mix": "mix watch",
+    "build:eleventy": "eleventy",
+    "build:mix": "mix --production",
+    "build": "npm-run-all clean -p build:*"
   },
   "author": "James Doc",
   "license": "ISC",
@@ -26,6 +31,7 @@
     "autoprefixer": "^10.4.2",
     "dayjs": "^1.11.5",
     "netlify-plugin-cache": "^1.0.3",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.4.5",
     "resolve-url-loader": "^4.0.0",
     "sass": "^1.45.1",
