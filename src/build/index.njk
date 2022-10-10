@@ -203,27 +203,23 @@ schedule: [
   <div class="container">
     <h3 class="text-orange font-bold uppercase mb-0 text-center">Confirmed projects so far…</h3>
     <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-4 my-4 md:mb-16">
-      {% for project in buildProjects %}
-      <div class="border border-orange p-4 bg-white">
-        {% if project.Logo.length %}
-        <div class="border-b border-orange mb-2">
-          <img src="{{ project.Logo[0].thumbnails.small.url }}" class="h-6" alt="{{ project.Organisation}}" />
-        </div>
-        {% endif %}
-        <h3 class="font-bold text-orange">
-          {{ project.Name}}
-          {% if project.Organisation !== project.Name %} - {{ project.Organisation}}{% endif %}
-        </h3>
-        <p class="text-sm">{{ project.Description }}</p>
 
-        <ul class="mt-2">
-          {% for skill in project.Skills.split(',') %}
+      {% for project in collections.projects %}
+        <a href="{{ project.url }}" class="block border border-orange p-4 bg-white hover:scale-105 transition">
+          <h3 class="font-bold text-orange">
+            {{ project.data.title }}
+            {% if project.data.org != project.data.title %} - {{ project.data.org }}{% endif %}
+          </h3>
+          <p class="text-sm">{{ project.data.summary }}</p>
+          <ul class="mt-2">
+          {% for skill in project.data.skills %}
             <li class="inline-block text-xs bg-orange text-white rounded px-1">{{ skill }}</li>
           {% endfor %}
         </ul>
-      </div>
+        </a>
       {% endfor %}
-      {% if buildProjects % 4 !== 0 %}
+
+      {% if collections.projects | length % 4 !== 0 %}
         <a href="/build/projects" class="bg-white block border border-orange p-4 hover:scale-105 transition">
           <div class="border-b border-orange mb-2">
             And your project?

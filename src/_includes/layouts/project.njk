@@ -1,0 +1,43 @@
+---
+nav: true;
+layout: layouts/base.njk
+---
+<div class="container">
+
+  <article class="text-blue">
+
+    <div class="prose prose-figcaption:text-xs mx-auto">
+      <h1 class="text-3xl md:text-4xl font-bold mb-2 md:mt-2 md:mb-4 text-blue" itemprop="name">{{ title | orphanWrap | safe }}</h1>
+      {{ layoutContent | safe }}
+    </div>
+
+    <section class="py-4 text-blue md:py-16">
+      <div class="container">
+        <h3 class="text-orange font-bold uppercase mb-0 text-center">All BUILD projects…</h3>
+        <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-4 my-4 md:mb-16">
+
+          {% for project in collections.projects %}
+            <a href="{{ project.url }}" class="block border border-orange p-4 bg-white hover:scale-105 transition">
+              <h3 class="font-bold text-orange">
+                {{ project.data.title }}
+                {% if project.data.org != project.data.title %} - {{ project.data.org }}{% endif %}
+              </h3>
+              <p class="text-sm">{{ project.data.summary }}</p>
+              <ul class="mt-2">
+              {% for skill in project.data.skills %}
+                <li class="inline-block text-xs bg-orange text-white rounded px-1">{{ skill }}</li>
+              {% endfor %}
+            </ul>
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <div class="py-4">
+      {% include "blocks/build.njk" %}
+    </div>
+
+  </article>
+
+</div>

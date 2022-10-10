@@ -78,6 +78,10 @@ module.exports = function (eleventyConfig) {
     });
   });
 
+  eleventyConfig.addCollection("projects", function(collection) {
+    return collection.getFilteredByGlob(["./src/build/projects/**/*.md"]);
+  });
+
   eleventyConfig.addCollection("meetups", function (collection) {
     return collection.getAllSorted().filter(function (item) {
       return item.inputPath.match(/^\.\/src\/meetup\/.*\.md$/) !== null;
