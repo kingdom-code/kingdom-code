@@ -14,5 +14,5 @@ package = "netlify-plugin-cache"
 
 [[redirects]]
   from = "/feedback"
-  to = "https://forms.gle/ot8r7Y3ZufNgf3om7"
+  to = "https://docs.google.com/forms/d/e/1FAIpQLSePhi4UF-WDUQKRZvmydVmPLDdMEMwi4cyOnLWVHpJyiTe9YQ/viewform"
   status = 302
