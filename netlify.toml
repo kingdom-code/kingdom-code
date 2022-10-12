@@ -16,3 +16,8 @@ package = "netlify-plugin-cache"
   from = "/feedback"
   to = "https://docs.google.com/forms/d/e/1FAIpQLSePhi4UF-WDUQKRZvmydVmPLDdMEMwi4cyOnLWVHpJyiTe9YQ/viewform"
   status = 302
+
+[[redirects]]
+  from = "/build/projects/2022/cost-of-living"
+  to = "/build"
+  status = 302

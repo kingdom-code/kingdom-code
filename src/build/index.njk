@@ -206,10 +206,10 @@ schedule: [
 
       {% for project in collections.projects %}
         <a href="{{ project.url }}" class="block border border-orange p-4 bg-white hover:scale-105 transition">
-          <h3 class="font-bold text-orange">
-            {{ project.data.title }}
-            {% if project.data.org != project.data.title %} - {{ project.data.org }}{% endif %}
-          </h3>
+          <h3 class="font-bold text-orange border-b border-orange mb-4">
+              {% if project.data.org != project.data.title %}<span class="block text-xs">{{ project.data.org }}:</span>{% endif %}
+              {{ project.data.title }}
+            </h3>
           <p class="text-sm">{{ project.data.summary }}</p>
           <ul class="mt-2">
           {% for skill in project.data.skills %}
