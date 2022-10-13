@@ -95,11 +95,13 @@ schedule: [
         </hgroup>
 
         <div>
-          {% if eventbriteId %}
+          <span class="mt-4 inline-block border border-orange rounded p-2 uppercase text-white hover:bg-transparent transition-colors">Bookings closed</span>
+
+          {# {% if eventbriteId %}
           <a href="#tickets" class="js-moveto mt-4 inline-block border bg-orange border-orange rounded p-2 uppercase text-white hover:bg-transparent transition-colors">Book Now</a>
           {% else %}
           <a href="#tickets" class="js-moveto mt-4 inline-block border bg-orange border-orange rounded p-2 uppercase text-white hover:bg-transparent transition-colors">Booking open soon</a>
-          {% endif %}
+          {% endif %} #}
         </div>
       </div>
     </div>
@@ -110,7 +112,7 @@ schedule: [
       <li class="inline"><a href="#projects" class="js-moveto underline px-2 hover:no-underline">Projects</a>
       {# <li class="inline"><a href="#sponsor" class="js-moveto underline px-2 hover:no-underline">Partner</a> #}
       <li class="inline"><a href="#timings" class="js-moveto underline px-2 hover:no-underline">Timings&nbsp;and&nbsp;Practicalities</a>
-      <li class="inline"><a href="#tickets" class="js-moveto underline px-2 hover:no-underline">Tickets</a>
+      {# <li class="inline"><a href="#tickets" class="js-moveto underline px-2 hover:no-underline">Tickets</a> #}
     </ul>
 
   </div>
@@ -134,11 +136,11 @@ schedule: [
     <p>Join Christian technologists from across the UK and beyond to share ideas and kick start projects that integrate our Christian faith and technical skill sets.</p>
     <p>Whether you’re a developer, designer, project manager, branding/marketing expert, ideator or something else entirely, enjoy taking a weekend to meet and work with others in the Kingdom Code community who share your desire to see God glorified through technology.</p>
 
-    {% if eventbriteId %}
+    {# {% if eventbriteId %}
     <a href="#tickets" class="inline-block js-moveto mt-4 border border-white rounded p-2 uppercase text-white hover:border-blue hover:text-blue transition-colors">
       Book Now
     </a>
-    {% endif %}
+    {% endif %} #}
   </div>
 </section>
 
@@ -288,7 +290,7 @@ schedule: [
     <div class="ev-ticket__eventbrite-widget" id="js-eb-ticket-widget-south"></div>
 
     <p class="ev-ticket__smallprint mt-8">Kingdom Code BUILD ticket sales handled by Eventbrite.</p>
-    <p><a class="btn btn--orange btn--full-width" href="https://www.eventbrite.co.uk/e/kingdom-code-build-2022-tickets-396537453197">Book your place via Eventbrite</a></p>
+    {# <p><a class="btn btn--orange btn--full-width" href="https://www.eventbrite.co.uk/e/kingdom-code-build-2022-tickets-396537453197">Book your place via Eventbrite</a></p> #}
 
     {% else %}
     <h3>Booking will open soon</h3>
