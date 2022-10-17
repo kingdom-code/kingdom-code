@@ -140,17 +140,17 @@ schedule: [
   <div class="textcol">
     {% for c in challenges %}
 
-    <div class="textcol__col textcol__col--centered">
+    <div class="textcol__col textcol__col--centered text-left">
 
       {% if c.org %}
         <div class="textcol__col__lead-img">
           <a href="{{ c.org.url }}">
-            <img class="highlight-box__logo" src="/_assets/misc/logos/{{ c.org.img }}" alt="{{ c.org.name }}" />
+            <img class="highlight-box__logo mx-auto block mb-4" src="/_assets/misc/logos/{{ c.org.img }}" alt="{{ c.org.name }}" />
           </a>
         </div>
       {% endif %}
 
-      <h3>
+      <h3 class="font-bold">
         {{ c.challenge }}
       </h3>
 
@@ -159,7 +159,7 @@ schedule: [
       </p>
 
       {% if c.youtubeId %}
-      <div class="video-embed">
+      <div class="video-embed my-4">
         <iframe src="https://www.youtube.com/embed/{{ c.youtubeId }}" frameborder="0" allowfullscreen></iframe>
       </div>
       {% endif %}

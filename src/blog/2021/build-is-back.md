@@ -3,6 +3,8 @@ title: BUILD is back for 2021
 date: 2021-08-03
 intro: Back for 2021, and now in the North and the South! Join Christians in the world of technology and innovation to support and serve ministries with digital projects.
 hero_img: /_assets/img/blog/2019/kingdom-code-build-2019-hackathon.jpg
+tags:
+  - build
 ---
 
 It’s been a long time since you heard from us. You might have even forgotten what Kingdom Code is! Let me remind you; Kingdom Code is a community of Christians who work in the world of technology and innovation. We’re a group which explores together how our faith shapes how and what we design, build, and use.

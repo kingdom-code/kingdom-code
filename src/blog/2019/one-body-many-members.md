@@ -1,6 +1,7 @@
 ---
 title: One Body, Many Members
-tags: Build
+tags:
+  - build
 author: Andy Geers
 date: 2019-11-07
 intro: The apostle Paul describes the church as one body with many members. Andy Geers explores what this means for us as Kingdom Code.

@@ -4,12 +4,13 @@ dayjs.extend(isSameOrAfter);
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const inspect = require("util").inspect;
 
+const collections = require("./utils/collections.js");
+const filters = require("./utils/filters.js");
+const shortcodes = require("./utils/shortcodes.js");
+
 const dateFormat = (d, format) => {
   return dayjs(d).format(format);
 };
-
-const shortcodes = require("./utils/shortcodes.js");
-const { Dayjs } = require("dayjs");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -17,10 +18,6 @@ module.exports = function (eleventyConfig) {
   // Shortcodes
   Object.keys(shortcodes).forEach((shortcodeName) => {
     eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName]);
-  });
-
-  eleventyConfig.addFilter("isFutureDate", (dateObj) => {
-    return dayjs(dateObj).isAfter(dayjs());
   });
 
   eleventyConfig.addFilter("debug", (content) => `${inspect(content)}`);
@@ -35,18 +32,6 @@ module.exports = function (eleventyConfig) {
     return collection.filter(function (item) {
       return dayjs(item.data.date).isBefore(dayjs());
     });
-  });
-
-  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
-    return dateFormat(dateObj, "YYYY-MM-DD");
-  });
-
-  eleventyConfig.addFilter("readableDate", (dateObj) => {
-    return dateFormat(dateObj, "ddd, D MMMM YYYY");
-  });
-
-  eleventyConfig.addFilter("formatDate", (dateObj, format) => {
-    return dateFormat(dateObj, format);
   });
 
   eleventyConfig.addFilter("eventsInCity", (events, city) => {
@@ -72,15 +57,14 @@ module.exports = function (eleventyConfig) {
     }
   });
 
+  // Filters
+  Object.keys(filters).forEach((filterName) => {
+    eleventyConfig.addFilter(filterName, filters[filterName]);
+  });
+
   eleventyConfig.addCollection("cities", function (collection) {
     return collection.getAllSorted().filter(function (item) {
       return item.inputPath.match(/^\.\/src\/cities\/.*\.md$/) !== null;
-    });
-  });
-
-  eleventyConfig.addCollection("posts", function (collection) {
-    return collection.getAllSorted().filter(function (item) {
-      return item.inputPath.match(/^\.\/src\/blog\/.*\.md$/) !== null;
     });
   });
 
@@ -90,6 +74,11 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection("meetups", function (collection) {
     return collection.getFilteredByGlob(["./src/meetup/**/*.md"]);
+  });
+
+  // Collections
+  Object.keys(collections).forEach((collectionName) => {
+    eleventyConfig.addCollection(collectionName, collections[collectionName]);
   });
 
   // Watch assets folder for changes

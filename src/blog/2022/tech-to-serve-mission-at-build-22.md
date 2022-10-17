@@ -4,6 +4,8 @@ date: 2022-09-17
 author: Andy Geers
 intro: From helping people think about how they vote, through to memorising scripture, or engaging people with child education and sponsorship programs, there are so many different ways your technical skill set can have Kingdom impact this year at BUILD. Andy explains more…
 hero_img: /_assets/img/blog/2022/build-22-hackathon.jpg
+tags:
+  - build
 ---
 
 Next month, 14-15 October, we will be running our seventh <a href="/build">Kingdom Code BUILD</a> event. The hackathon brings together Christian technologists and innovators from across the UK and beyond for a weekend of worshipping God with the skills and tools that he has gifted us with.

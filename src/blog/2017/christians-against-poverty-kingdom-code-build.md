@@ -1,7 +1,8 @@
 ---
 title: Christians Against Poverty + Kingdom Code BUILD
-city: 
-tags: Build
+city:
+tags:
+  - build
 author: James Doc
 date: 2017-09-10
 intro: This year at BUILD we're really looking forward to being joined by CAP and exploring their challenge around enabling local churches…

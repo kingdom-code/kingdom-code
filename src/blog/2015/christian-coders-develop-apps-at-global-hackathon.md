@@ -1,10 +1,11 @@
 ---
 title: Christian coders develop apps at global hackathon
-tags: Build
 author: Tim Wyatt
 date: 2015-10-09
 intro: What do you get when you put 100 Christian technology enthusiasts into a Westminster conference centre for three days, with a fast broadband connection but little sleep?
 canonical: https://www.churchtimes.co.uk/articles/2015/9-october/news/uk/christian-coders-develop-apps-at-global-hackathon
+tags:
+  - build
 ---
 
 What do you get when you put 100 Christian technology enthusiasts into a Westminster conference centre for three days, with a fast broadband connection but little sleep?

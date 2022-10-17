@@ -1,6 +1,7 @@
 ---
 title: Hackathon Global Challenges
-tags: BUILD
+tags:
+  - build
 author: James Doc
 date: 2015-09-09
 intro: While individuals and teams are welcome to come to the hackathon with they own projects and ideas, one of exciting parts of this weekend is working towards the challenges…

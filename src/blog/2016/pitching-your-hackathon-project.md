@@ -1,6 +1,7 @@
 ---
 title: Pitching your hackathon project
-tags: BUILD
+tags:
+  - build
 author: James Doc
 date: 2016-10-15
 intro: Let’s be clear, a good hackathon pitch does not have to be polished. It doesn’t need a three year roadmap or all the details about each UI interaction worked out. What really makes a great project pitch is communicating the vision…

@@ -1,6 +1,7 @@
 ---
 title: BUILDing tools for Bible-based evangelism
-tags: Build
+tags:
+  - build
 author: Alastair Gledhill
 date: 2019-09-12
 intro: In September our meetups in London and Leeds are getting practical ahead of next month's hackathon…
@@ -33,7 +34,7 @@ It was a real encouragement to see a diverse group of Christians, many of whom h
 Watch Jubi posing CEM’s challenge to innovators at the Kingdom Code BUILD event this week.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vYptMzrYumo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
- 
+
 ## Get hacking!
 
 This week’s design sprint was building towards the main BUILD event next month.

@@ -1,7 +1,8 @@
 ---
 title: Do you believe in anything like God’s serendipity?
 city: London
-tags: Think
+tags:
+  - think
 author: Rupert Edwards
 date: 2015-01-18
 intro: Noun - The occurrence and development of events by chance in a happy or beneficial way.

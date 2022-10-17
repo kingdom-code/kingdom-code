@@ -1,7 +1,8 @@
 ---
 title: The Startup World – March 2017 Meetup
-city: ['London', 'Bath and Bristol']
-tags: Think
+city: ["London", "Bath and Bristol"]
+tags:
+  - think
 author: James Doc
 date: 2017-02-23
 intro: I know what you are thinking… it’s been a while since you heard from Kingdom Code. Sorry. We’re coming out of hibernation now, and we’ve got some exciting things coming up over the next year.

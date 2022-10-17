@@ -1,6 +1,7 @@
 ---
 title: Making time for ideas
-tags: BUILD
+tags:
+  - build
 author: James Doc
 date: 2015-09-15
 intro: I love that bit at the beginning of projects when as a team we’re just throwing ideas around. There are post-it notes, sharpies, a big clear bit of wall and each member of the team is just putting their thoughts out there. The harder bit, is taking those thoughts and ideas, and condensing them down into a plan, and then getting on and making that plan happen.
@@ -8,9 +9,9 @@ intro: I love that bit at the beginning of projects when as a team we’re just 
 
 I love that bit at the beginning of projects when as a team we’re just throwing ideas around. There are post-it notes, sharpies, a big clear bit of wall and each member of the team is just putting their thoughts out there. The harder bit, is taking those thoughts and ideas, and condensing them down into a plan, and then getting on and making that plan happen.
 
-A while ago, a friend of mine told me “*ideas are cheap, it is the execution that is expensive*”. It’s not a new or original quote, but it was the first time that I had heard it and the words stuck with me. It resonated with me because I carry a notebook around that is just full of ideas, but so few of them have been actioned. Why? Because of time, because of fear and because it will be a sacrifice of something else, because there is just a lot of other things to do.
+A while ago, a friend of mine told me “_ideas are cheap, it is the execution that is expensive_”. It’s not a new or original quote, but it was the first time that I had heard it and the words stuck with me. It resonated with me because I carry a notebook around that is just full of ideas, but so few of them have been actioned. Why? Because of time, because of fear and because it will be a sacrifice of something else, because there is just a lot of other things to do.
 
-Genesis 1:27 says: “*…God created mankind in his own image, in the image of God he created them; male and female he created them*” (NIV 2011). The great creator made us in his image, the creative God made us with creativity. We’re not made to sit on ideas, locked up in notebooks.
+Genesis 1:27 says: “_…God created mankind in his own image, in the image of God he created them; male and female he created them_” (NIV 2011). The great creator made us in his image, the creative God made us with creativity. We’re not made to sit on ideas, locked up in notebooks.
 
 That is one of the reasons that I’m involved with a group called [Kingdom Code](https://www.kingdomcode.org.uk). We’re a group of developers, designers and entrepreneurs who, in some way, want to use our ideas, gifts and skills for God’s glory. We’ve got caught around the concept of catalysing serendipity, bringing together a community where ideas are sparked, relationships are formed and technology is made that glorifies God.
 

@@ -1,10 +1,12 @@
 ---
 title: Moving your ideas forward
-tags: Build
+tags:
+  - build
 author: James Doc
 date: 2018-09-19
 intro: Years ago a friend told me 'ideas are cheap. What sets people apart is the implementation'. It was a provokation…
 ---
+
 Years ago a friend told me &#8220;<em>ideas are cheap. What sets people apart is the implementation</em>&#8220;. It was a provokation… they had heard me share another wild idea, but were (understandably) frustrated from hearing yet another scheme that probably wouldn&#8217;t be followed through.
 
 At the last Kingdom Code meetup we spent the evening coming up with ideas… we heard from both Bible Society and Stewardship, about their mission, about how their Christian ethos has challenged them to make a difference, how they&#8217;ve been working over many years to see it realised, and where they see their challenges now. Then over the course of the rest of our evening we came up with many ideas riffing off the challenge statements, exploring how digital skillsets could help resource these organisations further. Now what? Do we just sit on our ideas until the <a href="https://kingdomcode.org.uk/build">hackathon in October</a>?

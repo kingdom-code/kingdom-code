@@ -4,6 +4,8 @@ author: Joe Gallant
 date: 2020-02-21
 intro: ‘BUILD's challenge stuck me to consider how we could use digital tools to increase appetite and engagement…’ Joe shares more about the desire to get their project, Bible Garden, finished and launched
 hero_img: /_assets/img/blog/2020/bible-garden.jpg
+tags:
+  - build
 ---
 
 _Blessed is the one… whose delight is in the law of the Lord, and who meditates on his law day and night. That person is like a tree planted by streams of water, which yields its fruit in season and whose leaf does not wither—whatever they do prospers._ - Psalm 1:1-3

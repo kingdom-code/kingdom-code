@@ -1,10 +1,11 @@
 ---
 title: Founder of Zappos, Tony Hsieh’s Rule for Success- Maximise Serendipity
 city: London
-tags: Think
+tags:
+  - think
 author: Rupert Edwards
 date: 2015-01-28
-intro:  My fascination with serendipity started in college. I think for most people, college was the last time it was normal to just randomly run into people all the time.
+intro: My fascination with serendipity started in college. I think for most people, college was the last time it was normal to just randomly run into people all the time.
 ---
 
 This article from Inc. about Tony Hsieh – founder of Zappos, is interesting when we think about what we hope for with Kingdom Code. He is rebuilding downtown Los Vegas to accelerate serendipity:

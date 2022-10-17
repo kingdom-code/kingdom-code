@@ -1,6 +1,7 @@
 ---
 title: Hear back from BUILD 2019
-tags: Build
+tags:
+  - build
 author: James Doc
 date: 2019-11-01
 intro: Throughout BUILD 19 we were interviewing some of the people in the room to give you a snapshot of what happened during the 24 hour hackathon. Listen now…

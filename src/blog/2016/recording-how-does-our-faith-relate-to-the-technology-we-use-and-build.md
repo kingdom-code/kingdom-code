@@ -1,7 +1,8 @@
 ---
 title: How does our faith relate to the technology we use and build?
 city: London
-tags: Think
+tags:
+  - think
 author: James Doc
 date: 2016-04-09
 intro: Technology is deeply engrained in our society. When we were discussing it on Monday night we were thinking much more than computers, smartphones or the virtual reality (VR) headsets that are on the horizon though. Kettles, dishwashers, gas lamps, even chairs and the wheel were included in the discussion…

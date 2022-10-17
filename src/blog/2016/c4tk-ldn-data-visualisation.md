@@ -1,6 +1,7 @@
 ---
 title: Challenge 2 - Data Visualisation
-tags: BUILD
+tags:
+  - build
 author: James Doc
 date: 2016-10-12
 intro: Have you noticed that we’re producing more data than ever before? There are things like FitBit, which generate data at a personal level. Datasets created by analytic tracking tools, built into our apps and websites shouldn’t overlooked.

@@ -4,6 +4,8 @@ author: Dave Knotts
 date: 2020-01-10
 intro: Having a project idea is easy, implementing that idea is harder, but by far the hardest thing is sticking with a project for a few years! We hear back from one of the projects out of the 2016 hackathon.
 hero_img: /_assets/img/blog/2020/more-than-tech.jpg
+tags:
+  - build
 ---
 
 **Having an idea for a great app or website is easy, implementing that idea is harder. But by far the hardest thing is sticking with a project for a few years; continuing to update, add to it, and make sure it is still doing what you set out to do!**

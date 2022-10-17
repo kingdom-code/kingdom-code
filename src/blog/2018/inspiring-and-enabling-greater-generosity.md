@@ -1,6 +1,7 @@
 ---
 title: Inspiring and enabling greater generosity…
-tags: Build
+tags:
+  - build
 author: James Doc
 date: 2018-08-23
 intro: Kingdom Code BUILD is a great opportunity to kick off that passion project that you’ve had in the back of your mind for a while, or to start coding the idea that came up over a drink at a Kingdom Code meetup…

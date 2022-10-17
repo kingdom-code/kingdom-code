@@ -1,10 +1,12 @@
 ---
 title: Helping to increase an appetite for the Bible…
-tags: Build
+tags:
+  - build
 author: James Doc
 date: 2018-07-31
 intro: In a time when digital devices play a huge role in our lives, how can we leverage the skills we have as developers, designers and creatives to help people experience the power of the Bible?
 ---
+
 One of the aims for Kingdom Code is to help Christians in the world of technology see how their skillset can be used for God’s Kingdom. BUILD, our annual hackathon, is a really important part of that.
 
 To focus how we use the weekend we invite a pair of Christian organisations to set challenges for the BUILD weekend. This year, our first partner will be Bible Society.
