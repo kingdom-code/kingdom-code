@@ -6,9 +6,9 @@
   "scripts": {
     "clean": "rm -rf static/dist",
     "dev": "npm-run-all clean -p dev:*",
-    "dev:eleventy": "eleventy --serve --quiet",
+    "dev:eleventy": "ELEVENTY_ENV=development eleventy --serve --quiet",
     "dev:mix": "mix watch",
-    "build:eleventy": "eleventy",
+    "build:eleventy": "ELEVENTY_ENV=production eleventy",
     "build:mix": "mix --production",
     "build": "npm-run-all clean -p build:*"
   },
