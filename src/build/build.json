@@ -1,0 +1,8 @@
+{
+  "nav": true,
+  "section": "build",
+  "nextDate": "13–14 October 2023",
+  "nextYear": 2023,
+  "buildYears": [2015, 2016, 2017, 2018, 2019, 2021, 2022],
+  "layout": "layouts/base.njk"
+}

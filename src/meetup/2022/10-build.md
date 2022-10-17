@@ -10,5 +10,5 @@ location:
   postcode: N1 6NP
 intro: Our annual hackathon will be back at St. John's, Hoxton in October 2022. Save the date and get ready to join a group of missions-minded technologists to share ideas and kick start projects that integrate our Christian faith and technical skill sets.
 #eventbriteId: 86902667217
-canonical: /build
+canonical: /build/2022
 ---

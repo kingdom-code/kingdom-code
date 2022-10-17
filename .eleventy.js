@@ -31,6 +31,12 @@ module.exports = function (eleventyConfig) {
     });
   });
 
+  eleventyConfig.addFilter("pastEvent", (collection) => {
+    return collection.filter(function (item) {
+      return dayjs(item.data.date).isBefore(dayjs());
+    });
+  });
+
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
     return dateFormat(dateObj, "YYYY-MM-DD");
   });
@@ -83,9 +89,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection("meetups", function (collection) {
-    return collection.getAllSorted().filter(function (item) {
-      return item.inputPath.match(/^\.\/src\/meetup\/.*\.md$/) !== null;
-    });
+    return collection.getFilteredByGlob(["./src/meetup/**/*.md"]);
   });
 
   // Watch assets folder for changes

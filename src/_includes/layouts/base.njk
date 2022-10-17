@@ -57,11 +57,12 @@
 
     {{ layoutContent | safe }}
 
+    {% if hideNewsletter !== true %}
     <div class="kc-newsletter">
       <section class="container" id="newsletter">
         <h2 class="text-2xl font-bold">Stay in touch</h2>
         <p class="mb-4">Sign up and receive all the latest news and meet up information from Kingdom Code{% if cityName %} and events in {{ cityName }}{% endif %}:</p>
-
+        {# if you edit this remember there is another on the BUILD index page #}
         <form action="https://kingdomcode.us11.list-manage.com/subscribe/post?u=0faea843d029399bef7962992&amp;id=686a0f7b4b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
           <div id="mce-responses" class="clear">
             <div class="response" id="mce-error-response" style="display:none"></div>
@@ -98,6 +99,7 @@
 
       </section>
     </div>
+    {% endif %}
 
 
     <footer class="container mx-auto">

@@ -2,9 +2,9 @@
 nav: true
 layout: layouts/base.njk
 title: BUILD
-eventbriteId: 396537453197
+#eventbriteId: 396537453197
 section: build
-dates: 14 – 15 October 2022
+dates: 13 – 14 October 2023
 projects: [
   {
 
@@ -95,7 +95,6 @@ schedule: [
         </hgroup>
 
         <div>
-          <span class="mt-4 inline-block border border-orange rounded p-2 uppercase text-white hover:bg-transparent transition-colors">Bookings closed</span>
 
           {# {% if eventbriteId %}
           <a href="#tickets" class="js-moveto mt-4 inline-block border bg-orange border-orange rounded p-2 uppercase text-white hover:bg-transparent transition-colors">Book Now</a>
@@ -110,7 +109,7 @@ schedule: [
       <li class="inline"><a href="#about" class="js-moveto underline px-2 hover:no-underline">About</a>
       <li class="inline"><a href="#location" class="js-moveto underline px-2 hover:no-underline">Location</a>
       <li class="inline"><a href="#projects" class="js-moveto underline px-2 hover:no-underline">Projects</a>
-      {# <li class="inline"><a href="#sponsor" class="js-moveto underline px-2 hover:no-underline">Partner</a> #}
+      <li class="inline"><a href="#sponsor" class="js-moveto underline px-2 hover:no-underline">Partner</a>
       <li class="inline"><a href="#timings" class="js-moveto underline px-2 hover:no-underline">Timings&nbsp;and&nbsp;Practicalities</a>
       {# <li class="inline"><a href="#tickets" class="js-moveto underline px-2 hover:no-underline">Tickets</a> #}
     </ul>
@@ -118,12 +117,12 @@ schedule: [
   </div>
 </header>
 
-<section class="py-4 md:py-12">
+{# <section class="py-4 md:py-12">
   <div class="container text-center sm:text-left">
     <p class="uppercase text-[#1f2453]">{% if logobar_title %}{{ logobar_title }}{% else %}Supported by:{% endif %}</p>
     <img src="/_assets/misc/logos/churchsuite.svg" alt="ChurchSuite" class="w-1/2 max-w-sm m-auto sm:m-0" />
   </div>
-</section>
+</section> #}
 
 
 <section class="imagetext imagetext--orange" id="about">
@@ -196,13 +195,14 @@ schedule: [
     <h2 class="uppercase text-2xl font-bold">Projects</h2>
     <p class="my-2">Each year individuals come together around projects to form a teams. These might be a missionally minded passion project, a R&amp;D project from a ministry, or an investigation into the potential of a new tech or tool…</p>
     <p class="my-2">In 2016 we explored the evangelistic potential from Alexa, and in 2017 how Christians Against Poverty might use VR… We've optimised AWS setups for ministries, designed supporter websites, analysed data…</p>
-    <p class="my-2">This year we're excited to be working with projects and ministries like {% for project in buildProjects.slice(0,3) %}{% if loop.last %} and {% elif loop.first !== true %}, {% endif %}{{ project.Organisation }}{% endfor %}…</p>
+    {# <p class="my-2">This year we're excited to be working with projects and ministries like {% for project in buildProjects.slice(0,3) %}{% if loop.last %} and {% elif loop.first !== true %}, {% endif %}{{ project.Organisation }}{% endfor %}…</p> #}
+    <a class="mt-2 inline-block hover:no-underline" href="/build/projects">Find out about bringing yours.</a>
   </div>
 </section>
 
-<section class="py-4 bg-orange/10 text-blue md:py-16">
+{# <section class="py-4 bg-orange/10 text-blue md:py-16">
   <div class="container">
-    <h3 class="text-orange font-bold uppercase mb-0 text-center">Projects at BUILD 2022</h3>
+    <h3 class="text-orange font-bold uppercase mb-0 text-center">Confirmed projects so far…</h3>
     <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-4 my-4 md:mb-16">
 
       {% for project in collections.projects %}
@@ -219,9 +219,21 @@ schedule: [
         </ul>
         </a>
       {% endfor %}
+
+      {% if collections.projects | length % 4 !== 0 %}
+        <a href="/build/projects" class="bg-white block border border-orange p-4 hover:scale-105 transition">
+          <div class="border-b border-orange mb-2">
+            And your project?
+          </div>
+          <p>We're looking for some great Kingdom minded projects to work on at BUILD this year.</p>
+          <p class="mt-2">
+            <span class="rounded border-orange border p-1">Find out more</span>
+          </p>
+        </a>
+      {% endif %}
     </div>
   </div>
-</section>
+</section> #}
 
 <section class="container" id="timings">
   <h2 class="text-mint font-bold text-2xl uppercase my-4 md:my-16 text-center">Schedule</h2>

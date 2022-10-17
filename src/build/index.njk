@@ -1,322 +1,69 @@
 ---
 nav: true
-layout: layouts/base.njk
 title: BUILD
-#eventbriteId: 396537453197
-section: build
-dates: 13 – 14 October 2023
-projects: [
-  {
-
-  }
-]
-quotes: [
-  {
-    quote: 'It was great to develop something for the Kingdom and to meet Christians in tech.',
-    attr: 'Bonolo'
-  },
-  {
-    quote: 'One of my highlights from BUILD was catching up with people and getting to do some pythony pairing for a great idea.',
-    attr: 'Eddie'
-  },
-  {
-    quote: 'I loved seeing how much can be achieved in such a short period of time!',
-    attr: 'Esther'
-  },
-  {
-    quote: 'I was able to work with a team of people who loved God, to build something which advanced His Kingdom… it was exhilarating.',
-    attr: 'Isaac'
-  },
-  {
-    quote: 'At BUILD I was able to meet other Christian developers and discuss God centered technologies.',
-    attr: 'Mike'
-  },
-  {
-    quote: 'It was impressive to seeing every one committed to moving fast from idea to an output with in a day. Grateful for the tech skill sets and talents within the Christian community',
-    attr: 'Owusu'
-  },
-  {
-    quote: "It all come together; five previous strangers managed to build something together using everyone's skills",
-    attr: 'Ruth'
-  },
-  {
-    quote: 'I met excellent skilled people, eager to code for Jesus',
-    attr: 'Simeon'
-  },
-  {
-    quote: "At BUILD I realised you don't have to be perfect to develop or have a high knowledge to start an project",
-    attr: 'Nicholas'
-  },
-  {
-    quote: 'One of the best bits was encouraging and supporting a community who really are dedicated to Jesus and Tech… it is a really good hackathon!',
-    attr: 'Corina'
-  }
-]
-schedule: [
-  {
-    day: 2021-10-15,
-    timings: [
-      ['18.00', 'Doors open'],
-      ['18:45', 'Dinner'],
-      ['19:15', 'Welcome'],
-      ['19.45', 'Praise and prayer'],
-      ['20.00', 'Project presentations'],
-      ['20.30', 'Team formation'],
-      ['21.00', 'Team prayer']
-    ]
-  },
-  {
-    day: 2021-10-16,
-    timings: [
-      ['08.30', 'Breakfast'],
-      ['09.00', 'Morning prayer'],
-      ['12.30', 'Lunch break'],
-      ['17.00', 'Project deadline and tidy up!'],
-      ['17.30', 'Dinner'],
-      ['18.30', 'Presentations'],
-      ['19.45', 'Voting'],
-      ['20.30', 'Farewell']
-    ]
-  }
-]
+hideNewsletter: true
 ---
 
-<header class="relative text-white">
+<section class="container p-0 mb-4 bg-orange text-white">
 
-  {% rwdImg "/_assets/img/build/kingdom-code-build-presentations.jpg", "" , "100vw", "block h-full object-cover absolute w-full" %}
+  {% rwdImg "/_assets/img/build/build-index-banner.jpg", "" , "100vw", "block w-full" %}
 
-  <div class="relative w-full text-center flex items-center justify-center flex-col bg-blue-500/60">
-    <div class="sm:flex items-center gap-4 md:gap-8">
-      <img src="/_assets/misc/build22.svg" style="" alt="Kingdom Code BUILD" class="kc-header__logo p-4 mx-auto w-[90%] max-w-[350px]" />
-      <div class="sm:text-left">
-        <hgroup>
-          <h1 class="font-bold text-5xl">Kingdom Code BUILD</h1>
-          <h2>London: {{ dates }}</h2>
-        </hgroup>
+  <div class="px-4 md:px-16 bg-orange">
+    <div class="border-b-2 border-white py-4 md:py-8">
 
-        <div>
+      <img src="/_assets/misc/build22.svg" style="" alt="Kingdom Code BUILD" class="-mt-16 w-[33%] max-w-[150px] mb-4 md:-mt-24" />
 
-          {# {% if eventbriteId %}
-          <a href="#tickets" class="js-moveto mt-4 inline-block border bg-orange border-orange rounded p-2 uppercase text-white hover:bg-transparent transition-colors">Book Now</a>
-          {% else %}
-          <a href="#tickets" class="js-moveto mt-4 inline-block border bg-orange border-orange rounded p-2 uppercase text-white hover:bg-transparent transition-colors">Booking open soon</a>
-          {% endif %} #}
-        </div>
+      <p class="text-2xl leading-relaxed max-w-screen-md md:text-4xl md:leading-relaxed">
+        At Kingdom Code BUILD you'll take part in a 24 hour hackathon, meet Christians in the world of technology &amp; innovation, and practically explore how your faith and skills collide.
+      </p>
+    </div>
+
+    <div class="py-4">
+      <p>Join us at the next BUILD…</p>
+      <a href="/build/{{ nextYear }}" class="inline-block text-lg underline pb-2 md:text-2xl">
+        {{ nextDate }} 👉
+      </a>
       </div>
-    </div>
-
-    <ul class="block mt-4 md:mt-8 py-4">
-      <li class="inline"><a href="#about" class="js-moveto underline px-2 hover:no-underline">About</a>
-      <li class="inline"><a href="#location" class="js-moveto underline px-2 hover:no-underline">Location</a>
-      <li class="inline"><a href="#projects" class="js-moveto underline px-2 hover:no-underline">Projects</a>
-      {# <li class="inline"><a href="#sponsor" class="js-moveto underline px-2 hover:no-underline">Partner</a> #}
-      <li class="inline"><a href="#timings" class="js-moveto underline px-2 hover:no-underline">Timings&nbsp;and&nbsp;Practicalities</a>
-      {# <li class="inline"><a href="#tickets" class="js-moveto underline px-2 hover:no-underline">Tickets</a> #}
-    </ul>
-
-  </div>
-</header>
-
-{# <section class="py-4 md:py-12">
-  <div class="container text-center sm:text-left">
-    <p class="uppercase text-[#1f2453]">{% if logobar_title %}{{ logobar_title }}{% else %}Supported by:{% endif %}</p>
-    <img src="/_assets/misc/logos/churchsuite.svg" alt="ChurchSuite" class="w-1/2 max-w-sm m-auto sm:m-0" />
-  </div>
-</section> #}
-
-
-<section class="imagetext imagetext--orange" id="about">
-  <div class="imagetext__img">
-    {% rwdImg "/_assets/img/build/kingdom-code-build-st-johns-hoxton.jpg", "Build at St. John's, Hoxton" , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
-  </div>
-
-  <div class="imagetext__text">
-    <p>Kingdom Code BUILD is our annual hackathon in partnership with <a href="https://indigitous.org/hack" target="_blank" rel="noopener" style="border-color: #d95835">Indigitous #Hack</a>, bringing together Christians who work in the world of tech from across Europe.</p>
-    <p>Join Christian technologists from across the UK and beyond to share ideas and kick start projects that integrate our Christian faith and technical skill sets.</p>
-    <p>Whether you’re a developer, designer, project manager, branding/marketing expert, ideator or something else entirely, enjoy taking a weekend to meet and work with others in the Kingdom Code community who share your desire to see God glorified through technology.</p>
-
-    {# {% if eventbriteId %}
-    <a href="#tickets" class="inline-block js-moveto mt-4 border border-white rounded p-2 uppercase text-white hover:border-blue hover:text-blue transition-colors">
-      Book Now
-    </a>
-    {% endif %} #}
   </div>
 </section>
 
-
-<section class="imagetext imagetext--blue" id="location">
-  <div class="imagetext__text">
-    <h2 class="text-white font-bold text-2xl uppercase mb-4">Location</h2>
-
-    <div>
-      <p class="mb-4">
-        St. John's, Hoxton<br />
-        Pitfield St,<br />
-        London N1 6NP
-      </p>
-
-      <p>
-        <a href="https://www.google.co.uk/maps/place/St+John's+Hoxton/@51.530558,-0.0857897,17z/data=!3m1!4b1!4m5!3m4!1s0x48761ca4a1c662f3:0x32dbb98ab343ecd8!8m2!3d51.530558!4d-0.083601?hl=en">Get directions</a>
-      </p>
-    </div>
-
-    <div>
-      Nearest station: Old Street / Hoxton
-    </div>
+<section class="container mb-4 border-2 border-mint p-4 md:p-16 md:grid md:grid-cols-2 md:gap-16">
+  <div class="flex justify-center flex-col">
+    <p class="text-2xl font-bold mb-4">Stay in touch</p>
+    <p>Sign up to the newsletter to hear more about BUILD, other Kingdom Code events, news and resources.</p>
   </div>
 
-  <div class="imagetext__img lg:min-h-[450px]">
-    {% rwdImg "/_assets/img/build/build18-stjohns.jpg", "Build at St. John's, Hoxton" , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
-  </div>
+  <form class="pt-4 md:pt-0" action="https://kingdomcode.us11.list-manage.com/subscribe/post?u=0faea843d029399bef7962992&amp;id=686a0f7b4b" method="post" target="_blank">
 
+    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+      <input type="text" name="b_0faea843d029399bef7962992_686a0f7b4b" tabindex="-1" value="">
+    </div>
+
+    <div class="mb-2">
+      <label for="mce-FNAME" class="block text-sm">First name:</label>
+      <input type="text" value="" name="FNAME" class="w-full p-2 border border-mint" id="mce-FNAME" placeholder="First name" required />
+    </div>
+
+    <div class="mb-2">
+      <label for="mce-LNAME" class="block text-sm">Last name:</label>
+      <input type="text" value="" name="LNAME" class="w-full p-2 border border-mint" id="mce-LNAME" placeholder="Family name" required />
+    </div>
+
+    <div class="mb-2">
+      <label for="mce-EMAIL" class="block text-sm">Email address:</label>
+      <input type="email" value="" name="EMAIL" class="w-full p-2 border border-mint" id="mce-EMAIL" placeholder="Email address" required />
+    </div>
+
+    <div class="">
+      <input type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="mt-4 inline-block border bg-mint border-mint rounded p-2 uppercase text-white cursor-pointer hover:bg-transparent hover:text-mint transition-colors">
+    </div>
+
+  </form>
 </section>
 
-{% include "blocks/slider.njk" %}
-
-<section class="imagetext imagetext--blue" id="sponsor">
-  <div class="imagetext__text">
-    <h2 class="uppercase text-2xl font-bold">Partner with BUILD</h2>
-    <p class="my-2">From having projects to work on, through to covering the event costs, we need your help. The team give their time for free, but without the support of like-minded businesses, churches and charities, BUILD could not take place.</p>
-    <a class="mt-2 inline-block hover:no-underline" href="/build/partnership">Find out more</a>
-  </div>
-
-  <div class="imagetext__img lg:min-h-[450px]">
-    {% rwdImg "/_assets/img/build/cap-build.jpg", "Build at St. John's, Hoxton" , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
-  </div>
-
+<section class="container mb-2">
+  Previously at BUILD:
+  {% for year in buildYears | reverse %}
+    <a href="/build/{{ year }}" class="underline mx-2">{{ year }}</a>
+  {% endfor %}
 </section>
-
-<section class="imagetext imagetext--orange" id="projects">
-  <div class="imagetext__img lg:min-h-[450px]">
-    {% rwdImg "/_assets/img/build/build21-team.jpg", "Build at St. John's, Hoxton" , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
-  </div>
-
-  <div class="imagetext__text">
-    <h2 class="uppercase text-2xl font-bold">Projects</h2>
-    <p class="my-2">Each year individuals come together around projects to form a teams. These might be a missionally minded passion project, a R&amp;D project from a ministry, or an investigation into the potential of a new tech or tool…</p>
-    <p class="my-2">In 2016 we explored the evangelistic potential from Alexa, and in 2017 how Christians Against Poverty might use VR… We've optimised AWS setups for ministries, designed supporter websites, analysed data…</p>
-    {# <p class="my-2">This year we're excited to be working with projects and ministries like {% for project in buildProjects.slice(0,3) %}{% if loop.last %} and {% elif loop.first !== true %}, {% endif %}{{ project.Organisation }}{% endfor %}…</p> #}
-    <a class="mt-2 inline-block hover:no-underline" href="/build/projects">Find out about bringing yours.</a>
-  </div>
-</section>
-
-{# <section class="py-4 bg-orange/10 text-blue md:py-16">
-  <div class="container">
-    <h3 class="text-orange font-bold uppercase mb-0 text-center">Confirmed projects so far…</h3>
-    <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-4 my-4 md:mb-16">
-
-      {% for project in collections.projects %}
-        <a href="{{ project.url }}" class="block border border-orange p-4 bg-white hover:scale-105 transition">
-          <h3 class="font-bold text-orange border-b border-orange mb-4">
-              {% if project.data.org != project.data.title %}<span class="block text-xs">{{ project.data.org }}:</span>{% endif %}
-              {{ project.data.title }}
-            </h3>
-          <p class="text-sm">{{ project.data.summary }}</p>
-          <ul class="mt-2">
-          {% for skill in project.data.skills %}
-            <li class="inline-block text-xs bg-orange text-white rounded px-1">{{ skill }}</li>
-          {% endfor %}
-        </ul>
-        </a>
-      {% endfor %}
-
-      {% if collections.projects | length % 4 !== 0 %}
-        <a href="/build/projects" class="bg-white block border border-orange p-4 hover:scale-105 transition">
-          <div class="border-b border-orange mb-2">
-            And your project?
-          </div>
-          <p>We're looking for some great Kingdom minded projects to work on at BUILD this year.</p>
-          <p class="mt-2">
-            <span class="rounded border-orange border p-1">Find out more</span>
-          </p>
-        </a>
-      {% endif %}
-    </div>
-  </div>
-</section> #}
-
-<section class="container" id="timings">
-  <h2 class="text-mint font-bold text-2xl uppercase my-4 md:my-16 text-center">Schedule</h2>
-
-  <div class="textcol">
-    {% for day in schedule %}
-    <div class="textcol__col">
-      <h3 class="font-bold uppercase mb-2">{{ day.day | formatDate('dddd') }}</h3>
-      <ul class="time-list">
-        {% for item in day.timings %}
-          <li>
-            <span>{{ item[0] }}</span>
-            <span>{{ item[1] }}</span>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endfor %}
-  </div>
-
-  <h3 class="text-mint font-bold uppercase mb-0 text-center">Some practicalities</h3>
-  <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-4 my-4 md:mb-16">
-    <div class="border border-mint p-4">
-      <h3 class="font-bold text-mint">Food</h3>
-      <p class="text-sm sm:text-base">We'll feed you throughout the whole weekend, just let us know your dietary needs when you register.</p>
-    </div>
-
-    <div class="border border-mint p-4">
-      <h3 class="font-bold text-mint">Sleeping</h3>
-      <p class="text-sm sm:text-base">Some people choose to work all the way through, most choose some sleep! You can sleep onsite (bring your own sleeping bag and toothbrush), or arrange your own offsite accomodation.</p>
-    </div>
-
-    <div class="border border-mint p-4">
-      <h3 class="font-bold text-mint">Getting here</h3>
-      <p class="text-sm sm:text-base">St. John's is a five minute walk from Old Street Tube station (Northern line), it's a quick hop from London, King's Cross.</p>
-    </div>
-
-    <div class="border border-mint p-4">
-      <h3 class="font-bold text-mint">Other questions?</h3>
-      <p class="text-sm sm:text-base">Ping us a message on <a href="https://twitter.com/kcodeuk" rel="noopener" target="_blank">twitter</a>, or send an email to info@ and we will get back to you asap.</p>
-    </div>
-  </div>
-</section>
-
-
-<section class="ev-ticket" id="tickets">
-
-  <div class="container py-16">
-    <h2 class="ev-ticket__title text-4xl font-bold">Kingdom Code BUILD</h2>
-    <date>{{ dates }}</date>
-
-    {% if eventbriteId %}
-    <div class="ev-ticket__eventbrite-widget" id="js-eb-ticket-widget-south"></div>
-
-    <p class="ev-ticket__smallprint mt-8">Kingdom Code BUILD ticket sales handled by Eventbrite.</p>
-    {# <p><a class="btn btn--orange btn--full-width" href="https://www.eventbrite.co.uk/e/kingdom-code-build-2022-tickets-396537453197">Book your place via Eventbrite</a></p> #}
-
-    {% else %}
-    <h3>Booking will open soon</h3>
-    {% endif %}
-  </div>
-
-  {% if eventbriteId %}
-  <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
-
-  <script type="text/javascript">
-      var exampleCallback = function() {
-          console.log('Order complete!');
-      };
-
-      window.EBWidgets.createWidget({
-          // Required
-          widgetType: 'checkout',
-          eventId: '{{ eventbriteId }}',
-          iframeContainerId: 'js-eb-ticket-widget-south',
-
-          // Optional
-          // onOrderComplete: exampleCallback  // Method called when an order has successfully completed
-      });
-
-  </script>
-  {% endif %}
-</section>
-
-
-{% include "blocks/buildPartners.njk" %}
