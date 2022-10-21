@@ -10,7 +10,7 @@ nav: true
 {% include "blocks/events.njk" %}
 
 {% set post = collections.posts|reverse|first %}
-
+{% if not post.data.canonical %}
 <section class="promo promo--flipped mt-4 md:mt-16">
   {% rwdImg post.data.hero_img, "" , "100vw", "block h-full object-cover absolute w-full rounded z-[-1]" %}
 
@@ -30,5 +30,6 @@ nav: true
     </p>
   </a>
 </section>
+{% endif %}
 
 

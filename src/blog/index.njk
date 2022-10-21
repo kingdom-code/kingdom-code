@@ -29,14 +29,14 @@ section: blog
   <div class="divide-y divide-grey text-blue md:col-span-2 md:mt-0">
   {% for post in collections.posts | reverse %}
 
-    <a href="{{ post.url }}" class="block group pt-4 mb-4">
+    <a href="{% if post.data.canonical %}{{ post.data.canonical }}{% else %}{{ post.url }}{% endif %}" {% if post.data.canonical %}target="_blank"{% endif %} class="block group pt-4 mb-4">
       <date class="text-xs block">{{ post.data.date | readableDate }}</date>
       <h2 class="text-orange text-2xl font-bold group-hover:text-mint hover:underline">{{ post.data.title }}</h2>
       {% if post.data.intro %}
       <p class="mx-0 my-2 text-blue">{{ post.data.intro }}</p>
       {% endif %}
 
-      <span class="underline group-hover:text-mint hover:underline">Keep reading…</span>
+      <span class="underline group-hover:text-mint hover:underline">Keep reading{% if post.data.canonicalRef %} on {{ post.data.canonicalRef }}{% endif %}…</span>
     </a>
   {% endfor %}
   </div>
