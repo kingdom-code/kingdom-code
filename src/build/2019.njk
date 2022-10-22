@@ -135,7 +135,7 @@ schedule: [
 </section>
 
 <section class="container" id="challenges">
-  <h2 class="heading heading--centered heading--green">Challenges</h2>
+  <h2 class="text-mint font-bold my-4 uppercase text-4xl text-center md:my-12">Challenges</h2>
   <p>At Kingdom Code we want to explore how the technical skillsets that God has given us can practically serve His church. Each year at BUILD we set a pair of challenges to give focus to what we work on during the 24 hour hackathon.</p>
   <div class="textcol">
     {% for c in challenges %}
@@ -143,9 +143,9 @@ schedule: [
     <div class="textcol__col textcol__col--centered text-left">
 
       {% if c.org %}
-        <div class="textcol__col__lead-img">
+        <div class="px-4 pb-4">
           <a href="{{ c.org.url }}">
-            <img class="highlight-box__logo mx-auto block mb-4" src="/_assets/misc/logos/{{ c.org.img }}" alt="{{ c.org.name }}" />
+            <img class="h-[75px] mx-auto block" src="/_assets/misc/logos/{{ c.org.img }}" alt="{{ c.org.name }}" />
           </a>
         </div>
       {% endif %}
@@ -181,7 +181,7 @@ schedule: [
 
 <section class="imagetext imagetext--blue" id="location">
   <div class="imagetext__text">
-    <h1 class="heading">Location</h1>
+    <h1 class="text-white font-bold uppercase text-4xl">Location</h1>
 
     <div>
       <p>
@@ -207,7 +207,7 @@ schedule: [
 </section>
 
 <section class="container" id="schedules">
-  <h2 class="heading heading--centered heading--green">Schedule</h2>
+  <h2 class="text-mint font-bold my-4 uppercase text-4xl text-center md:my-12">Schedule</h2>
 
   <div class="textcol">
     {% for day in schedule %}
@@ -229,7 +229,7 @@ schedule: [
 <section class="ev-ticket" id="tickets">
 
   <div class="container">
-    <h2 class="ev-ticket__title heading">Kingdom Code BUILD</h2>
+    <h2 class="text-orange font-bold my-4 uppercase text-4xl text-center md:my-12">Kingdom Code BUILD</h2>
 
     <h3>Sorry, are now bookings closed</h3>
     <date>11–12 October</date>
