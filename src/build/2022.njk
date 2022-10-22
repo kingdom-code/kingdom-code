@@ -3,6 +3,7 @@ nav: true
 layout: layouts/base.njk
 title: BUILD 2022
 eventbriteId: 396537453197
+bookingsOpen: false
 section: build
 dates: 14 – 15 October 2022
 year: 2022
@@ -93,7 +94,7 @@ schedule: [
         <div>
           <span class="mt-4 inline-block border border-orange rounded p-2 uppercase text-white hover:bg-transparent transition-colors">Bookings closed</span>
 
-          {# {% if eventbriteId %}
+          {# {% if eventbriteId and bookingsOpen %}
           <a href="#tickets" class="js-moveto mt-4 inline-block border bg-orange border-orange rounded p-2 uppercase text-white hover:bg-transparent transition-colors">Book Now</a>
           {% else %}
           <a href="#tickets" class="js-moveto mt-4 inline-block border bg-orange border-orange rounded p-2 uppercase text-white hover:bg-transparent transition-colors">Booking open soon</a>
@@ -108,7 +109,9 @@ schedule: [
       <li class="inline"><a href="#projects" class="js-moveto underline px-2 hover:no-underline">Projects</a>
       {# <li class="inline"><a href="#sponsor" class="js-moveto underline px-2 hover:no-underline">Partner</a> #}
       <li class="inline"><a href="#timings" class="js-moveto underline px-2 hover:no-underline">Timings&nbsp;and&nbsp;Practicalities</a>
-      {# <li class="inline"><a href="#tickets" class="js-moveto underline px-2 hover:no-underline">Tickets</a> #}
+      {% if eventbriteId and bookingsOpen %}
+      <li class="inline"><a href="#tickets" class="js-moveto underline px-2 hover:no-underline">Tickets</a>
+      {% endif %}
     </ul>
 
   </div>
@@ -132,11 +135,11 @@ schedule: [
     <p>Join Christian technologists from across the UK and beyond to share ideas and kick start projects that integrate our Christian faith and technical skill sets.</p>
     <p>Whether you’re a developer, designer, project manager, branding/marketing expert, ideator or something else entirely, enjoy taking a weekend to meet and work with others in the Kingdom Code community who share your desire to see God glorified through technology.</p>
 
-    {# {% if eventbriteId %}
+    {% if eventbriteId and bookingsOpen %}
     <a href="#tickets" class="inline-block js-moveto mt-4 border border-white rounded p-2 uppercase text-white hover:border-blue hover:text-blue transition-colors">
       Book Now
     </a>
-    {% endif %} #}
+    {% endif %}
   </div>
 </section>
 
@@ -192,7 +195,7 @@ schedule: [
     <h2 class="uppercase text-2xl font-bold">Projects</h2>
     <p class="my-2">Each year individuals come together around projects to form a teams. These might be a missionally minded passion project, a R&amp;D project from a ministry, or an investigation into the potential of a new tech or tool…</p>
     <p class="my-2">In 2016 we explored the evangelistic potential from Alexa, and in 2017 how Christians Against Poverty might use VR… We've optimised AWS setups for ministries, designed supporter websites, analysed data…</p>
-    <p class="my-2">This year we're excited to be working with projects and ministries like {% for project in buildProjects.slice(0,3) %}{% if loop.last %} and {% elif loop.first !== true %}, {% endif %}{{ project.Organisation }}{% endfor %}…</p>
+    <p class="my-2">This year we're excited to be working with projects and ministries like Compassion, CARE, and Discipleship Tech.</p>
   </div>
 </section>
 
@@ -248,18 +251,15 @@ schedule: [
     <h2 class="ev-ticket__title text-4xl font-bold">Kingdom Code BUILD</h2>
     <date>{{ dates }}</date>
 
-    {% if eventbriteId %}
+    {% if eventbriteId and bookingsOpen %}
     <div class="ev-ticket__eventbrite-widget" id="js-eb-ticket-widget-south"></div>
 
     <p class="ev-ticket__smallprint mt-8">Kingdom Code BUILD ticket sales handled by Eventbrite.</p>
-    {# <p><a class="btn btn--orange btn--full-width" href="https://www.eventbrite.co.uk/e/kingdom-code-build-2022-tickets-396537453197">Book your place via Eventbrite</a></p> #}
-
-    {% else %}
-    <h3>Booking will open soon</h3>
+    <p><a class="btn btn--orange btn--full-width" href="https://www.eventbrite.co.uk/e/kingdom-code-build-2022-tickets-396537453197">Book your place via Eventbrite</a></p>
     {% endif %}
   </div>
 
-  {% if eventbriteId %}
+  {% if eventbriteId and bookingsOpen %}
   <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
 
   <script type="text/javascript">

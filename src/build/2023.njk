@@ -1,8 +1,8 @@
 ---
 nav: true
-layout: layouts/base.njk
 title: BUILD 2023
 #eventbriteId: 396537453197
+bookingsOpen: false
 section: build
 dates: 13 – 14 October 2023
 projects: [
@@ -12,44 +12,32 @@ projects: [
 ]
 quotes: [
   {
-    quote: 'It was great to develop something for the Kingdom and to meet Christians in tech.',
-    attr: 'Bonolo'
+    quote: "Kingdom Code unites, \r\nbuilding done in unity, \r\nChrist honoured in tech.",
+    attr: "Haiku by Alexandra @ BUILD 2022"
   },
   {
-    quote: 'One of my highlights from BUILD was catching up with people and getting to do some pythony pairing for a great idea.',
-    attr: 'Eddie'
+    quote: "I loved using my God-given to have fun and create tools to further God’s kingdom",
+    attr: "Tom @ BUILD 2022"
   },
   {
-    quote: 'I loved seeing how much can be achieved in such a short period of time!',
-    attr: 'Esther'
+    quote: "BUILD is a community and encouragement of shared passions",
+    attr: "Matthew @ BUILD 2022"
   },
   {
-    quote: 'I was able to work with a team of people who loved God, to build something which advanced His Kingdom… it was exhilarating.',
-    attr: 'Isaac'
+    quote: "Really encouraging to be surrounded and work alongside fellow Christians who want to create tech for God's Kingdom!",
+    attr: "Nia @ BUILD 2022"
   },
   {
-    quote: 'At BUILD I was able to meet other Christian developers and discuss God centered technologies.',
-    attr: 'Mike'
+    quote: "[BUILD is] an amazing opportunity to work on some exciting, kingdom focused projects with so many gifted and passionate individuals.",
+    attr: "Ceri @ BUILD 2022"
   },
   {
-    quote: 'It was impressive to seeing every one committed to moving fast from idea to an output with in a day. Grateful for the tech skill sets and talents within the Christian community',
-    attr: 'Owusu'
+    quote: "I absolutely loved it, I was able to use my God given gift to glorify God",
+    attr: "Osi @ BUILD 2022"
   },
   {
-    quote: "It all come together; five previous strangers managed to build something together using everyone's skills",
-    attr: 'Ruth'
-  },
-  {
-    quote: 'I met excellent skilled people, eager to code for Jesus',
-    attr: 'Simeon'
-  },
-  {
-    quote: "At BUILD I realised you don't have to be perfect to develop or have a high knowledge to start an project",
-    attr: 'Nicholas'
-  },
-  {
-    quote: 'One of the best bits was encouraging and supporting a community who really are dedicated to Jesus and Tech… it is a really good hackathon!',
-    attr: 'Corina'
+    quote: "[The hackathon is] a fun, yet intense, time to work with other Christian tech enthusiasts, a great space to learn.",
+    attr: "Josiah @ BUILD 2022"
   }
 ]
 schedule: [
@@ -83,10 +71,10 @@ schedule: [
 
 <header class="relative text-white">
 
-  {% rwdImg "/_assets/img/build/kingdom-code-build-presentations.jpg", "" , "100vw", "block h-full object-cover absolute w-full" %}
+  {% rwdImg "/_assets/img/build/laptop-sticker.jpg", "" , "100vw", "block h-full object-cover absolute w-full" %}
 
   <div class="relative w-full text-center flex items-center justify-center flex-col bg-blue-500/60">
-    <div class="sm:flex items-center gap-4 md:gap-8">
+    <div class="sm:flex items-center gap-4 md:gap-8 mt-4 md:mt-8">
       <img src="/_assets/misc/build22.svg" style="" alt="Kingdom Code BUILD" class="kc-header__logo p-4 mx-auto w-[90%] max-w-[350px]" />
       <div class="sm:text-left">
         <hgroup>
@@ -111,7 +99,9 @@ schedule: [
       <li class="inline"><a href="#projects" class="js-moveto underline px-2 hover:no-underline">Projects</a>
       <li class="inline"><a href="#sponsor" class="js-moveto underline px-2 hover:no-underline">Partner</a>
       <li class="inline"><a href="#timings" class="js-moveto underline px-2 hover:no-underline">Timings&nbsp;and&nbsp;Practicalities</a>
-      {# <li class="inline"><a href="#tickets" class="js-moveto underline px-2 hover:no-underline">Tickets</a> #}
+      {% if eventbriteId and bookingsOpen %}
+      <li class="inline"><a href="#tickets" class="js-moveto underline px-2 hover:no-underline">Tickets</a>
+      {% endif %}
     </ul>
 
   </div>
@@ -127,7 +117,7 @@ schedule: [
 
 <section class="imagetext imagetext--orange" id="about">
   <div class="imagetext__img">
-    {% rwdImg "/_assets/img/build/kingdom-code-build-st-johns-hoxton.jpg", "Build at St. John's, Hoxton" , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
+    {% rwdImg "/_assets/img/build/build-22-focus.jpg", "A team working on a project at BUILD" , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
   </div>
 
   <div class="imagetext__text">
@@ -166,7 +156,7 @@ schedule: [
   </div>
 
   <div class="imagetext__img lg:min-h-[450px]">
-    {% rwdImg "/_assets/img/build/build18-stjohns.jpg", "Build at St. John's, Hoxton" , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
+    {% rwdImg "/_assets/img/build/kingdom-code-build-st-johns-22.jpg", "Build at St. John's, Hoxton" , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
   </div>
 
 </section>
@@ -181,14 +171,14 @@ schedule: [
   </div>
 
   <div class="imagetext__img lg:min-h-[450px]">
-    {% rwdImg "/_assets/img/build/cap-build.jpg", "Build at St. John's, Hoxton" , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
+    {% rwdImg "/_assets/img/build/stewardship-build.jpg", "Build at St. John's, Hoxton" , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
   </div>
 
 </section>
 
 <section class="imagetext imagetext--orange" id="projects">
   <div class="imagetext__img lg:min-h-[450px]">
-    {% rwdImg "/_assets/img/build/build21-team.jpg", "Build at St. John's, Hoxton" , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
+    {% rwdImg "/_assets/img/build/build22-compassion.jpg", "Build at St. John's, Hoxton" , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
   </div>
 
   <div class="imagetext__text">
@@ -285,18 +275,15 @@ schedule: [
     <h2 class="ev-ticket__title text-4xl font-bold">Kingdom Code BUILD</h2>
     <date>{{ dates }}</date>
 
-    {% if eventbriteId %}
-    <div class="ev-ticket__eventbrite-widget" id="js-eb-ticket-widget-south"></div>
+    {% if eventbriteId and bookingsOpen %}
+      <div class="ev-ticket__eventbrite-widget" id="js-eb-ticket-widget-south"></div>
 
-    <p class="ev-ticket__smallprint mt-8">Kingdom Code BUILD ticket sales handled by Eventbrite.</p>
-    {# <p><a class="btn btn--orange btn--full-width" href="https://www.eventbrite.co.uk/e/kingdom-code-build-2022-tickets-396537453197">Book your place via Eventbrite</a></p> #}
-
-    {% else %}
-    <h3>Booking will open soon</h3>
+      <p class="ev-ticket__smallprint mt-8">Kingdom Code BUILD ticket sales handled by Eventbrite.</p>
+      <p><a class="btn btn--orange btn--full-width" href="https://www.eventbrite.co.uk/e/{{ eventbriteId }}">Book your place via Eventbrite</a></p>
     {% endif %}
   </div>
 
-  {% if eventbriteId %}
+  {% if eventbriteId and bookingsOpen %}
   <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
 
   <script type="text/javascript">

@@ -39,6 +39,10 @@ exports.orphanWrap = (str) => {
   }
 };
 
+exports.randomiseArray = (arr) => {
+  return arr.sort(() => Math.random() - 0.5)
+}
+
 // Return just the projects for a given year
 // and sorted by project title
 exports.buildProjects = (projects, year) => {

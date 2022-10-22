@@ -4,7 +4,7 @@
   "nextDate": "13–14 October 2023",
   "nextYear": 2023,
   "buildYears": [2015, 2016, 2017, 2018, 2019, 2021, 2022],
-  "layout": "layouts/base.njk",
+  "layout": "layouts/build.njk",
   "hero_img": "/_assets/img/build/build-og-hero.jpg",
   "intro": "At Kingdom Code BUILD you'll take part in a 24 hour hackathon, meet Christians in the world of technology & innovation, and practically explore how your faith and skills collide."
 }

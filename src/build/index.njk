@@ -79,10 +79,3 @@ hideNewsletter: true
     {% endif %}
   {% endfor %}
 </section>
-
-<section class="container mb-2">
-  Previously at BUILD:
-  {% for year in buildYears | reverse %}
-    <a href="/build/{{ year }}" class="underline mx-2">{{ year }}</a>
-  {% endfor %}
-</section>

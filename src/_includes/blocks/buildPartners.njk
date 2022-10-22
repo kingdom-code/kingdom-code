@@ -1,25 +1,17 @@
 <section class="py-4 bg-blue text-white md:py-16">
-    <div class="container">
-      <h2 class="text-center text-2xl font-bold">
-        In the past we've worked with digital teams at</h2>
-      <ul class="grid gap-4 grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 text-sm text-center my-4">
+  <div class="container">
+    <h2 class="text-center text-2xl font-bold">
+      In the past we've worked with digital teams at
+    </h2>
+
+    <ul class="grid gap-4 grid-cols-2 sm:grid-cols-4 md:gap-8 lg:grid-cols-8 text-sm text-center my-4">
+      {% for partner in buildPartners | randomiseArray %}
+        {% if loop.index0 < 8 %}
         <li>
-          <img src="/_assets/misc/logos/tearfund.svg" class="block" alt="Tearfund" />
+          <img src="/_assets/misc/logos/{{ partner.logo }}" class="block" alt="{{ partner.name }}" />
         </li>
-        <li>
-          <img src="/_assets/misc/logos/cap-white.svg" class="block" alt="Christians Against Poverty" />
-        </li>
-        <li>
-          <img src="/_assets/misc/logos/CEM-white.svg" class="block" alt="Christianity Explored" />
-        </li>
-        <li><img src="/_assets/misc/logos/premier.svg" class="block" alt="Premier" /></li>
-        <li>
-          <img src="/_assets/misc/logos/homeForGood.svg" class="block" alt="Home For Good" />
-        </li>
-        <li><img src="/_assets/misc/logos/bibleSoc.svg" class="block" alt="Bible Society" /></li>
-        <li><img src="/_assets/misc/logos/stewardship.svg" class="block" alt="Stewardship" /></li>
-        {# <li><img src="/_assets/misc/logos/coe.svg" class="block" alt="The Church of England" /></li> #}
-        <li><img src="/_assets/misc/logos/biblicalCounselling.svg" class="block" alt="Biblical Counselling UK" /></li>
-      </ul>
-    <div>
-  </section>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  <div>
+</section>

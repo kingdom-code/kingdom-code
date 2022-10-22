@@ -3,9 +3,9 @@
 
   <div class="container slider__container">
 
-    {% for q in quotes %}
+    {% for q in quotes|randomiseArray %}
     <blockquote class="slider__slide">
-      <p class="slider__quote">{{ q.quote }}</p>
+      <p class="slider__quote">{{ q.quote|nl2br|safe }}</p>
       <footer class="slider__attribute">{{ q.attr }}</footer>
     </blockquote>
     {% endfor %}
