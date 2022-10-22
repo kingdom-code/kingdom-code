@@ -4,11 +4,7 @@ layout: layouts/base.njk
 title: BUILD
 section: build
 dates: Friday 15th – Saturday 16th October 2021
-projects: [
-  {
-
-  }
-]
+year: 2021
 quotes: [
   {
     quote: 'It was great to develop something for the Kingdom and to meet Christians in tech.',
@@ -92,9 +88,9 @@ schedule: [
       {# <h3>Bookings open now!</h3> #}
     </hgroup>
 
-    <div class="kc-header__ctas">
+    {# <div class="kc-header__ctas">
       <a href="https://www.eventbrite.co.uk/e/kingdom-code-build-south-tickets-169754699877?aff=kcsite">Book Now</a>
-    </div>
+    </div> #}
 
   </div>
 </header>
@@ -117,6 +113,9 @@ schedule: [
 </section>
 
 {% include "blocks/slider.njk" %}
+
+{% include "blocks/projectList.njk" %}
+
 <section class="ev-ticket" id="tickets">
 
   <div class="container">

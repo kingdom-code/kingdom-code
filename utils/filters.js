@@ -38,3 +38,15 @@ exports.orphanWrap = (str) => {
     return str;
   }
 };
+
+// Return just the projects for a given year
+// and sorted by project title
+exports.buildProjects = (projects, year) => {
+  return projects
+    .filter(project => project.data.year.toString() === year.toString())
+    .sort((a, b) => {
+      const x = a.data.title.toLowerCase();
+      const y = b.data.title.toLowerCase();
+      return x < y ? -1 : x > y ? 1 : 0;
+    });
+};

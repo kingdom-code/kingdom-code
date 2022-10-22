@@ -5,11 +5,7 @@ title: BUILD
 eventbriteId: 396537453197
 section: build
 dates: 14 – 15 October 2022
-projects: [
-  {
-
-  }
-]
+year: 2022
 quotes: [
   {
     quote: 'It was great to develop something for the Kingdom and to meet Christians in tech.',
@@ -200,28 +196,7 @@ schedule: [
   </div>
 </section>
 
-<section class="py-4 bg-orange/10 text-blue md:py-16">
-  <div class="container">
-    <h3 class="text-orange font-bold uppercase mb-0 text-center">Projects at BUILD 2022</h3>
-    <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-4 my-4 md:mb-16">
-
-      {% for project in collections.projects %}
-        <a href="{{ project.url }}" class="block border border-orange p-4 bg-white hover:scale-105 transition">
-          <h3 class="font-bold text-orange border-b border-orange mb-4">
-              {% if project.data.org != project.data.title %}<span class="block text-xs">{{ project.data.org }}:</span>{% endif %}
-              {{ project.data.title }}
-            </h3>
-          <p class="text-sm">{{ project.data.summary }}</p>
-          <ul class="mt-2">
-          {% for skill in project.data.skills %}
-            <li class="inline-block text-xs bg-orange text-white rounded px-1">{{ skill }}</li>
-          {% endfor %}
-        </ul>
-        </a>
-      {% endfor %}
-    </div>
-  </div>
-</section>
+{% include "blocks/projectList.njk" %}
 
 <section class="container" id="timings">
   <h2 class="text-mint font-bold text-2xl uppercase my-4 md:my-16 text-center">Schedule</h2>

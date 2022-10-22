@@ -1,4 +1,5 @@
 {
   "layout": "layouts/project.njk",
-  "section": "build"
+  "section": "build",
+  "permalink": "build/{{ year }}/{{ title | slug }}/index.html"
 }
