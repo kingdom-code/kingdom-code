@@ -6,6 +6,7 @@ intro: On Friday night, 75 designers, developers, and technologists gathered in 
 hero_img:
 tags:
   - build
+  - build22
 canonical: https://churchsuite.com/blog/2022-10-19-coding-for-the-kingdom/
 canonicalRef: ChurchSuite
 ---

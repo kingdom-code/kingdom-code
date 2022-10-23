@@ -8,6 +8,9 @@ const collections = require("./utils/collections.js");
 const filters = require("./utils/filters.js");
 const shortcodes = require("./utils/shortcodes.js");
 
+const markdownIt = require("markdown-it");
+const markdownItFootnote = require("markdown-it-footnote");
+
 const dateFormat = (d, format) => {
   return dayjs(d).format(format);
 };
@@ -80,6 +83,28 @@ module.exports = function (eleventyConfig) {
   Object.keys(collections).forEach((collectionName) => {
     eleventyConfig.addCollection(collectionName, collections[collectionName]);
   });
+
+  // Markdown Config
+  const markdownConfig = markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true,
+    typographer: true,
+  }).use(markdownItFootnote);
+
+  markdownConfig.renderer.rules.footnote_block_open = () => {
+    return (
+      '<div class="footnotes">\n' +
+      "<h4>Footnotes</h4>\n" +
+      '<ol class="footnotes-list">\n'
+    );
+  };
+
+  markdownConfig.renderer.rules.footnote_block_close = () => {
+    return "</ol>\n" + "</div>\n";
+  };
+
+  eleventyConfig.setLibrary("md", markdownConfig);
 
   // Watch assets folder for changes
   eleventyConfig.addWatchTarget("./src/_assets");

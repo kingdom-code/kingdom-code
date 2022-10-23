@@ -6,6 +6,7 @@ intro: A constant glow was emanating from the interior of St John’s, Hoxton, l
 hero_img:
 tags:
   - build
+  - build22
 canonical: https://www.churchtimes.co.uk/articles/2022/21-october/news/uk/christian-coders-attend-hackathon
 canonicalRef: Church Times
 ---
