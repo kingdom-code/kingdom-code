@@ -6,6 +6,7 @@ intro: We've been checking-in with Phil Hardwick, developer of The Prayer Walk A
 hero_img: /_assets/img/blog/2022/prayer-walking-phil-presenting.jpg
 tags:
   - build
+  - build21
 ---
 
 Thank you for praying for BUILD 2021. We had over 60 participants! The weekend was filled with worshipping God together, encouraging one another, collaborating on selected projects and building the groundwork for deep friendships.

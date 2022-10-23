@@ -6,6 +6,7 @@ intro: From helping people think about how they vote, through to memorising scri
 hero_img: /_assets/img/blog/2022/build-22-hackathon.jpg
 tags:
   - build
+  - build22
 ---
 
 Next month, 14-15 October, we will be running our seventh <a href="/build">Kingdom Code BUILD</a> event. The hackathon brings together Christian technologists and innovators from across the UK and beyond for a weekend of worshipping God with the skills and tools that he has gifted us with.

@@ -49,25 +49,3 @@ We’re now exploring how to make it financially sustainable; the Christmas vide
 **DR**: Oh, they definitely should! I’m not a coder; there's a place for all types of people. I found I could offer ideas, I can offer some other experience that I’ve got. I needed the coders, I needed the designers, it would be great to have a whole variety of skills there. But I’d say come along because you’ll be an encouragement to whatever team you’re part of, you’ll help them sharpen their ideas.
 
 Come along because it’s a genuine group of people who are trying to work on something together. And at the end you just won’t find anything quite like it. You know, at a conference you go and you just sit on a chair all day, or if you go to you know like a sort of a digital meet up with other photographers all you do is talk about cameras… But at Kingdom Code BUILD you get a chance to bring your faith into something and work on a project together. You don’t need to come with a project; you’ll be a massive blessing to somebody for whom this could be a really crucial, massive boost to their project. So yeah, come along!
-
-<section class="promo">
-
-  <a class="promo__content" href="/build">
-
-  <img class="promo__content__logo" src="/_assets/misc/build.svg" />
-
-  <date>
-    Friday 11 - Saturday 12 October 2019
-  </date>
-
-  <p>
-    Kingdom Code BUILD brings together Christians in the world of tech from across Europe to practically explore our how faith in Jesus connects with our technical skills.
-  </p>
-
-  <p>
-    <span class="promo__content__button">
-      Find out more
-    </span>
-  </p>
-  </a>
-</section>
