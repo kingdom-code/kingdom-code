@@ -2,6 +2,7 @@
 title: Hackathon Local Challenges
 tags:
   - build
+  - build-2015
 author: James Doc
 date: 2015-09-27
 intro: At the beginning of the month we shared with you the global challenges that are being worked on across the different Code for the Kingdom events around the world. Today we want to share with you the challenges that we are setting specifically in the UK Code for the Kingdom hackathon…

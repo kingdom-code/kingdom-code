@@ -6,6 +6,7 @@ intro: What do you get when you put 100 Christian technology enthusiasts into a 
 canonical: https://www.churchtimes.co.uk/articles/2015/9-october/news/uk/christian-coders-develop-apps-at-global-hackathon
 tags:
   - build
+  - build-2015
 ---
 
 What do you get when you put 100 Christian technology enthusiasts into a Westminster conference centre for three days, with a fast broadband connection but little sleep?

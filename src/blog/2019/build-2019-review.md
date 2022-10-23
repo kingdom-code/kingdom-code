@@ -2,6 +2,7 @@
 title: Reviewing BUILD 2019
 tags:
   - build
+  - build-2019
 author: James Doc
 date: 2019-10-16
 intro: In Christ we, though many, form one body… as BUILD 2019 comes to an end we share what has happened during the twenty four hour hackathon.

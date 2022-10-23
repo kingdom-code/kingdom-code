@@ -2,6 +2,7 @@
 title: How to make the most of a 24 hour hackathon
 tags:
   - build
+  - build-2018
 author: Andy Geers
 date: 2018-10-02
 intro: A hackathon is always an intense experience where you are seeking to make as much progress as possible in a short space of time, but this year's BUILD is a little different from previous BUILD events- we only have 24 hours to get things done.

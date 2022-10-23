@@ -2,6 +2,7 @@
 title: Transforming Lives at Code for the Kingdom
 tags:
   - build
+  - build-2016
 author: James Doc
 date: 2016-09-29
 intro: Lets be under no illusion – technology has totally transformed the world we live in. It is something that continues each day…

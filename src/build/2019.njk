@@ -2,6 +2,7 @@
 nav: true
 layout: layouts/base.njk
 title: BUILD 2019
+year: 2019
 section: build
 challenges: [
   {
@@ -205,6 +206,9 @@ schedule: [
   </div>
 
 </section>
+
+{% set blogListingTag = "build-" + year %}
+{% include "blocks/blogListing.njk" %}
 
 <section class="container" id="schedules">
   <h2 class="text-mint font-bold my-4 uppercase text-4xl text-center md:my-12">Schedule</h2>

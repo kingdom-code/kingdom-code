@@ -6,6 +6,7 @@ date: 2015-07-29
 intro: Last week I had the pleasure of spending 15 minutes talking to Chris Lim, founder of TheoTech, about what is exciting him about the global hackathon in October and why developers, designers, entrepreneurs and even pastors should sign up to come along.
 tags:
   - build
+  - build-2015
 ---
 
 **Last week I had the pleasure of spending 15 minutes talking to Chris Lim, founder of TheoTech, about what is exciting him about the global hackathon in October and why developers, designers, entrepreneurs and even pastors should sign up to come along.**

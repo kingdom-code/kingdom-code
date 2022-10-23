@@ -61,21 +61,6 @@ hideNewsletter: true
   </form>
 </section>
 
-<section class="container p-0 mb-4 grid grid-cols-2 gap-4">
-  {% for  post in collections.build | reverse  %}
-    {% if loop.index0 < 2 %}
-    <a href="{% if post.data.canonical %}{{ post.data.canonical }}{% else %}{{ post.url }}{% endif %}" {% if post.data.canonical %}target="_blank"{% endif %} class="bg-orange-50 p-8 text-center md:py-12 border-2 border-transparent transition-colors hover:border-orange">
-      <p class="text-xs uppercase">
-      {% if post.data.canonical and post.data.canonicalRef %}
-        {{ post.data.canonicalRef }}
-      {% else %}
-        Blog post
-      {% endif %}
-      - {{ post.date | formatDate('MMMM YYYY') }}
-      </p>
-
-      <p class="font-bold">{{ post.data.title | orphanWrap | safe }}</p>
-    </a>
-    {% endif %}
-  {% endfor %}
-</section>
+{% set blogListingTag = 'build' %}
+{% set blogListingLimit = 4 %}
+{% include "blocks/blogListing.njk" %}

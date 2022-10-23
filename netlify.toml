@@ -21,3 +21,8 @@ package = "netlify-plugin-cache"
   from = "/build/projects/2022/cost-of-living"
   to = "/build"
   status = 302
+
+[[redirects]]
+  from = "/build/2020"
+  to = "/blog/2020/the-next-few-months/"
+  status = 302

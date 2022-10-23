@@ -2,6 +2,7 @@
 title: What to expect from Kingdom Code BUILD
 tags:
   - build
+  - build-2017
 author: James Doc
 date: 2017-08-03
 intro: Build is about gathering a people together who love to think about technology; design and build. Over the course of the weekend we’ll form teams and work together on projects that bring technology to bear on the great commission…

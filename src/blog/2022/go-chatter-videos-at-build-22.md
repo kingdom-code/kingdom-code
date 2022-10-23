@@ -6,7 +6,7 @@ intro: As Go Chatter has grown, they’ve reached the need for a tent-making ven
 hero_img: /_assets/img/blog/2022/go-chatter-mike-ashelby.jpg
 tags:
   - build
-  - build22
+  - build-2022
 ---
 
 **Back in [BUILD 2018](/build/2018), Dan from [GoChatter](https://www.gochattervideos.com) joined us at [BUILD](/build) with an idea to enable churches to customise promo videos for evangelistic courses to go out on their social media.** Every year since GoChatter has come back to BUILD with a new idea, feature, or improvement to work with the Kingdom Code community. This year, Jana sat down with Mike Ashelby to talk more about where Go Chatter is at.

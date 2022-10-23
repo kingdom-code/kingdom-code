@@ -5,6 +5,7 @@ intro: BUILD kicks off tonight, we'd love for you to support us in prayer over t
 hero_img: /_assets/img/blog/2019/kingdom-code-build-2019-hackathon.jpg
 tags:
   - build
+  - build-2021
 ---
 
 Tomorrow night BUILD kicks off, bringing people like yourself from across the country to worship God using the tech skills that He has given us on some incredible digital projects. If you are coming, or if you can't make it, we'd love for you to join us in prayer. Here are three things you could pray for this weekend:

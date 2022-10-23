@@ -2,6 +2,7 @@
 title: Making time for ideas
 tags:
   - build
+  - build-2015
 author: James Doc
 date: 2015-09-15
 intro: I love that bit at the beginning of projects when as a team we’re just throwing ideas around. There are post-it notes, sharpies, a big clear bit of wall and each member of the team is just putting their thoughts out there. The harder bit, is taking those thoughts and ideas, and condensing them down into a plan, and then getting on and making that plan happen.
