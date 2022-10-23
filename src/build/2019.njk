@@ -1,8 +1,9 @@
 ---
 nav: true
-layout: layouts/base.njk
 title: BUILD 2019
 year: 2019
+eventbriteId: 62719767513
+bookingsOpen: false
 section: build
 challenges: [
   {
@@ -118,9 +119,13 @@ schedule: [
   </div>
 </header>
 
-{% set logobar_logos = challenges %}
-{% set logobar_title = "Challenge partners" %}
-{#% include "blocks/logobar.njk" %#}
+<section class="py-4 md:py-12 bg-blue">
+  <div class="container text-center sm:text-left">
+    <p class="uppercase text-white">Supported by:</p>
+    <img src="/_assets/misc/logos/CAP-white.svg" alt="Christians Against Poverty" class="h-[50px] m-auto inline mr-4 sm:mr-8" />
+    <img src="/_assets/misc/logos/CEM-white.svg" alt="Christianity Explored Ministries" class="h-[50px] m-auto inline mr-4 sm:mr-8" />
+  </div>
+</section>
 
 <section class="imagetext imagetext--orange">
   <div class="imagetext__img">
@@ -237,11 +242,14 @@ schedule: [
 
     <h3>Sorry, are now bookings closed</h3>
     <date>11–12 October</date>
+    {% if bookingsOpen %}
     <div class="ev-ticket__eventbrite-widget" id="js-eb-ticket-widget"></div>
     <p class="ev-ticket__smallprint">Kingdom Code BUILD ticket sales handled by Eventbrite.</p>
     <!--<p><a class="btn btn--orange btn--full-width" href="https://www.eventbrite.co.uk/e/kingdom-code-build-19-tickets-62719767513">Book your place via Eventbrite</a></p>-->
+    {% endif %}
   </div>
 
+  {% if bookingsOpen %}
   <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
 
   <script type="text/javascript">
@@ -259,4 +267,5 @@ schedule: [
           // onOrderComplete: exampleCallback  // Method called when an order has successfully completed
       });
   </script>
+  {% endif %}
 </section>
