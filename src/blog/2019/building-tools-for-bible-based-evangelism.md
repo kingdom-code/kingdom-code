@@ -2,6 +2,7 @@
 title: BUILDing tools for Bible-based evangelism
 tags:
   - build
+  - build-2019
 author: Alastair Gledhill
 date: 2019-09-12
 intro: In September our meetups in London and Leeds are getting practical ahead of next month's hackathon…

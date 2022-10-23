@@ -2,6 +2,7 @@
 title: Moving your ideas forward
 tags:
   - build
+  - build-2018
 author: James Doc
 date: 2018-09-19
 intro: Years ago a friend told me 'ideas are cheap. What sets people apart is the implementation'. It was a provokation…

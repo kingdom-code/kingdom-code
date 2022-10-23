@@ -2,6 +2,7 @@
 title: Build 2019 Partners
 tags:
   - build
+  - build-2019
 author: James Doc
 date: 2019-08-22
 intro: Each BUILD hackathon is an opportunity for us to practically serve a Christian ministry use tech well. A few weeks ago we shared with you the challenges for BUILD. Today, we're excited to announce that at BUILD 2019 we’ll be joined by…

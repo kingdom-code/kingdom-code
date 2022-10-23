@@ -2,6 +2,7 @@
 title: I’ve never been to a hackathon… what will the weekend be like?
 tags:
   - build
+  - build-2015
 author: Chris Lim, James Doc
 date: 2015-09-02
 intro: The Code for the Kingdom Global Hackathon is coming up October 2nd-4th and many people are wondering what it’s going to be like. We know 36 hours of intense product building sounds intimidating…

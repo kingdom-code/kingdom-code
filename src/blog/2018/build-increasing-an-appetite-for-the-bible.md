@@ -2,6 +2,7 @@
 title: Helping to increase an appetite for the Bible…
 tags:
   - build
+  - build-2018
 author: James Doc
 date: 2018-07-31
 intro: In a time when digital devices play a huge role in our lives, how can we leverage the skills we have as developers, designers and creatives to help people experience the power of the Bible?

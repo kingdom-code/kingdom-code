@@ -2,6 +2,7 @@
 title: Design Sprints
 tags:
   - build
+  - build-2019
 author: James Doc
 date: 2019-09-05
 intro: In September our meetups in London and Leeds are getting practical ahead of next month's hackathon…

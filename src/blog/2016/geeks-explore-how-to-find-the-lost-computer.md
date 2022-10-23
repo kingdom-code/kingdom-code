@@ -2,6 +2,7 @@
 title: Geeks explore how to find ‘the lost’ computer
 tags:
   - build
+  - build-2016
 author: Gavin Drake
 date: 2016-10-28
 intro: More than 70 Christian computer-experts gathered in a room above Smithfield Market, in London, last weekend for a 48-hour Code for the Kingdom "hackathon”

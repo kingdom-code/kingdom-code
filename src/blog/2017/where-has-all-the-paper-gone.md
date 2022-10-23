@@ -1,6 +1,8 @@
 ---
 title: Where's all the paper gone?
-tags: Build
+tags:
+  - build
+  - build-2017
 author: James Doc
 date: 2017-07-17
 intro: I've got a confession to make… I don't think I actually read any of the books on my university reading list. At least not in 'physical book' form anyway…

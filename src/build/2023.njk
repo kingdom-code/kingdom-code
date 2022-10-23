@@ -5,6 +5,7 @@ title: BUILD 2023
 bookingsOpen: false
 section: build
 dates: 13 – 14 October 2023
+year: 2023
 projects: [
   {
 
@@ -224,6 +225,9 @@ schedule: [
     </div>
   </div>
 </section> #}
+
+{% set blogListingTag = "build-" + year %}
+{% include "blocks/blogListing.njk" %}
 
 <section class="container" id="timings">
   <h2 class="text-mint font-bold text-2xl uppercase my-4 md:my-16 text-center">Schedule</h2>

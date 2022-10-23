@@ -1,5 +1,12 @@
+---
+year: 2017
+---
+
 <div class="container text-center">
   This page is coming soon
 
   <img src="/_assets/img/gif/under-construction.gif" alt="" class="block mb-4 mx-auto" />
 </div>
+
+{% set blogListingTag = "build-" + year %}
+{% include "blocks/blogListing.njk" %}

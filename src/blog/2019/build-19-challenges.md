@@ -2,6 +2,7 @@
 title: BUILD 2019 challenges
 tags:
   - build
+  - build-2019
 author: James Doc
 date: 2019-08-08
 intro: BUILD is one of our regular events where we practically explore how our skillsets can be used for God's glory. Today we're announcing the challenges for this year's hackathon…

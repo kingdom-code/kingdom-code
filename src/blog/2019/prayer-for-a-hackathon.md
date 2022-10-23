@@ -2,6 +2,7 @@
 title: Part of something bigger…
 tags:
   - build
+  - build-2019
 author: James Doc
 date: 2019-10-08
 intro: Kingdom Code BUILD is part of a global set of hackathons hosted by Indigitous. During two weekend in October over 30 different cities of technologists come together to apply their skillsets. Here's how we can be praying for them…
