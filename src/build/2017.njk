@@ -1,12 +1,76 @@
 ---
+title: BUILD 2017
+eventbriteId: 35788924637
 year: 2017
+bookingsOpen: false
+dates: 20 – 22 October 2017
 ---
 
-<div class="container text-center">
-  This page is coming soon
+<header class="relative text-blue">
+  {% rwdImg "/_assets/img/build/build17-bg.jpg", "" , "100vw", "block h-full object-cover absolute w-full" %}
 
-  <img src="/_assets/img/gif/under-construction.gif" alt="" class="block mb-4 mx-auto" />
-</div>
+  <div class="relative w-full text-center flex items-center justify-center flex-col">
+    <div class="py-12">
+      <hgroup class="my-4 md:mt-96">
+        <h1 class="font-bold text-5xl">Kingdom Code BUILD 2017</h1>
+        <h2>{{ dates }}</h2>
+      </hgroup>
+    </div>
+  </div>
+</header>
+
+<section class="py-4 md:py-12 bg-orange">
+  <div class="container text-center sm:text-left">
+    <p class="uppercase text-white">Supported by:</p>
+    <img src="/_assets/misc/logos/CAP-white.svg" alt="Christians Against Poverty" class="h-[50px] m-auto inline mr-4 sm:mr-8" />
+    <img src="/_assets/misc/logos/homeForGood.svg" alt="Home for Good" class="h-[50px] m-auto inline mr-4 sm:mr-8" />
+  </div>
+</section>
+
+<section class="imagetext" id="location">
+  <div class="imagetext__text">
+    <h1 class="text-blue font-bold uppercase text-4xl mb-4">Location</h1>
+
+    <div>
+      <p>
+        Innovation Warehouse<br />
+        1 East Poultry Avenue<br />
+        London,EC1A 9PT
+      </p>
+    </div>
+  </div>
+
+  <div class="imagetext__img">
+    {% rwdImg "/_assets/img/build/build-2016-innovation-warehouse.jpg", "Build at Innovation Warehouse" , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
+  </div>
+
+</section>
+
+
+<section class="bg-blue text-white">
+  <div class="container">
+    <h2 class="text-white font-bold py-4 uppercase text-4xl text-center md:pt-12">Challenges</h2>
+
+    <div class="grid gap-12 md:grid-cols-2 py-4 md:py-12">
+      <div>
+        <img class="h-[75px] mx-auto block" src="/_assets/misc/logos/cap-white.svg" alt="Christians Against Poverty" />
+
+        <h3 class="font-bold my-4 border-t border-white pt-4">
+          How can digital tools enable churches to serve the poor and save the lost in their local communities?
+        </h3>
+        <a class="underline" href="/blog/2017/christians-against-poverty-kingdom-code-build/">Find out more</a>
+      </div>
+
+      <div>
+        <img class="h-[75px] mx-auto block" src="/_assets/misc/logos/homeForGood.svg" alt="Home for Good" />
+
+        <h3 class="font-bold my-4 border-t border-white pt-4">
+          How could Home for Good better use digital tools to inspire people, support them in their fostering and adoption journey and enable them to be part of a growing movement?
+        </h3>
+      </div>
+    </div>
+  </div>
+</section>
 
 {% set blogListingTag = "build-" + year %}
 {% include "blocks/blogListing.njk" %}
