@@ -1,0 +1,14 @@
+{% for person in people | sort(false, false, 'name') %}
+  {% if authorName == person.name %}
+    <div class="flex gap-4 py-4">
+      {% set avatar = person.img if person.img else 'no-avatar.jpg' %}
+      <div class="h-12 w-12 flex-none">
+        {% rwdImg "/_assets/img/people/" + avatar, person.name , "50px", "rounded-full h-12 w-12 flex-none" %}
+      </div>
+      <div>
+        <p>{% if person.href %}<a href="{{ person.href }}" target="_blank" rel="noopener">{% endif %}{{ person.name }}{% if person.href %}</a>{% endif %}</p>
+        <p class="text-sm">{{ person.bio }}</p>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}

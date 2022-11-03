@@ -35,22 +35,20 @@ layout: layouts/base.njk
         <date class="block text-sm md:text-base mb-2 md:mb-4">{{ date | readableDate }}</date>
         <p class="block text-sm md:text-base">{{ intro }}</p>
       </div>
+
       {% if author %}
-        {% for person in people | sort(false, false, 'name') %}
-          {% if author == person.name %}
-            <div class="border-y border-grey py-4 my-4 flex gap-4">
-              {% set avatar = person.img if person.img else 'no-avatar.jpg' %}
-              <div class="h-12 w-12 flex-none">
-                {% rwdImg "/_assets/img/people/" + avatar, person.name , "50px", "rounded-full h-12 w-12 flex-none" %}
-              </div>
-              <div>
-                <p>{% if person.href %}<a href="{{ person.href }}" target="_blank" rel="noopener">{% endif %}{{ person.name }}{% if person.href %}</a>{% endif %}</p>
-                <p class="text-sm">{{ person.bio }}</p>
-              </div>
-            </div>
-          {% endif %}
-        {% endfor %}
+        <div class="grid grid-cols-1 divide-y divide-blue">
+        {% if author is string %}
+          {% set authorName = author %}
+          {% include "blocks/authorBio.njk" %}
+        {% else %}
+          {% for authorName in author %}
+            {% include "blocks/authorBio.njk" %}
+          {% endfor %}
+        {% endif %}
+        </div>
       {% endif %}
+
       <a class="text-sm underline hover:text-mint" href="/blog">Back to all posts</a>
 
       {# {% if disable_ad !== true %}
