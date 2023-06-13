@@ -66,7 +66,7 @@
 
     <ul class="kc-events-list">
     {% set count = 0 %}
-    {% for event in collections.meetups | pastEvent %}
+    {% for event in collections.meetups | pastEvent | reverse %}
       {% if count < 3 %}
         <li itemscope itemtype="http://schema.org/Event">
 
@@ -82,11 +82,13 @@
             {{ event.data.date | readableDate }}
           </date>
 
-          {% if event.url %}
+          {% if event.data.canonical %}
+            <a href="{{ event.data.canonical }}" target="_blank" itemprop="url" class="inline-block underline pb-2">
+          {% else %}
             <a href="{{ event.url }}" target="_blank" itemprop="url" class="inline-block underline pb-2">
+          {% endif %}
               See more
             </a>
-          {% endif %}
         </li>
         {% set count = count + 1 %}
       {% endif %}

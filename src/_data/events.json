@@ -2,9 +2,16 @@
   {
     "name": "Build",
     "city": "London",
+    "date": "2023-10-13",
+    "description": "Kingdom Code BUILD is our annual hackathon in partnership with Indigitous #Hack, bringing together Christians who work in the world of tech from across Europe.",
+    "url": "/build/2023"
+  },
+  {
+    "name": "Build",
+    "city": "London",
     "date": "2022-10-14",
     "description": "Kingdom Code BUILD is our annual hackathon in partnership with Indigitous #Hack, bringing together Christians who work in the world of tech from across Europe.",
-    "url": "/build"
+    "url": "/build/2022"
   },
   {
     "name": "Design Thinking",

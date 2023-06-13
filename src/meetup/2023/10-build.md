@@ -1,5 +1,5 @@
 ---
-title: "BUILD"
+title: "BUILD 2023"
 date: 2023-10-13
 time: "18:00"
 city: London
