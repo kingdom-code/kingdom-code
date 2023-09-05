@@ -271,69 +271,20 @@ schedule:
       ministry, or an investigation into the potential of a new tech or tool…
     </p>
     <p class="my-2">
-      In 2016 we explored the evangelistic potential from Alexa, and in 2017 how
-      Christians Against Poverty might use VR… We've optimised AWS setups for
+      In 2017 we explored how Christians Against Poverty might use VR… In 2022 we trialed virtual sponsored marathons for Compassion. We've optimised AWS setups for
       ministries, designed supporter websites, analysed data…
     </p>
-    {#
-    <p class="my-2">
-      This year we're excited to be working with projects and ministries like {%
-      for project in buildProjects.slice(0,3) %}{% if loop.last %} and {% elif
-      loop.first !== true %}, {% endif %}{{ project.Organisation }}{% endfor %}…
-    </p>
-    #}
+
     <a class="mt-2 inline-block hover:no-underline" href="/build/projects"
       >Find out about bringing yours.</a
     >
   </div>
 </section>
 
-{#
-<section class="py-4 bg-orange/10 text-blue md:py-16">
-  <div class="container">
-    <h3 class="text-orange font-bold uppercase mb-0 text-center">
-      Confirmed projects so far…
-    </h3>
-    <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-4 my-4 md:mb-16">
-      {% for project in collections.projects %}
-      <a
-        href="{{ project.url }}"
-        class="block border border-orange p-4 bg-white hover:scale-105 transition"
-      >
-        <h3 class="font-bold text-orange border-b border-orange mb-4">
-          {% if project.data.org != project.data.title %}<span
-            class="block text-xs"
-            >{{ project.data.org }}:</span
-          >{% endif %} {{ project.data.title }}
-        </h3>
-        <p class="text-sm">{{ project.data.summary }}</p>
-        <ul class="mt-2">
-          {% for skill in project.data.skills %}
-          <li class="inline-block text-xs bg-orange text-white rounded px-1">
-            {{ skill }}
-          </li>
-          {% endfor %}
-        </ul>
-      </a>
-      {% endfor %} {% if collections.projects | length % 4 !== 0 %}
-      <a
-        href="/build/projects"
-        class="bg-white block border border-orange p-4 hover:scale-105 transition"
-      >
-        <div class="border-b border-orange mb-2">And your project?</div>
-        <p>
-          We're looking for some great Kingdom minded projects to work on at
-          BUILD this year.
-        </p>
-        <p class="mt-2">
-          <span class="rounded border-orange border p-1">Find out more</span>
-        </p>
-      </a>
-      {% endif %}
-    </div>
-  </div>
-</section>
-#} {% set blogListingTag = "build-" + year %} {% include
+{% include "blocks/projectList.njk" %}
+
+
+{% set blogListingTag = "build-" + year %} {% include
 "blocks/blogListing.njk" %}
 
 <section class="container" id="timings">
