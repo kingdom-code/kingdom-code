@@ -22,6 +22,15 @@
         </a>
       {% endfor %}
     </div>
+
+    {% if projectsOpen %}
+    <p class="text-center">
+      There is still space for a few more projects to join us…
+      <a class="mt-2 inline-block underline text-orange hover:no-underline" href="/build/projects">
+        Find out about bringing yours
+      </a>.
+    </p>
+    {% endif %}
   </div>
 </section>
 
