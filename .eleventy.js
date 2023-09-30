@@ -115,10 +115,6 @@ module.exports = function (eleventyConfig) {
   // eleventyConfig.addPassthroughCopy({ "./src/_assets/vid": "_assets/misc" });
   // eleventyConfig.addPassthroughCopy({ "./src/_redirects": "_redirects" });
 
-  eleventyConfig.browserSyncConfig = {
-    https: true,
-  };
-
   return {
     templateFormats: ["html", "njk", "md"],
     dir: {
