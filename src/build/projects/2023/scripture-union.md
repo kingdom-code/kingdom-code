@@ -7,7 +7,7 @@ skills:
 - ux
 - church worker
 - copy editor
-summary: How might create a hybrid space for young people to grow in their faith
+summary: How might create a hybrid space for young people to grow in their faith?
 year: 2023
 ---
 

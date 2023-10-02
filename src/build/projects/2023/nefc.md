@@ -4,6 +4,8 @@ org: North Evington Free Church
 url: https://www.nefc.org.uk/
 skills:
 - development
+- tts
+- platform integration
 summary: What technology could we implement to help non-english speakers understand a Sunday service in real-time?
 year: 2023
 ---
