@@ -2,7 +2,7 @@
 nav: true
 title: BUILD 2023
 eventbriteId: 657399408327
-bookingsOpen: true
+bookingsOpen: false
 projectsOpen: true
 section: build
 dates: 13 – 14 October 2023
@@ -91,11 +91,16 @@ schedule:
         </hgroup>
 
         <div>
-          {% if eventbriteId %}
+          {% if eventbriteId and bookingsOpen %}
           <a
             href="#tickets"
             class="js-moveto mt-4 inline-block border bg-orange border-orange rounded p-2 uppercase text-white hover:bg-transparent transition-colors"
             >Book Now</a
+          >
+          {% elseif bookingsOpen == false %}
+          <span
+            class="mt-4 inline-block border bg-orange border-orange rounded p-2 uppercase text-white"
+            >Bookings closed</span
           >
           {% else %}
           <a
@@ -196,7 +201,7 @@ schedule:
       to see God glorified through technology.
     </p>
 
-    {% if eventbriteId %}
+    {% if eventbriteId and bookingsOpen %}
     <a
       href="#tickets"
       class="inline-block js-moveto mt-4 border border-white rounded p-2 uppercase text-white hover:border-blue hover:text-blue transition-colors"
