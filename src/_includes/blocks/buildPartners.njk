@@ -8,7 +8,7 @@
       {% for partner in buildPartners | randomiseArray %}
         {% if loop.index0 < 8 %}
         <li>
-          <img src="/_assets/misc/logos/{{ partner.logo }}" class="block" alt="{{ partner.name }}" />
+          <img src="/_assets/misc/logos/{{ partner.logo }}" class="block max-h-[50px] md:max-h-[75px] mx-auto" alt="{{ partner.name }}" />
         </li>
         {% endif %}
       {% endfor %}
