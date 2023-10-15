@@ -38,5 +38,25 @@
   {
     "name": "Church of England",
     "logo": "coe.svg"
+  },
+  {
+    "name": "PrayerMate",
+    "logo": "prayermate.svg"
+  },
+  {
+    "name": "Safe Families",
+    "logo": "safe-families.svg"
+  },
+  {
+    "name": "Church Mission Society",
+    "logo": "cms.svg"
+  },
+  {
+    "name": "Scripture Union England and Wales",
+    "logo": "su.svg"
+  },
+  {
+    "name": "Speak Life",
+    "logo": "speaklife.svg"
   }
 ]
