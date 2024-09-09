@@ -1,7 +1,7 @@
 ---
 title: Prayer Walk App
 org: Prayer Walk App
-url: https://openheaven.prayerwalk.app
+url: https://prayerwalk.app
 skills:
   - mobile app
   - java and typescript
