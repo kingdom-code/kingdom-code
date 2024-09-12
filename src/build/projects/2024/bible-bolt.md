@@ -1,7 +1,7 @@
 ---
 title: Bible Bolt
 org: Bible Society
-url: https://biblesociety.org.uk
+url: https://biblesociety.org.uk/bible-bolt
 skills:
   - backend dev
   - integration
@@ -16,5 +16,5 @@ WhatsApp, Zoom, YouTube and Powerpoint are commonplace tools for these Bible com
 
 Last year at BUILD we developed BibleBolt for Google Docs - a simple bolt on to allow effortless inserting and formatting of verses – saving time, ensuring clean and consistent presentations, and making sure that words don’t get lost in the copy-and-paste.
 
-This year, Bible Society is bringing BibleBolt back to BULID to explore what other bolt-ons could be developed - e.g. a bible plugin for Microsoft 365 (Word, Powerpoint), Canvas, or OBS. Where could we bolt in the Bible?
+This year, Bible Society is bringing BibleBolt back to BULID to explore what other bolt-ons could be developed - e.g. a bible plugin for Microsoft 365 (Word, Powerpoint), Canva, or OBS. Where could we bolt in the Bible?
 
