@@ -1,5 +1,5 @@
 ---
-title: Find a Councillor 
+title: Find a Counsellor 
 org: Waverley Abbey
 url: https://waverleyabbeycollege.ac.uk/courses/counselling
 skills:
