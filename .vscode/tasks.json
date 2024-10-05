@@ -1,0 +1,47 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "Start 11ty",
+      "command": "source ~/.zshrc && nvm use && npm run dev",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new",
+        "group": "groupA",
+        "showReuseMessage": false
+      },
+      "problemMatcher": []
+    },
+    {
+      "type": "shell",
+      "label": "Git status",
+      "command": "git fetch && git status",
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": true,
+        "panel": "new",
+        "group": "groupA",
+        "showReuseMessage": false
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Start Both",
+      "dependsOn": [
+        "Start 11ty",
+        "Git status"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    }
+  ]
+}
