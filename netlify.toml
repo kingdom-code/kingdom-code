@@ -1,28 +1,28 @@
 [[plugins]]
 package = "netlify-plugin-cache"
 
-  [plugins.inputs]
-  paths = [
-    "dist/assets/img", # Eleventy Image Disk Cache
-    ".cache" # Remote Asset Cache
-  ]
+[plugins.inputs]
+paths = [
+  "dist/assets/img", # Eleventy Image Disk Cache
+  ".cache",          # Remote Asset Cache
+]
 
 [[redirects]]
-  from = "/hackathon"
-  to = "/build"
-  status = 301
+from = "/hackathon"
+to = "/build"
+status = 301
 
 [[redirects]]
-  from = "/feedback"
-  to = "https://forms.gle/c2V9JbeHbxFCduHC6"
-  status = 302
+from = "/feedback"
+to = "https://docs.google.com/forms/d/e/1FAIpQLSe328kPvro24m5NYJn19qLF2JVn-rTux7mEljzIOGDUKpVBCA/viewform?usp=sf_link"
+status = 302
 
 [[redirects]]
-  from = "/build/projects/2022/cost-of-living"
-  to = "/build"
-  status = 302
+from = "/build/projects/2022/cost-of-living"
+to = "/build"
+status = 302
 
 [[redirects]]
-  from = "/build/2020"
-  to = "/blog/2020/the-next-few-months/"
-  status = 302
+from = "/build/2020"
+to = "/blog/2020/the-next-few-months/"
+status = 302

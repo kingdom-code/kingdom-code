@@ -2,7 +2,7 @@
 nav: true
 title: BUILD 2024
 eventbriteId: 980089202187
-bookingsOpen: true
+bookingsOpen: false
 projectsOpen: false
 section: build
 dates: 11–12 October 2024
@@ -102,9 +102,7 @@ schedule:
             class="mt-4 inline-block border bg-orange border-orange rounded p-2 uppercase text-white"
             >Bookings closed</span
           >
-          {% else %}
-
-          {% endif %}
+          {% else %} {% endif %}
         </div>
       </div>
     </div>
@@ -147,7 +145,8 @@ schedule:
   </div>
 </header>
 
-{# <section class="py-4 md:py-12">
+{#
+<section class="py-4 md:py-12">
   <div class="container text-center sm:text-left">
     <p class="uppercase text-[#f6be03]">
       {% if logobar_title %}{{ logobar_title }}{% else %}Supported by:{% endif
@@ -165,12 +164,13 @@ schedule:
       />
     </a>
   </div>
-</section> #}
+</section>
+#}
 
 <section class="imagetext imagetext--orange" id="about">
   <div class="imagetext__img">
-    {% rwdImg "/_assets/img/build/23/pairing.jpg", "A team working on a
-    project at BUILD" , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
+    {% rwdImg "/_assets/img/build/23/pairing.jpg", "A team working on a project
+    at BUILD" , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
   </div>
 
   <div class="imagetext__text py-16">
@@ -231,8 +231,8 @@ schedule:
   </div>
 
   <div class="imagetext__img lg:min-h-[450px]">
-    {% rwdImg "/_assets/img/build/23/location.jpg", "Build at
-    St. John's, Hoxton" , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
+    {% rwdImg "/_assets/img/build/23/location.jpg", "Build at St. John's,
+    Hoxton" , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
   </div>
 </section>
 
@@ -253,15 +253,15 @@ schedule:
   </div>
 
   <div class="imagetext__img lg:min-h-[450px]">
-    {% rwdImg "/_assets/img/build/23/partner.jpg", "Build at St. John's,
-    Hoxton" , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
+    {% rwdImg "/_assets/img/build/23/partner.jpg", "Build at St. John's, Hoxton"
+    , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
   </div>
 </section>
 
 <section class="imagetext imagetext--orange" id="projects">
   <div class="imagetext__img lg:min-h-[450px]">
-    {% rwdImg "/_assets/img/build/23/award.jpg", "Build at St. John's,
-    Hoxton" , "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
+    {% rwdImg "/_assets/img/build/23/award.jpg", "Build at St. John's, Hoxton" ,
+    "(min-width: 640px) 50vw, 100vw", "imagetext__img" %}
   </div>
 
   <div class="imagetext__text">
@@ -272,20 +272,21 @@ schedule:
       ministry, or an investigation into the potential of a new tech or tool…
     </p>
     <p class="my-2">
-      In 2017 we explored how Christians Against Poverty might use VR… In 2022 we trialed virtual sponsored marathons for Compassion. We've optimised AWS setups for
-      ministries, designed supporter websites, analysed data…
+      In 2017 we explored how Christians Against Poverty might use VR… In 2022
+      we trialed virtual sponsored marathons for Compassion. We've optimised AWS
+      setups for ministries, designed supporter websites, analysed data…
     </p>
 
+    {#
     <a class="mt-2 inline-block hover:no-underline" href="/build/projects">
       Find out about bringing yours.
     </a>
+    #}
   </div>
 </section>
 
-{% include "blocks/projectList.njk" %}
-
-{% set blogListingTag = "build-" + year %} {% include
-"blocks/blogListing.njk" %}
+{% include "blocks/projectList.njk" %} {% set blogListingTag = "build-" + year
+%} {% include "blocks/blogListing.njk" %}
 
 <section class="container" id="timings">
   <h2 class="text-mint font-bold text-2xl uppercase my-4 md:my-16 text-center">
