@@ -1,134 +1,271 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 
-    <link rel="stylesheet" href="/_assets/css/style.css?v={{ data.buildRef }}" media="screen" type="text/css">
-    <link rel="stylesheet" href="/_assets/css/tw.css?v={{ data.buildRef }}" media="screen" type="text/css">
+    <link
+      rel="stylesheet"
+      href="/_assets/css/style.css?v={{ data.buildRef }}"
+      media="screen"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="/_assets/css/tw.css?v={{ data.buildRef }}"
+      media="screen"
+      type="text/css"
+    />
 
     <title>{{ basics.name }}{% if title %} | {{ title }}{% endif %}</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/_assets/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/_assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/_assets/img/favicon/favicon-16x16.png">
-    <link rel="mask-icon" href="/_assets/img/favicon/safari-pinned-tab.svg" color="#483ba4">
-    <link rel="shortcut icon" href="/_assets/img/favicon/favicon.ico">
-    <meta name="apple-mobile-web-app-title" content="{{ basics.name }}">
-    <meta name="application-name" content="{{ basics.name }}">
-    <meta name="msapplication-TileColor" content="#483ba4">
-    <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="{{ basics.name }}{% if title %} | {{ title }}{% endif %}">
-    <meta property="og:description" content="{% if intro %}{{ intro }}{% else %}{{ basics.description }}{% endif %}">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_GB">
-    <meta property="og:image" content="https://kingdomcode.org.uk{% if hero_img %}{{ hero_img }}{% else %}/_assets/img/kingdom-code-open-graph.jpg{% endif %}">
-    <meta property="og:url" content="{{ basics.url }}{{ page.url }}">
-    <meta property="og:url:secure_url" content="{{ basics.url }}{{ page.url }}">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/_assets/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/_assets/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/_assets/img/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="mask-icon"
+      href="/_assets/img/favicon/safari-pinned-tab.svg"
+      color="#483ba4"
+    />
+    <link rel="shortcut icon" href="/_assets/img/favicon/favicon.ico" />
+    <meta name="apple-mobile-web-app-title" content="{{ basics.name }}" />
+    <meta name="application-name" content="{{ basics.name }}" />
+    <meta name="msapplication-TileColor" content="#483ba4" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      property="og:title"
+      content="{{ basics.name }}{% if title %} | {{ title }}{% endif %}"
+    />
+    <meta
+      property="og:description"
+      content="{% if intro %}{{ intro }}{% else %}{{ basics.description }}{% endif %}"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_GB" />
+    <meta
+      property="og:image"
+      content="https://kingdomcode.org.uk{% if hero_img %}{{ hero_img }}{% else %}/_assets/img/kingdom-code-open-graph.jpg{% endif %}"
+    />
+    <meta property="og:url" content="{{ basics.url }}{{ page.url }}" />
+    <meta
+      property="og:url:secure_url"
+      content="{{ basics.url }}{{ page.url }}"
+    />
 
-    <link rel="alternate" type="application/rss+xml" title="Kingdom Code Blog" href="/blog/feed.xml" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Kingdom Code Blog"
+      href="/blog/feed.xml"
+    />
 
     <meta name="generator" content="{{ eleventy.generator }}" />
 
     {% if data.env === "production" %}
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PS73Z74');</script>
+    <script>
+      ;(function (w, d, s, l, i) {
+        w[l] = w[l] || []
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" })
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : ""
+        j.async = true
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl
+        f.parentNode.insertBefore(j, f)
+      })(window, document, "script", "dataLayer", "GTM-PS73Z74")
+    </script>
     {% endif %}
   </head>
 
   <body>
     {% if data.env === "production" %}
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PS73Z74" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    {% endif %}
-
-    {% if nav %}
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PS73Z74"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    {% endif %} {% if nav %}
     <nav class="bg-blue text-white font-bold uppercase">
       <div class="text-sm px-4 flex justify-between gap-2">
         <a class="py-1 hover:text-orange" href="/">
-          <img class="inline h-4 w-4 mr-1" src="/_assets/misc/logos/kingdom-code.svg" alt="Kingdom Code"/>
+          <img
+            class="inline h-4 w-4 mr-1"
+            src="/_assets/misc/logos/kingdom-code.svg"
+            alt="Kingdom Code"
+          />
           <span class="sr-only sm:not-sr-only">Kingdom&nbsp;Code</span>
         </a>
 
         <div class="flex gap-3 items-center md:gap-6">
-          {# <li class="inline"><a class="text-white hover:text-orange" href="/cities">Cities</a></li> #}
-          <a class="py-1 inline border-b-2 {% if section == 'meetup' %}border-orange{% else %}border-blue{% endif %} text-white hover:text-orange" href="/meetup">Meetups</a>
-          <a class="py-1 inline border-b-2 {% if section == 'build' %}border-orange{% else %}border-blue{% endif %} text-white hover:text-orange" href="/build/2024">Build</a>
-          <a class="py-1 inline border-b-2 {% if section == 'blog' %}border-orange{% else %}border-blue{% endif %} text-white hover:text-orange" href="/blog">Blog</a>
-          <a class="py-1 inline border-b-2 {% if section == 'jobs' %}border-orange{% else %}border-blue{% endif %} text-white hover:text-orange" href="/jobs">Jobs</a>
+          {#
+          <li class="inline">
+            <a class="text-white hover:text-orange" href="/cities">Cities</a>
+          </li>
+          #}
+          <a
+            class="py-1 inline border-b-2 {% if section == 'meetup' %}border-orange{% else %}border-blue{% endif %} text-white hover:text-orange"
+            href="/meetup"
+            >Meetups</a
+          >
+          <a
+            class="py-1 inline border-b-2 {% if section == 'build' %}border-orange{% else %}border-blue{% endif %} text-white hover:text-orange"
+            href="/build"
+            >Build</a
+          >
+          <a
+            class="py-1 inline border-b-2 {% if section == 'blog' %}border-orange{% else %}border-blue{% endif %} text-white hover:text-orange"
+            href="/blog"
+            >Blog</a
+          >
+          <a
+            class="py-1 inline border-b-2 {% if section == 'jobs' %}border-orange{% else %}border-blue{% endif %} text-white hover:text-orange"
+            href="/jobs"
+            >Jobs</a
+          >
         </div>
-
       </div>
     </nav>
-    {% endif %}
-
-    {{ layoutContent | safe }}
-
-    {% if hideNewsletter !== true %}
+    {% endif %} {{ layoutContent | safe }} {% if hideNewsletter !== true %}
     <div class="kc-newsletter">
       <section class="container" id="newsletter">
         <h2 class="text-2xl font-bold">Stay in touch</h2>
-        <p class="mb-4">Sign up and receive all the latest news and meet up information from Kingdom Code{% if cityName %} and events in {{ cityName }}{% endif %}:</p>
+        <p class="mb-4">
+          Sign up and receive all the latest news and meet up information from
+          Kingdom Code{% if cityName %} and events in {{ cityName }}{% endif %}:
+        </p>
         {# if you edit this remember there is another on the BUILD index page #}
-        <form action="https://kingdomcode.us11.list-manage.com/subscribe/post?u=0faea843d029399bef7962992&amp;id=686a0f7b4b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <form
+          action="https://kingdomcode.us11.list-manage.com/subscribe/post?u=0faea843d029399bef7962992&amp;id=686a0f7b4b"
+          method="post"
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          class="validate"
+          target="_blank"
+          novalidate
+        >
           <div id="mce-responses" class="clear">
-            <div class="response" id="mce-error-response" style="display:none"></div>
-            <div class="response" id="mce-success-response" style="display:none"></div>
+            <div
+              class="response"
+              id="mce-error-response"
+              style="display: none"
+            ></div>
+            <div
+              class="response"
+              id="mce-success-response"
+              style="display: none"
+            ></div>
           </div>
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0faea843d029399bef7962992_686a0f7b4b" tabindex="-1" value=""></div>
+          <div style="position: absolute; left: -5000px" aria-hidden="true">
+            <input
+              type="text"
+              name="b_0faea843d029399bef7962992_686a0f7b4b"
+              tabindex="-1"
+              value=""
+            />
+          </div>
 
-          {# For chimp segmenting. Set in city frontmatter #}
-          {% if chimpId %}
-          <input type="hidden" name="group[19273][{{ chimpId }}]" value="{{ chimpId }}">
-          {% endif %}
-          {# end chimp segmenting #}
+          {# For chimp segmenting. Set in city frontmatter #} {% if chimpId %}
+          <input
+            type="hidden"
+            name="group[19273][{{ chimpId }}]"
+            value="{{ chimpId }}"
+          />
+          {% endif %} {# end chimp segmenting #}
 
           <div class="kc-newsletter__group">
             <div class="kc-newsletter__field mc-field-group">
               <label for="mce-FNAME">First Name</label>
-              <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First name">
+              <input
+                type="text"
+                value=""
+                name="FNAME"
+                class=""
+                id="mce-FNAME"
+                placeholder="First name"
+              />
             </div>
             <div class="kc-newsletter__field mc-field-group">
               <label for="mce-LNAME">Last Name</label>
-              <input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Family name">
+              <input
+                type="text"
+                value=""
+                name="LNAME"
+                class=""
+                id="mce-LNAME"
+                placeholder="Family name"
+              />
             </div>
             <div class="kc-newsletter__field mc-field-group">
               <label for="mce-EMAIL">Email Address</label>
-              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Primary email address">
+              <input
+                type="email"
+                value=""
+                name="EMAIL"
+                class="required email"
+                id="mce-EMAIL"
+                placeholder="Primary email address"
+              />
             </div>
             <div class="kc-newsletter__field">
-              <input type="submit" value="Subscribe!" name="subscribe" id="mc-embedded-subscribe" class="button">
+              <input
+                type="submit"
+                value="Subscribe!"
+                name="subscribe"
+                id="mc-embedded-subscribe"
+                class="button"
+              />
             </div>
           </div>
-
         </form>
         <!--End mc_embed_signup-->
-
       </section>
     </div>
     {% endif %}
 
-
     <footer class="container mx-auto">
       <div class="text-center md:text-left mb-4">
         <p>
-          We have a <a href="/blog" class="underline">Blog</a>
-          &middot;
-          {% if jobs.length == 1 %}
-          There is one vacancy on <a href="/jobs" class="underline">the jobs board</a>
-          &middot;
-          {% endif %}
-
-          {% if jobs.length > 1 %}
-          There are {{ jobs.length }} vacancies on <a href="/jobs" class="underline">the jobs board</a>
-          &middot;
-          {% endif %}
-
-          This site is built on top of <a href="https://www.11ty.io" target="_blank" rel="noopener" class="underline">Eleventy</a>
+          We have a <a href="/blog" class="underline">Blog</a> &middot; {% if
+          jobs.length == 1 %} There is one vacancy on
+          <a href="/jobs" class="underline">the jobs board</a> &middot; {% endif
+          %} {% if jobs.length > 1 %} There are {{ jobs.length }} vacancies on
+          <a href="/jobs" class="underline">the jobs board</a> &middot; {% endif
+          %} This site is built on top of
+          <a
+            href="https://www.11ty.io"
+            target="_blank"
+            rel="noopener"
+            class="underline"
+            >Eleventy</a
+          >
         </p>
         <p class="text-sm">
-          Last updated: {{ data.updatedTime }}
-          &middot;
-          <a href="https://github.com/kingdom-code/kingdom-code/blob/master/{{ page.inputPath }}" class="underline" target="_blank" rel="noopener">Update this page on GitHub</a>
+          Last updated: {{ data.updatedTime }} &middot;
+          <a
+            href="https://github.com/kingdom-code/kingdom-code/blob/master/{{ page.inputPath }}"
+            class="underline"
+            target="_blank"
+            rel="noopener"
+            >Update this page on GitHub</a
+          >
         </p>
       </div>
     </footer>
