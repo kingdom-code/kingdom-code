@@ -3,7 +3,7 @@ nav: true
 title: BUILD 2025
 # eventbriteId: 980089202187
 bookingsOpen: true
-projectsOpen: false
+projectsOpen: true
 section: build
 dates: 10–11 October 2025
 year: 2025
@@ -98,12 +98,12 @@ schedule:
       />
       <div class="sm:text-left">
         <hgroup>
-          <h1 class="font-bold text-5xl">Kingdom Code BUILD</h1>
+          <h1 class="font-bold text-5xl">BUILD 2025</h1>
           <h2 class="mt-2 text-2xl">{{ dates }}</h2>
         </hgroup>
 
         <div>
-          {% if eventbriteId and bookingsOpen %}
+          {% if bookingsOpen %}
           <a
             href="#tickets"
             class="js-moveto mt-4 inline-block border bg-orange border-orange rounded p-2 uppercase text-white hover:bg-transparent transition-colors"
@@ -144,7 +144,7 @@ schedule:
         <a href="#timings" class="js-moveto underline px-2 hover:no-underline"
           >Timings&nbsp;and&nbsp;Practicalities</a
         >
-        {% if eventbriteId and bookingsOpen %}
+        {% if bookingsOpen %}
       </li>
 
       <li class="inline">
@@ -209,7 +209,7 @@ schedule:
       to see God glorified through technology.
     </p>
 
-    {% if eventbriteId and bookingsOpen %}
+    {% if bookingsOpen %}
     <a
       href="#tickets"
       class="inline-block js-moveto mt-4 border border-white rounded p-2 uppercase text-white hover:border-blue hover:text-blue transition-colors"
@@ -361,48 +361,31 @@ schedule:
 
 <section class="ev-ticket" id="tickets">
   <div class="container py-16">
-    <h2 class="ev-ticket__title text-4xl font-bold">Kingdom Code BUILD</h2>
+    <h2 class="ev-ticket__title text-4xl font-bold">Book your place now</h2>
     <date>{{ dates }}</date>
 
-    {% if eventbriteId and bookingsOpen %}
-    <div
-      class="ev-ticket__eventbrite-widget"
-      id="js-eb-ticket-widget-south"
-    ></div>
-
-    <p class="ev-ticket__smallprint mt-8">
-      Kingdom Code BUILD ticket sales handled by Eventbrite.
-    </p>
-    <p>
+    {% if bookingsOpen %}
+    <iframe
+      class="my-12"
+      src="https://lu.ma/embed/event/evt-SQKaYxJLsc64eXV/simple"
+      width="100%"
+      height="550"
+      frameborder="0"
+      style="border: 1px solid #4E556988; border-radius: 4px"
+      allowfullscreen=""
+      aria-hidden="false"
+      tabindex="0"
+    ></iframe>
+    <p
       <a
-        class="btn btn--orange btn--full-width"
-        href="https://www.eventbrite.co.uk/e/{{ eventbriteId }}"
-        >Book your place via Eventbrite</a
+        class="underline hover:no-underline"
+        href="https://lu.ma/gang9rg3"
+        target="_blank"
+        >Book via Lu.ma</a
       >
     </p>
     {% endif %}
   </div>
-
-  {% if eventbriteId and bookingsOpen %}
-  <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
-
-  <script type="text/javascript">
-    var exampleCallback = function () {
-      console.log("Order complete!")
-    }
-
-    window.EBWidgets.createWidget({
-      // Required
-      widgetType: "checkout",
-      eventId: "{{ eventbriteId }}",
-      iframeContainerId: "js-eb-ticket-widget-south",
-      iframeContainerHeight: 750,
-
-      // Optional
-      // onOrderComplete: exampleCallback  // Method called when an order has successfully completed
-    })
-  </script>
-  {% endif %}
 </section>
 
 {% include "blocks/buildPartners.njk" %}
