@@ -8,11 +8,6 @@ paths = [
 ]
 
 [[redirects]]
-from = "/"
-to = "/build"
-status = 301
-
-[[redirects]]
 from = "/hackathon"
 to = "/build"
 status = 301
