@@ -3,36 +3,27 @@ layout: layouts/home.njk
 nav: true
 ---
 
-
-{# {% include "blocks/build.njk" %} #}
+{% include "blocks/build.njk" %}
 
 <div class="mb-4 md:mb-12">
-{% include "blocks/events.njk" %}
+  {% include "blocks/events.njk" %} {# {% set post =
+  collections.posts|reverse|first %} {% if not post.data.canonical %}
+  <section class="promo promo--flipped mt-4 md:mt-16">
+    {% rwdImg post.data.hero_img, "" , "100vw", "block h-full object-cover
+    absolute w-full rounded z-[-1]" %}
 
-{# {% set post = collections.posts|reverse|first %}
-{% if not post.data.canonical %}
-<section class="promo promo--flipped mt-4 md:mt-16">
-  {% rwdImg post.data.hero_img, "" , "100vw", "block h-full object-cover absolute w-full rounded z-[-1]" %}
+    <a class="promo__content" href="{{ post.url }}">
+      <p class="promo__content__tag">Latest blog post</p>
+      <h2 class="text-2xl text-orange font-bold">{{ post.data.title }}</h2>
 
-  <a class="promo__content" href="{{ post.url }}">
-
-    <p class="promo__content__tag">Latest blog post</p>
-    <h2 class="text-2xl text-orange font-bold">{{ post.data.title }}</h2>
-
-    {% if post.data.intro %}
+      {% if post.data.intro %}
       <p class="mb-2">{{ post.data.intro }}</p>
-    {% endif %}
+      {% endif %}
 
-    <p>
-      <span class="promo__content__button">
-        Keep reading
-      </span>
-    </p>
-  </a>
-</section>
-{% endif %} #}
-</div>
-
-<div class="my-8">
-{% include "blocks/build.njk" %}
+      <p>
+        <span class="promo__content__button"> Keep reading </span>
+      </p>
+    </a>
+  </section>
+  {% endif %} #}
 </div>
