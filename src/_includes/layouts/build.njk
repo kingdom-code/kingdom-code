@@ -3,11 +3,10 @@ nav: true;
 layout: layouts/base.njk
 ---
 
-{{ layoutContent | safe }}
+{{ content | safe }}
 
 <section class="container p-4 md:p-12">
-  Previously at BUILD:
-  {% for year in buildYears | reverse %}
-    <a href="/build/{{ year }}" class="underline mx-2">{{ year }}</a>
+  Previously at BUILD: {% for year in buildYears | reverse %}
+  <a href="/build/{{ year }}" class="underline mx-2">{{ year }}</a>
   {% endfor %}
 </section>

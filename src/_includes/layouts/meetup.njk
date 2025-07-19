@@ -2,56 +2,78 @@
 nav: true;
 layout: layouts/base.njk
 ---
-{# <div class="md:container mx-auto px-4 md:px-0 border-b border-blue pb-4 mb-4">
+
+{#
+<div class="md:container mx-auto px-4 md:px-0 border-b border-blue pb-4 mb-4">
   <header role="banner" class="w-10/12">
-    <h1 class="text-3xl md:text-4xl font-bold mb-2 md:mt-2" itemprop="name">{{ title | orphanWrap | safe }}</h1>
+    <h1 class="text-3xl md:text-4xl font-bold mb-2 md:mt-2" itemprop="name">
+      {{ title | orphanWrap | safe }}
+    </h1>
     <p>{{ intro }}</p>
     {% if eventbriteId %}
-    <a href="#tickets" class="block text-sm mt-2 text-orange underline hover:text-mint js-moveto">Get tickets</a>
+    <a
+      href="#tickets"
+      class="block text-sm mt-2 text-orange underline hover:text-mint js-moveto"
+      >Get tickets</a
+    >
     {% endif %}
   </header>
-</div> #}
+</div>
+#}
 
 <div class="md:container mx-auto px-4 md:px-0 md:grid md:grid-cols-3 md:gap-8">
-
   <article class="md:col-span-2 pt-2">
-
     <header role="banner" class="mb-4">
-      {% if hero_img %}
-        {% rwdImg hero_img, title , "(min-width: 1020px) 1020px, calc(100vw - 100px)", "w-full rounded-b" %}
-      {% endif %}
+      {% if hero_img %} {% rwdImg hero_img, title , "(min-width: 1020px) 1020px,
+      calc(100vw - 100px)", "w-full rounded-b" %} {% endif %}
 
-      <date class="block text-sm mt-2 md:hidden">{{ date | readableDate }}</date>
-      <h1 class="text-3xl md:text-4xl font-bold mb-2 md:mt-2" itemprop="name">{{ title | orphanWrap | safe }}</h1>
+      <date class="block text-sm mt-2 md:hidden"
+        >{{ date | readableDate }}</date
+      >
+      <h1 class="text-3xl md:text-4xl font-bold mb-2 md:mt-2" itemprop="name">
+        {{ title | orphanWrap | safe }}
+      </h1>
       <p class="text-sm mt-2">
-        {{ date | readableDate }} - {{ time }}
-      {% if eventbriteId %}
-        &middot; <a href="#tickets" class=" text-orange underline hover:text-mint js-moveto">Book your place</a>
-      {% endif %}
+        {{ date | readableDate }} - {{ time }} {% if eventbriteId %} &middot;
+        <a
+          href="#tickets"
+          class="text-orange underline hover:text-mint js-moveto"
+          >Book your place</a
+        >
+        {% endif %}
       </p>
     </header>
 
-    <div class="prose prose-blue prose-a:text-orange prose-figcaption:text-xs lg:prose-xl">
+    <div
+      class="prose prose-blue prose-a:text-orange prose-figcaption:text-xs lg:prose-xl"
+    >
       {% if canonical %}
-        <a class="text-white bg-orange border border-orange p-3 rounded-lg no-underline uppercase hover:bg-white hover:text-orange transition-colors" href="{{ canonical }}">Find out more</a>
-      {% else %}
-        {{ layoutContent | safe }}
-
-        {% if eventbriteId %}
-          <div class="border-orange border-t mt-4 pt-4" id="tickets">
-            <div class="ev-ticket__eventbrite-widget" id="js-eb-ticket-widget"></div>
-          </div>
-        {% endif %}
-      {% endif %}
+      <a
+        class="text-white bg-orange border border-orange p-3 rounded-lg no-underline uppercase hover:bg-white hover:text-orange transition-colors"
+        href="{{ canonical }}"
+        >Find out more</a
+      >
+      {% else %} {{ content | safe }} {% if eventbriteId %}
+      <div class="border-orange border-t mt-4 pt-4" id="tickets">
+        <div
+          class="ev-ticket__eventbrite-widget"
+          id="js-eb-ticket-widget"
+        ></div>
+      </div>
+      {% endif %} {% endif %}
     </div>
-
   </article>
 
   <aside class="md:row-start-1 md:col-start-1">
     <div class="flex flex-col top-0 sticky pt-2 md:pt-4">
       <div>
         <a class="block text-xs" href="/meetup">Meetups</a>
-        <p class="text-base md:text-2xl lg:text-3xl font-bold mb-2 md:mb-4" itemprop="name">{{ city }}</p>
+        <p
+          class="text-base md:text-2xl lg:text-3xl font-bold mb-2 md:mb-4"
+          itemprop="name"
+        >
+          {{ city }}
+        </p>
       </div>
 
       <div class="mb-4">
@@ -72,47 +94,61 @@ layout: layouts/base.njk
         {{ location.city }}<br />
         {{ location.postcode }}
       </div>
-      {% endif %}
-
-      {% if eventbriteId %}
+      {% endif %} {% if eventbriteId %}
       <div class="mb-4">
-      <a href="#tickets" class="inline-block text-sm p-2 rounded uppercase font-bold text-white bg-orange border border-orange hover:bg-white hover:text-orange js-moveto">Get tickets</a>
+        <a
+          href="#tickets"
+          class="inline-block text-sm p-2 rounded uppercase font-bold text-white bg-orange border border-orange hover:bg-white hover:text-orange js-moveto"
+          >Get tickets</a
+        >
       </div>
-      {% endif %}
-
-      {% if sponsors !== "disabled" %}
+      {% endif %} {% if sponsors !== "disabled" %}
       <div class="border-grey border p-2 mb-4 text-grey">
         {% if sponsors %}
-          <p class="border-b text-sm mb-2 pb-2">Event sponsored by…</p>
-          {% for sponsor in sponsors %}
-          <p>
-            {% if sponsor.type %}
-            <span class="block text-sm">{{ sponsor.type }}:</span>
-            {% endif %}
-            {% if sponsor.url %}
-            <a href="{{ sponsor.url }}" target="_blank" rel="noopener" class="underline text-orange">
-              {% if sponsor.logo %}
-                <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }} logo" class="max-w-[50%]" />
-              {% endif %}
-              <strong class="block">{{ sponsor.name }}</strong>
-            </a>
-            {% else %}
+        <p class="border-b text-sm mb-2 pb-2">Event sponsored by…</p>
+        {% for sponsor in sponsors %}
+        <p>
+          {% if sponsor.type %}
+          <span class="block text-sm">{{ sponsor.type }}:</span>
+          {% endif %} {% if sponsor.url %}
+          <a
+            href="{{ sponsor.url }}"
+            target="_blank"
+            rel="noopener"
+            class="underline text-orange"
+          >
             {% if sponsor.logo %}
-              <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }} logo" class="max-w-[50%]" />
+            <img
+              src="{{ sponsor.logo }}"
+              alt="{{ sponsor.name }} logo"
+              class="max-w-[50%]"
+            />
             {% endif %}
-            <strong class="block text-orange">{{ sponsor.name }}</strong>
+            <strong class="block">{{ sponsor.name }}</strong>
+          </a>
+          {% else %} {% if sponsor.logo %}
+          <img
+            src="{{ sponsor.logo }}"
+            alt="{{ sponsor.name }} logo"
+            class="max-w-[50%]"
+          />
+          {% endif %}
+          <strong class="block text-orange">{{ sponsor.name }}</strong>
 
-            {% endif %}
-
+          {% endif %}
+        </p>
+        <div class="border-t pt-2 mt-2">
+          <p class="text-sm">
+            Please get in touch (info@) if you would like to talk about
+            sponsoring future Kingdom Code events.
           </p>
-          <div class="border-t pt-2 mt-2">
-            <p class="text-sm">Please get in touch (info@) if you would like to talk about sponsoring future Kingdom Code events.</p>
-          </div>
-          {% endfor %}
-        {% else %}
-          <p>
-            <strong class="block">This event is unsponsored</strong>
-          Please get in touch (info@) if you would like to talk about sponsoring Kingdom Code events.</p>
+        </div>
+        {% endfor %} {% else %}
+        <p>
+          <strong class="block">This event is unsponsored</strong>
+          Please get in touch (info@) if you would like to talk about sponsoring
+          Kingdom Code events.
+        </p>
         {% endif %}
       </div>
       {% endif %}
@@ -124,18 +160,18 @@ layout: layouts/base.njk
 <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
 
 <script type="text/javascript">
-    {# var exampleCallback = function() {
-        console.log('Order complete!');
-    }; #}
+  {# var exampleCallback = function() {
+      console.log('Order complete!');
+  }; #}
 
-    window.EBWidgets.createWidget({
-        // Required
-        widgetType: 'checkout',
-        eventId: '{{ eventbriteId }}',
-        iframeContainerId: 'js-eb-ticket-widget',
+  window.EBWidgets.createWidget({
+      // Required
+      widgetType: 'checkout',
+      eventId: '{{ eventbriteId }}',
+      iframeContainerId: 'js-eb-ticket-widget',
 
-        // Optional
-        // onOrderComplete: exampleCallback  // Method called when an order has successfully completed
-    });
+      // Optional
+      // onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+  });
 </script>
 {% endif %}

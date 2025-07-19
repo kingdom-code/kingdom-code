@@ -2,61 +2,63 @@
 nav: true;
 layout: layouts/base.njk
 ---
+
 <div class="container mb-4 kc-blog md:grid md:grid-cols-3 md:gap-8">
-
   <article class="text-blue md:col-span-2 md:mt-0">
-
     <header role="banner" class="mb-4">
-      {% if hero_img %}
-        {% rwdImg hero_img, title , "(min-width: 1020px) 1020px, calc(100vw - 100px)", "w-full rounded-b" %}
-      {% endif %}
+      {% if hero_img %} {% rwdImg hero_img, title , "(min-width: 1020px) 1020px,
+      calc(100vw - 100px)", "w-full rounded-b" %} {% endif %}
 
-      <date class="block text-sm mt-2 md:hidden">{{ date | readableDate }}</date>
-      <h1 class="text-3xl md:text-4xl font-bold mb-2 md:mt-2" itemprop="name">{{ title | orphanWrap | safe }}</h1>
-
+      <date class="block text-sm mt-2 md:hidden"
+        >{{ date | readableDate }}</date
+      >
+      <h1 class="text-3xl md:text-4xl font-bold mb-2 md:mt-2" itemprop="name">
+        {{ title | orphanWrap | safe }}
+      </h1>
     </header>
 
-    <div class="prose prose-figcaption:text-xs">
-      {{ layoutContent | safe }}
-    </div>
-
+    <div class="prose prose-figcaption:text-xs">{{ content | safe }}</div>
 
     {% if canonical %}
-    <small class="mt-4 pt-4 border-t block thought-canonical">This post originally appeared at:<br /><a href="{{ canonical }}">{{ canonical }}</a></small>
+    <small class="mt-4 pt-4 border-t block thought-canonical"
+      >This post originally appeared at:<br /><a href="{{ canonical }}"
+        >{{ canonical }}</a
+      ></small
+    >
     {% endif %}
-
   </article>
 
   <div class="md:max-w-screen-md pb-2 mb:pb-4">
     <div class="flex flex-col-reverse top-0 sticky pt-2 md:pt-4 md:flex-col">
       <div>
         <a class="block text-xs" href="/blog">The Kingdom Code Blog</a>
-        <p class="text-base md:text-2xl lg:text-3xl font-bold mb-2 md:mb-4" itemprop="name">{{ title | orphanWrap | safe }}</p>
-        <date class="block text-sm md:text-base mb-2 md:mb-4">{{ date | readableDate }}</date>
+        <p
+          class="text-base md:text-2xl lg:text-3xl font-bold mb-2 md:mb-4"
+          itemprop="name"
+        >
+          {{ title | orphanWrap | safe }}
+        </p>
+        <date class="block text-sm md:text-base mb-2 md:mb-4"
+          >{{ date | readableDate }}</date
+        >
         <p class="block text-sm md:text-base">{{ intro }}</p>
       </div>
 
       {% if author %}
-        <div class="grid grid-cols-1 divide-y divide-blue">
-        {% if author is string %}
-          {% set authorName = author %}
-          {% include "blocks/authorBio.njk" %}
-        {% else %}
-          {% for authorName in author %}
-            {% include "blocks/authorBio.njk" %}
-          {% endfor %}
-        {% endif %}
-        </div>
+      <div class="grid grid-cols-1 divide-y divide-blue">
+        {% if author is string %} {% set authorName = author %} {% include
+        "blocks/authorBio.njk" %} {% else %} {% for authorName in author %} {%
+        include "blocks/authorBio.njk" %} {% endfor %} {% endif %}
+      </div>
       {% endif %}
 
-      <a class="text-sm underline hover:text-mint" href="/blog">Back to all posts</a>
+      <a class="text-sm underline hover:text-mint" href="/blog"
+        >Back to all posts</a
+      >
 
       {% if disable_ad !== true %}
-      <div class="py-4">
-        {% include "blocks/build.njk" %}
-      </div>
+      <div class="py-4">{% include "blocks/build.njk" %}</div>
       {% endif %}
     </div>
   </div>
-
 </div>

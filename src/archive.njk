@@ -6,42 +6,44 @@ nav: true
 {% set events = events %}
 
 <header class="kc-header">
-
   <div class="kc-header__container">
-
     <div class="kc-header__container__logoGroup">
-      <img src="/_assets/misc/logos/kingdom-code.svg" alt="Kingdom Code" class="kc-header__logo"/>
+      <img
+        src="/_assets/misc/logos/kingdom-code.svg"
+        alt="Kingdom Code"
+        class="kc-header__logo"
+      />
       <hgroup>
         <h1>{{ basics.name }}</h1>
         <h2>Event Archive</h2>
       </hgroup>
     </div>
-
   </div>
-
 </header>
 
-<main class="container kc-describer">
-  {{ layoutContent | safe }}
-</main>
+<main class="container kc-describer">{{ content | safe }}</main>
 
 <div class="container">
-
   <section class="kc-event-archive">
-
     <ul class="kc-event-archive__list">
-    {% for event in events | sort(true, false, 'date') %}
+      {% for event in events | sort(true, false, 'date') %}
 
       <li class="kc-event-archive__list__item">
         <div class="kc-event-archive__name">{{event.name}}</div>
         <div class="kc-event-archive__detail">{{event.city}}</div>
-        <div class="kc-event-archive__detail">{{event.date | readableDate}}</div>
+        <div class="kc-event-archive__detail">
+          {{event.date | readableDate}}
+        </div>
         <div class="kc-event-archive__detail">{{event.description}}</div>
       </li>
-      
-    {% endfor %}
+
+      {% endfor %}
     </ul>
 
-    <p>Want to get invovled? <a href="https://www.twitter.com/kcodeuk/" target="_blank">Let us know</a>.</p>
+    <p>
+      Want to get invovled?
+      <a href="https://www.twitter.com/kcodeuk/" target="_blank">Let us know</a
+      >.
+    </p>
   </section>
 </div>

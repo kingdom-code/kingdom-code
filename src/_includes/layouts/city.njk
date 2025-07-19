@@ -6,15 +6,23 @@ layout: layouts/base.njk
 {% set events = events | eventsInCity(cityName) %}
 
 <header class="kc-header">
-  {% rwdImg "/_assets/img/cities/" + cityName | slugify + ".jpg", "" , "100vw", "kc-header__media" %}
+  {% rwdImg "/_assets/img/cities/" + cityName | slugify + ".jpg", "" , "100vw",
+  "kc-header__media" %}
 
   <div class="kc-header__container">
-
     <div class="kc-header__container__logoGroup">
-      <img src="/_assets/misc/logos/kingdom-code.svg" alt="Kingdom Code" class="kc-header__logo"/>
+      <img
+        src="/_assets/misc/logos/kingdom-code.svg"
+        alt="Kingdom Code"
+        class="kc-header__logo"
+      />
       <hgroup>
         <h1>{{ basics.name }}</h1>
-        <img src="/_assets/misc/logos/{{ cityName | slugify }}.svg" alt="{{ cityName }}" class="kc-header__cityName-svg"/>
+        <img
+          src="/_assets/misc/logos/{{ cityName | slugify }}.svg"
+          alt="{{ cityName }}"
+          class="kc-header__cityName-svg"
+        />
       </hgroup>
     </div>
 
@@ -22,17 +30,11 @@ layout: layouts/base.njk
       <a class="js-moveto" href="#meetups">Meetups</a>
       <a class="js-moveto" href="#newsletter">Newsletter</a>
     </div>
-
   </div>
-
 </header>
 
-<main class="container kc-describer">
-  {{ layoutContent | safe }}
-</main>
+<main class="container kc-describer">{{ content | safe }}</main>
 
 <div class="container">
-  {% include "blocks/events.njk" %}
-
-  {% include "blocks/people.njk" %}
+  {% include "blocks/events.njk" %} {% include "blocks/people.njk" %}
 </div>

@@ -20,7 +20,9 @@ layout: layouts/base.njk
       <div class="sm:text-left">
         <hgroup class="px-4">
           <h1 class="font-bold text-5xl">Kingdom Code BUILD</h1>
-          <h2 class="mt-2 text-2xl">Project: {{ title | orphanWrap | safe }}</h2>
+          <h2 class="mt-2 text-2xl">
+            Project: {{ title | orphanWrap | safe }}
+          </h2>
         </hgroup>
 
         <div class="px-4">
@@ -37,31 +39,32 @@ layout: layouts/base.njk
 </header>
 
 <div class="container">
-
   <article class="text-blue">
-
     <div class="prose prose-figcaption:text-xs mx-auto">
-      
       <hgroup class="mt-8">
         {% if title != org %}
         <p class="text-sm m-0 font-bold text-blue">{{ org }}:</p>
         {% endif %}
-        <h1 class="text-3xl md:text-4xl font-bold mb-2 md:mt-2 md:mb-4 text-blue" itemprop="name">{{ title | orphanWrap | safe }}</h1>
+        <h1
+          class="text-3xl md:text-4xl font-bold mb-2 md:mt-2 md:mb-4 text-blue"
+          itemprop="name"
+        >
+          {{ title | orphanWrap | safe }}
+        </h1>
       </hgroup>
-      
-      {{ layoutContent | safe }}
 
-      {% if url %}
-      <p>Find out more at <a href="{{ url }}" target="_blank" rel="noopener">{{ url | replace("https://", "") }}</a></p>
+      {{ content | safe }} {% if url %}
+      <p>
+        Find out more at
+        <a href="{{ url }}" target="_blank" rel="noopener"
+          >{{ url | replace("https://", "") }}</a
+        >
+      </p>
       {% endif %}
     </div>
 
     {% include "blocks/projectList.njk" %}
 
-    <div class="py-4">
-      {% include "blocks/build.njk" %}
-    </div>
-
+    <div class="py-4">{% include "blocks/build.njk" %}</div>
   </article>
-
 </div>
