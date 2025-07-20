@@ -245,10 +245,13 @@
         <p>
           We have a <a href="/blog" class="underline">Blog</a> &middot; {% if
           jobs.length == 1 %} There is one vacancy on
-          <a href="/jobs" class="underline">the jobs board</a> &middot; {% endif
-          %} {% if jobs.length > 1 %} There are {{ jobs.length }} vacancies on
-          <a href="/jobs" class="underline">the jobs board</a> &middot; {% endif
-          %} This site is built on top of
+          <a href="/jobs" class="underline">the jobs board</a>{% endif %} {% if
+          jobs.length > 1 %} There are {{ jobs.length }} vacancies on
+          <a href="/jobs" class="underline">the jobs board</a>{% endif %}
+        </p>
+        <p class="text-sm">
+          Last updated: {{ data.updatedTime }} &middot; This site is built on
+          top of
           <a
             href="https://www.11ty.io"
             target="_blank"
@@ -256,9 +259,7 @@
             class="underline"
             >Eleventy</a
           >
-        </p>
-        <p class="text-sm">
-          Last updated: {{ data.updatedTime }} &middot;
+          &middot;
           <a
             href="https://github.com/kingdom-code/kingdom-code/blob/master/{{ page.inputPath }}"
             class="underline"
