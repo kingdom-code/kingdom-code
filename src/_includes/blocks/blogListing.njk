@@ -1,47 +1,44 @@
-{% set blogPosts = collections[blogListingTag] %}
-
-{% if blogListingLimit|length === 0  %}
-  {% set blogListingLimit = blogPosts|length %}
-{% endif %}
-
-{% if blogPosts | length %}
+{% set blogPosts = collections[blogListingTag] %} {% if blogListingLimit|length
+=== 0 %} {% set blogListingLimit = blogPosts|length %} {% endif %} {% if
+blogPosts | length %}
 <section class="container p-0 mb-4">
-
   <div class="my-4 md:mt-16">
-    <h2 class="text-orange font-bold text-2xl uppercase text-center">{{ blogListingTag | replace('-', ' ') }} Blog posts</h2>
+    <h2 class="text-orange font-bold text-2xl uppercase text-center">
+      {{ blogListingTag | replace('-', ' ') }} Blog posts
+    </h2>
     <p class="text-center text-sm mt-4">
-      This is
-      {% if blogListingLimit === 1 %}
-      the latest blog post
-      {% else %}
-      a list of the latest {{ blogListingLimit }} blog posts
-      {% endif %}
-      tagged with <code>{{ blogListingTag }}</code>.
-
-      View all posts from Kingdom Code on the <a href="/blog" class="underline text-orange">Kingdom Code blog</a>.
+      This is {% if blogListingLimit === 1 %} the latest blog post {% else %} a
+      list of the latest {{ blogListingLimit }} blog posts {% endif %} tagged
+      with <code>{{ blogListingTag }}</code>. View all posts from Kingdom Code
+      on the
+      <a href="/blog" class="underline text-orange">Kingdom Code blog</a>.
     </p>
   </div>
 
   <div class="grid grid-cols-2 gap-4">
+    {% for post in blogPosts | reverse %} {% if loop.index0 < blogListingLimit
+    %}
+    <a
+      href="{% if post.data.canonical %}{{ post.data.canonical }}{% else %}{{ post.url }}{% endif %}"
+      {%
+      if
+      post.data.canonical
+      %}target="_blank"
+      {%
+      endif
+      %}
+      class="bg-orange-50 p-8 text-center md:py-12 border-2 border-transparent transition-colors hover:border-orange"
+    >
+      <p class="text-xs uppercase">
+        {% if post.data.canonical and post.data.canonicalRef %} {{
+        post.data.canonicalRef }} {% else %} Blog post {% endif %} - {{
+        post.date | formatDate('MMMM YYYY') }}
+      </p>
 
-    {% for  post in blogPosts | reverse  %}
-      {% if loop.index0 < blogListingLimit %}
-      <a href="{% if post.data.canonical %}{{ post.data.canonical }}{% else %}{{ post.url }}{% endif %}" {% if post.data.canonical %}target="_blank"{% endif %} class="bg-orange-50 p-8 text-center md:py-12 border-2 border-transparent transition-colors hover:border-orange">
-        <p class="text-xs uppercase">
-        {% if post.data.canonical and post.data.canonicalRef %}
-          {{ post.data.canonicalRef }}
-        {% else %}
-          Blog post
-        {% endif %}
-        - {{ post.date | formatDate('MMMM YYYY') }}
-        </p>
-
-        <p class="font-bold">{{ post.data.title | orphanWrap | safe }}</p>
-      </a>
-      {% endif %}
-    {% endfor %}
-
+      <p class="font-bold">{{ post.data.title | orphanWrap | safe }}</p>
+      <p class="text-sm mt-4">{{ post.data.intro | orphanWrap | safe }}</p>
+    </a>
+    {% endif %} {% endfor %}
   </div>
-
 </section>
 {% endif %}
