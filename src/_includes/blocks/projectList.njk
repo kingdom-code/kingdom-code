@@ -1,34 +1,44 @@
-{% set projectList = collections.projects|buildProjects(year) %}
-
-{% if projectList|length > 0 %}
+{% set projectList = collections.projects|buildProjects(year) %} {% if
+projectList|length > 0 %}
 
 <section class="py-4 text-blue md:py-16">
   <div class="container">
-    <h3 class="text-orange font-bold uppercase mb-0 text-center">All BUILD {{ year }} projects…</h3>
+    <h3 class="text-orange font-bold uppercase mb-0 text-center">
+      All BUILD {{ year }} projects{% if projectsOpen %} so far{% endif %}…
+    </h3>
     <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-4 my-4 md:mb-16">
-
       {% for project in projectList %}
-        <a href="{{ project.url }}" class="block border border-orange p-4 bg-white hover:scale-105 transition">
-          <h3 class="font-bold text-orange border-b border-orange mb-4">
-            {% if project.data.org != project.data.title %}<span class="block text-xs">{{ project.data.org }}:</span>{% endif %}
-            {{ project.data.title }}
-          </h3>
-          <p class="text-sm">{{ project.data.summary }}</p>
-          <ul class="mt-2">
+      <a
+        href="{{ project.url }}"
+        class="block border border-orange p-4 bg-white hover:scale-105 transition"
+      >
+        <h3 class="font-bold text-orange border-b border-orange mb-4">
+          {% if project.data.org != project.data.title %}<span
+            class="block text-xs"
+            >{{ project.data.org }}:</span
+          >{% endif %} {{ project.data.title }}
+        </h3>
+        <p class="text-sm">{{ project.data.summary }}</p>
+        <ul class="mt-2">
           {% for skill in project.data.skills %}
-            <li class="inline-block text-xs bg-orange text-white rounded px-1">{{ skill }}</li>
+          <li class="inline-block text-xs bg-orange text-white rounded px-1">
+            {{ skill }}
+          </li>
           {% endfor %}
         </ul>
-        </a>
+      </a>
       {% endfor %}
     </div>
 
     {% if projectsOpen %}
     <p class="text-center">
       There is still space for a few more projects to join us…
-      <a class="mt-2 inline-block underline text-orange hover:no-underline" href="/build/projects">
-        Find out about bringing yours
-      </a>.
+      <a
+        class="mt-2 inline-block underline text-orange hover:no-underline"
+        href="/build/projects"
+      >
+        Find out about bringing your project
+      </a>
     </p>
     {% endif %}
   </div>

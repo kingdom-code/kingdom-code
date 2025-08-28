@@ -1,5 +1,6 @@
 import MoveTo from "moveto";
 import { tns } from "../../../node_modules/tiny-slider/src/tiny-slider";
+import LiteYoutube from "lite-youtube-embed"
 
 document.addEventListener("DOMContentLoaded", function () {
   const moveTo = new MoveTo();

@@ -62,9 +62,9 @@ layout: layouts/base.njk
       </p>
       {% endif %}
     </div>
-
-    {% include "blocks/projectList.njk" %}
-
-    <div class="py-4">{% include "blocks/build.njk" %}</div>
   </article>
 </div>
+
+{% include "blocks/projectList.njk" %}
+
+<div class="container mb-4">{% include "blocks/build.njk" %}</div>
