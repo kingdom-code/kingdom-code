@@ -1,6 +1,6 @@
 ---
 title: The Auracast Pathfinders
-org: The Auracast Pathfinders
+org: Independent
 skills:
 - Development
 - Bluetooth spec
