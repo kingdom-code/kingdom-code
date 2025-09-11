@@ -1,6 +1,6 @@
 ---
 title: Evidence for Faith
-org: Evidence for Faith
+org: Independent
 url: https://evidenceforfaith.org
 summary: This is an evangelistic apologetic tool based on the evidence for the resurrection which exposes honest seekers to Scripture and other evidence for faith.
 year: 2021

@@ -1,6 +1,6 @@
 ---
 title: Intercultural Hub
-org: Intercultural Hub
+org: Independent
 summary: The Intercultural Hub is a new entity aiming to provide digital and physical integrated hubs for churches and networks to work together to help plant, strengthen and multiply intercultural churches, providing focused resources to build bridges and trusted relationships across a diversity of backgrounds.
 year: 2021
 ---

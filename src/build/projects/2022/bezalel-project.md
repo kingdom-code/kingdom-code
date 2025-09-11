@@ -1,6 +1,6 @@
 ---
 title: Bezalel Project
-org: Bezalel Project
+org: Independent
 url: https://thebezalelproject.tumblr.com/
 skills:
   - Design

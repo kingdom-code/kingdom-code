@@ -1,6 +1,6 @@
 ---
 title: Fellow
-org: Fellow
+org: Independent
 url: https://fellow-web.vercel.app/
 skills:
 - typescript

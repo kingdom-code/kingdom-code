@@ -1,6 +1,6 @@
 ---
 title: Prayer Walk App
-org: Prayer Walk App
+org: Independent
 url: https://prayerwalk.app
 skills:
   - mobile app

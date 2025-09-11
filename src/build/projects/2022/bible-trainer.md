@@ -1,6 +1,6 @@
 ---
 title: Bible Trainer
-org: Bible Trainer
+org: Independent
 url: https://bibletrainer.co.uk
 skills:
   - UX Design

@@ -1,6 +1,6 @@
 ---
 title: Bankuet
-org: Bankuet
+org: Independent
 url: https://evidenceforfaith.org
 summary: What insight can all our data on donations and food requests can give us and the food banks we work with?
 year: 2021

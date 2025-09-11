@@ -1,6 +1,6 @@
 ---
 title: Upsio
-org: Upsio
+org: Independent
 url: https://www.upsio.org/
 skills:
 - react

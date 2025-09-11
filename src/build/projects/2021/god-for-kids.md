@@ -1,6 +1,6 @@
 ---
 title: God for Kids
-org: God for Kids
+org: Independent
 url: https://www.godforkidsapp.com
 summary: What motivates people to give to charties, and how might we link people up with charities that match with the causes that God has put on their heart?
 year: 2021

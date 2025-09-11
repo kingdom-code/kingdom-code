@@ -1,6 +1,6 @@
 ---
 title: Breeze Translate
-org: Breeze Translate
+org: Independent
 url: https://breezetranslate.com/
 skills:
   - backend

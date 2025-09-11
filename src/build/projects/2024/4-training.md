@@ -1,6 +1,6 @@
 ---
 title: 4training.net
-org: 4training.net
+org: Independent
 url: https://holydevelopers.net/projects/4training.net
 skills:
   - web

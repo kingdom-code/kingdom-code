@@ -1,6 +1,6 @@
 ---
 title: Behold Bible
-org: Behold Bible
+org: Independent
 skills:
   - web
   - design / ux

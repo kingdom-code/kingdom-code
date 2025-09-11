@@ -1,6 +1,6 @@
 ---
 title: Taproots
-org: Taproots
+org: Bible Society
 skills:
   - web
   - react/vue

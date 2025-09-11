@@ -1,6 +1,6 @@
 ---
 title: Prayer Walk App
-org: Prayer Walk App
+org: Independent
 url: https://openheaven.prayerwalk.app
 summary: The app helps organisations in cities or areas engage people in prayer walking and becoming passionate for the area they live in. At its simplest, it allows people to select streets to walk and then say when they've been prayed for. A map is shown to users to show the overall progress of covering an area in prayer.
 year: 2021
