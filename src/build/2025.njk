@@ -2,7 +2,7 @@
 nav: true
 title: BUILD 2025
 # eventbriteId: 980089202187
-bookingsOpen: true
+bookingsOpen: false
 projectsOpen: true
 section: build
 dates: 10–11 October 2025
@@ -399,12 +399,12 @@ schedule:
   </div>
 </section>
 
+{% if bookingsOpen %}
 <section class="ev-ticket" id="tickets">
   <div class="py-16">
     <h2 class="ev-ticket__title text-4xl font-bold">Book your place at BUILD 2025</h2>
     <date>{{ dates }}</date>
 
-    {% if bookingsOpen %}
     <iframe
       class="my-12"
       src="https://lu.ma/embed/event/evt-SQKaYxJLsc64eXV/simple"
@@ -421,11 +421,10 @@ schedule:
         class="underline hover:no-underline"
         href="https://lu.ma/gang9rg3"
         target="_blank"
-        >Book via Lu.ma</a
-      >
+        >Book via Lu.ma</a>
     </p>
-    {% endif %}
   </div>
 </section>
+{% endif %}
 
 {% include "blocks/buildPartners.njk" %}
