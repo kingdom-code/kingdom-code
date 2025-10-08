@@ -14,7 +14,7 @@ status = 301
 
 [[redirects]]
 from = "/feedback"
-to = "https://docs.google.com/forms/d/e/1FAIpQLSe328kPvro24m5NYJn19qLF2JVn-rTux7mEljzIOGDUKpVBCA/viewform?usp=sf_link"
+to = "https://forms.gle/xhWkBfh1jPgyBFzX9"
 status = 302
 
 [[redirects]]
