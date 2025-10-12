@@ -1,0 +1,156 @@
+---
+nav: true
+title: BUILD 2026
+projectsOpen: true
+section: build
+dates: 9–10 October 2026
+year: 2026
+---
+
+<header class="relative text-black">
+  {# {% rwdImg "/_assets/img/build/24/top-2.jpg", "" , "100vw", "block h-full
+  object-cover absolute w-full" %} #}
+
+  <div
+    class="relative w-full text-center flex items-center justify-center flex-col bg-white"
+  >
+    <div class="sm:flex items-center gap-4 md:gap-8 my-4 md:my-8">
+      <img
+        src="/_assets/misc/build26.svg"
+        style=""
+        alt="BUILD 2026"
+        class="kc-header__logo p-4 mx-auto w-[90%] max-w-[350px]"
+      />
+      <div class="sm:text-left">
+        <hgroup>
+          <h1 class="font-bold text-5xl">BUILD 2026</h1>
+          <h2 class="mt-2 text-2xl">{{ dates }}</h2>
+        </hgroup>
+
+        <div>
+          {% if bookingsOpen %}
+          <a
+            href="#tickets"
+            class="js-moveto mt-4 inline-block border bg-orange border-orange rounded p-2 uppercase text-white hover:bg-transparent transition-colors"
+            >Book Now</a
+          >
+          {% elseif bookingsOpen == false %}
+          <span
+            class="mt-4 inline-block border bg-orange border-orange rounded p-2 uppercase text-white"
+            >Bookings closed</span
+          >
+          {% else %} {% endif %}
+        </div>
+      </div>
+    </div>
+
+    {# <ul class="block mt-4 md:mt-8 py-4">
+      <li class="inline">
+        <a href="#about" class="js-moveto underline px-2 hover:no-underline"
+          >About</a
+        >
+      </li>
+      <li class="inline">
+        <a href="#location" class="js-moveto underline px-2 hover:no-underline"
+          >Location</a
+        >
+      </li>
+      <li class="inline">
+        <a href="#projects" class="js-moveto underline px-2 hover:no-underline"
+          >Projects</a
+        >
+      </li>
+      <li class="inline">
+        <a href="#sponsor" class="js-moveto underline px-2 hover:no-underline"
+          >Partner</a
+        >
+      </li>
+      <li class="inline">
+        <a href="#timings" class="js-moveto underline px-2 hover:no-underline"
+          >Timings&nbsp;and&nbsp;Practicalities</a
+        >
+        {% if bookingsOpen %}
+      </li>
+
+      <li class="inline">
+        <a href="#tickets" class="js-moveto underline px-2 hover:no-underline"
+          >Tickets</a
+        >
+        {% endif %}
+      </li>
+    </ul> #}
+  </div>
+</header>
+
+{#
+<section class="py-4 md:py-12">
+  <div class="container text-center sm:text-left">
+    <p class="uppercase text-[#f6be03]">
+      {% if logobar_title %}{{ logobar_title }}{% else %}Supported by:{% endif
+      %}
+    </p>
+    <a
+      href="https://worship.works/worship-works-x-build/"
+      target="_blank"
+      rel="noopener"
+    >
+      <img
+        src="/_assets/misc/logos/worshipworks.svg"
+        alt="Worship Works"
+        class="w-1/2 max-w-sm m-auto sm:m-0"
+      />
+    </a>
+  </div>
+</section>
+#}
+
+<section class="imagetext imagetext--yellow" id="about">
+  <div class="imagetext__img">
+    {% rwdImg "/_assets/img/build/24/working.jpg", "" , "(min-width: 640px)
+    50vw, 100vw", "imagetext__img" %}
+  </div>
+
+  <div class="imagetext__text py-16">
+    <p>BUILD is an annual Christian hackathon that brings together technologists from across Europe who are passionate about the intersection of faith and innovation.</p>
+    <p>It's an energising weekend where Christian developers, designers, project managers, marketing professionals, and creative thinkers unite to collaborate on projects that matter. This isn't just about building technology—it's about discipleship. It's a space where our love for Jesus meets our technical skills, where we gather as a community to create technology that redeems, restores, and reflects God's kingdom.</p>
+    <p>Over the weekend you might be working on a prototype to help an ministry explore an idea, building in a new feature to an existing project, or something completely different. Whatever you work on BUILD is your opportunity to work alongside fellow believers who share your conviction that technology can be a force for good in God's hands.</p>
+    <p>In 2026 BUILD will be hosted by the FaithTech London community.</p>
+    <p><a
+      href="https://www.faithtech.com/communities/london" target="_blank"
+      class="text-[#000]"
+    >
+      Find out more and register for updates
+    </a>
+    </p>
+  </div>
+</section>
+
+{% if bookingsOpen %}
+<section class="ev-ticket" id="tickets">
+  <div class="py-16">
+    <h2 class="ev-ticket__title text-4xl font-bold">Book your place at BUILD 2025</h2>
+    <date>{{ dates }}</date>
+
+    <iframe
+      class="my-12"
+      src="https://lu.ma/embed/event/evt-SQKaYxJLsc64eXV/simple"
+      width="100%"
+      height="550"
+      frameborder="0"
+      style="border: 1px solid #4E556988; border-radius: 4px"
+      allowfullscreen=""
+      aria-hidden="false"
+      tabindex="0"
+    ></iframe>
+    <p
+      <a
+        class="underline hover:no-underline"
+        href="https://lu.ma/gang9rg3"
+        target="_blank"
+        >Book via Lu.ma</a>
+    </p>
+  </div>
+</section>
+{% endif %}
+
+{% include "blocks/buildPartners.njk" %}

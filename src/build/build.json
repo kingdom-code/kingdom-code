@@ -1,8 +1,8 @@
 {
   "nav": true,
   "section": "build",
-  "nextDate": "10–11 October 2025",
-  "nextYear": 2025,
+  "nextDate": "9–10 October 2026",
+  "nextYear": 2026,
   "buildYears": [
     2015,
     2016,
@@ -12,9 +12,10 @@
     2021,
     2022,
     2023,
-    2024
+    2024,
+    2025
   ],
   "layout": "layouts/build.njk",
   "hero_img": "/_assets/img/build/build-og-hero.jpg",
-  "intro": "At Kingdom Code BUILD you'll take part in a 24 hour hackathon, meet Christians in the world of technology & innovation, and practically explore how your faith and skills collide."
+  "intro": "At BUILD you'll take part in a 24 hour hackathon, meet Christians in the world of technology & innovation, and practically explore how your faith and skills collide."
 }

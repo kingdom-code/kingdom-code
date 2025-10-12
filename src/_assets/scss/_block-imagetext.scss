@@ -1,6 +1,10 @@
 .imagetext {
   width: 100%;
 
+  p {
+    margin: 10px 0;
+  }
+
   @include bpMinXSmall() {
     display: grid;
     grid-template-rows: minmax(350px, 1fr);
@@ -36,6 +40,21 @@
     }
   }
 
+  // BUILD FaithTech
+  &--yellow {
+    background-color: #FFD700;
+    color: black;
+
+    a {
+      color: black;
+      border-bottom: 1px solid black;
+
+      &:hover {
+        // border-bottom-color: $colorOrange;
+      }
+    }
+  }
+
   &__img {
     position: relative;
     align-self: stretch;
@@ -58,12 +77,12 @@
       width: 100%;
     }
 
-    + .imagetext__text {
+    +.imagetext__text {
       justify-self: left;
     }
   }
 
-  &__text{
+  &__text {
     padding: 20px;
 
     @include bpMinXSmall() {
@@ -77,6 +96,6 @@
     justify-self: right;
     width: 100%;
 
-    
+
   }
 }
