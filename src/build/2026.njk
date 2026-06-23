@@ -28,81 +28,19 @@ year: 2026
         </hgroup>
 
         <div>
-          {% if bookingsOpen %}
           <a
-            href="#tickets"
-            class="js-moveto mt-4 inline-block border bg-orange border-orange rounded p-2 uppercase text-white hover:bg-transparent transition-colors"
-            >Book Now</a
+            href="https://ftbuild.org.uk/"
+            class="mt-4 inline-block border bg-[#f6be03] border-[#f6be03] rounded p-2 uppercase text-black hover:bg-transparent transition-colors"
           >
-          {% elseif bookingsOpen == false %}
-          <span
-            class="mt-4 inline-block border bg-orange border-orange rounded p-2 uppercase text-white"
-            >Bookings closed</span
-          >
-          {% else %} {% endif %}
+            Find out more
+          </a>
+
         </div>
       </div>
     </div>
 
-    {# <ul class="block mt-4 md:mt-8 py-4">
-      <li class="inline">
-        <a href="#about" class="js-moveto underline px-2 hover:no-underline"
-          >About</a
-        >
-      </li>
-      <li class="inline">
-        <a href="#location" class="js-moveto underline px-2 hover:no-underline"
-          >Location</a
-        >
-      </li>
-      <li class="inline">
-        <a href="#projects" class="js-moveto underline px-2 hover:no-underline"
-          >Projects</a
-        >
-      </li>
-      <li class="inline">
-        <a href="#sponsor" class="js-moveto underline px-2 hover:no-underline"
-          >Partner</a
-        >
-      </li>
-      <li class="inline">
-        <a href="#timings" class="js-moveto underline px-2 hover:no-underline"
-          >Timings&nbsp;and&nbsp;Practicalities</a
-        >
-        {% if bookingsOpen %}
-      </li>
-
-      <li class="inline">
-        <a href="#tickets" class="js-moveto underline px-2 hover:no-underline"
-          >Tickets</a
-        >
-        {% endif %}
-      </li>
-    </ul> #}
   </div>
 </header>
-
-{#
-<section class="py-4 md:py-12">
-  <div class="container text-center sm:text-left">
-    <p class="uppercase text-[#f6be03]">
-      {% if logobar_title %}{{ logobar_title }}{% else %}Supported by:{% endif
-      %}
-    </p>
-    <a
-      href="https://worship.works/worship-works-x-build/"
-      target="_blank"
-      rel="noopener"
-    >
-      <img
-        src="/_assets/misc/logos/worshipworks.svg"
-        alt="Worship Works"
-        class="w-1/2 max-w-sm m-auto sm:m-0"
-      />
-    </a>
-  </div>
-</section>
-#}
 
 <section class="imagetext imagetext--yellow" id="about">
   <div class="imagetext__img">
@@ -116,7 +54,7 @@ year: 2026
     <p>Over the weekend you might be working on a prototype to help an ministry explore an idea, building in a new feature to an existing project, or something completely different. Whatever you work on BUILD is your opportunity to work alongside fellow believers who share your conviction that technology can be a force for good in God's hands.</p>
     <p>In 2026 BUILD will be hosted by the FaithTech London community.</p>
     <p><a
-      href="https://www.faithtech.com/communities/london" target="_blank"
+      href="https://ftbuild.org.uk/" target="_blank"
       class="text-[#000]"
     >
       Find out more and register for updates
@@ -124,33 +62,3 @@ year: 2026
     </p>
   </div>
 </section>
-
-{% if bookingsOpen %}
-<section class="ev-ticket" id="tickets">
-  <div class="py-16">
-    <h2 class="ev-ticket__title text-4xl font-bold">Book your place at BUILD 2025</h2>
-    <date>{{ dates }}</date>
-
-    <iframe
-      class="my-12"
-      src="https://lu.ma/embed/event/evt-SQKaYxJLsc64eXV/simple"
-      width="100%"
-      height="550"
-      frameborder="0"
-      style="border: 1px solid #4E556988; border-radius: 4px"
-      allowfullscreen=""
-      aria-hidden="false"
-      tabindex="0"
-    ></iframe>
-    <p
-      <a
-        class="underline hover:no-underline"
-        href="https://lu.ma/gang9rg3"
-        target="_blank"
-        >Book via Lu.ma</a>
-    </p>
-  </div>
-</section>
-{% endif %}
-
-{% include "blocks/buildPartners.njk" %}
