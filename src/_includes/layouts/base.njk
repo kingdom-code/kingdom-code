@@ -240,6 +240,7 @@
     </div>
     {% endif %}
 
+    {% if hideFooter !== true %}
     <footer class="container mx-auto">
       <div class="text-center md:text-left mb-4">
         <p>
@@ -270,6 +271,7 @@
         </p>
       </div>
     </footer>
+    {% endif %}
     <script src="/_assets/js/script.js?v={{ data.buildRef }}"></script>
   </body>
 </html>

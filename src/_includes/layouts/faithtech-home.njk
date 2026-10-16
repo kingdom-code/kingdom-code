@@ -1,0 +1,113 @@
+---
+layout: layouts/base.njk
+hideNewsletter: true
+hideFooter: true
+---
+
+<header class="ft-home ft-home__hero">
+  <div class="md:max-w-screen-lg mx-auto px-4 py-12 md:py-20 text-center">
+    <div class="flex items-center justify-center gap-6 mb-8">
+      <img
+        src="/_assets/misc/logos/kingdom-code.svg"
+        alt="Kingdom Code"
+        class="h-16 w-16"
+      />
+      <span class="text-3xl font-bold" aria-hidden="true">&times;</span>
+      <span class="block h-16 w-12">
+        {% include "../../_assets/misc/logos/faithtech.svg" %}
+      </span>
+    </div>
+    <h1 class="text-3xl md:text-5xl font-bold mb-4">
+      Kingdom Code is now part of FaithTech
+    </h1>
+    <p class="text-lg md:text-xl mb-8">
+      We have become part of FaithTech, a global community of Christians in
+      tech.
+    </p>
+    <a
+      class="ft-home__cta inline-block font-bold uppercase px-6 py-3 rounded"
+      href="{{ faithtech.url }}"
+      >Visit FaithTech.com</a
+    >
+  </div>
+</header>
+
+<main class="ft-home ft-home__main md:max-w-screen-lg mx-auto px-4 py-10">
+  <p class="font-bold text-lg mb-4">
+    When the love of Jesus and a passion for tech collide, exciting things
+    happen.
+  </p>
+  <p class="mb-10">
+    Kingdom Code has been a community of people who love Jesus and love tech.
+    Together with FaithTech, that community continues: the same people, the same
+    heart, now part of a global movement. Find your local community below.
+  </p>
+
+  <h2 class="text-2xl font-bold mb-4">Find your local community in the UK</h2>
+  <ul class="grid gap-4 sm:grid-cols-2 mb-10">
+    {%- for community in faithtech.communities %}
+    <li>
+      <a
+        class="ft-home__card block h-full rounded p-6 font-bold text-xl"
+        href="{{ community.url }}"
+      >
+        FaithTech {{ community.name }}
+        <span class="ft-home__arrow" aria-hidden="true">&rarr;</span>
+      </a>
+    </li>
+    {%- endfor %}
+  </ul>
+
+  <div class="grid gap-x-6 md:grid-cols-2">
+    <div class="flex flex-col mb-10">
+      <h2 class="text-2xl font-bold mb-4">{{ faithtech.build.name }}</h2>
+      <a
+        class="ft-home__build ft-home__feature block flex-1 rounded overflow-hidden"
+        href="{{ faithtech.build.url }}"
+      >
+        <span class="ft-home__imgwrap block overflow-hidden">
+          {% rwdImg faithtech.build.image, "People working together at BUILD 2026", "(min-width: 768px) 512px, 100vw", "ft-home__img block w-full" %}
+        </span>
+        <span class="block p-6">
+          <span class="block font-bold text-xl mb-2">
+            Join us at BUILD
+            <span class="ft-home__arrow" aria-hidden="true">&rarr;</span>
+          </span>
+          <span class="block"
+            >BUILD brings together Christians in tech to explore how our faith
+            in Jesus connects with our technical skills.</span
+          >
+        </span>
+      </a>
+    </div>
+
+    <div class="flex flex-col mb-10">
+      <h2 class="text-2xl font-bold mb-4">{{ faithtech.playbook.name }}</h2>
+      <a
+        class="ft-home__playbook ft-home__feature block flex-1 rounded overflow-hidden"
+        href="{{ faithtech.playbook.url }}"
+      >
+        <span class="ft-home__imgwrap block overflow-hidden">
+          <img
+            class="ft-home__img block w-full"
+            src="{{ faithtech.playbook.image }}"
+            alt="{{ faithtech.playbook.name }}"
+            width="5120"
+            height="2412"
+            loading="lazy"
+          />
+        </span>
+        <span class="block p-6">
+          <span class="block font-bold text-xl mb-2">
+            Read the Playbook
+            <span class="ft-home__arrow" aria-hidden="true">&rarr;</span>
+          </span>
+          <span class="block"
+            >There is a different way of building technology, a redemptive way.
+            Find out more in the FaithTech Playbook.</span
+          >
+        </span>
+      </a>
+    </div>
+  </div>
+</main>

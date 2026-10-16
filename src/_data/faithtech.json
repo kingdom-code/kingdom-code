@@ -1,0 +1,31 @@
+{
+  "url": "https://www.faithtech.com/",
+  "playbook": {
+    "name": "The FaithTech Playbook",
+    "url": "https://www.faithtech.com/playbook",
+    "image": "/_assets/img/faithtech-playbook.avif"
+  },
+  "build": {
+    "name": "BUILD Hackathon",
+    "url": "https://ftbuild.org.uk/",
+    "image": "/_assets/img/build/26/build-26.jpg"
+  },
+  "communities": [
+    {
+      "name": "London",
+      "url": "https://www.faithtech.com/communities/london"
+    },
+    {
+      "name": "Sheffield",
+      "url": "https://www.faithtech.com/communities/sheffield"
+    },
+    {
+      "name": "Newcastle",
+      "url": "https://www.faithtech.com/communities/newcastle"
+    },
+    {
+      "name": "Manchester",
+      "url": "https://www.faithtech.com/communities/manchester"
+    }
+  ]
+}
