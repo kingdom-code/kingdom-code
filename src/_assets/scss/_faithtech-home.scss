@@ -117,7 +117,7 @@ $ftGrey: #f5f0f0;
   color: $ftBlack;
 
   &:hover {
-    background-color: $ftYellow;
+    background-color: var(--card-hover, #{$ftYellow});
   }
 }
 
