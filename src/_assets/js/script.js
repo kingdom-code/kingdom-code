@@ -25,3 +25,12 @@ if (slider !== null) {
     nav: false,
   });
 }
+
+const glowHero = document.querySelector(".ft-home__hero");
+if (glowHero !== null) {
+  glowHero.addEventListener("pointermove", (e) => {
+    const rect = glowHero.getBoundingClientRect();
+    glowHero.style.setProperty("--mx", `${e.clientX - rect.left}px`);
+    glowHero.style.setProperty("--my", `${e.clientY - rect.top}px`);
+  });
+}
