@@ -21,6 +21,45 @@ $ftGrey: #f5f0f0;
   transform: translateX(6px);
 }
 
+.ft-home__arrow--reveal {
+  max-width: 0;
+  margin-left: 0;
+  opacity: 0;
+  overflow: hidden;
+  vertical-align: bottom;
+  white-space: nowrap;
+  transition: max-width 0.3s ease, margin-left 0.3s ease, opacity 0.3s ease;
+}
+
+.ft-home__cta:hover .ft-home__arrow--reveal,
+.ft-home__cta:focus-visible .ft-home__arrow--reveal {
+  max-width: 1.5em;
+  margin-left: 0.5em;
+  opacity: 1;
+}
+
+@keyframes ftLogoInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-48px) scale(1.1);
+  }
+}
+
+@keyframes ftLogoInRight {
+  from {
+    opacity: 0;
+    transform: translateX(48px) scale(1.1);
+  }
+}
+
+.ft-home__logo--left {
+  animation: ftLogoInLeft 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.ft-home__logo--right {
+  animation: ftLogoInRight 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
 .ft-home__img {
   aspect-ratio: 2 / 1;
   object-fit: cover;
@@ -34,6 +73,7 @@ $ftGrey: #f5f0f0;
 
 @media (prefers-reduced-motion: reduce) {
   .ft-home__arrow,
+  .ft-home__arrow--reveal,
   .ft-home__img,
   .ft-home__cta,
   .ft-home__card,
@@ -41,6 +81,11 @@ $ftGrey: #f5f0f0;
   .ft-home__playbook,
   .ft-home__main a.underline {
     transition: none;
+  }
+
+  .ft-home__logo--left,
+  .ft-home__logo--right {
+    animation: none;
   }
 }
 
@@ -102,6 +147,10 @@ $ftGrey: #f5f0f0;
 
 .ft-home h2 {
   text-wrap: pretty;
+}
+
+.ft-home__intro {
+  max-width: 46rem;
 }
 
 .ft-home__main {
