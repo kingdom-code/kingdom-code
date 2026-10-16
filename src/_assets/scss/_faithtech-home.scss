@@ -46,6 +46,12 @@ $ftGrey: #f5f0f0;
 
 .ft-home__hero {
   background-color: $ftYellow;
+  background-image: radial-gradient(
+    circle at 4px 4px,
+    rgba($ftBlack, 0.12) 1.4px,
+    transparent 1.4px
+  );
+  background-size: 16px 16px;
   color: $ftBlack;
 }
 
