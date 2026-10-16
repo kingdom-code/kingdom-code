@@ -1,6 +1,16 @@
 $ftYellow: #ffd700;
 $ftBlack: #16160c;
 $ftGrey: #f5f0f0;
+$ftPeg: #2e2e25;
+
+@mixin ftPegboard($dot) {
+  background-image: radial-gradient(
+    circle at 4px 4px,
+    $dot 1.4px,
+    transparent 1.4px
+  );
+  background-size: 16px 16px;
+}
 
 .ft-home__cta,
 .ft-home__card,
@@ -90,15 +100,93 @@ $ftGrey: #f5f0f0;
 }
 
 .ft-home__hero {
+  @include ftPegboard(rgba($ftBlack, 0.12));
   background-color: $ftYellow;
-  background-image: radial-gradient(
-    circle at 4px 4px,
-    rgba($ftBlack, 0.12) 1.4px,
-    transparent 1.4px
-  );
-  background-size: 16px 16px;
   color: $ftBlack;
 }
+
+// The glow is two stacked layers (different size and colour) that cross-fade
+// into each other. Only opacity is animated, so the colour change is a smooth
+// fade. The hover fade-in uses filter: opacity() so it doesn't clash with it.
+@mixin ftGlowLayer($color, $scale) {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      ellipse calc(380px * #{$scale}) calc(300px * #{$scale}) at var(--mx, 50%)
+        var(--my, 50%),
+      var($color) 0%,
+      color-mix(in srgb, var($color) 60%, transparent) 25%,
+      color-mix(in srgb, var($color) 25%, transparent) 50%,
+      color-mix(in srgb, var($color) 6%, transparent) 75%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse calc(220px * #{$scale}) calc(260px * #{$scale}) at
+        calc(var(--mx, 50%) + 90px) calc(var(--my, 50%) - 60px),
+      color-mix(in srgb, var($color) 45%, transparent),
+      transparent 100%
+    );
+  pointer-events: none;
+  filter: opacity(0);
+  transition: filter 0.4s ease;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ftGlowA {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes ftGlowB {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.ft-home__hero {
+  position: relative;
+  overflow: hidden;
+  --glow-1: rgba(255, 255, 255, 0.55);
+  --glow-2: rgba(255, 246, 200, 0.6);
+}
+
+.ft-home__heroinner {
+  position: relative;
+  z-index: 1;
+}
+
+.ft-home__hero::before {
+  @include ftGlowLayer(--glow-1, 1);
+  animation-name: ftGlowA;
+}
+
+.ft-home__hero::after {
+  @include ftGlowLayer(--glow-2, 1.12);
+  animation-name: ftGlowB;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .ft-home__hero:hover::before,
+  .ft-home__hero:hover::after {
+    filter: opacity(1);
+  }
+}
+
 
 .ft-home__cta {
   background-color: $ftBlack;
@@ -108,6 +196,27 @@ $ftGrey: #f5f0f0;
   &:hover {
     background-color: $ftYellow;
     color: $ftBlack;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .ft-home__hero {
+    @include ftPegboard($ftPeg);
+    background-color: $ftBlack;
+    color: #fff;
+    --glow-1: rgba(255, 215, 0, 0.2);
+    --glow-2: rgba(255, 170, 0, 0.26);
+  }
+
+  .ft-home__hero .ft-home__cta {
+    background-color: $ftYellow;
+    border-color: $ftYellow;
+    color: $ftBlack;
+
+    &:hover {
+      background-color: $ftBlack;
+      color: $ftYellow;
+    }
   }
 }
 
@@ -122,19 +231,23 @@ $ftGrey: #f5f0f0;
 }
 
 .ft-home__playbook {
+  @include ftPegboard(rgba($ftBlack, 0.1));
   background-color: $ftGrey;
   color: $ftBlack;
 
   &:hover {
+    @include ftPegboard(rgba($ftBlack, 0.12));
     background-color: $ftYellow;
   }
 }
 
 .ft-home__build {
+  @include ftPegboard(rgba(#fff, 0.1));
   background-color: $ftBlack;
   color: $ftYellow;
 
   &:hover {
+    @include ftPegboard(rgba($ftBlack, 0.12));
     background-color: $ftYellow;
     color: $ftBlack;
   }
