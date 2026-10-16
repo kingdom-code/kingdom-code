@@ -10,10 +10,12 @@ hideFooter: true
       <img
         src="/_assets/misc/logos/kingdom-code.svg"
         alt="Kingdom Code"
-        class="h-16 w-16"
+        class="ft-home__logo ft-home__logo--left h-16 w-16"
       />
-      <span class="text-3xl font-bold" aria-hidden="true">&times;</span>
-      <span class="block h-16 w-12">
+      <span class="text-3xl font-bold" aria-hidden="true"
+        >&times;</span
+      >
+      <span class="ft-home__logo ft-home__logo--right block h-16 w-12">
         {% include "../../_assets/misc/logos/faithtech.svg" %}
       </span>
     </div>
@@ -27,21 +29,27 @@ hideFooter: true
     <a
       class="ft-home__cta inline-block font-bold uppercase px-6 py-3 rounded"
       href="{{ faithtech.url }}"
-      >Visit FaithTech.com</a
+      >Visit FaithTech.com<span
+        class="ft-home__arrow ft-home__arrow--reveal"
+        aria-hidden="true"
+        >&rarr;</span
+      ></a
     >
   </div>
 </header>
 
 <main class="ft-home ft-home__main md:max-w-screen-lg mx-auto px-4 py-10">
-  <p class="font-bold text-lg mb-4">
-    When the love of Jesus and a passion for tech collide, exciting things
-    happen.
-  </p>
-  <p class="mb-10">
-    Kingdom Code has been a community of people who love Jesus and love tech.
-    Together with FaithTech, that community continues: the same people, the same
-    heart, now part of a global movement. Find your local community below.
-  </p>
+  <div class="ft-home__intro mb-10">
+    <p class="font-bold text-lg mb-4">
+      When the love of Jesus and a passion for tech collide, exciting things
+      happen.
+    </p>
+    <p>
+      Kingdom Code has been a community of people who love Jesus and love tech.
+      Together with FaithTech, that community continues: the same people, the same
+      heart, now part of a global movement. Find your local community below.
+    </p>
+  </div>
 
   <h2 class="text-2xl font-bold mb-4">Find your local community in the UK</h2>
   <ul class="grid gap-4 sm:grid-cols-2 mb-10">
