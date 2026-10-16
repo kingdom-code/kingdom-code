@@ -1,0 +1,107 @@
+$ftYellow: #ffd700;
+$ftBlack: #16160c;
+$ftGrey: #f5f0f0;
+
+.ft-home__cta,
+.ft-home__card,
+.ft-home__build,
+.ft-home__playbook,
+.ft-home__main a.underline {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.ft-home__arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.ft-home__card:hover .ft-home__arrow,
+.ft-home__build:hover .ft-home__arrow,
+.ft-home__playbook:hover .ft-home__arrow {
+  transform: translateX(6px);
+}
+
+.ft-home__img {
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.ft-home__build:hover .ft-home__img,
+.ft-home__playbook:hover .ft-home__img {
+  transform: scale(1.05);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ft-home__arrow,
+  .ft-home__img,
+  .ft-home__cta,
+  .ft-home__card,
+  .ft-home__build,
+  .ft-home__playbook,
+  .ft-home__main a.underline {
+    transition: none;
+  }
+}
+
+.ft-home__hero {
+  background-color: $ftYellow;
+  color: $ftBlack;
+}
+
+.ft-home__cta {
+  background-color: $ftBlack;
+  border: 2px solid $ftBlack;
+  color: $ftYellow;
+
+  &:hover {
+    background-color: $ftYellow;
+    color: $ftBlack;
+  }
+}
+
+.ft-home__card {
+  background-color: $ftGrey;
+  border: 2px solid $ftBlack;
+  color: $ftBlack;
+
+  &:hover {
+    background-color: $ftYellow;
+  }
+}
+
+.ft-home__playbook {
+  background-color: $ftGrey;
+  color: $ftBlack;
+
+  &:hover {
+    background-color: $ftYellow;
+  }
+}
+
+.ft-home__build {
+  background-color: $ftBlack;
+  color: $ftYellow;
+
+  &:hover {
+    background-color: $ftYellow;
+    color: $ftBlack;
+  }
+}
+
+.ft-home h1 {
+  text-wrap: balance;
+  line-height: 1.2;
+}
+
+.ft-home h2 {
+  text-wrap: pretty;
+}
+
+.ft-home__main {
+  color: $ftBlack;
+
+  a.underline:hover {
+    background-color: $ftYellow;
+  }
+}
