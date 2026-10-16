@@ -13,19 +13,23 @@
   "communities": [
     {
       "name": "London",
-      "url": "https://www.faithtech.com/communities/london"
+      "url": "https://www.faithtech.com/communities/london",
+      "color": "#FFD700"
     },
     {
       "name": "Sheffield",
-      "url": "https://www.faithtech.com/communities/sheffield"
+      "url": "https://www.faithtech.com/communities/sheffield",
+      "color": "#FFB300"
     },
     {
       "name": "Newcastle",
-      "url": "https://www.faithtech.com/communities/newcastle"
+      "url": "https://www.faithtech.com/communities/newcastle",
+      "color": "#F05228"
     },
     {
       "name": "Manchester",
-      "url": "https://www.faithtech.com/communities/manchester"
+      "url": "https://www.faithtech.com/communities/manchester",
+      "color": "#FFF737"
     }
   ]
 }
